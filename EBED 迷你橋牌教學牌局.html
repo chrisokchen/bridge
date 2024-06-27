@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        EBED 迷你橋牌教學牌局 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="EBED-迷你橋牌教學牌局" data-id="EBED-迷你橋牌教學牌局"><a class="anchor hidden-xs" href="#EBED-迷你橋牌教學牌局" title="EBED-迷你橋牌教學牌局"><span class="octicon octicon-link"></span></a><span>EBED 迷你橋牌教學牌局</span></h1><p><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/Minibridge/MiniBridge%20teaching%20hands_revised_including%20defence%20v2021%20%282%29.pdf" target="_blank" rel="noopener"><span>MiniBridge Teaching Hands</span></a></p><h1 id="無王合約" data-id="無王合約"><a class="anchor hidden-xs" href="#無王合約" title="無王合約"><span class="octicon octicon-link"></span></a><span>無王合約</span></h1><h2 id="給老師的關於使用這些牌局的注意事項" data-id="給老師的關於使用這些牌局的注意事項"><a class="anchor hidden-xs" href="#給老師的關於使用這些牌局的注意事項" title="給老師的關於使用這些牌局的注意事項"><span class="octicon octicon-link"></span></a><span>給老師的關於使用這些牌局的注意事項</span></h2><p><span>第一部分包含所有無王的牌局。 有十組各四手牌。 請參閱下一頁的摘要，以了解所涵蓋的要點。 另外也提供了十六手供複習。 其中八個可以在前五課後使用，其餘的涵蓋後五課中包含的主題。</span><br>
+<span>牌局的設計是為了清楚說明特定主題。 不要擔心優秀的玩法可以做出更多的墩數，只需在做出了足夠的墩數時，說“做得很好”即可。</span></p><p><span>牌桌上有四名玩家，每個人都必須扮演自己的角色。 但當明手很無聊，明手沒有理由不繞到桌子旁坐在莊家旁邊。 他們可以一起討論這個問題。</span></p><p><span>雖然這些主題是基於莊家的玩法，但不要忽視防守者。 防禦的目的是建立可以兌現的贏墩。 因此，引牌通常是連續張的頂張，或內部連續張的頂張。 其中有些來自優質的長門花色，任何低牌都可以（不用擔心第四高的牌）。</span></p><p><span>簡單的防禦課程包括：</span><br>
+<span>➢ 如果有引牌花色的話，你必須要跟</span><br>
+<span>➢ 如果搭檔引一張低牌，第三位玩家就打大牌</span><br>
+<span>➢ 如果您贏得一墩並取得引牌，則回引搭檔的引牌</span><br>
+<span>➢ 留住贏張； 如果有機會，則拋出失張。</span><br>
+<span>記得也要對防守者說「做得很好」。</span></p><p><span>當您來到第 5 組和第 6 組時，提醒一下每套花色剛好有 13 張牌。 您可能需要教如何數到 13。</span><br>
+<span>➢ 計算每張牌的打出數。 請記住，每個人都跟隨的一套花色的每一輪都會打出四張牌，因此您通常可以四張四張數。</span><br>
+<span>➢ 或算出你持有多少張牌，用 13 去減，這就是其他人手上拿的張數。 每次打出一張牌時都要倒數去減，直到零。 那麼你手中的小牌一定是贏墩。</span><br>
+<span>➢ 用手指計算。</span></p><p><span>記算做莊方有多少點，以及他們贏了多少墩是很有用的。 在無王成局合約中要 26 點上的想法就來自於這個記錄的保持。 在Minibridge中，合約是在看到夢家決定的，因此贏墩是可以計算的。 但大牌點仍然是有用的指引。</span><br>
+<span>敏銳的莊家通常可以根據防守者所顯示的點力來定位防守者的大牌。</span><br>
+<span>不要使用橋牌術語。 別說太多！</span></p><h2 id="第-1-部分-–-無王合約牌局" data-id="第-1-部分-–-無王合約牌局"><a class="anchor hidden-xs" href="#第-1-部分-–-無王合約牌局" title="第-1-部分-–-無王合約牌局"><span class="octicon octicon-link"></span></a><span>第 1 部分 – 無王合約牌局</span></h2><ol>
+<li><span>合約所需的頂張贏墩足夠</span><br>
+<span>打牌要點：算可用的頂張贏墩數量。如果足夠，制定提取它們的計畫</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="2">
+<li><span>合約所需的頂張贏墩足夠，要按正確順序提取</span><br>
+<span>如果以錯誤的順序提取頂張贏墩，則可能會出現阻塞。 先從短方提取大牌。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>2-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="3">
+<li><span>頂出 A 或 K，建立額外的大牌贏墩</span><br>
+<span>成局需要贏取九墩。任何九墩都可以，不一定要是前九墩。做好失去引牌墩的準備。制定計劃。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>3-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="4">
+<li><span>頂出某花色的兩張大牌或兩張 A，建立額外的大牌贏墩</span><br>
+<span>頂出兩張大牌。 檢查是否可以失去引牌墩兩次優勢。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>4-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="5">
+<li><span>認清某門花色長度夠時，小牌也可以成贏墩</span><br>
+<span>每個花色有 13 張牌。 如果你有 8 張，那防守方就是 5 張。通常某人有3張，另一人2張。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>5-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="6">
+<li><span>引給防家吃，建立長門花色的小牌成為贏墩</span><br>
+<span>如果可以安全地先給防家吃，請在兌現其他贏墩之前這樣做。 邊打邊數打的張數。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>6-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="7">
+<li><span>扣住以切斷防守者之間的溝通</span><br>
+<span>你不必僅因為你能贏就急著先一墩。 扣住可以耗盡此花色在其中一名防守者的牌。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>7-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="8">
+<li><span>嘗試透過偷牌來獲得額外的贏墩。 這不確定可成功</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th><span>打牌要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>8-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td><span>簡單 AQ 偷牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td><span>簡單 AQJ 偷牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td><span>簡單 AQJT 偷牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td><span>簡單 AKJ 偷牌</span></td>
+</tr>
+</tbody>
+</table><ol start="9">
+<li><span>其它位置的偷牌</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th><span>打牌要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>9-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td><span>AQT</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td><span>KJT</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td><span>Axx 對 QJT</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td><span>從 Axx 對 Qxx 引牌</span></td>
+</tr>
+</tbody>
+</table><ol start="10">
+<li><span>扣住，然後偷向安全方</span><br>
+<span>當有選擇時，就可以偷牌安全的那方，他沒有贏家可以提取。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>10-1</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10-2</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10-3</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10-4</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+</tbody>
+</table><h2 id="無王合約複習牌局" data-id="無王合約複習牌局"><a class="anchor hidden-xs" href="#無王合約複習牌局" title="無王合約複習牌局"><span class="octicon octicon-link"></span></a><span>無王合約複習牌局</span></h2><ul>
+<li><span>1~5 組的複習牌局</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th style="text-align:left"><span>要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>東家首引 HK 以頂出 A，莊家應扣住，但沒用9</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>還少兩墩，建立紅心</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>保留橋引，先提短方大牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>打第一墩前先計劃好，小心保留夢家唯一橋引，先提短方大牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>注意橋引</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>打第一墩前先計劃好，小心保留夢家唯一橋引，先提短方大牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>少一墩要趕快建立</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>打第一墩前先計劃好，小心保留夢家唯一橋引，先提短方大牌</span></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>6~10 組的複習牌局</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th style="text-align:left"><span>要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>偷牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>扣住</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>扣住，偷安全方</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>S KQ，偷東家 SA</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>標明的偷 DJ</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>壞分配，還是要建立D</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>扣住，偷安全方</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>無王</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>壞分配，找 plan B</span></td>
+</tr>
+</tbody>
+</table><h1 id="王牌合約" data-id="王牌合約"><a class="anchor hidden-xs" href="#王牌合約" title="王牌合約"><span class="octicon octicon-link"></span></a><span>王牌合約</span></h1><h2 id="給老師的關於使用這些牌局的注意事項1" data-id="給老師的關於使用這些牌局的注意事項"><a class="anchor hidden-xs" href="#給老師的關於使用這些牌局的注意事項1" title="給老師的關於使用這些牌局的注意事項1"><span class="octicon octicon-link"></span></a><span>給老師的關於使用這些牌局的注意事項</span></h2><p><span>第二部分是關於主打和防禦王牌合約的內容。 有十批四手牌。 請參閱下一頁的摘要，以了解所涵蓋的要點。 您不必先完成所有無王手牌，但一些技術會在無王牌手牌中引入，然後在這組中出現，例如 頂出大牌以建立贏墩。</span><br>
+<span>最重要的一點，通常被所有學習者忽略的是，由長王手中王吃並不是額外的贏墩。 假設我們有 H A K J 10 9 面對 H Q 7 4； 當我們計算我們的贏墩時，我們將其視為五個贏墩。 無論我們只是將五張牌一張一張地打在桌上，還是對夢家的幾個失墩王吃，這仍然只是五墩。 但由短王方用Q或4王吃，則是一個額外的贏墩。</span><br>
+<span>我們出於各種原因會以長王牌方王吃，例如阻止防守方兌現他們的贏墩或獲得上手，但當我們這樣做時，我們並沒有創造額外的贏墩。 （當然，對於倒夢來說，情況並非如此，但這個主題並未涵蓋！）</span><br>
+<span>牌局的設計是為了清楚說明特定主題。 創造出恰好七墩的部分合約是非常困難的，因此告訴學生盡可能多地取得贏墩，通常至少八個是可能的。 由於大多數王牌合約都是在二階或以上進行的，因此這是明智的。</span></p><p><span>這些主題是基於莊家的打法，但不要忽視防守者。 王牌合約中的防禦目標有所不同。 現在引牌的原因包括：</span><br>
+<span>➢ 嘗試在莊家墊牌之前快速取得贏墩</span><br>
+<span>➢ 不要放過贏墩； 他們稍後不會輕易回來。 不要從 A 下低引。</span><br>
+<span>➢ 引王牌以制止王吃</span><br>
+<span>➢ 引單張以獲得王吃。</span><br>
+<span>➢ 從連續張中引牌通常是安全的。</span></p><p><span>所有合約都被設定為在明智地主打下是能完成的。 祝賀防守者的出色表現比批評莊家打當更容易。</span><br>
+<span>如果一手牌造成了問題，請將牌局旋轉 90 度並讓某人嘗試完成合約。 事實上，任何一手牌都可以在沒有人注意到的情況下輕鬆玩四次！</span></p><p><span>確保每個人都知道如何數 13 張牌，尤其是當它們是王牌時。</span><br>
+<span>敏銳的莊家通常可以根據防守者在迷你橋牌中所顯示的點力來定位防守者的大牌。 評論中故意省略了這方面的內容，但如果學生記住「叫牌」中的信息，我們會很高興。</span></p><h2 id="第-2-部分-–-王牌合約牌局" data-id="第-2-部分-–-王牌合約牌局"><a class="anchor hidden-xs" href="#第-2-部分-–-王牌合約牌局" title="第-2-部分-–-王牌合約牌局"><span class="octicon octicon-link"></span></a><span>第 2 部分 – 王牌合約牌局</span></h2><ol>
+<li><span>能夠以王吃來阻止引出的花色。 合約所需的頂張贏墩足夠。 清王牌。</span><br>
+<span>打牌要點：沒有擋張的短門意味著這手牌必須打王牌合約。 王吃所引花色，清王牌，兌現贏墩。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1-1</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1-2</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1-3</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1-4</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="2">
+<li><span>清王後，王吃可提供額外的贏墩</span><br>
+<span>清空防家剩餘的王牌，利用王吃獲取贏墩。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>2-1</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2-2</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2-3</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2-4</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="3">
+<li><span>清王後，頂出 A 建立贏墩</span><br>
+<span>就像在 NT 中一樣，我們不可能總是在不失去引牌墩的情況下獲取贏墩。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>3-1</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3-2</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3-3</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3-4</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="4">
+<li><span>清王牌，丟失小牌以建立夢家王吃</span><br>
+<span>就像第二組一樣，除了我們必須丟失掉去一些墩讓某門花色缺門(void)來創造可以王吃的情況。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>4-1</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4-2</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4-3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4-4</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="5">
+<li><span>延遲清王牌，先以在短王牌王吃。</span><br>
+<span>在 5-3 那牌，如果先清王牌，則夢家手中沒有王牌可以王吃失墩，因此必須先王吃。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>5-1</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5-2</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5-3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5-4</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+</tbody>
+</table><ol start="6">
+<li><span>延遲清王牌，首先墊掉失張</span><br>
+<span>在王牌有失墩，而防家有旁門花色可兌現贏墩，可能需要在清王牌之前先墊掉失張。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>6-1</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6-2</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6-3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分/成局?</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6-4</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+</tbody>
+</table><ol start="7">
+<li><span>延延遲清王牌，先建立旁門花色以墊失張</span><br>
+<span>建立旁門花色，因為兌現贏墩的橋引在王牌花色中。 所以必須先建立旁門花色。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>7-1</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7-2</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7-3</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7-4</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+</tbody>
+</table><ol start="8">
+<li><span>交互王吃(Crossruff)</span><br>
+<span>交互王吃 對於從未見過的玩家來說就像魔法一樣。 4-4 配合的王牌最多可取得 8 墩。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>8-1</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8-2</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8-3</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8-4</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="9">
+<li><span>王牌合約中的額外贏墩</span><br>
+<span>正常的偷牌或其他打法可以獲得額外的贏墩。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>9-1</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9-2</span></td>
+<td style="text-align:center"><span>C/D</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9-3</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9-4</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+</tbody>
+</table><ol start="10">
+<li><span>王吃偷牌</span><br>
+<span>王吃偷牌只能在王牌合約中體現，因此是項需要學習的新技術。</span></li>
+</ol><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>10-1</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>部分</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10-2</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10-3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10-4</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>成局</span></td>
+</tr>
+</tbody>
+</table><h2 id="王牌合約複習牌局" data-id="王牌合約複習牌局"><a class="anchor hidden-xs" href="#王牌合約複習牌局" title="王牌合約複習牌局"><span class="octicon octicon-link"></span></a><span>王牌合約複習牌局</span></h2><ul>
+<li><span>1~5 組的複習牌局</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th style="text-align:left"><span>要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>9張王牌不要偷牌，8偷9敲</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>在清王之前，夢家大王吃兩圈C</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>紅心偷牌以避免王牌失墩</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>直接打王牌以頂出 CA</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>防家打 S AKQ，額外贏墩的唯一機會是 D 3-3 分配，長王方王吃以建立</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>清王前，夢家先王吃 C</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>清光所有王前，先頂出 SA</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>打S清掉大王牌，引向 H KQJ</span></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>6~10 組的複習牌局</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th style="text-align:left"><span>要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>交互王吃，但要先兌現旁門贏墩</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>在清王牌之前，用短王方王吃。放棄一墩紅心和一墩黑桃來建立贏墩</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>王吃建立C，或安排由短王方王吃 H 和 D</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>選擇打4-4紅心配合。如果首引 SA 並在第2墩轉攻方塊，則 D 10 確保方塊只有兩個失墩</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>D</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>甪看選方塊當王牌的優點，由短王方王吃</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>選擇黑桃當王牌，因為得分較高。單張梅花首引意味著防家可以王吃個梅花贏張。建立紅心和方塊贏張以取得 8 墩</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>C</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>兌現贏墩，丟一墩方塊後交互王吃</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>如果沒引梅花，則在王吃一墩黑桃後，北家的梅花可以用黑桃贏墩墊光。不要持有 11 張還偷紅心</span></td>
+</tr>
+</tbody>
+</table><h1 id="防禦" data-id="防禦"><a class="anchor hidden-xs" href="#防禦" title="防禦"><span class="octicon octicon-link"></span></a><span>防禦</span></h1><h2 id="給老師關於使用這些牌局的注意事項" data-id="給老師關於使用這些牌局的注意事項"><a class="anchor hidden-xs" href="#給老師關於使用這些牌局的注意事項" title="給老師關於使用這些牌局的注意事項"><span class="octicon octicon-link"></span></a><span>給老師關於使用這些牌局的注意事項</span></h2><p><span>最後一部分包含專門為提供防守練習而設計的手牌。</span><br>
+<span>防守可能是遊戲中最困難的部分，你做這件事的頻率是當莊或夢家的兩倍。然而，在學習遊戲的課程中，它經常被忽視，而當進入叫牌部份的完整合約橋牌時，老師更喜歡專注於做莊主打技巧。防守方的目標始終是嘗試擊垮合約，莊家每不足一墩，您將獲得 50 分。</span></p><ul>
+<li>
+<p><span>無王合約</span></p>
+<p><span>防禦方的目的是建立他們可以兌現的贏墩。因此，引牌通常是三張連續大牌的頂張（例如 KQJ，引 K）或內部連續張（例如 AJ10，引 J）的頂張。當您沒有連續大牌時，正常引牌是「最長最強花色中的第四高」。 （例如K853，引3）； A9753，引 5)</span></p>
+</li>
+</ul><p><span>簡單的防禦課程包括：</span><br>
+<span>➢ 有所引花色時，你必須要跟</span><br>
+<span>➢ 如果搭檔引一張低牌，第三家就打高牌</span><br>
+<span>➢ 如果您贏得一墩並取得引牌，則回打搭檔的引牌</span><br>
+<span>➢ 留住贏張；如果有機會，則拋出失張。</span></p><ul>
+<li><span>王牌合約</span><br>
+<span>在王牌合約中，防禦的方式是不同的。你的目標仍然是至少以一墩擊敗合約，但現在的技巧包括：</span><br>
+<span>➢ 嘗試在莊家墊牌之前快速取得贏墩</span><br>
+<span>➢ 不要放過贏墩；它他們稍後不會輕易回來。不要抱 A 低領。</span><br>
+<span>➢ 領王牌制止莊家王吃。</span><br>
+<span>➢ 領單張以獲王吃。</span><br>
+<span>➢ 從連續大牌中引牌通常是安全的。</span></li>
+</ul><p><span>如果防守方做得正確，本節中的所有合約都被設計為可被擊垮。</span></p><h2 id="防禦牌局" data-id="防禦牌局"><a class="anchor hidden-xs" href="#防禦牌局" title="防禦牌局"><span class="octicon octicon-link"></span></a><span>防禦牌局</span></h2><ul>
+<li><span>迷你橋牌防禦無王合約牌局</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th style="text-align:left"><span>要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引長門第4，回引該花色</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引長門第4，繼續該花色</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引長門第4，西家每次上手繼續該花色以建立長門贏墩</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引H連續張頂張，並繼續。以旁門上手繼續打紅心</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引長門第4，同伴稍後旁門上手再回引</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>從內部連續張引頂張，同伴旁門上手回引該花色</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引長門第4 (KQ帶頭並不是三張連續張)，同伴回引該花色</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引長門第4，同伴贏得並回引</span></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>迷你橋牌防禦王牌合約牌局</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約花色</span></th>
+<th style="text-align:center"><span>成局否</span></th>
+<th style="text-align:left"><span>要點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引單張，希望獲得王吃</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引雙張的頂張，同伴贏得並繼續該花色以給同伴王吃</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>消極引王牌以避免從大牌中引出，盡可能繼續引王牌。</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引 HA，夥伴發出雙張訊號，因此繼續打 HK 和另一張給同伴王吃</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引 HK，夥伴發出雙張訊號，因此當用 SA 上手打 HQ 和另一張給同伴王吃</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引連續張頂張，可吃兩墩紅心和兩張 A</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>成局</span></td>
+<td style="text-align:left"><span>首引連續張頂張，並在每次引牌時堅持這門，迫使莊家王吃。這是一手相當困難的牌</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>部分</span></td>
+<td style="text-align:left"><span>消極引王牌並繼續引王牌。這是一手相當困難的牌</span></td>
+</tr>
+</tbody>
+</table></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#EBED-迷你橋牌教學牌局" title="EBED 迷你橋牌教學牌局">EBED 迷你橋牌教學牌局</a></li>
+<li class=""><a href="#無王合約" title="無王合約">無王合約</a><ul class="nav">
+<li class=""><a href="#給老師的關於使用這些牌局的注意事項" title="給老師的關於使用這些牌局的注意事項">給老師的關於使用這些牌局的注意事項</a></li>
+<li class=""><a href="#第-1-部分-–-無王合約牌局" title="第 1 部分 – 無王合約牌局">第 1 部分 – 無王合約牌局</a></li>
+<li class=""><a href="#無王合約複習牌局" title="無王合約複習牌局">無王合約複習牌局</a></li>
+</ul>
+</li>
+<li class=""><a href="#王牌合約" title="王牌合約">王牌合約</a><ul class="nav">
+<li class=""><a href="#給老師的關於使用這些牌局的注意事項1" title="給老師的關於使用這些牌局的注意事項">給老師的關於使用這些牌局的注意事項</a></li>
+<li class=""><a href="#第-2-部分-–-王牌合約牌局" title="第 2 部分 – 王牌合約牌局">第 2 部分 – 王牌合約牌局</a></li>
+<li class=""><a href="#王牌合約複習牌局" title="王牌合約複習牌局">王牌合約複習牌局</a></li>
+</ul>
+</li>
+<li class=""><a href="#防禦" title="防禦">防禦</a><ul class="nav">
+<li class=""><a href="#給老師關於使用這些牌局的注意事項" title="給老師關於使用這些牌局的注意事項">給老師關於使用這些牌局的注意事項</a></li>
+<li class=""><a href="#防禦牌局" title="防禦牌局">防禦牌局</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#EBED-迷你橋牌教學牌局" title="EBED 迷你橋牌教學牌局">EBED 迷你橋牌教學牌局</a></li>
+<li class=""><a href="#無王合約" title="無王合約">無王合約</a><ul class="nav">
+<li class=""><a href="#給老師的關於使用這些牌局的注意事項" title="給老師的關於使用這些牌局的注意事項">給老師的關於使用這些牌局的注意事項</a></li>
+<li class=""><a href="#第-1-部分-–-無王合約牌局" title="第 1 部分 – 無王合約牌局">第 1 部分 – 無王合約牌局</a></li>
+<li class=""><a href="#無王合約複習牌局" title="無王合約複習牌局">無王合約複習牌局</a></li>
+</ul>
+</li>
+<li class=""><a href="#王牌合約" title="王牌合約">王牌合約</a><ul class="nav">
+<li class=""><a href="#給老師的關於使用這些牌局的注意事項1" title="給老師的關於使用這些牌局的注意事項">給老師的關於使用這些牌局的注意事項</a></li>
+<li class=""><a href="#第-2-部分-–-王牌合約牌局" title="第 2 部分 – 王牌合約牌局">第 2 部分 – 王牌合約牌局</a></li>
+<li class=""><a href="#王牌合約複習牌局" title="王牌合約複習牌局">王牌合約複習牌局</a></li>
+</ul>
+</li>
+<li class=""><a href="#防禦" title="防禦">防禦</a><ul class="nav">
+<li class=""><a href="#給老師關於使用這些牌局的注意事項" title="給老師關於使用這些牌局的注意事項">給老師關於使用這些牌局的注意事項</a></li>
+<li class=""><a href="#防禦牌局" title="防禦牌局">防禦牌局</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        EBU 迷你橋牌教師手冊 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="EBU-迷你橋牌教師手冊" data-id="EBU-迷你橋牌教師手冊"><a class="anchor hidden-xs" href="#EBU-迷你橋牌教師手冊" title="EBU-迷你橋牌教師手冊"><span class="octicon octicon-link"></span></a><span>EBU 迷你橋牌教師手冊</span></h1><p><a href="https://www.ebu.co.uk/documents/education-and-teaching/pdfs/minibridge-manual-for-teachers.pdf" target="_blank" rel="noopener"><span>EBU Minibridge: A manual for teachers</span></a></p><p><span>十二個課程主題的計畫如下:</span></p><ol>
+<li><a href="##1.%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98"><span>基礎知識</span></a></li>
+<li><a href="##2.%E4%BB%A5%E5%A4%A5%E4%BC%B4%E6%96%B9%E5%BC%8F%E7%8E%A9"><span>以夥伴方式玩</span></a></li>
+<li><a href="##3.%E7%8D%B2%E5%8F%96%E8%B4%8F%E5%A2%A9"><span>獲取贏墩</span></a></li>
+<li><a href="##4.%E9%96%8B%E5%A7%8B%E8%BF%B7%E4%BD%A0%E6%A9%8B"><span>開始迷你橋</span></a></li>
+<li><a href="##5.%E9%95%B7%E5%A5%97%E7%9A%84%E5%83%B9%E5%80%BC"><span>長套的價值</span></a></li>
+<li><a href="##6.%E7%8E%8B%E7%89%8C"><span>王牌</span></a></li>
+<li><a href="##7.%E6%88%90%E5%B1%80%E5%90%88%E7%B4%84"><span>成局合約</span></a></li>
+<li><a href="##8.%E8%8E%8A%E5%AE%B6%E6%89%93%E6%B3%95"><span>莊家打法</span></a></li>
+<li><a href="##9.%E7%AB%B6%E7%88%AD%E6%80%A7%E7%9A%84%E6%AF%94%E8%B3%BD"><span>競爭性的比賽</span></a></li>
+<li><a href="##10.%E8%A8%88%E6%95%B8%E3%80%81%E8%A8%98%E6%86%B6%E5%92%8C%E5%AE%9A%E4%BD%8D%E5%A4%A7%E7%89%8C%E9%BB%9E"><span>計數、記憶和定位大牌點</span></a></li>
+<li><a href="##11.%E9%A6%96%E5%BC%95"><span>首引</span></a></li>
+<li><a href="##12.%E9%98%B2%E5%AE%88%E6%88%B0%E8%A1%93"><span>防守戰術</span></a></li>
+</ol><table>
+<thead>
+<tr>
+<th></th>
+<th><span>課程</span></th>
+<th><span>目標</span></th>
+<th><span>教學技巧</span></th>
+<th><span>牌例</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>1</span></td>
+<td><a href="##1.%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98"><span>基礎知識</span></a></td>
+<td><span>認識四種花色</span><br><span>認識牌的相對等級</span><br><span>了解如何在沒有王牌的情況下贏得一墩</span><br><span>了解一墩的贏家將引下一墩</span><br><span>發牌並排序一手牌</span></td>
+<td><span>只使用部分牌</span><br><span>理牌</span><br><span>贏取墩</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>2</span></td>
+<td><a href="##2.%E4%BB%A5%E5%A4%A5%E4%BC%B4%E6%96%B9%E5%BC%8F%E7%8E%A9"><span>以夥伴方式玩</span></a></td>
+<td><span>在遊戲中與夥伴合作</span><br><span>正確管理打出的牌</span></td>
+<td><span>夥伴關係遊戲</span><br><span>打過的牌怎麼擺</span><br><span>一副打完計算贏墩</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>3</span></td>
+<td><a href="##3.%E7%8D%B2%E5%8F%96%E8%B4%8F%E5%A2%A9"><span>獲取贏墩</span></a></td>
+<td><span>了解尊牌（A、K、Q 和 J）是寶貴的資產</span><br><span>體認到有時一張「小」牌會贏得一墩，並計算何時可能</span><br><span>認知到「引牌」可能有優勢，也就是可以選擇花色來進入下一墩</span></td>
+<td><span>尊牌</span><br><span>花色長度</span><br><span>保持引牌優勢</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>4</span></td>
+<td><a href="##4.%E9%96%8B%E5%A7%8B%E8%BF%B7%E4%BD%A0%E6%A9%8B"><span>開始迷你橋</span></a></td>
+<td><span>計算大牌點數</span><br><span>夢家</span><br><span>計算贏得的墩數並開始計分</span></td>
+<td><span>計算大牌點數</span><br><span>決定是誰來進行交易</span><br><span>夢家</span><br><span>打牌</span><br><span>記錄贏取的墩數</span><br><span>防守</span><br><span>簡單計分</span></td>
+<td><a href="##%E7%B7%B4%E7%BF%921"><span>練習1–啟動</span></a></td>
+</tr>
+<tr>
+<td><span>5</span></td>
+<td><a href="##5.%E9%95%B7%E5%A5%97%E7%9A%84%E5%83%B9%E5%80%BC"><span>長套的價值</span></a></td>
+<td><span>意識到「長套」(Long Suits) 的價值</span><br><span>計算出從某些手牌中可以預期獲得多少墩</span><br><span>了解可能需要輸掉某套花色的墩數才能建立贏墩</span><br><span>明智地選擇首引</span></td>
+<td><span>長套</span><br><span>計算預期的贏墩數</span><br><span>建立贏墩</span><br><span>首引</span></td>
+<td><a href="##%E7%B7%B4%E7%BF%922"><span>練習2–計算墩數</span></a></td>
+</tr>
+<tr>
+<td><span>6</span></td>
+<td><a href="##6.%E7%8E%8B%E7%89%8C"><span>王牌</span></a></td>
+<td><span>解王牌花色的概念</span><br><span>選擇最好的王牌花色</span></td>
+<td><span>打王牌合約</span><br><span>哪種花色應該作為王牌？</span><br><span>清王牌</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>7</span></td>
+<td><a href="##7.%E6%88%90%E5%B1%80%E5%90%88%E7%B4%84"><span>成局合約</span></a></td>
+<td><span>決定是否要打成局合約</span><br><span>在無王與有王牌花色之間進行選擇</span><br><span>使用完整的Minibridge 計分系統</span></td>
+<td><span>迷你橋牌計分方式</span><br><span>嘗試成局</span></td>
+<td><a href="##%E7%B7%B4%E7%BF%923"><span>練習3–迷你橋牌計分</span></a></td>
+</tr>
+<tr>
+<td><span>8</span></td>
+<td><a href="##8.%E8%8E%8A%E5%AE%B6%E6%89%93%E6%B3%95"><span>莊家打法</span></a></td>
+<td><span>在玩第一墩之前，先作為莊家制定計劃</span><br><span>打出贏張以避免阻塞花色</span><br><span>認識上手張 (entry) 的價值</span></td>
+<td><span>計劃打法</span><br><span>避免阻塞</span><br><span>關注上手張</span></td>
+<td><a href="##%E7%B7%B4%E7%BF%924"><span>練習4–計劃打法</span></a></td>
+</tr>
+<tr>
+<td><span>9</span></td>
+<td><a href="##9.%E7%AB%B6%E7%88%AD%E6%80%A7%E7%9A%84%E6%AF%94%E8%B3%BD"><span>競爭性的比賽</span></a></td>
+<td><span>認識到超墩的價值，尤其是在部分合約中</span><br><span> 了解遊戲的一些禮儀</span></td>
+<td><span>來場比賽怎麼樣？</span><br><span>讓夢家參與其中</span><br><span>禮儀</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>10</span></td>
+<td><a href="##10.%E8%A8%88%E6%95%B8%E3%80%81%E8%A8%98%E6%86%B6%E5%92%8C%E5%AE%9A%E4%BD%8D%E5%A4%A7%E7%89%8C%E9%BB%9E"><span>計數、記憶</span><br><span>和定位大牌點</span></a></td>
+<td><span>觀察打出的大牌點，並計算對手還剩下多少點</span><br><span>利用所持有的點數資訊來定位未見到的大牌</span><br><span>根據未見牌的預期或希望位置進行遊戲</span></td>
+<td><span>計算點數</span><br><span>使用有關大牌位置的信息</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>11</span></td>
+<td><a href="##11.%E9%A6%96%E5%BC%95"><span>首引</span></a></td>
+<td><span>從特定的持牌中選擇最好的牌來引</span><br><span>避免可能丟失贏墩的引牌</span></td>
+<td><span>選擇引牌的花色</span><br><span>選擇要引的牌張</span><br><span>回引合作夥伴的引的花色</span></td>
+<td><a href="##%E7%B7%B4%E7%BF%925"><span>練習5–引什麼</span></a></td>
+</tr>
+<tr>
+<td><span>12</span></td>
+<td><a href="##12.%E9%98%B2%E5%AE%88%E6%88%B0%E8%A1%93"><span>防守戰術</span></a></td>
+<td><span>跟牌時打出正確的牌</span><br><span>了解防守者可以透過所打的牌向對方發送訊號</span></td>
+<td><span>在第三家打出手中正確的牌</span><br><span>其他防禦訊號</span><br><span>態度訊號</span><br><span>花色長度訊號</span></td>
+<td><a href="##%E7%B7%B4%E7%BF%926"><span>練習6–發現合作夥伴的牌</span></a><br><a href="##%E7%B7%B4%E7%BF%927"><span>練習7–在搭檔的引牌時打什麼</span></a></td>
+</tr>
+</tbody>
+</table><h2 id="介紹" data-id="介紹"><a class="anchor hidden-xs" href="#介紹" title="介紹"><span class="octicon octicon-link"></span></a><span>介紹</span></h2><h3 id="什麼是迷你橋？" data-id="什麼是迷你橋？"><a class="anchor hidden-xs" href="#什麼是迷你橋？" title="什麼是迷你橋？"><span class="octicon octicon-link"></span></a><span>什麼是迷你橋？</span></h3><p><span>迷你橋牌是橋牌遊戲的簡化版本。橋牌在世界各地已有數十年歷史，目前在英國約有 200 萬人玩橋牌。橋牌比賽的組織形式一直是奧運表演項目，對智力要求較高，注重表現。這是一項技巧遊戲，具有由世界橋牌聯合會 (WBF, World Bridge Federation) 定義和控制的道德準則和規則。</span></p><p><span>迷你橋是英國橋牌聯盟（EBU English Bridge Union）推薦的橋牌路線。迷你橋牌最初是在法國和荷蘭開發的，作為小學生橋牌的入門課程，很快就被認為是一款出色的遊戲。</span></p><p><span>即使是很小的孩子也喜歡玩紙牌，這可以幫助他們識別數字、顏色、相似之處和順序。到六、七歲的時候，許多孩子在家裡或學校擁有或可以使用計算機，他們經常嘗試自己做的第一件事就是玩紙牌和其他可用的遊戲。孩子喜歡聰明、解決問題、獲勝。這些都是他們在玩迷你橋牌時會做的事情，但由於這是一場合作遊戲，他們還將了解到他們需要合作、分享資訊並團結起來，作為一個團隊來擊敗對手。</span></p><p><span>但迷你橋牌不僅僅是適合年輕族群的遊戲。它可以向任何年齡的學生、小學、中學和高等教育的學生直至成人教授。它被廣泛用作所有年齡段的學習橋牌的先驅，並且普遍認為既有效又有趣。作為一名老師，我們相信您也會喜歡 Minibridge！</span></p><h3 id="教育輔助" data-id="教育輔助"><a class="anchor hidden-xs" href="#教育輔助" title="教育輔助"><span class="octicon octicon-link"></span></a><span>教育輔助</span></h3><p><span>本手冊介紹如何教導青少年玩迷你橋牌，幫助他們在享受社交、競賽和互動遊戲的樂趣的同時，培養計算和推理能力。重點是小學年齡層的兒童，但 Minibridge 在中學中同樣有效。迷你橋可以在課堂上作為數學或其他課程的一部分使用，也可以作為課後活動引入。</span></p><h3 id="如何使用本手冊" data-id="如何使用本手冊"><a class="anchor hidden-xs" href="#如何使用本手冊" title="如何使用本手冊"><span class="octicon octicon-link"></span></a><span>如何使用本手冊</span></h3><p><span>建議教師在開始教授Minibridge之前，先通讀第一部分“如何玩Minibridge”，然後自己嘗試玩遊戲，以了解遊戲的玩法。爭取其他熟悉橋牌、迷你橋牌甚至惠斯特牌的玩家參與將會很有幫助。但本手冊旨在供所有教師使用，無論他們以前是否玩過 Minibridge 或其他紙牌遊戲 - 對於缺乏經驗的教師來說，可能需要更長的時間才能充分發揮遊戲的潛力。</span></p><p><span>如果沒有立即達到專業水平，請不要絕望！教學時，會逐步介紹遊戲的特色。將有充足的時間來培養理解和打牌技巧。</span></p><p><span>在描述 Minibridge 遊戲時，我們會注意不要使用無法解釋的術語。本身已經打過橋牌的老師應該小心不要無意中使用橋牌術語，以免讓學生感到困惑。</span></p><p><span>提供了某些主題的練習－這些練習（第 3、35、37、39、41、43、44、47 頁）可以影印供課堂使用，計分表樣本也可以（參見第 12 頁）。</span></p><h3 id="迷你橋軟體" data-id="迷你橋軟體"><a class="anchor hidden-xs" href="#迷你橋軟體" title="迷你橋軟體"><span class="octicon octicon-link"></span></a><span>迷你橋軟體</span></h3><p><span>最近的一項進展和額外的好處是 Blue Chip Bridge 為英國橋牌聯盟開發的特殊 Minibridge 軟體，幫助學生透過替代媒介學習並提供額外的練習材料。該軟體不僅提供了提高熟練程度的有效方法，還大大增加了學生的整體樂趣。</span></p><h3 id="英語橋聯盟的支持" data-id="英語橋聯盟的支持"><a class="anchor hidden-xs" href="#英語橋聯盟的支持" title="英語橋聯盟的支持"><span class="octicon octicon-link"></span></a><span>英語橋聯盟的支持</span></h3><p><span>希望獲得進一步幫助將迷你橋引入學校的教師應與英國橋牌聯盟取得聯繫，該聯盟擁有完善的教師協會，為所有橋牌和迷你橋的教師提供持續的培訓和支援。該聯盟為學校的迷你橋教師提供為期一天的培訓課程，並與可能能夠提供當地援助的志工網絡保持聯繫。教育部將很樂意為任何有需要的人提供建議，您可以透過電話 01296 317217 或電子郵件 </span><a href="mailto:john@ebu.co.uk" target="_blank" rel="noopener"><span>john@ebu.co.uk</span></a><span> 與教育部聯繫。</span></p><h2 id="如何玩迷你橋牌" data-id="如何玩迷你橋牌"><a class="anchor hidden-xs" href="#如何玩迷你橋牌" title="如何玩迷你橋牌"><span class="octicon octicon-link"></span></a><span>如何玩迷你橋牌</span></h2><h3 id="遊戲概要" data-id="遊戲概要"><a class="anchor hidden-xs" href="#遊戲概要" title="遊戲概要"><span class="octicon octicon-link"></span></a><span>遊戲概要</span></h3><p><span>Minibridge 遊戲使用一包標準的 52 張撲克牌（去掉小丑牌）進行遊戲。有四名玩家圍坐在桌子周圍，通常透過指南針的點來識別：北、南、東、西。他們扮演著南-北和東-西方兩種夥伴關係的角色。可以商定或指定合作夥伴，也可以透過切牌來決定誰和誰一起玩。</span></p><p><span>Minibridge 是一款獲取贏墩的遊戲。一名玩家從「引牌」或打出第一張牌開始。每位玩家以順時針順序為每一墩貢獻一張牌，打出的最大牌贏得該墩。 A 最高，依序為 K、Q、J、10、9 等，一直到 2，即每種花色中最低的牌。這 13 張牌有四種花色：</span></p><p><span>Clubs (梅花) ♣ and Spades (黑桃) ♠ (黑花色)</span><br>
+<span>Diamonds (方塊) ♦ and Hearts (紅心) ♥ (紅花色)</span></p><p><span>當玩一墩牌時，如果可能的話，每個玩家都必須“跟牌”，並使用同花色的牌。否則，他們可以墊掉任何他們喜歡的牌，但無論選擇的牌有多大，墊牌都不能贏得該墩。一墩的獲勝者將引下一墩。</span></p><p><span>合約可以以“無王”或王牌花色進行——其中一種比其他花色更強大。假設黑桃是王牌，那麼任何黑桃都可以擊敗其他三種花色中的任何一張牌。如果有的話，玩家每一墩仍然必須遵循跟牌原則，但是當無法跟牌時，可以打出一張將贏得該技巧的王牌，而不是墊牌放棄該墩（除非另一位玩家隨後對該墩打出更大的王牌） 。</span></p><p><span>迷你橋牌有別於惠斯特和其他類似取墩遊戲的主要特點是存在一個決定「合約」的「莊家」－即王牌花色的選擇以及贏取的目標墩數。合約必須始終針對所有的 13 墩中的至少 7 個，但可以設定更高的目標，稱為「成局」合約，如果達到該目標，則聲明方得分更高。稍後會詳細說明評分（請參閱第 9-10 頁）。</span></p><p><span>以下將逐步描述 Minibridge 的完整遊戲，儘管學生在學習遊戲時將透過簡單的階段來掌握這些遊戲。</span></p><h2 id="Minibridge-中的步驟" data-id="Minibridge-中的步驟"><a class="anchor hidden-xs" href="#Minibridge-中的步驟" title="Minibridge-中的步驟"><span class="octicon octicon-link"></span></a><span>Minibridge 中的步驟</span></h2><ol>
+<li>
+<p><span>洗牌和發牌</span><br>
+<span>該副應該被洗牌（隨機混合）並給發牌人切牌。發牌人順時針將牌一張一張發給玩家，讓玩家每人有 13 張牌。第二場比賽的發牌人將是順時針方向的下一個玩家，依此類推。</span></p>
+</li>
+<li>
+<p><span>理牌</span><br>
+<span>玩家將自己手中的牌按花色和每個花色中的順序排序，而不向其他玩家展示牌。閱讀更多關於</span><a href="https://www.ebu.co.uk/information-resources/sorting-hand" target="_blank" rel="noopener"><span>手牌排序</span></a><span>的內容。</span></p>
+</li>
+<li>
+<p><span>算點力</span><br>
+<span>這手牌的價值是透過計算持有的大牌點數來計算的，使用以下算法：</span><br>
+<span>A = 4點</span><br>
+<span>K = 3點</span><br>
+<span>Q = 2點</span><br>
+<span>J = 1點</span></p>
+</li>
+<li>
+<p><span>報點力</span><br>
+<span>從發牌者開始，然後按順時針順序，每個玩家宣布他或她的手牌包含多少點。點力總合最高的合作夥伴成為決定合約的作莊方。另一對是防守方，他們試圖透過自己贏取贏墩來阻止合約的完成。如果合作夥伴之間的積分分配結果為 20:20，則重新發牌。</span></p>
+</li>
+<li>
+<p><span>作莊方</span><br>
+<span>作莊方點力較高的玩家成為“莊家”，而他的搭檔成為“夢家”。如果雙方點力相同，則先宣布點力的玩家為莊家。然後夢家將他或她的手面朝上放在桌上面對莊家，花色按列排列。</span></p>
+</li>
+</ol><img src="https://www.ebu.co.uk/images/Yes.png" class="offline-handled error-handled"><ol start="6">
+<li>
+<p><span>決定合約</span><br>
+<span>莊家計算聯合手中可能贏得多少墩，然後選擇並宣布可能為合作夥伴帶來最佳分數的合約。</span><br>
+<span>莊家可以選擇無王或王牌花色，以及「部分合約」（至少 7 墩）或「成局」。成局合約所需的墩數根據王牌的不同而不同。在無王的情況下，成局意味著贏得 9 墩。在花色合約中，如果黑桃或紅心是王牌，則表示 10 墩，如果梅花或方塊是王牌，則表示 11 墩。</span><br>
+<span>成局合約在完成時會獲得很多額外的分數，但如果沒有達到目標，那麼作莊方將不會獲得任何分數，而對手則會獲得分數。因此，選擇最佳合約是遊戲的關鍵部分，需要技巧和判斷力。</span><br>
+<span>如果莊家選擇了王牌，則所選花色中的夢家牌將移至夢家的右手側（莊家看時為左手端）。</span></p>
+</li>
+<li>
+<p><span>比賽開始</span></p>
+</li>
+</ol><p><span>莊家左邊的玩家打出第一張牌，即「首引」。遊戲以順時針順序進行，玩家必須盡可能跟打所引花色。打出的最大牌贏得該墩（除非在花色合約中，它被王牌王吃，因為王牌的等級高於其他三張花色）。如果玩了幾輪同花色，並且玩家用完該花色的牌，他或她可以墊掉另一花色的牌（這不能贏得該墩），或者在王牌合約中可以選擇打出王牌（這除非被更高的王牌擊敗，否則將贏得該墩）。</span></p><ol start="8">
+<li><span>取得贏墩</span></li>
+</ol><p><span>每張牌都放在每個玩家前，面朝上打出，以便每個人都可以清楚地看到牌。當一墩完成後，牌會被翻轉，玩家將自己手中的「打出」牌面朝下整齊地排在自己面前的桌子上。為了方便查看贏了或輸了多少墩，贏了的墩中的牌是直立放置的，輸了的墩中的牌是橫著放置的。第一墩的獲勝者將引出第二墩，依此類推。</span></p><ol start="9">
+<li><span>夢家責任</span></li>
+</ol><p><span>莊家控制夢家牌的打法，告訴夥伴輪到夢家時該打哪張牌。莊家的搭檔必須始終按照指示打出明手牌，並且必須保持明手已經打出的牌的順序和擺放正確。除此之外，夢家不會參與該牌的遊戲。</span></p><ol start="10">
+<li><span>打牌結束</span></li>
+</ol><p><span>當13墩打完後，計算並確認雙方的贏墩數，計算結果並計分。玩家將他們的分數記錄在記分表上。當一方達到商定的目標分總數或完成一定數量的牌局後，這輪結束。閱讀更多關於</span><a href="https://www.ebu.co.uk/information-resources/how-score-minibridge" target="_blank" rel="noopener"><span>如何計分</span></a><span>的內容。</span></p><ol start="11">
+<li><span>下一副</span></li>
+</ol><p><span>每下一副牌，發牌人的位置在桌子周圍順時針移動。</span></p><p><span>最好準備兩副牌，這樣在發第一副牌的同時，發牌人的搭檔就可以洗第二副牌。在開始發下一組牌之前，新莊家右邊的玩家應先切牌。</span></p><p><span>或者，可以預先準備好牌局並將其儲存在複式橋牌比賽中使用的「牌盒」或「牌套」中。牌套有四個口袋，可容納四手牌，並有牌桌號碼以及發牌者的指示。 這些可以從EBU獲得。</span></p><h2 id="迷你橋牌計分" data-id="迷你橋牌計分"><a class="anchor hidden-xs" href="#迷你橋牌計分" title="迷你橋牌計分"><span class="octicon octicon-link"></span></a><span>迷你橋牌計分</span></h2><p><span>每副牌都是獨立計分的，本場比賽的獲勝者是整體得分最高的合作夥伴。每副牌得分應在該牌打完時記錄，最好每位玩家都記錄。 （適當的記分表請見第 12 頁。可以影印此頁以建立在牌桌上使用的記分表）。</span></p><p><span>作莊方超過六墩以上將獲得分數。第七個和隨後的每一墩所賺取的積分會根據所選的合約而有所不同——沒有王牌或特定花色作為王牌。部分得分或遊戲合約可獲得獎勵積分。</span></p><p><span>聲明並做出“成局”得分最好，因為增加了很大的“成局奬分”。 「部分合約」的奬分並不高，但無論是成局還是部分合約，額外的贏墩（稱為「超墩」）都會獲得積分。因此，總是有充分的理由巧妙地打牌以獲取盡可能多的贏墩。成局奬分僅在選擇並宣布成局合約且做成的情況下才有；如果在部分合約中取得了許多額外的贏墩，也不會有成局奬分。</span></p><p><span>如果莊家未能完成所需的墩數（即部分合約至少為7 墩或成局合約的適當目標數量），則作莊方將無得分，而每不足1墩防守方將獲得50 分（稱為「不足墩'）。</span></p><h1 id="教學迷你橋" data-id="教學迷你橋"><a class="anchor hidden-xs" href="#教學迷你橋" title="教學迷你橋"><span class="octicon octicon-link"></span></a><span>教學迷你橋</span></h1><p><span>在向年輕人教授迷你橋時，通常最好採用分階段的方法。遊戲非常適合逐漸引入的功能，但從一開始就讓新玩家覺得有趣和令人興奮，這將使其受益匪淺。</span></p><p><span>此處給出的建議主題順序並不是介紹 Minibridge 的唯一方式。教師可能希望改變順序，毫無疑問，許多人對於如何最好地教授迷你橋並將其引入自己特定的學校環境有自己的想法。</span></p><p><span>特別是，有關打牌技巧的課程可能會以不同的順序進行。當有機會使用特定的技術時，教師可能想討論這些技術。</span></p><p><span>課程之後是一系列問答練習，這些練習可以用作課堂資源或作為在課堂外進行的額外練習。如果您願意，可以影印練習題表。給出了使用每種資源的建議階段以及每個主題的教學技巧。還包括一套迷你橋牌練習牌局，每個都有一個特定的主題。</span></p><p><span>如果教師發現自己需要更多資源，例如供學生玩的更簡單的手型或有關遊戲技巧的其他建議，則可以從圖書館或好書店提供的橋牌書籍中找到合適的手型和遊戲指導。一本特別有用的教科書是 English Bridge Union 出版的《Really Easy Play in No Trumps》，零售價為 9.99 英鎊加 50 便士。學校可享 7.75 英鎊的折扣價（含 P&amp;P）——請致電 Bridge Shop 01296 397851 訂購一本。</span></p><p><span>十二個課程主題的計畫如下:</span></p><ol>
+<li><a href="##1.%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98"><span>基礎知識</span></a></li>
+<li><a href="##2.%E4%BB%A5%E5%A4%A5%E4%BC%B4%E6%96%B9%E5%BC%8F%E7%8E%A9"><span>以夥伴方式玩</span></a></li>
+<li><a href="##3.%E7%8D%B2%E5%8F%96%E8%B4%8F%E5%A2%A9"><span>獲取贏墩</span></a></li>
+<li><a href="##4.%E9%96%8B%E5%A7%8B%E8%BF%B7%E4%BD%A0%E6%A9%8B"><span>開始迷你橋</span></a></li>
+<li><a href="##5.%E9%95%B7%E5%A5%97%E7%9A%84%E5%83%B9%E5%80%BC"><span>長套的價值</span></a></li>
+<li><a href="##6.%E7%8E%8B%E7%89%8C"><span>王牌</span></a></li>
+<li><a href="##7.%E6%88%90%E5%B1%80%E5%90%88%E7%B4%84"><span>成局合約</span></a></li>
+</ol><h2 id="1基礎知識" data-id="1基礎知識"><a class="anchor hidden-xs" href="#1基礎知識" title="1基礎知識"><span class="octicon octicon-link"></span></a><span>1.基礎知識</span></h2><p><span>學生學會：</span><br>
+<span>• 認識四種花色；</span><br>
+<span>• 認識牌的相對等級；</span><br>
+<span>• 了解如何在沒有王牌的情況下贏得一墩；</span><br>
+<span>• 了解一墩的贏家將引下一墩；</span><br>
+<span>• 發牌並排序一手牌。</span></p><h3 id="教學技巧" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧" title="教學技巧"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="只使用部分牌" data-id="只使用部分牌"><a class="anchor hidden-xs" href="#只使用部分牌" title="只使用部分牌"><span class="octicon octicon-link"></span></a><span>只使用部分牌</span></h3><p><span>最初不要使用整副牌可能是個好主意。尤其是年幼的孩子，往往難以管理紙牌，必須習慣發牌和處理紙牌。</span></p><p><span>您可以只用一種花色開始遊戲，去掉 2，這樣遊戲就由三墩組成，每個人都可以跟牌。鼓勵學生觀察打出的牌。完成兩墩後，持有最大牌的人應該能夠預測他們將贏得第三墩。</span></p><p><span>然後加入第二套花色，讓學生了解如何墊牌。再次取出兩張2，這樣遊戲中就有 24 張牌了。請注意，無論使用多少張牌，每個墩數始終有 4 張牌，可用墩數 = 遊戲中的牌數/4。</span></p><h3 id="理牌" data-id="理牌"><a class="anchor hidden-xs" href="#理牌" title="理牌"><span class="octicon octicon-link"></span></a><span>理牌</span></h3><p><span>讓全班同學練習將牌分類成顏色交替的有序套，大牌在左邊。下一頁提供如何對手牌進行排序的分步指南，這可能很有用。</span></p><h3 id="贏取墩" data-id="贏取墩"><a class="anchor hidden-xs" href="#贏取墩" title="贏取墩"><span class="octicon octicon-link"></span></a><span>贏取墩</span></h3><p><span>有些同學可能沒有接觸過取墩遊戲，也不熟悉跟牌的原理。他們很快就會跟上，但在早期階段沒有王牌。實際上，此時您只是在玩惠斯特牌的一個版本。</span></p><h2 id="2以夥伴方式玩" data-id="2以夥伴方式玩"><a class="anchor hidden-xs" href="#2以夥伴方式玩" title="2以夥伴方式玩"><span class="octicon octicon-link"></span></a><span>2.以夥伴方式玩</span></h2><p><span>學生學會：</span><br>
+<span>• 在遊戲中與夥伴合作；</span><br>
+<span>• 正確管理打出的牌。</span></p><h3 id="教學技巧1" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧1" title="教學技巧1"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="夥伴關係遊戲" data-id="夥伴關係遊戲"><a class="anchor hidden-xs" href="#夥伴關係遊戲" title="夥伴關係遊戲"><span class="octicon octicon-link"></span></a><span>夥伴關係遊戲</span></h3><p><span>解釋一下，在迷你橋牌中，你們總是作為夥伴一起比賽——就像網球中的「雙打」一樣。玩家贏得的一墩對於合作夥伴來說就是一墩——兩位玩家都因此而獲得榮譽。所以玩家需要共同努力、合作來實現他們的目標。找出一對學生，讓他們按照南北或東西方向坐在桌子旁。指定“北”在哪裡，並在所有課程中保持該方向。對於防守者來說，尤其是花一些時間學會不要試圖贏得搭檔已經贏過的贏墩。</span></p><h3 id="打過的牌" data-id="打過的牌"><a class="anchor hidden-xs" href="#打過的牌" title="打過的牌"><span class="octicon octicon-link"></span></a><span>打過的牌</span></h3><p><span>向學生展示如何將打出的牌面朝下整齊地排列在他們面前，獲勝的牌張垂直放置，輸掉的牌張橫放。解釋這如何使遊戲結束時計算和確認贏墩變得容易。</span></p><p><span>那些以前玩過取墩遊戲的人可能會本能地想要將所有牌集中在桌子中間。迷你橋牌贏墩可以這樣玩，但最好儘早建立可以在最後重建手牌的遊戲風格。你稍後會想要這樣做，最好是「按照你想要繼續的方式開始」。</span></p><p><span>您可能會注意到，輸掉的墩看起來像“減號”，而獲勝的墩放在上面，看起來像“加號”。</span></p><h3 id="一副打完計算贏墩" data-id="一副打完計算贏墩"><a class="anchor hidden-xs" href="#一副打完計算贏墩" title="一副打完計算贏墩"><span class="octicon octicon-link"></span></a><span>一副打完計算贏墩</span></h3><p><span>每副牌結束時，在牌混淆之前，務必就雙方贏得的墩數達成協議。當您玩一整副牌時，請注意，雙方贏得的總墩數始終為 13。</span></p><h2 id="3獲取贏墩" data-id="3獲取贏墩"><a class="anchor hidden-xs" href="#3獲取贏墩" title="3獲取贏墩"><span class="octicon octicon-link"></span></a><span>3.獲取贏墩</span></h2><p><span>學生學會：</span><br>
+<span>• 了解尊牌（A、K、Q 和 J）是寶貴的資產；</span><br>
+<span>• 體認到有時一張「小」牌會贏得一墩，並計算何時可能；</span><br>
+<span>• 認知到「引牌」可能有優勢，也就是可以選擇花色來進入下一墩。</span></p><h3 id="教學技巧2" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧2" title="教學技巧2"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="尊牌" data-id="尊牌"><a class="anchor hidden-xs" href="#尊牌" title="尊牌"><span class="octicon octicon-link"></span></a><span>尊牌</span></h3><p><span>現在應該使用一副完整的牌進行遊戲。學生很快就會體會到 A 和其他圖牌的價值。您可以開始展示一旦打出更高的牌，國王和王后如何成為贏家。鼓勵觀察和記憶，以便玩家知道他們在遊戲過程中持有的尊牌是否是贏家。</span></p><h3 id="花色長度" data-id="花色長度"><a class="anchor hidden-xs" href="#花色長度" title="花色長度"><span class="octicon octicon-link"></span></a><span>花色長度</span></h3><p><span>在開發打牌技巧時，展示小牌有時如何成為贏家。從包含 AKQ2 的花色開始，其他手中各有三張牌 - 當玩 AKQ 時，每個人都跟三輪後，2 成為贏家。但牌會這樣分配的可能性有多大呢？ （事實上只有大約 40% 的機率！）。</span></p><p><span>不過，隨著同花色的牌越來越多，小牌變贏墩的機會就會大大增加。如果您拿著 AKQxxx 對著 xxx（其中 x 表示任何小牌），您至少 90% 的情況下可以贏得 6 墩。</span></p><h3 id="保持引牌優勢" data-id="保持引牌優勢"><a class="anchor hidden-xs" href="#保持引牌優勢" title="保持引牌優勢"><span class="octicon octicon-link"></span></a><span>保持引牌優勢</span></h3><p><span>指出如果您在贏得最後一墩後處於“引牌”狀態，則您可以選擇接下來要打的花色。這顯然是一個優勢，特別是如果你已經建立了一些獲勝的小牌。所以有時候保留你的大牌是正確的，而不是一有機會就贏得它們。這違背了常規，因此儘早引入是一個有趣的想法。</span></p><h2 id="4開始迷你橋" data-id="4開始迷你橋"><a class="anchor hidden-xs" href="#4開始迷你橋" title="4開始迷你橋"><span class="octicon octicon-link"></span></a><span>4.開始迷你橋</span></h2><p><span>學生學會：</span><br>
+<span>• 計算大牌點數；</span><br>
+<span>• 夢家；</span><br>
+<span>• 計算贏得的墩數並開始計分。</span></p><h3 id="教學技巧3" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧3" title="教學技巧3"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="計算大牌點數" data-id="計算大牌點數"><a class="anchor hidden-xs" href="#計算大牌點數" title="計算大牌點數"><span class="octicon octicon-link"></span></a><span>計算大牌點數</span></h3><p><span>現在是同學們開始統計持有的大牌點數的時候了，</span><br>
+<span>使用量表：</span><br>
+<span>A = 4，K = 3，Q = 2，J = 1</span><br>
+<span>大量的簡單算術練習很快就能使他們能夠快速準確地完成這項工作。請注意，每種花色有 10 點，總共 40 點。每手平均持有 10 點——持有多的人就是好牌。</span></p><h3 id="決定誰是誰來進行交易" data-id="決定誰是誰來進行交易"><a class="anchor hidden-xs" href="#決定誰是誰來進行交易" title="決定誰是誰來進行交易"><span class="octicon octicon-link"></span></a><span>決定誰是誰來進行交易</span></h3><p><span>玩家現在宣布他們的點數，從發牌人開始，然後按正確的順時針順序。如果總數未達 40，請重試！現在確定點力最多的一方為作莊方，得分低於 20 分的一方為防守方。說明如果分數分配為 20:20，則必須重新發牌。將莊家（或老闆）和夢家（或傀儡）分別確定為作莊方點力較多和較少的玩家。如果兩人點數相等，則最先宣布的玩家成為莊家。</span></p><h3 id="夢家" data-id="夢家"><a class="anchor hidden-xs" href="#夢家" title="夢家"><span class="octicon octicon-link"></span></a><span>夢家</span></h3><p><span>在辨認莊家和夢家後，解釋夢家的手牌應如何放置在牌桌上，以及夢家在比賽過程中的作用僅限於按照莊家的指示打牌並保持夢家所打牌的正確順序。不過，在這個學習階段，讓夢家來到牌桌旁幫助搭檔當莊家玩這手牌通常是個好主意。這減輕了莊家的壓力，並讓夢家參與事情。</span></p><h3 id="打牌" data-id="打牌"><a class="anchor hidden-xs" href="#打牌" title="打牌"><span class="octicon octicon-link"></span></a><span>打牌</span></h3><p><span>在此階段，僅使用無王牌，莊家的目標是 7 墩或更多墩。指出持有最多點力的一方必須贏得超過一半的墩數是合理的。</span></p><h3 id="記錄贏取的墩數" data-id="記錄贏取的墩數"><a class="anchor hidden-xs" href="#記錄贏取的墩數" title="記錄贏取的墩數"><span class="octicon octicon-link"></span></a><span>記錄贏取的墩數</span></h3><p><span>從一開始，就請學生寫下每副牌中作莊方所持有的點數和贏得的墩數。 （第 12 頁所示的評分表可用於此目的）。他們很快就會親眼目睹不同的點數通常可以贏得多少墩。雖然有很多手牌不完全符合這種模式，但應該會出現以下量表：</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>贏墩</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>21 - 22</span></td>
+<td style="text-align:center"><span>7</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>23 - 24</span></td>
+<td style="text-align:center"><span>8</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>25 - 26</span></td>
+<td style="text-align:center"><span>9</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>27 - 28</span></td>
+<td style="text-align:center"><span>10</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>29 - 32</span></td>
+<td style="text-align:center"><span>11</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>33 - 36</span></td>
+<td style="text-align:center"><span>12</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>37 +</span></td>
+<td style="text-align:center"><span>13</span></td>
+</tr>
+</tbody>
+</table><h3 id="防守" data-id="防守"><a class="anchor hidden-xs" href="#防守" title="防守"><span class="octicon octicon-link"></span></a><span>防守</span></h3><p><span>與作為聲明方的興奮相比，防守似乎恰是另一面。事實上，防守是一件令人著迷的事情，學生們稍後會發現（提醒他們，防守的次數是作莊的兩倍），但要盡量確保每個人作為莊家都能得到公平的鞭打，特別是在早期時候。</span></p><h3 id="簡單計分" data-id="簡單計分"><a class="anchor hidden-xs" href="#簡單計分" title="簡單計分"><span class="octicon octicon-link"></span></a><span>簡單計分</span></h3><p><span>暫時不要引入嘗試成局的概念。莊家的唯一目標是在沒有王牌的情況下完成七個或更多墩。使用簡化的計分形式，即作莊方每勝出一墩，超過前六墩的得分為 30 分，另加 50 分的獎勵。如果他們未能贏得 7 墩，則防守方每個「欠墩」（倒墩，未達目標的每墩）得 50 分。確保每個人都正確記錄分數。確保沒有人對術語感到困惑——得分點和大牌點通常在迷你橋牌中都被稱為“點”，但它們當然是完全不同的東西。</span></p><p><a href="##%E7%B7%B4%E7%BF%921"><span>練習1</span></a><span> – 啟動 Minibridge 可以與本主題一起使用。</span></p><h2 id="5長套的價值" data-id="5長套的價值"><a class="anchor hidden-xs" href="#5長套的價值" title="5長套的價值"><span class="octicon octicon-link"></span></a><span>5.長套的價值</span></h2><p><span>學生學會：</span><br>
+<span>· 意識到「長套」(Long Suits) 的價值；</span><br>
+<span>· 計算出從某些手牌中可以預期獲得多少墩；</span><br>
+<span>· 了解可能需要輸掉某套花色的墩數才能建立贏墩；</span><br>
+<span>· 明智地選擇首引。</span></p><h3 id="教學技巧4" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧4" title="教學技巧4"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="長套" data-id="長套"><a class="anchor hidden-xs" href="#長套" title="長套"><span class="octicon octicon-link"></span></a><span>長套</span></h3><p><span>學生現在應該已經開始明白長套花色奪取贏墩的力量，但值得明確說明。</span><br>
+<span>透過指出在比賽初期引長門花色通常是個好主意，鼓勵學生贏得墩數的自然傾向。在這個階段（可能是今後），開始使用包含合適之長門花色牌組的預先準備好的套牌，來展示要引出的重點將是有幫助的。</span></p><h3 id="計算預期的贏墩數" data-id="計算預期的贏墩數"><a class="anchor hidden-xs" href="#計算預期的贏墩數" title="計算預期的贏墩數"><span class="octicon octicon-link"></span></a><span>計算預期的贏墩數</span></h3><p><span>指出莊家可以計算出以最高尊牌為首的一套花色中預期的墩數，如下：</span><br>
+<span>將合夥人持有的花色中的牌張數加在一起，用 13 減去此數即防家持有此花色的總張數，再除以 2，即可得到防家之間最平均的分配。您至少需要足夠的頂張尊牌來清掉這些牌，才有希望贏得所有此花色的墩數。</span><br>
+<span>例子：</span><br>
+<span>A Q x x x 對 K x x – 八張牌的配合。</span><br>
+<span>缺五張牌，希望是 3-2 分配。您有足夠的頂張尊牌可以在這種分配中贏得前 3 墩，所以此花色應該可產生 5 墩。</span></p><h3 id="建立贏墩" data-id="建立贏墩"><a class="anchor hidden-xs" href="#建立贏墩" title="建立贏墩"><span class="octicon octicon-link"></span></a><span>建立贏墩</span></h3><p><span>在打牌的早期階段想要贏得墩數是很自然的，因此學生通常會先打出他們的 A 和 K。但這在迷你橋牌中很可能是個錯誤——先打一些尊牌缺少的花色通常是正確的。您可能需要儘早輸掉一墩以建立其它牌成為贏墩。</span></p><p><span>例如，如果你持有KQJ10，輸給對手的A後，只要你能重新獲得引牌優勢，你就可以贏得3墩。另一門花色中的 A 可能有助於獲得引牌優勢，因此應保留以供之後使用。</span></p><p><span>指出有時保存你的頂牌是有好處的，並在比賽後期當它們提供更大優勢時使用它們來贏得牌局。這被稱為“迴避”(duck)或“扣住”(hold-up)贏張。例如，持有 AKxxxx，您可能透過兌現 A 和 K 只能贏得兩墩。但如果你先打出該花色的小牌，那麼如果再次打出它，你可能會贏得你的頂牌並兌現 5 墩。</span></p><h3 id="首引-Opening-Lead" data-id="首引-Opening-Lead"><a class="anchor hidden-xs" href="#首引-Opening-Lead" title="首引-Opening-Lead"><span class="octicon octicon-link"></span></a><span>首引 (Opening Lead)</span></h3><p><span>對莊家有效的事情同樣對防守者也有效。因此，為了建立贏墩，通常會引長門花色。如果首引者的牌非常差，預計不會得到很多墩，建議首引的花色可能是夥伴的長門花色。看看明手將有助於決定嘗試哪種花色——計劃應該是攻擊夢家的弱花色。</span></p><p><span>練習 2 – 計算墩數 可以用在這個主題。</span></p><h2 id="6王牌" data-id="6王牌"><a class="anchor hidden-xs" href="#6王牌" title="6王牌"><span class="octicon octicon-link"></span></a><span>6.王牌</span></h2><p><span>學生學會：</span><br>
+<span>· 了解王牌花色的概念；</span><br>
+<span>· 選擇最好的王牌花色。</span></p><h3 id="教學技巧5" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧5" title="教學技巧5"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="打王牌合約" data-id="打王牌合約"><a class="anchor hidden-xs" href="#打王牌合約" title="打王牌合約"><span class="octicon octicon-link"></span></a><span>打王牌合約</span></h3><p><span>需要強調的要點是：</span><br>
+<span>· 你可以隨時引王牌；</span><br>
+<span>· 任何王牌將擊敗任何其他花色的任何牌；</span><br>
+<span>· 如果引的是另一套花色並且您能夠跟牌，則不允許您打出王牌，但如果您無法跟牌，則可以選擇打出王牌王吃（“ruff”），儘管您沒有義務這樣做；</span><br>
+<span>· 如果引出的花色被王吃超過一次，則所打出的最大王牌贏得這墩。</span></p><h3 id="哪種花色應該作為王牌？" data-id="哪種花色應該作為王牌？"><a class="anchor hidden-xs" href="#哪種花色應該作為王牌？" title="哪種花色應該作為王牌？"><span class="octicon octicon-link"></span></a><span>哪種花色應該作為王牌？</span></h3><p><span>當尋找王牌花色時，神奇的數字是八——莊家和明手手中加起來持有八張牌。學生應該認知到，擁有八張王牌的莊家通常有很好的機會清光防守方的王牌，並且仍然會剩下一些可以做一些有用的事情。這可能是擊敗對手的贏張，或進手到特定方以兌現旁門花色贏張。</span></p><p><span>肯定會有一些學生想要選擇短而強的王牌花色，而不是較長但較弱的花色。展現長王牌花色有效性的最佳方法是讓他們玩同一手牌兩次，首先以短強花色作為王牌，然後以較長花色作為王牌。這是一個啟示！</span></p><h3 id="清王牌" data-id="清王牌"><a class="anchor hidden-xs" href="#清王牌" title="清王牌"><span class="octicon octicon-link"></span></a><span>清王牌</span></h3><p><span>通常，莊家「清王牌」(draw trumps) 是正確的，即打出幾輪王牌，以消除防守者持有的所有王牌。如果作莊方至少有8張王牌，則防守方最多有5張王牌，大多數情況下可以在3輪內清光。應鼓勵莊家在王牌合約開始前進行此計算，即計算出防守方持有多少張王牌、它們可能怎麼分配，以及需要多少輪王牌才能清光它們。</span></p><h2 id="7成局合約" data-id="7成局合約"><a class="anchor hidden-xs" href="#7成局合約" title="7成局合約"><span class="octicon octicon-link"></span></a><span>7.成局合約</span></h2><p><span>學生學會：</span><br>
+<span>· 決定是否要打成局合約；</span><br>
+<span>· 在無王與有王牌花色之間進行選擇；</span><br>
+<span>· 使用完整的Minibridge 計分系統。</span></p><h3 id="教學技巧6" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧6" title="教學技巧6"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="Minibridge-計分方式" data-id="Minibridge-計分方式"><a class="anchor hidden-xs" href="#Minibridge-計分方式" title="Minibridge-計分方式"><span class="octicon octicon-link"></span></a><span>Minibridge 計分方式</span></h3><p><span>為了了解成局合約，請解釋需要了解計分方式。解釋贏得的墩數的價值如何根據您打無王還是有王牌以及選擇的王牌花色而變化。同樣，在無王的情況下，贏得墩數也有不同的價值。</span></p><p><span>解釋需要將贏墩得分至少達到 100 分才能「成局」。因此，無王牌遊戲需要9 墩（40+30+30），紅心或黑桃 (高花，Majors)成局需要10 墩（4 x 30），梅花或方塊 (低花，Minors) 成局需要11 墩。</span></p><p><span>解釋一下成局合約的 300 分獎勵，而不是部分分數的 50 分獎勵。這是非常值得的，但如果沒有達到成局目標，則防守者每多打當一墩 (不足墩，under-trick)都會獲得 50 分。所以收益和風險都更大！</span></p><p><span>現在學生會注意到，在有大量王牌的情況下，王牌合約通常比無王合約更容易。因此，無王成局比有王牌的成局需要更少的墩數是合理的。但高花和低花之間的差異純粹是任意的——它只會增加遊戲的趣味性，讓迷你橋牌更像真正的橋牌。</span></p><h3 id="嘗試成局" data-id="嘗試成局"><a class="anchor hidden-xs" href="#嘗試成局" title="嘗試成局"><span class="octicon octicon-link"></span></a><span>嘗試成局</span></h3><p><span>鼓勵學生嘗試進行聯手大牌點 25 或以上時打成局合約。很多這樣的成局合約可能會失敗，但他們應該享受挑戰。</span></p><p><span>建議學生在不論是否嘗試成局都選擇最長的組合花色作為王牌，假設它至少包含八張牌。當他們有長低花（方塊或梅花）時，通常最好嘗試無王牌成局，此時只需要 9 墩，而不是使用低花作為王牌，此時需要 11 墩才成局。</span></p><p><span>練習 3 – Minibridge 計分 可用於本主題。</span></p><h2 id="8莊家打法" data-id="8莊家打法"><a class="anchor hidden-xs" href="#8莊家打法" title="8莊家打法"><span class="octicon octicon-link"></span></a><span>8.莊家打法</span></h2><p><span>學生學會：</span><br>
+<span>· 在玩第一墩之前，先作為莊家制定計劃；</span><br>
+<span>· 打出贏張以避免阻塞花色；</span><br>
+<span>· 認識上手張 (entry) 的價值。</span></p><h3 id="教學技巧7" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧7" title="教學技巧7"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="計劃打法" data-id="計劃打法"><a class="anchor hidden-xs" href="#計劃打法" title="計劃打法"><span class="octicon octicon-link"></span></a><span>計劃打法</span></h3><p><span>當夢家攤牌時，莊家必須決定王牌花色以及是否打成局或部份合約。為了做到這一點，請解釋如何透過觀察每種花色中作莊方兩手的組合來計算可能的贏墩，一次一種花色。莊家需要弄清楚額外的贏墩可能來自哪裡，也許是透過建立贏張，或者如果打王牌則透過王吃。</span></p><h3 id="避免阻塞-blockages" data-id="避免阻塞-blockages"><a class="anchor hidden-xs" href="#避免阻塞-blockages" title="避免阻塞-blockages"><span class="octicon octicon-link"></span></a><span>避免阻塞 (blockages)</span></h3><p><span>解釋一下您如何必須始終掌握正確的上手方才能兌現其中的贏張。這意味著您在兌現贏墩時必須小心，以正確的順序獲得它們。例如。當 A Q J x 與 K x 相對時，重要的是不要先兌現 A，然後兌現 K，否則您將處於錯誤的上手方而無法兌現 Q 和 J。指出先兌現短牌中的大牌總是正確的。</span></p><h3 id="關注上手張" data-id="關注上手張"><a class="anchor hidden-xs" href="#關注上手張" title="關注上手張"><span class="octicon octicon-link"></span></a><span>關注上手張</span></h3><p><span>有時，一套花色被阻塞是不可避免的，例如持有 A K 與 Q J x x 相對。</span></p><p><span>在這種情況下，您可以先兌現短套持有中的大贏張（A 和 K），然後需要另一手牌有另一花色的上手張才能兌現 Q 和 J。指出在這樣的牌局中保留上手張是多麼重要，而不是過早提取這樣的贏張。</span></p><p><span>練習 4 – 計劃打法 可用於本主題。</span></p><h2 id="9競爭性的比賽" data-id="9競爭性的比賽"><a class="anchor hidden-xs" href="#9競爭性的比賽" title="9競爭性的比賽"><span class="octicon octicon-link"></span></a><span>9.競爭性的比賽</span></h2><p><span>學生學會：</span><br>
+<span>· 認識到超墩 (over tricks) 的價值，尤其是在部分合約中；</span><br>
+<span>· 了解遊戲的一些禮儀。</span></p><h3 id="教學技巧8" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧8" title="教學技巧8"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="來場比賽怎麼樣？" data-id="來場比賽怎麼樣？"><a class="anchor hidden-xs" href="#來場比賽怎麼樣？" title="來場比賽怎麼樣？"><span class="octicon octicon-link"></span></a><span>來場比賽怎麼樣？</span></h3><p><span>到目前為止，學生們已經能夠有一定的信心玩迷你橋牌了，最重要的是需要練習來獲得能力。他們現在很可能已經準備好參加比賽，無論是雙人比賽還是個人比賽。事實上，如果你有足夠的學生組成幾張桌子，你甚至可以進行一場比賽，所有南北玩家相互競爭，所有東西方玩家也這樣做，桌子之間循環有許多複式的牌局。將自己的分數與其他玩家取得的分數進行比較會帶來很多樂趣和興奮，並且可能會提高他們的表現。如果一個玩家比持有相同牌的其他玩家多出一墩，他們就會感到合理的成就感。</span></p><p><span>不過，您將需要一組複式牌盒，並且可能需要一些幫助來組織它。請聯絡EBU教育部門尋求建議。</span></p><h3 id="讓夢家參與其中" data-id="讓夢家參與其中"><a class="anchor hidden-xs" href="#讓夢家參與其中" title="讓夢家參與其中"><span class="octicon octicon-link"></span></a><span>讓夢家參與其中</span></h3><p><span>在比賽中，最好讓夢家坐在自己的座位上，而不是幫助莊家。但您可以透過設定在遊戲結束時要回答的問題或任務來保持夢家的警覺和參與，例如：</span><br>
+<span>· 四位玩家的王牌是如何分配的？</span><br>
+<span>· 莊家的牌型是什麼形狀？</span><br>
+<span>· 誰持有黑桃A？還是梅花三？</span><br>
+<span>· 首引是什麼？在首引的花色中，防守方後來贏了多少墩？</span><br>
+<span>· 總大牌點較低的防守者的點力是如何組成的？也就是實際上持有哪些大牌來組成這些點？</span></p><p><span>這些都是有助於作為莊家或防守者進行比賽的計算和觀察。優秀的玩家總是會留意這些事情！</span></p><h3 id="禮儀" data-id="禮儀"><a class="anchor hidden-xs" href="#禮儀" title="禮儀"><span class="octicon octicon-link"></span></a><span>禮儀</span></h3><p><span>比賽是介紹一些關於「正確的遊戲方式」的想法的好時機。應該阻止的事情包括：</span><br>
+<span>· 透過表情、鬼臉等方式表明你是否喜歡同伴侶的引牌；</span><br>
+<span>· 對打法做出評論，尤其是對搭檔；</span><br>
+<span>· 未對出過的牌進行有序整理；</span><br>
+<span>· 在遊戲結束時，在就輸贏墩或應跟未跟達成一致之前就把牌混在一起；</span><br>
+<span>· 交易結束前翻開並檢查已出的牌。</span></p><h2 id="10計數、記憶和定位大牌點" data-id="10計數、記憶和定位大牌點"><a class="anchor hidden-xs" href="#10計數、記憶和定位大牌點" title="10計數、記憶和定位大牌點"><span class="octicon octicon-link"></span></a><span>10.計數、記憶和定位大牌點</span></h2><p><span>學生學會：</span><br>
+<span>· 觀察打出的大牌點，並計算對手手中還剩下多少點；</span><br>
+<span>· 利用所持有的點數資訊來定位未見到的大牌；</span><br>
+<span>· 根據未見牌的預期或希望位置進行遊戲。</span></p><h3 id="教學技巧9" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧9" title="教學技巧9"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="計算點數" data-id="計算點數"><a class="anchor hidden-xs" href="#計算點數" title="計算點數"><span class="octicon octicon-link"></span></a><span>計算點數</span></h3><p><span>解釋一下，因為您知道每手牌開始時有多少點，所以您可以計算出在比賽的任何階段每手牌還剩下多少點。你必須仔細觀察，並從每家隱藏的牌中扣掉你所看到的大牌點。您可以作為莊家或防守者來執行此操作。</span></p><p><span>您通常可以使用有關每手牌點數的資訊來定位沒看到的大牌。這對於決定下一步要做什麼可能非常有用。</span></p><h3 id="使用有關大牌位置的信息" data-id="使用有關大牌位置的信息"><a class="anchor hidden-xs" href="#使用有關大牌位置的信息" title="使用有關大牌位置的信息"><span class="octicon octicon-link"></span></a><span>使用有關大牌位置的信息</span></h3><p><span>現在，學生會意識到，有時他們會用無支持的 K 贏得一墩（即，在沒有 A 或 Q 的花色中），有時則不會。但假設作為莊家，您在明手牌中持有 ♠ Kx，在自己的手中持有 ♠ xx，並且您已經計算出您的左手對手 (lho) 必須持有 ♠ A 以對應他的 4 點。你可以從手中打出一張小牌，看看 lho 會做什麼。如果 A 出現，你就打小牌，稍後贏得 K，或者如果 lho 打小牌，你可以打 K，有信心贏得這一墩。只要你這樣打牌，你遲早都會讓 K 吃到一墩。這就是所謂的「引向大牌」。</span></p><p><span>類似地，如果你手上拿著 ♠ AQ，夢家手裡拿著 ♠ xx，並且你已經算出rho一定有 ♠ K，那麼你可以從夢家上打出一張小牌，然後根據 rho 是否打 K 來選擇打A或Q。現在你持這樣牌張組合總是能得到兩墩。這種技術被稱為「偷牌」(finessing)或「採取偷牌」(taking a finesse)。您可以對任何缺少的牌張進行偷牌，例如當 KJ10 處於夢家對面 xxx 時，您可以從手中的小牌開始並打 10 或 J。你總是會輸給 A ，但如果 lho 拿到了 Q，你就不需要再輸掉另一墩。</span></p><p><span>說明即使您不確定少的大牌在哪裡，這些技巧也非常有用。當牌處於您想要的位置時，您有 50:50 的獲勝機會，但如果您從 AQ 中打出 A，然後打出 Q，您可以確定您將永遠輸給 K！</span></p><h2 id="11首引" data-id="11首引"><a class="anchor hidden-xs" href="#11首引" title="11首引"><span class="octicon octicon-link"></span></a><span>11.首引</span></h2><p><span>學生學會：</span><br>
+<span>· 從特定的持牌中選擇最好的牌來引；</span><br>
+<span>· 避免可能丟失贏墩的引牌。</span></p><h3 id="教學技巧10" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧10" title="教學技巧10"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="選擇引牌的花色" data-id="選擇引牌的花色"><a class="anchor hidden-xs" href="#選擇引牌的花色" title="選擇引牌的花色"><span class="octicon octicon-link"></span></a><span>選擇引牌的花色</span></h3><p><span>當你首引時，指出你正在嘗試做幾件事。你想要為防守取得或建立贏張，而不是不必要地丟失贏墩，而且還要向夥伴提供有關你的手牌的資訊。</span></p><p><span>當對抗無王合約首引時，提醒學生他們應該嘗試引合夥人持有的最好的花色 - 通常是最長的花色。通常這意味著引他們自己最長的花色，但如果夢家在這套花色中也有很好的把握，請再考慮一下！同時，如果首引者的牌很弱，那麼嘗試找出搭檔的最佳花色可能是個好主意。</span></p><p><span>在對抗王牌合約時，您可以兌現贏墩，但請解釋說，如果這會讓莊家贏得他無權贏得的牌，則您不應該這樣做。例如，不要先出一張不受支援的 A，否則莊家可能會在不應該贏得的情況下讓 K 成為贏墩。否則，嘗試在某花色中建立大牌贏張，或引短門花色，希望創造缺門並讓夥伴上手給你帶來王吃。不過，請指出，只有當夥伴擁有一些大牌點時，這才有效。</span></p><h3 id="選擇要引的牌張" data-id="選擇要引的牌張"><a class="anchor hidden-xs" href="#選擇要引的牌張" title="選擇要引的牌張"><span class="octicon octicon-link"></span></a><span>選擇要引的牌張</span></h3><p><span>一種好的引牌是從連續大牌引出卡——您可以立即取得贏墩，或將其建立成贏張稍後兌現。如果你有 KQJ10，那麼你打出哪張牌來逼出 A 並不重要，但請解釋一下我們如何始終引連續張中的頂張作為向夥伴傳達的信息。它說「我沒有在我所引的牌上方的牌，但我有下面的牌」。</span></p><p><span>如果您所引的花色中沒有連續大牌，請向學生解釋對於打哪張牌也有類似的協議。從根本沒有大牌的花色中，領出第二高的牌 - 高牌會傳達這樣的訊息：這不是一個好的花色 (我在這門沒有大牌)。</span></p><p><span>例如，從 9 8 5 3 引 8 或從 8 7 2 引 7。例如，從 K 10 7 4 3 引 4。</span></p><p><span>如果引雙張希望獲得王吃，則引最大牌。解釋一下，當您稍後第二次打出該花色時打出一張較小的牌時，搭檔應該能夠算出您開始時該花色中只有兩張牌。 (先大後小，雙數張)</span></p><h3 id="回引合作夥伴的引的花色" data-id="回引合作夥伴的引的花色"><a class="anchor hidden-xs" href="#回引合作夥伴的引的花色" title="回引合作夥伴的引的花色"><span class="octicon octicon-link"></span></a><span>回引合作夥伴的引的花色</span></h3><p><span>請提醒學生，當他們是首引者的搭檔時，該搭檔通常會引他/她最好的花色。除非您自己有一套非常好的花色可以打，否則當獲得引牌權時，通常最好繼續打搭檔引的花色。請記住，這是一款合作、夥伴關係的遊戲！</span></p><p><span>練習 5 – 引什麼？ 可以與這個主題一起使用。</span></p><h2 id="12防守戰術" data-id="12防守戰術"><a class="anchor hidden-xs" href="#12防守戰術" title="12防守戰術"><span class="octicon octicon-link"></span></a><span>12.防守戰術</span></h2><p><span>學生學會：</span><br>
+<span>· 跟牌時打出正確的牌；</span><br>
+<span>· 了解防守者可以透過他們所打的牌向對方發送訊號。</span></p><h3 id="教學技巧11" data-id="教學技巧"><a class="anchor hidden-xs" href="#教學技巧11" title="教學技巧11"><span class="octicon octicon-link"></span></a><span>教學技巧</span></h3><h3 id="在第三家打出手中正確的牌" data-id="在第三家打出手中正確的牌"><a class="anchor hidden-xs" href="#在第三家打出手中正確的牌" title="在第三家打出手中正確的牌"><span class="octicon octicon-link"></span></a><span>在第三家打出手中正確的牌</span></h3><p><span>解釋雖然橋牌規則總是有例外，但對於第三家的人來說，打出一張大牌，試圖為他/她的一方贏得這一墩通常是一個好主意。 （這當然是假設第一家和第二家都打出小牌）。不過，打出的牌只要夠大就好。當對手引 2 時，持有諸如 QJ107 之類的序列，您應該打 10。這否認持有 9，如果說莊家以 A 獲勝並且夥伴從 K 引牌，夥伴就知道您必須持有 Q 和 J（否則莊家會打其中之一來贏得這一墩）。</span></p><h3 id="其他防禦訊號" data-id="其他防禦訊號"><a class="anchor hidden-xs" href="#其他防禦訊號" title="其他防禦訊號"><span class="octicon octicon-link"></span></a><span>其他防禦訊號</span></h3><p><span>向全班指出，在競爭環境中，防禦者必須有效合作才能打倒合約。他們可以透過打出的牌向彼此發送信號，而且也應該這樣做。由於防守方的小牌大多吃不到贏墩，因此其中一些小牌可以用來互相傳送訊息。這是完全合法的，只要作莊者在狀況中——防禦者不允許擁有只有他們自己知道的秘密系統或理解。有兩種類型的訊號可以在不同的情況下使用：</span></p><h3 id="態度訊號" data-id="態度訊號"><a class="anchor hidden-xs" href="#態度訊號" title="態度訊號"><span class="octicon octicon-link"></span></a><span>態度訊號</span></h3><p><span>當搭檔引一門花色時，打出一張高的小牌（例如七）表示「我喜歡這門花色，請繼續打下去」。打出一張非常低的牌（例如二）表示“我不喜歡這套花色”，或“我更喜歡其他花色”。</span></p><h3 id="花色長度訊號" data-id="花色長度訊號"><a class="anchor hidden-xs" href="#花色長度訊號" title="花色長度訊號"><span class="octicon octicon-link"></span></a><span>花色長度訊號</span></h3><p><span>當打由莊家或夢家引的墩時，防守者應打出該花色中牌數為奇數的最低牌。如果是偶數張，則應打第二低的牌，當這門花色再次引出時，則再跟最低的牌。因此，對於奇數張，打牌是“自下而上”，對於偶數張，則打“高-低”。然後，同伴可以計算出該特定花色中的牌是如何分配的，並使用該資訊來幫助擊敗合約。</span></p><p><span>而作為莊家，你在比賽中沒有活躍的伙伴，所以你完全有權以你喜歡的任何方式通過打出你選擇的牌張來誤導防守者！</span></p><p><span>練習 6 – 發現合作夥伴的牌</span><br>
+<span>練習 7 – 在搭檔的引牌時打什麼？ 可以與這個主題一起使用。</span></p><h2 id="練習1" data-id="練習1"><a class="anchor hidden-xs" href="#練習1" title="練習1"><span class="octicon octicon-link"></span></a><span>練習1</span></h2><h2 id="啟動-Minibridge" data-id="啟動-Minibridge"><a class="anchor hidden-xs" href="#啟動-Minibridge" title="啟動-Minibridge"><span class="octicon octicon-link"></span></a><span>啟動 Minibridge</span></h2><p><span>發牌：W</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ AK6</span><br><font color="red"><span>♥</span></font><span> 9632</span><br><font color="red"><span>♦</span></font><span> AQ4</span><br><span>♣ K42</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ Q74</span><br><font color="red"><span>♥</span></font><span> 75</span><br><font color="red"><span>♦</span></font><span> JT6</span><br><span>♣ QJ976</span></td>
+<td></td>
+<td><span>♠ J98</span><br><span> </span><font color="red"><span>♥</span></font><span> QJT8</span><br><font color="red"><span>♦</span></font><span> 9752</span><br><span>♣ T8</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ T532</span><br><font color="red"><span>♥</span></font><span> AK4</span><br><font color="red"><span>♦</span></font><span> K83</span><br><span>♣ A53</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><ol>
+<li><span>每位玩家有多少點？</span></li>
+<li><span>誰先宣布點力？</span></li>
+<li><span>哪對是莊家？</span></li>
+<li><span>哪對是防家？</span></li>
+<li><span>誰是莊家，誰是夢家？</span></li>
+<li><span>哪位選手率先引牌？</span></li>
+<li><span>莊家可以打出多少墩？</span></li>
+<li><span>誰會成為下一副牌的發牌者（dealer）？</span></li>
+</ol><p><span>您可能會發現拿一副牌並放在桌子上會很有幫助。</span></p><ul>
+<li><span>練習1 的答案</span></li>
+</ul><ol>
+<li><span>W 6, N 16, E 4, S 14。</span></li>
+<li><span>作為發牌者，West 首先宣布點力。</span></li>
+<li><span>北/南為作莊方。他們合起來有 30 點，東/西合計只有 10 點</span></li>
+<li><span>東/西是防守方。</span></li>
+<li><span>北方是莊家，因為北方的點力比南方多。南是夢家(明手)，因為夢家始終是莊家對面的牌。</span></li>
+<li><span>東家首引，因為東家在莊家的左邊。</span></li>
+<li><span>兌現頂牌有九墩。包括：2 墩黑桃，2 墩紅心，3 墩方塊，和 2 墩梅花。</span></li>
+<li><span>下一副牌的發牌者將是北家，因為這副是西家，順時針方向繞桌一周。</span></li>
+</ol><h2 id="練習2" data-id="練習2"><a class="anchor hidden-xs" href="#練習2" title="練習2"><span class="octicon octicon-link"></span></a><span>練習2</span></h2><h2 id="計算贏墩" data-id="計算贏墩"><a class="anchor hidden-xs" href="#計算贏墩" title="計算贏墩"><span class="octicon octicon-link"></span></a><span>計算贏墩</span></h2><p><span>以下所示的每種牌張組合兩手合起來可取得多少墩？</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>墩數</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>A42</span></td>
+<td style="text-align:center"><span>763</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>AK5</span></td>
+<td style="text-align:center"><span>732</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>A32</span></td>
+<td style="text-align:center"><span>K75</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>AKQ</span></td>
+<td style="text-align:center"><span>763</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>AK</span></td>
+<td style="text-align:center"><span>Q76</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>A</span></td>
+<td style="text-align:center"><span>K</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>AQ54</span></td>
+<td style="text-align:center"><span>KJ32</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>QJ</span></td>
+<td style="text-align:center"><span>AK</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>KQ2</span></td>
+<td style="text-align:center"><span>J97</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"><span>QT94</span></td>
+<td style="text-align:center"><span>J732</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"><span>AT7453</span></td>
+<td style="text-align:center"><span>986</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>12</span></td>
+<td style="text-align:center"><span>98765</span></td>
+<td style="text-align:center"><span>432</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>練習2 的答案</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>墩數</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>A42</span></td>
+<td style="text-align:center"><span>763</span></td>
+<td style="text-align:center"><span>1</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>AK5</span></td>
+<td style="text-align:center"><span>732</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>A32</span></td>
+<td style="text-align:center"><span>K75</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>AKQ</span></td>
+<td style="text-align:center"><span>763</span></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>AK</span></td>
+<td style="text-align:center"><span>Q76</span></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>A</span></td>
+<td style="text-align:center"><span>K</span></td>
+<td style="text-align:center"><span>1</span><br><span>當打A時，K就要跟在同一墩了</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>AQ54</span></td>
+<td style="text-align:center"><span>KJ32</span></td>
+<td style="text-align:center"><span>4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>QJ</span></td>
+<td style="text-align:center"><span>AK</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>KQ2</span></td>
+<td style="text-align:center"><span>J97</span></td>
+<td style="text-align:center"><span>2</span><br><span>當打K時，某個敵家打A，Q跟J就大了</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"><span>QT94</span></td>
+<td style="text-align:center"><span>J732</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"><span>AT7453</span></td>
+<td style="text-align:center"><span>986</span></td>
+<td style="text-align:center"><span>3 or 4 or 5</span><br><span>依敵方的分配而定</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>12</span></td>
+<td style="text-align:center"><span>98765</span></td>
+<td style="text-align:center"><span>432</span></td>
+<td style="text-align:center"><span>0 or 1 or 2</span><br><span>依敵方的分配而定</span></td>
+</tr>
+</tbody>
+</table><p><span>關於問題 11 和 12 的註釋</span><br>
+<span>用一副牌嘗試問題 11 中的範例。當你兩手牌之間有九張牌時，對手在此花色中有四張牌。這四張牌可能在兩手牌之間以 2-2、3-1 或 4-0 的方式進行分配。您必須分別玩 2、3 或 4 輪該花色，才能消除對手的贏家。 A 將贏得其中一墩，而您剩餘的小牌將始終贏得墩數，因此您可以分別贏得 5、4 或 3 墩。類似的邏輯也適用於問題 12。</span></p><h2 id="練習3" data-id="練習3"><a class="anchor hidden-xs" href="#練習3" title="練習3"><span class="octicon octicon-link"></span></a><span>練習3</span></h2><h2 id="MINIBRIDGE-計分" data-id="MINIBRIDGE-計分"><a class="anchor hidden-xs" href="#MINIBRIDGE-計分" title="MINIBRIDGE-計分"><span class="octicon octicon-link"></span></a><span>MINIBRIDGE 計分</span></h2><p><span>Sarah and Vijay 對抗 Kim and Jason 打迷你橋牌。下表總結了所發生的情況。每對合作夥伴在每副牌中的得分是多少？</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>贏墩</span></th>
+<th style="text-align:center"><span>S&amp;V 分數</span></th>
+<th style="text-align:center"><span>K&amp;J 分數</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>game in </span><font color="red"><span>♥</span></font></td>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>Vijay</span></td>
+<td style="text-align:center"><span>part score in ♠</span></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>Vijay</span></td>
+<td style="text-align:center"><span>game in NT</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>Sarah</span></td>
+<td style="text-align:center"><span>part score in ♣</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>part score in </span><font color="red"><span>♦</span></font></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>Sarah</span></td>
+<td style="text-align:center"><span>game in </span><font color="red"><span>♦</span></font></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>Jason</span></td>
+<td style="text-align:center"><span>game in NT</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>part score in ♠</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>Jason</span></td>
+<td style="text-align:center"><span>game in ♣</span></td>
+<td style="text-align:center"><span>12</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"><span>Vijay</span></td>
+<td style="text-align:center"><span>part score in NT</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"><span>Sarah</span></td>
+<td style="text-align:center"><span>game in </span><font color="red"><span>♥</span></font></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>12</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>part score in </span><font color="red"><span>♦</span></font></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>練習3 的答案</span></li>
+</ul><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>贏墩</span></th>
+<th style="text-align:right"><span>S&amp;V 分數</span></th>
+<th style="text-align:right"><span>K&amp;J 分數</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>game in </span><font color="red"><span>♥</span></font></td>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>420</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>Vijay</span></td>
+<td style="text-align:center"><span>part score in ♠</span></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:right"><span>200</span></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>Vijay</span></td>
+<td style="text-align:center"><span>game in NT</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>50</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>Sarah</span></td>
+<td style="text-align:center"><span>part score in ♣</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:right"><span>90</span></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>part score in </span><font color="red"><span>♦</span></font></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:right"><span>50</span></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>Sarah</span></td>
+<td style="text-align:center"><span>game in </span><font color="red"><span>♦</span></font></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:right"><span>400</span></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>Jason</span></td>
+<td style="text-align:center"><span>game in NT</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>400</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>part score in ♠</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>140</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>Jason</span></td>
+<td style="text-align:center"><span>game in ♣</span></td>
+<td style="text-align:center"><span>12</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>420</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"><span>Vijay</span></td>
+<td style="text-align:center"><span>part score in NT</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:right"><span>90</span></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"><span>Sarah</span></td>
+<td style="text-align:center"><span>game in </span><font color="red"><span>♥</span></font></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>50</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>12</span></td>
+<td style="text-align:center"><span>Kim</span></td>
+<td style="text-align:center"><span>part score in </span><font color="red"><span>♦</span></font></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:right"><span>110</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:right"><span>830</span></td>
+<td style="text-align:right"><span>1590</span></td>
+</tr>
+</tbody>
+</table><h2 id="練習4" data-id="練習4"><a class="anchor hidden-xs" href="#練習4" title="練習4"><span class="octicon octicon-link"></span></a><span>練習4</span></h2><h2 id="計畫主打" data-id="計畫主打"><a class="anchor hidden-xs" href="#計畫主打" title="計畫主打"><span class="octicon octicon-link"></span></a><span>計畫主打</span></h2><p><span>在下面的每個例子中，West 都是莊家。他該如何計劃主打這副牌？</span><br>
+<span>您可能會發現用一副牌組成手牌很有幫助。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th><span>West</span></th>
+<th><span>East</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td><span>♠ Q2</span><br><font color="red"><span>♥</span></font><span> AKQ</span><br><font color="red"><span>♦</span></font><span> AK43</span><br><span>♣ AT83</span></td>
+<td><span>♠ AKJ3</span><br><span> </span><font color="red"><span>♥</span></font><span> 7642</span><br><font color="red"><span>♦</span></font><span> 52</span><br><span>♣ 976</span></td>
+<td><span>無王, 成局</span><br><span>首引：</span><font color="red"><span>♦</span></font><span>Q</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td><span>♠ A3</span><br><font color="red"><span>♥</span></font><span> AK42</span><br><font color="red"><span>♦</span></font><span> 9752</span><br><span>♣ J87</span></td>
+<td><span>♠ 742</span><br><span> </span><font color="red"><span>♥</span></font><span> 853</span><br><font color="red"><span>♦</span></font><span> QJ</span><br><span>♣ AQT93</span></td>
+<td><span>梅花, 部份</span><br><span>首引：</span><font color="red"><span>♦</span></font><span>A</span><br><span>西家為什麼不選擇無王？</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td><span>♠ </span><span class="smartypants">–</span><br><font color="red"><span>♥</span></font><span> AKJ962</span><br><font color="red"><span>♦</span></font><span> K75</span><br><span>♣ QJ73</span></td>
+<td><span>♠ K853</span><br><span> </span><font color="red"><span>♥</span></font><span> Q85</span><br><font color="red"><span>♦</span></font><span> AQ2</span><br><span>♣ T94</span></td>
+<td><span>紅心, 成局</span><br><span>首引：♠Q</span><br><span>為什麼選擇紅心，而不是無王或梅花？</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td><span>♠ AQJ96</span><br><font color="red"><span>♥</span></font><span> A543</span><br><font color="red"><span>♦</span></font><span> A5</span><br><span>♣ T6</span></td>
+<td><span>♠ KT5</span><br><span> </span><font color="red"><span>♥</span></font><span> 62</span><br><font color="red"><span>♦</span></font><span> K942</span><br><span>♣ A532</span></td>
+<td><span>黑桃, 成局</span><br><span>首引：</span><font color="red"><span>♥</span></font><span>K</span></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>練習4 的答案</span></li>
+</ul><ol>
+<li>
+<p><span>您有十個頂級贏墩－四張黑桃、三張紅桃、兩顆方塊和一張梅花。您需要按照正確的順序打黑桃，才能確保在這套花色中打出四墩。先打 Q，然後打 2，以 A 獲勝。打 K 和 J，丟掉莊家手上的小牌。如果您先打出 A，您會發現您現在無法在該花色中取得四個墩。(先打三圈紅心 AKQ，如果 3-3 分配還可打大一墩紅心)</span></p>
+</li>
+<li>
+<p><span>不打王牌是不明智的，因為如果首引黑桃並且梅花偷牌失敗，就會失去很多黑桃。計劃在西手牌中王吃黑桃失張。你必須輸掉一墩黑桃才能耗盡西手的黑桃，但你可以用短的王牌手來王吃第三輪黑桃。這為莊家創造了一個額外的贏墩。</span><br>
+<span>你將失去兩顆方塊，不會再多了，因為你可以在第三輪王吃，一副黑桃，一副紅心，一副梅花，完成八墩。您贏得的墩數是一張黑桃和一張黑桃王吃、兩墩顆紅心、無方塊和四副梅花。</span><br>
+<span>如果北家有梅花 K，則有可能在梅花上製造額外的贏墩。先從 W 手中引出 J。如果 N 用 K 蓋了它，則用 A 贏取。如果 N 沒有出 K，就擺小偷過。如果南方有 K，這個策略就會失敗，但由於你不知道 K 在哪裡，所以值得一試。如果兩個玩家都沒有出 K，則從 West 手中打出另一張梅花，並從明手上打出 Q。這就是所謂的偷牌 (finesse)。</span></p>
+</li>
+<li>
+<p><span>最好打紅心合約，因為你有九張紅心，比你在梅花中的張數還要多，而且黑桃可能無法作為無王的擋張。您可以王吃黑桃首引並打紅心，直到對手沒有剩餘王牌 - 這稱為抽王牌。然後打大梅花，迫出  A 和 K ，在梅花中建立兩墩。</span></p>
+</li>
+<li>
+<p><span>當防守方首引紅心時，您想要用短王牌王吃的小紅心。用紅心 A 贏得第一墩，並直接打出紅心。當你再次引牌時，就先引另一張紅心並由東家王吃。用短王牌王吃對莊家來說意味著額外的贏墩。請注意，您可以用大王牌來王吃，因此要避免任何超王吃的可能性。</span><br>
+<span>另一種打法是讓防守方贏得第一墩紅心。這稱為“扣住”紅心 A。你可以贏得第二墩紅心，你會發現後面的打法更加簡單。</span></p>
+</li>
+</ol><h2 id="練習5" data-id="練習5"><a class="anchor hidden-xs" href="#練習5" title="練習5"><span class="octicon octicon-link"></span></a><span>練習5</span></h2><h2 id="首引什麼？" data-id="首引什麼？"><a class="anchor hidden-xs" href="#首引什麼？" title="首引什麼？"><span class="octicon octicon-link"></span></a><span>首引什麼？</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th><span>N (夢家)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>1</span></td>
+<td><span>♠ Q63</span><br><font color="red"><span>♥</span></font><span> AK42</span><br><font color="red"><span>♦</span></font><span> 963</span><br><span>♣ 652</span></td>
+</tr>
+<tr>
+<td><span>W (你)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ T4</span><br><span> </span><font color="red"><span>♥</span></font><span> 953</span><br><font color="red"><span>♦</span></font><span> AK872</span><br><span>♣ T43</span></td>
+<td><span>S 打紅心成局</span><br><span>同伴有 7 點</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><span>N (夢家)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>2</span></td>
+<td style="text-align:left"><span>♠ K94</span><br><font color="red"><span>♥</span></font><span> AQ6</span><br><font color="red"><span>♦</span></font><span> KQT95</span><br><span>♣ 54</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>W (你)</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>♠ QJT52</span><br><span> </span><font color="red"><span>♥</span></font><span> 53</span><br><font color="red"><span>♦</span></font><span> A4</span><br><span>♣ 8632</span></td>
+<td style="text-align:left"><span>S 打無王成局</span><br><span>同伴有 4 點</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><span>N (夢家)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>3</span></td>
+<td style="text-align:left"><span>♠ J63</span><br><font color="red"><span>♥</span></font><span> KQ3</span><br><font color="red"><span>♦</span></font><span> KT52</span><br><span>♣ T63</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>W (你)</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>♠ KT875</span><br><span> </span><font color="red"><span>♥</span></font><span> A2</span><br><font color="red"><span>♦</span></font><span> 943</span><br><span>♣ 752</span></td>
+<td style="text-align:left"><span>S 打無王部份</span><br><span>同伴有 10 點</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><span>N (夢家)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>4</span></td>
+<td style="text-align:left"><span>♠ AK</span><br><font color="red"><span>♥</span></font><span> 732</span><br><font color="red"><span>♦</span></font><span> Q94</span><br><span>♣ KJT73</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>W (你)</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>♠ T7632</span><br><span> </span><font color="red"><span>♥</span></font><span> A54</span><br><font color="red"><span>♦</span></font><span> T75</span><br><span>♣ 54</span></td>
+<td style="text-align:left"><span>S 打梅花成局</span><br><span>同伴有 6 點</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left"><span>N (夢家)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>5</span></td>
+<td style="text-align:left"><span>♠ AQJ954</span><br><font color="red"><span>♥</span></font><span> 6</span><br><font color="red"><span>♦</span></font><span> T982</span><br><span>♣ 53</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>W (你)</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>♠ T6</span><br><span> </span><font color="red"><span>♥</span></font><span> AK752</span><br><font color="red"><span>♦</span></font><span> AK63</span><br><span>♣ 62</span></td>
+<td style="text-align:left"><span>S 打黑桃部份</span><br><span>同伴有 5 點</span></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>練習5 的答案</span></li>
+</ul><ol>
+<li><span>方塊 A - 你想兌現你的贏墩，也許你的搭檔可以在第三輪王吃方塊。無論如何，它不會丟失贏墩改莊家。</span></li>
+<li><span>黑桃 Q – 你想要在黑桃立建立贏墩。同伴的四點可能是黑桃 A，這意味著你們可以輕鬆地擊敗合約。但即使莊家擁有黑桃 A，這種首引也不會對防守方造成任何傷害。</span></li>
+<li><span>黑桃－你想建立長門花色，所以希望搭檔有一張黑桃大牌來幫助你建立花色。對於沒有連續大牌的長花色，正確的牌張是第四張，在本例中是 7。</span><br>
+<span>另一種方法是嘗試引梅花以找到搭檔的花色。同伴的點力比你多，因此會為防守做出更多貢獻。這可能是西家幫助合作夥伴的唯一機會。</span></li>
+<li><span>正如經常發生的那樣，這手牌沒有明顯的最佳首引。</span><br>
+<span>一種選擇是首引一張小黑桃。通常你會引 3，這不會損失任何贏墩——讓莊家自己來猜測。</span><br>
+<span>另一種選擇是紅心 A，以確保您獲得該墩，但是當您沒有 K 時引 A 可能會給莊家帶來不應得的贏墩，因此最好避免這種情況。</span></li>
+<li><span>方塊 A。紅心只能贏得一墩，這令人失望，所以嘗試方塊王吃以獲得額外的贏墩。只有兩張方塊時，同伴可以透過打先大後小訊號來鼓勵。</span><br>
+<span>如果同伴沒有顯示出雙張方塊，您可以打黑桃王牌來嘗試阻止莊家在短王牌中王吃方塊。在這種情況下，短王牌的是南方家，你看不到的那一手。最好的計劃是首引鑽石 A，看看搭檔打什麼牌，然後再決定下一步要做什麼。</span></li>
+</ol><h2 id="練習6" data-id="練習6"><a class="anchor hidden-xs" href="#練習6" title="練習6"><span class="octicon octicon-link"></span></a><span>練習6</span></h2><h2 id="發現合作夥伴的牌張" data-id="發現合作夥伴的牌張"><a class="anchor hidden-xs" href="#發現合作夥伴的牌張" title="發現合作夥伴的牌張"><span class="octicon octicon-link"></span></a><span>發現合作夥伴的牌張</span></h2><p><span>最好取出一副牌並將它們按照問題所示排列。</span></p><ol>
+<li></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>你</span></th>
+<th><span>63</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>J8542</span></td>
+<td></td>
+<td><span>同伴打 T</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>莊家打 Q</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>你引 4。</span><br>
+<span>誰有 A？誰有 K？誰有 9？</span><br>
+<span>同伴在這門花色中一開始有多少張牌？</span></p><ol start="2">
+<li></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>你</span></th>
+<th><span>953</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>K842</span></td>
+<td></td>
+<td><span>同伴打 J</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>莊家打 A</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>你引 2。</span><br>
+<span>誰有 Q？誰有 K？誰有 T？</span></p><ol start="3">
+<li></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>你</span></th>
+<th><span>A92</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>KQT73</span></td>
+<td></td>
+<td><span>同伴打 8</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>莊家打 6</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>你引 K，莊家從夢家打 A，手上跟 6。</span><br>
+<span>您從同伴打的牌張上推斷出什麼？</span></p><ol start="4">
+<li><span>合約是無王成局，同伴引田黑桃 Q：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ T54</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠Q</span></td>
+<td></td>
+<td><span>762</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>莊家打 A</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>誰有 K？誰有 J？</span><br>
+<span>你該打哪張？</span></p><ol start="5">
+<li><span>合約是紅心成局，同伴引黑桃 A：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ Q54</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠A</span></td>
+<td></td>
+<td><span>K762</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>莊家打 3</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>同伴想讓你做什麼？</span></p><ol start="6">
+<li><span>合約是梅花部份，同伴引黑桃 7：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ 943</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠7</span></td>
+<td></td>
+<td><span>AKQ5</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>莊家打 6</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>你打哪張牌？為什麼？</span><br>
+<span>當你繼續打黑桃時，同伴玩打 8。你由此推斷出什麼？</span><br>
+<span>如果搭檔打 2，你會怎麼想？</span></p><ul>
+<li><span>練習 6 的答案</span></li>
+</ul><ol>
+<li>
+<p><span>莊家有 AKQ9，可能還有 7；搭檔從該花色中的單張或雙張引牌。</span></p>
+<ul>
+<li><span>如果搭檔有 A 或 K 或 Q，他就會打出大牌，因為第三家應打大。</span></li>
+<li><span>如果搭檔有 9，他就會打出這張牌，因為我們跟牌應跟連續張中最小的一張。</span></li>
+<li><span>能讀出該花色中的莊家有 AKQ9，這佔了莊家 9 個點。例如，如果你知道莊家一開始有 12 點，那麼他其它花色只有一張 K、或一張 Q 和一張 J。</span></li>
+</ul>
+</li>
+<li>
+<p><span>同伴有 Q，莊家有 T。</span></p>
+<ul>
+<li><span>如果莊家持有 Q，他就會用 Q 贏得這墩，所以 Q 一定在同伴手中。</span></li>
+<li><span>如果搭檔有 QJT，他會打出 T，所以這表示莊家有 T。</span></li>
+</ul>
+</li>
+<li>
+<p><span>同伴可以是 J854 或 85 或 84 或單張 8。</span></p>
+</li>
+</ol><ul>
+<li><span>搭檔若持 854 應打 4。</span></li>
+<li><span>如果您打的是無王合約，同伴不太可能持 J854，因為此時莊家將在該花色中是單張。</span></li>
+<li><span>在王牌合約中，J854 的可能性更大。莊家如果是單張，比適會選王牌合約。</span></li>
+</ul><ol start="4">
+<li><span>莊家有 K，夥伴有 J。你應該打 2 告訴夥伴你沒有 K。</span></li>
+</ol><ul>
+<li><span>夥伴會從 KQ 中引 K，所以莊家必定有 K。</span></li>
+<li><span>莊家有 A，因為他剛剛打了！這意味著我們可以算出莊家這門花色有 7 點。從公佈的點數中減去 7，你就可以猜測莊家持有的其他大牌。</span></li>
+<li><span>搭檔很可能有 J，除非他是首引短門希望獲得王吃。</span></li>
+</ul><ol start="5">
+<li><span>打 7，鼓勵夥伴繼續。同伴可能只有兩張梅花。</span></li>
+</ol><ul>
+<li><span>你可以看到 K 和 Q，所以看起來搭檔很可能從短門引牌，希望得到王吃。</span></li>
+<li><span>也許夥伴有一門很長的梅花花色，並嘗試用梅花 A 快速兌現贏墩。</span><br>
+<span>無論哪種情況，你都想鼓勵，所以你應該選擇你能負擔得起的最高的梅花。</span></li>
+</ul><ol start="6">
+<li><span>打 Q。當你在第三家時，應該打出連續張中最小的。</span></li>
+</ol><ul>
+<li><span>繼續打 A。您應該始終引連續張中最大的牌。第一墩和第二墩的組合告訴夥伴您有 AKQ。</span></li>
+<li><span>如果搭檔在第二墩中跟了方塊 8，您將推斷他是以三張方塊引的。最有可能的是 T87、J87 或 872。當持有 JT87 時，同伴應引 J。</span></li>
+<li><span>在第二輪打出 2 這張牌將表明搭檔以 72 雙張引牌。請注意，您可以看到 3、4、5 和 6，因此它們不能在夥伴手中。這種計算搭檔可能持有的牌張數的能力通常會告訴您 K 是否是一個會獲勝的贏墩，或者是否可能會被王吃。</span></li>
+</ul><h2 id="練習7" data-id="練習7"><a class="anchor hidden-xs" href="#練習7" title="練習7"><span class="octicon octicon-link"></span></a><span>練習7</span></h2><h2 id="同伴引牌你應該打什麼？" data-id="同伴引牌你應該打什麼？"><a class="anchor hidden-xs" href="#同伴引牌你應該打什麼？" title="同伴引牌你應該打什麼？"><span class="octicon octicon-link"></span></a><span>同伴引牌你應該打什麼？</span></h2><ol>
+<li><span>對抗無王成局合約，搭檔引黑桃 A：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ 763</span></th>
+<th><span>你</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠A</span></td>
+<td></td>
+<td><span>♠ 982</span></td>
+</tr>
+</tbody>
+</table><p><span>你該打哪張？為什麼？</span></p><ol start="2">
+<li><span>對抗紅心成局合約，搭檔引黑桃 A：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ 763</span></th>
+<th><span>你</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠A</span></td>
+<td></td>
+<td><span>♠ K982</span></td>
+</tr>
+</tbody>
+</table><p><span>你該打哪張？為什麼？</span><br>
+<span>如果同伴贏了 A 然後打 4，同伴想要你做什麼？</span></p><ol start="3">
+<li><span>對抗紅心成局合約，搭檔引黑桃 A：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ Q63</span></th>
+<th><span>你</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠A</span></td>
+<td></td>
+<td><span>♠ 82</span></td>
+</tr>
+</tbody>
+</table><p><span>你該打哪張？為什麼？</span></p><ol start="4">
+<li><span>對抗紅心成局合約，搭檔引黑桃 8：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ Q63</span></th>
+<th><span>你</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠8</span></td>
+<td></td>
+<td><span>♠ AK52</span></td>
+</tr>
+</tbody>
+</table><p><span>你該打哪張？為什麼？</span><br>
+<span>下次打黑桃時，同伴出 4。你推斷出什麼？</span></p><ol start="5">
+<li><span>對抗無王成局合約，搭檔引黑桃 2：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ 763</span></th>
+<th><span>你</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠2</span></td>
+<td></td>
+<td><span>♠ T54</span></td>
+</tr>
+</tbody>
+</table><p><span>你該打哪張？為什麼？</span></p><ol start="6">
+<li><span>對抗無王成局合約，搭檔引黑桃 7：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th><span>同伴</span></th>
+<th><span>♠ K983</span></th>
+<th><span>你</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>引 ♠7</span></td>
+<td></td>
+<td><span>♠ AQ5</span></td>
+</tr>
+</tbody>
+</table><p><span>你該打哪張？為什麼？</span></p><ul>
+<li><span>練習 7 的答案</span></li>
+</ul><ol>
+<li>
+<p><span>打 2。同伴也許能贏多墩黑桃，但你最小的牌張顯示你無能為力。</span></p>
+</li>
+<li>
+<p><span>打 9，鼓勵同伴繼續出黑桃。當他繼續打 4 時，這是同伴黑桃的最小張。所以他應該是從 A2 兩張黑桃引出。你應該用 K 贏得這一墩，並引另一黑桃讓同伴王吃。</span></p>
+</li>
+<li>
+<p><span>打 8。這將鼓勵同伴繼續打 K。</span><br>
+<span>當你在 K 上打 2 時，同伴搭檔就會知道您一開始有兩張黑桃，並且可以王吃第三張黑桃。同伴將能夠算出莊家有多少張黑桃，因為他可以數出手中的黑桃和明手上的黑桃，並且您已經告訴他您一開始是兩張黑桃。</span></p>
+</li>
+<li>
+<p><span>打 K－作為第三家，你應該總是以最低的連續尊張取墩，這有助於搭檔弄清楚你手中的牌。如果同伴下次打 4，你知道這是他黑桃的最小牌，所以他一定是從雙張引牌的。你可以看到你自己手上和夢家牌中有七張，所以莊家一開始有四張——QJT9。如果同伴此時還有王牌，那麼值得引另一張黑桃來王吃莊家已大了的一張贏張。</span></p>
+</li>
+<li>
+<p><span>打 T- 因為那是你最大的一張。</span></p>
+</li>
+<li>
+<p><span>如果夢家打 K，則打出 A。如果莊家選擇不打 K，則以 Q 贏取。不要繼續提 A，因為這會使 K 成為莊家的贏張。讓 A 繼續坐在 K 之後 - 記住，A 是用來殺 K 的！</span></p>
+</li>
+</ol><h1 id="練習牌例" data-id="練習牌例"><a class="anchor hidden-xs" href="#練習牌例" title="練習牌例"><span class="octicon octicon-link"></span></a><span>練習牌例</span></h1><h2 id="1-王牌長度好過王牌強度" data-id="1-王牌長度好過王牌強度"><a class="anchor hidden-xs" href="#1-王牌長度好過王牌強度" title="1-王牌長度好過王牌強度"><span class="octicon octicon-link"></span></a><span>1-王牌長度好過王牌強度</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>1. N發牌</span></td>
+<td><span>♠ AKQ</span><br><font color="red"><span>♥</span></font><span> JT98765</span><br><font color="red"><span>♦</span></font><span> AQ</span><br><span>♣ 4</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 932</span><br><font color="red"><span>♥</span></font><span> Q</span><br><font color="red"><span>♦</span></font><span> 8654</span><br><span>♣ J8752</span></td>
+<td></td>
+<td><span>♠ 87654</span><br><span> </span><font color="red"><span>♥</span></font><span> AK</span><br><font color="red"><span>♦</span></font><span> JT97</span><br><span>♣ A3</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ JT</span><br><font color="red"><span>♥</span></font><span> 432</span><br><font color="red"><span>♦</span></font><span> K32</span><br><span>♣ KQT96</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>第一次玩這手牌時，N 是莊家，應該試著用黑桃當王牌來玩這手牌。如果 N/S 打黑桃，對手的王牌多於莊家和明手，莊家將失去對這手牌的控制。</span><br>
+<span>現在向右旋轉牌盒90度，這樣東家就拿了北手，並以紅心作為王牌。儘管缺少三張頂牌，但以紅心作為王牌的墩數比持有五張最高尊牌的黑桃的墩數要多。在紅桃合約中，首引可能是 </span><font color="red"><span>♦</span></font><span> J，A 贏取，並且打出了紅桃心。Q 和 K 一起掉落。失去的只是兩墩紅心和一墩梅花。</span><br>
+<strong><span>請記住：王牌的長度比強度更重要。</span></strong><br>
+<span>如果莊家選擇紅心成局，則 10 墩紅心得分 (4 x 30) + 300 = 420</span><br>
+<span>如果莊家選擇黑桃部分合約，則黑桃 7 墩得分 30 + 50 = 80</span><br>
+<span>如果莊家選擇黑桃成局，則倒 3 墩，得分 – 3 x 50 = – 150。</span></p><h2 id="2-無王總是比低花合約得分多" data-id="2-無王總是比低花合約得分多"><a class="anchor hidden-xs" href="#2-無王總是比低花合約得分多" title="2-無王總是比低花合約得分多"><span class="octicon octicon-link"></span></a><span>2-無王總是比低花合約得分多</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>2. E發牌</span></td>
+<td><span>♠ QT85</span><br><font color="red"><span>♥</span></font><span> 8743</span><br><font color="red"><span>♦</span></font><span> 75</span><br><span>♣ JT7</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ A64</span><br><font color="red"><span>♥</span></font><span> QJ2</span><br><font color="red"><span>♦</span></font><span> AKJ9</span><br><span>♣ A98</span></td>
+<td></td>
+<td><span>♠ K32</span><br><span> </span><font color="red"><span>♥</span></font><span> K6</span><br><font color="red"><span>♦</span></font><span> QT2</span><br><span>♣ KQ432</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ J97</span><br><font color="red"><span>♥</span></font><span> AT95</span><br><font color="red"><span>♦</span></font><span> 8643</span><br><span>♣ 65</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>西是莊家，兩手之間有 32 點，顯然應該成局。W 可能會贏得 12 墩。如果選擇無王，則分數將為 40 + (5 x 30) + 300 = 490。</span><br>
+<span>將其與選擇有 8 張梅花打梅花成局時的分數進行比較，此時的分數為 (6 x 20) + 300 = 420。</span></p><p><span>北家可能會首引一張黑桃。西家必須在第二墩中打出紅心，迫出 A 而建立二墩紅心。在 </span><font color="red"><span>♥</span></font><span>A 出來之前，不要兌現另一頂張黑桃。兩墩黑桃、兩墩紅心、四墩方塊和五墩梅花將是 13 墩，但 </span><font color="red"><span>♥</span></font><span>A  必須輸掉，所以莊家取得 12 墩。在無王合約下完成 12 墩牌，E/W 得分為 40+ (5 x 30) + 300 = 490。</span></p><h2 id="3-但有時必須打低花合約" data-id="3-但有時必須打低花合約"><a class="anchor hidden-xs" href="#3-但有時必須打低花合約" title="3-但有時必須打低花合約"><span class="octicon octicon-link"></span></a><span>3-但有時必須打低花合約</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>3. S發牌</span></td>
+<td><span>♠ K53</span><br><font color="red"><span>♥</span></font><span> 874</span><br><font color="red"><span>♦</span></font><span> K97</span><br><span>♣ AQ65</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ JT6</span><br><font color="red"><span>♥</span></font><span> AKQ3</span><br><font color="red"><span>♦</span></font><span> 8643</span><br><span>♣ 98</span></td>
+<td></td>
+<td><span>♠ 9872</span><br><span> </span><font color="red"><span>♥</span></font><span> JT965</span><br><font color="red"><span>♦</span></font><span> 5</span><br><span>♣ JT4</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AQ4</span><br><font color="red"><span>♥</span></font><span> 2</span><br><font color="red"><span>♦</span></font><span> AQJT7</span><br><span>♣ K732</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>South 是莊家，N/S 加起來有 28 個大牌點，所以應該參加選擇成局。在這手牌，選擇梅花或方塊作王牌打成局合約至關重要，因為如果選擇無王，防守方將贏取前 5 墩紅心。假設南家選擇梅花成局合約，West 很可能首引 </span><font color="red"><span>♥</span></font><span> A，然後是 </span><font color="red"><span>♥</span></font><span> K。但南家可王吃</span><font color="red"><span>♥</span></font><span> K，抽光所有的王牌，仔細數此花色跟出的張數以確保它們都被清光了！現在，南家可吃三墩黑桃、五墩方塊和四張梅花。12 墩。在梅花成局合約完成 12 墩，得分為 N/S (6 x 20) + 300 = 420。</span></p><h2 id="4-無王合約，放棄一墩以建立花色" data-id="4-無王合約，放棄一墩以建立花色"><a class="anchor hidden-xs" href="#4-無王合約，放棄一墩以建立花色" title="4-無王合約，放棄一墩以建立花色"><span class="octicon octicon-link"></span></a><span>4-無王合約，放棄一墩以建立花色</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>4. W發牌</span></td>
+<td><span>♠ AKQ</span><br><font color="red"><span>♥</span></font><span> A532</span><br><font color="red"><span>♦</span></font><span> 962</span><br><span>♣ 862</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ T987</span><br><font color="red"><span>♥</span></font><span> KJ</span><br><font color="red"><span>♦</span></font><span> J875</span><br><span>♣ Q75</span></td>
+<td></td>
+<td><span>♠ J42</span><br><span> </span><font color="red"><span>♥</span></font><span> QT984</span><br><font color="red"><span>♦</span></font><span> T4</span><br><span>♣ JT9</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 653</span><br><font color="red"><span>♥</span></font><span> 76</span><br><font color="red"><span>♦</span></font><span> AKQ3</span><br><span>♣ AK43</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>南是莊家，兩手 29 點，應打成局。由於沒有高花配合，並且門門有擋，所以選打無王是正確的。如果成功，則得到最好的分數。 West 最好的首引可能是 ♠ T，因為不會吃虧，但看到明手中的 AKQ，West 可能會選擇引方塊。莊家可以數出九墩頂張贏墩。黑桃 3 個，紅心 1 個，方塊 3 個，梅花 2 個。你能看出哪裡可以取得額外的贏墩嗎？透過先讓對手吃到一墩梅花，莊家建立了額外的贏張，因為東西都有各三根梅花，該花色平均分配。</span><br>
+<span>在無王成局合約下完成 10 墩，得分為 N/S 40 + (3 x 30) + 300 = 430。</span></p><h2 id="5-無王合約，留意上手張" data-id="5-無王合約，留意上手張"><a class="anchor hidden-xs" href="#5-無王合約，留意上手張" title="5-無王合約，留意上手張"><span class="octicon octicon-link"></span></a><span>5-無王合約，留意上手張</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>5. N發牌</span></td>
+<td><span>♠ T873</span><br><font color="red"><span>♥</span></font><span> QJT4</span><br><font color="red"><span>♦</span></font><span> J42</span><br><span>♣ 84</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ K5</span><br><font color="red"><span>♥</span></font><span> AK86</span><br><font color="red"><span>♦</span></font><span> A865</span><br><span>♣ AK7</span></td>
+<td></td>
+<td><span>♠ AQJ4</span><br><span> </span><font color="red"><span>♥</span></font><span> 532</span><br><font color="red"><span>♦</span></font><span> 73</span><br><span>♣ 6532</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 962</span><br><font color="red"><span>♥</span></font><span> 97</span><br><font color="red"><span>♦</span></font><span> KT93</span><br><span>♣ QJT9</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>這次是西家拿著21點的好牌當莊家。兩手有 28 點而且門門有擋，所以無王成局看來是最好的選擇。 </span><font color="red"><span>♥</span></font><span>Q 被首引出。莊家擁有九種頂級贏墩：四墩黑桃，兩墩紅心，一墩方塊，兩墩梅花。然而，莊家需要注意黑桃的出牌順序。必須先打 K，再打 5 到 A；否則，莊家會發現沒有頂張大牌可以作為夢家的上手張。如果您在打這副牌時犯了這個錯誤，請仔細查看如何兌現這四個贏墩。</span><br>
+<span>在無王成局的情況下完成 9 墩，E/W 得分為 40 + (2 x 30) + 300 = 400。</span></p><h2 id="6-無王合約，避免阻塞" data-id="6-無王合約，避免阻塞"><a class="anchor hidden-xs" href="#6-無王合約，避免阻塞" title="6-無王合約，避免阻塞"><span class="octicon octicon-link"></span></a><span>6-無王合約，避免阻塞</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>6. E發牌</span></td>
+<td><span>♠ AK64</span><br><font color="red"><span>♥</span></font><span> Q2</span><br><font color="red"><span>♦</span></font><span> AK5</span><br><span>♣ A865</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QJT</span><br><font color="red"><span>♥</span></font><span> T963</span><br><font color="red"><span>♦</span></font><span> J72</span><br><span>♣ KQ9</span></td>
+<td></td>
+<td><span>♠ 987</span><br><span> </span><font color="red"><span>♥</span></font><span> 854</span><br><font color="red"><span>♦</span></font><span> QT964</span><br><span>♣ JT</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 532</span><br><font color="red"><span>♥</span></font><span> AKJ7</span><br><font color="red"><span>♦</span></font><span> 83</span><br><span>♣ 7432</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>北家有 20 點，全副牌的一半，必然當莊家。由於沒有特別配合的花色，並且兩手共 28 個大牌點且門門有擋，應該選擇無王成局合約。東家首引 </span><font color="red"><span>♦</span></font><span> 6。已有九個贏墩，但北家需要小心地打紅心，以避免落入錯誤的手中。要先打 </span><font color="red"><span>♥</span></font><span> Q，再向 A 打小紅心，再來是 </span><font color="red"><span>♥</span></font><span>K 和 </span><font color="red"><span>♥</span></font><span>J。試看看如果北家對著 A 打 </span><font color="red"><span>♥</span></font><span>2，然後兌現 </span><font color="red"><span>♥</span></font><span>K，或者現在對 Q 打 ©</span><font color="red"><span>♥</span></font><span> 7，會發生什麼。</span><br>
+<span>在無王成局的情況下完成 9 墩，，得分為 40 + (2 x 30) + 300 = 400 分（N/S）。</span></p><h2 id="7-王牌合約，避免阻塞" data-id="7-王牌合約，避免阻塞"><a class="anchor hidden-xs" href="#7-王牌合約，避免阻塞" title="7-王牌合約，避免阻塞"><span class="octicon octicon-link"></span></a><span>7-王牌合約，避免阻塞</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>7. S發牌</span></td>
+<td><span>♠ AT98</span><br><font color="red"><span>♥</span></font><span> T96</span><br><font color="red"><span>♦</span></font><span> Q75</span><br><span>♣ J85</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QJ43</span><br><font color="red"><span>♥</span></font><span> K84</span><br><font color="red"><span>♦</span></font><span> 96</span><br><span>♣ A742</span></td>
+<td></td>
+<td><span>♠ K2</span><br><span> </span><font color="red"><span>♥</span></font><span> AQJ75</span><br><font color="red"><span>♦</span></font><span> A842</span><br><span>♣ 96</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 765</span><br><font color="red"><span>♥</span></font><span> 32</span><br><font color="red"><span>♦</span></font><span> KJT3</span><br><span>♣ KQT3</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>東家是莊家，總共只有24點，成局就過於樂觀了。 8 張紅心高花配合，最好選該花色當王牌。你能算出如果莊家選擇打無王會發生什麼事嗎？對抗紅心部分合約，南方首引 ♣ K。莊家有六個頂張贏墩，其中四墩花心，一墩是花和一墩方塊。如果防守方的紅心以 4:1 或 3:2 分配，則莊家將能夠做出第五個紅贏墩。莊家還可以建立兩個黑桃贏張。東必須打出“K”，迫使持有它的防守者打出“A”，從而讓“Q”和“J”成為贏張。如果東家只是由一手打 2，另一手打 3，那麼防守者就不太可能主動出 A。他們將以 9 贏得，讓莊家不能得逞。東家的主打計劃應該是先清王牌，直到防守者沒王牌（</span><strong><span>計算並數數！</span></strong><span>），這樣防守者就無法通過王吃贏得意想不到的一墩，然後打出黑桃K。所以莊家一共就吃到九墩牌。</span><br>
+<span>在紅心部分合約中完成九墩，分數 (3 x 30) + 50 = 140 分 (E/W)。</span></p><h2 id="8-當少4張牌時擊落Q" data-id="8-當少4張牌時擊落Q"><a class="anchor hidden-xs" href="#8-當少4張牌時擊落Q" title="8-當少4張牌時擊落Q"><span class="octicon octicon-link"></span></a><span>8-當少4張牌時擊落Q</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>8. W發牌</span></td>
+<td><span>♠ KQJ</span><br><font color="red"><span>♥</span></font><span> J9752</span><br><font color="red"><span>♦</span></font><span> T97</span><br><span>♣ Q4</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 52</span><br><font color="red"><span>♥</span></font><span> AQ</span><br><font color="red"><span>♦</span></font><span> 96</span><br><span>♣ AKJT8</span></td>
+<td></td>
+<td><span>♠ 763</span><br><span> </span><font color="red"><span>♥</span></font><span> KT</span><br><font color="red"><span>♦</span></font><span> AKQ8</span><br><span>♣ 9653</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AT984</span><br><font color="red"><span>♥</span></font><span> 8643</span><br><font color="red"><span>♦</span></font><span> 43</span><br><span>♣ 72</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>西是莊家。明手和莊家的點數為 27，因此應該打成局。由於大部分力量都集中在低花上，西家可能會考慮打無王以獲得更好的分數。在沒有黑桃擋張的情況下，這個想法應該被拒絕——打更案全的梅花成局。西家可以看到八個頂張贏墩（梅花兩墩，方塊四墩，紅桃兩墩）。可惜的是，儘管莊家擁有前三張紅心，但他在這套花色中只能能兩墩，因為每邊只有兩張牌。正如通常的情況一樣，莊家最好儘早清光王牌，以防止對手王吃。有九張王牌但沒有 Q，機率稍微偏向於打出 A 和 K，並希望皇后會被擊落，正如這裡所發生的那樣。</span><br>
+<span>在梅花成局合約中完成 11 墩的得分 (5 x 20) + 300 = 400 分 (E/W)</span></p><h2 id="9-王牌合約，建立贏張" data-id="9-王牌合約，建立贏張"><a class="anchor hidden-xs" href="#9-王牌合約，建立贏張" title="9-王牌合約，建立贏張"><span class="octicon octicon-link"></span></a><span>9-王牌合約，建立贏張</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>9. N發牌</span></td>
+<td><span>♠ JT984</span><br><font color="red"><span>♥</span></font><span> 643</span><br><font color="red"><span>♦</span></font><span> A6</span><br><span>♣ AKJ</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 5</span><br><font color="red"><span>♥</span></font><span> A97</span><br><font color="red"><span>♦</span></font><span> QT52</span><br><span>♣ 97654</span></td>
+<td></td>
+<td><span>♠ AKQ</span><br><span> </span><font color="red"><span>♥</span></font><span> JT8</span><br><font color="red"><span>♦</span></font><span> K843</span><br><span>♣ T83</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 7632</span><br><font color="red"><span>♥</span></font><span> KQ52</span><br><font color="red"><span>♦</span></font><span> J97</span><br><span>♣ Q2</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>北家當莊。 N/S 有 21點，沒有成局的機會，因此諾斯應該打黑桃部分合約，即使少了這套花色中的三張頂牌。北家可以看到四墩（一墩方塊，三墩梅花）。透過打黑桃來迫使防守者的頂張黑桃出牌，莊家應該能夠做出兩個黑桃贏墩。在頂出 A 後，再在紅心加一墩，莊家就擁有所需的七墩。</span><br>
+<span>在黑桃部分合約中完成七墩的 N/S 得分為 30 + 50 = 80 分。</span></p><h2 id="10-防守時建立贏張" data-id="10-防守時建立贏張"><a class="anchor hidden-xs" href="#10-防守時建立贏張" title="10-防守時建立贏張"><span class="octicon octicon-link"></span></a><span>10-防守時建立贏張</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>10. E發牌</span></td>
+<td><span>♠ K932</span><br><font color="red"><span>♥</span></font><span> 8</span><br><font color="red"><span>♦</span></font><span> J976</span><br><span>♣ 9862</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ JT65</span><br><font color="red"><span>♥</span></font><span> 7542</span><br><font color="red"><span>♦</span></font><span> KQ3</span><br><span>♣ Q4</span></td>
+<td></td>
+<td><span>♠ AQ</span><br><span> </span><font color="red"><span>♥</span></font><span> AT3</span><br><font color="red"><span>♦</span></font><span> AT2</span><br><span>♣ KJT75</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 874</span><br><font color="red"><span>♥</span></font><span> KQJ96</span><br><font color="red"><span>♦</span></font><span> 854</span><br><span>♣ A3</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>東家當莊，兩手牌共 26 點，應該打無王成局合約。共有 5 個頂張贏墩，還可能有兩墩黑桃和 4 墩梅花。</span><br>
+<span>南家應首引 </span><font color="red"><span>♥</span></font><span> K，即連續張的頂張以迫出 A。東家必須在梅花以建立贏張。當南家贏得梅花 A 時，有四個紅心贏墩可以兌現，以擊垮莊家。</span><br>
+<span>擊倒一墩，N/S 得 50 分。</span></p><h2 id="11-找到最佳的首引" data-id="11-找到最佳的首引"><a class="anchor hidden-xs" href="#11-找到最佳的首引" title="11-找到最佳的首引"><span class="octicon octicon-link"></span></a><span>11-找到最佳的首引</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>11. S發牌</span></td>
+<td><span>♠ K93</span><br><font color="red"><span>♥</span></font><span> QJT9542</span><br><font color="red"><span>♦</span></font><span> KJ</span><br><span>♣ 8</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ J65</span><br><font color="red"><span>♥</span></font><span> 87</span><br><font color="red"><span>♦</span></font><span> 7642</span><br><span>♣ AQT3</span></td>
+<td></td>
+<td><span>♠ Q84</span><br><span> </span><font color="red"><span>♥</span></font><span> 63</span><br><font color="red"><span>♦</span></font><span> AQT5</span><br><span>♣ 9742</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AT72</span><br><font color="red"><span>♥</span></font><span> AK</span><br><font color="red"><span>♦</span></font><span> 983</span><br><span>♣ KJ65</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>南家應該打紅心成局。有 9 種頂張贏墩——7 墩紅心，2 墩黑桃。</span><br>
+<span>如果西家首引一張小梅花或小黑桃，這就給了莊家第十墩。小黑桃的首引也會起到同樣的作用 - 東家打出 ♠Q 將使莊家能定位 ♠J，因此可以在此花色第二輪花色中偷 J。首引黑桃不僅送出了合約，實際上還給出了一個超墩，因為可以吃到 4 墩黑桃。</span><font color="red"><span>♦</span></font><span>  6 的首引可擊垮合約，因為東家可以蓋吃夢家打出的任何牌。然後防守方應該能夠贏取兩墩方塊，一墩梅花和一墩黑桃。東/西得 50 分。</span></p><h2 id="12-找到轉攻及防禦信號" data-id="12-找到轉攻及防禦信號"><a class="anchor hidden-xs" href="#12-找到轉攻及防禦信號" title="12-找到轉攻及防禦信號"><span class="octicon octicon-link"></span></a><span>12-找到轉攻及防禦信號</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>12. W發牌</span></td>
+<td><span>♠ 65</span><br><font color="red"><span>♥</span></font><span> A9</span><br><font color="red"><span>♦</span></font><span> A63</span><br><span>♣ JT8652</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ AKT</span><br><font color="red"><span>♥</span></font><span> JT3</span><br><font color="red"><span>♦</span></font><span> KQ7</span><br><span>♣ AKQ3</span></td>
+<td></td>
+<td><span>♠ QJ9</span><br><span> </span><font color="red"><span>♥</span></font><span> 654</span><br><font color="red"><span>♦</span></font><span> JT954</span><br><span>♣ 97</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 87432</span><br><font color="red"><span>♥</span></font><span> KQ872</span><br><font color="red"><span>♦</span></font><span> 82</span><br><span>♣ 4</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>西家作莊，合計 26 點應該打成局。方塊成局看起來太多了，所以無王似乎是最好的，即使紅心花色很弱。北家應首引 ♣J，莊家 ♣Q 贏取。</span><br>
+<span>西家可以看到 6 墩：黑桃 3 墩，梅花 3 墩 方塊花色提供了必要的額外墩，但首先必須將 A 頂出。因此，西家引 </span><font color="red"><span>♦</span></font><span> K，並繼續打方塊，直到北家打出 A。當家家贏得 A 時，他應該看到防守在梅花中沒有前途，因此應該嘗試高花 - 畢竟，如果莊家有高花牌組的話，它可能會成為王牌。北方應該切換到紅心，打出 A 來查看南方的信號。南方應該讓北方知道這是一個好主意，打出他能負擔的最大的牌——8。然後北方可以繼續 9，南方將以 K 贏下並拿下五張紅桃贏墩。加上 色提供了必要的額外墩，但首先必須將 A 頂出。因此，西家引 A，這就以當兩墩擊垮了合約，以 北/南得 100 分。</span></p><h2 id="使用-MiniBridge-軟體" data-id="使用-MiniBridge-軟體"><a class="anchor hidden-xs" href="#使用-MiniBridge-軟體" title="使用-MiniBridge-軟體"><span class="octicon octicon-link"></span></a><span>使用 MiniBridge 軟體</span></h2><p><span>Blue Chip Minibridge 可由 Blue Chip Bridge 網站免費下載：</span></p><ul>
+<li><a href="http://www.bluechipbridge.co.uk/minibridge.htm" target="_blank" rel="noopener"><span>http://www.bluechipbridge.co.uk/minibridge.htm</span></a></li>
+</ul><p><span>這個免費程式是由 English Bridge Union 與 American Contract Bridge League 共贊助。</span></p><p><span>下載連結位於許可證頁面底部。下載時，您可以指定要儲存程式檔案的目錄。</span><br>
+<span>該軟體根據所達到的學習階段提供了多個級別的練習打牌的機會。它還包括一系列迷你橋課程，以加強課堂學習。您可以隨時選擇學習課程或練習遊戲，只需點擊開啟螢幕上的相應按鈕或使用「幫助」工具選擇課程即可。</span></p><p><span>藍籌股求助專線</span><br>
+<span>如果您在安裝或執行 Blue Chip Minibridge 軟體時遇到任何問題，您可以透過電子郵件聯絡協助專線：</span><br>
+<a href="mailto:support@bluechipbridge.co.uk" target="_blank" rel="noopener"><span>support@bluechipbridge.co.uk</span></a><span> 或致電 01992 636074。</span></p><h1 id="迷你橋牌術語表" data-id="迷你橋牌術語表"><a class="anchor hidden-xs" href="#迷你橋牌術語表" title="迷你橋牌術語表"><span class="octicon octicon-link"></span></a><span>迷你橋牌術語表</span></h1><table>
+<thead>
+<tr>
+<th><span>英文</span></th>
+<th><span>中文</span></th>
+<th><span>意義</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>Attitude signal</span></td>
+<td><span>態度訊號</span></td>
+<td><span>作為防家，打出一張高牌來表示“我喜歡這門”，或者打出一張低牌來阻止或否認這門花色有價值</span></td>
+</tr>
+<tr>
+<td><span>Balanced hand</span></td>
+<td><span>平均牌型</span></td>
+<td><span>每種花色的牌張數相對相等。沒有缺門或單張，不超過一個雙張</span></td>
+</tr>
+<tr>
+<td><span>Board</span></td>
+<td><span>牌盒</span></td>
+<td><span>放一副牌局並顯示誰是莊家的容器。有時也稱為牌套(wallet)</span></td>
+</tr>
+<tr>
+<td><span>Bonus</span></td>
+<td><span>奬分</span></td>
+<td><span>作成合約的額外加分，部分合約獎分為50分，成局奬分為300分</span></td>
+</tr>
+<tr>
+<td><span>Boss</span></td>
+<td><span>老闆</span></td>
+<td><span>莊家的替代名稱</span></td>
+</tr>
+<tr>
+<td><span>Cash</span></td>
+<td><span>兌現</span></td>
+<td><span>提取一張或多張贏墩。「cash out」就是提光所有的贏墩</span></td>
+</tr>
+<tr>
+<td><span>Claim</span></td>
+<td><span>宣稱</span></td>
+<td><span>當比賽已經明確時，莊家可以亮出他的手牌，宣稱他可以吃多少墩</span></td>
+</tr>
+<tr>
+<td><span>Clear a suit</span></td>
+<td><span>清掉一花色</span></td>
+<td><span>將對手手中的大牌逼出，定下勝局。</span></td>
+</tr>
+<tr>
+<td><span>Contract</span></td>
+<td><span>合約</span></td>
+<td><span>莊家宣布本副牌的品項（denomination, 王牌花色或無王）以及莊家要贏得的目標墩數</span></td>
+</tr>
+<tr>
+<td><span>Count signal</span></td>
+<td><span>計數訊號</span></td>
+<td><span>由防家在一門花色打出先高後低的牌以顯示偶數張，或先低後高顯示奇數張</span></td>
+</tr>
+<tr>
+<td><span>Covering honours</span></td>
+<td><span>蓋尊張</span></td>
+<td><span>當引出一個尊張並且下一個玩家打出一個更高的尊張，這就是所謂的「以尊張蓋尊張」</span></td>
+</tr>
+<tr>
+<td><span>Cross-ruff</span></td>
+<td><span>交叉王吃</span></td>
+<td><span>玩家和他的搭檔透過交替王吃旁門花分別取得贏墩的技巧</span></td>
+</tr>
+<tr>
+<td><span>Deal</span></td>
+<td><span>發牌</span></td>
+<td><span>分發 52 張牌，因此每位玩家有 13 張牌</span></td>
+</tr>
+<tr>
+<td><span>Dealer</span></td>
+<td><span>發牌者/荷官</span></td>
+<td><span>在發牌時先宣布分數的玩家</span></td>
+</tr>
+<tr>
+<td><span>Declare</span></td>
+<td><span>莊家</span></td>
+<td><span>取得合約權的一方由點數高者，或是同點數時先宣布點數的玩家。莊家有責任打出他的手牌和明手牌</span></td>
+</tr>
+<tr>
+<td><span>Defeat the contract</span></td>
+<td><span>擊垮合約</span></td>
+<td><span>在防守中贏得足夠的墩數，使莊家無法成約。每個缺墩防家得分為 50 分</span></td>
+</tr>
+<tr>
+<td><span>Defence</span></td>
+<td><span>防禦</span></td>
+<td><span>防守方所採用的打法路線</span></td>
+</tr>
+<tr>
+<td><span>Defenders</span></td>
+<td><span>防家</span></td>
+<td><span>兩名對抗莊家的玩家。通常稱為 RHO（右手對手）和 LHO（左手對手）</span></td>
+</tr>
+<tr>
+<td><span>Denomination</span></td>
+<td><span>品相</span></td>
+<td><span>梅花、方塊、紅心、黑桃或無王</span></td>
+</tr>
+<tr>
+<td><span>Discard</span></td>
+<td><span>墊牌</span></td>
+<td><span>當沒有所引花色的牌時，打出另一花色（不是王牌），最好丟出一張可以為搭檔提供有用資訊的牌</span></td>
+</tr>
+<tr>
+<td><span>Double dummy</span></td>
+<td><span>雙夢家</span></td>
+<td><span>看到所有四手牌的最佳打法</span></td>
+</tr>
+<tr>
+<td><span>Doubleton</span></td>
+<td><span>雙張</span></td>
+<td><span>一種花色中持有兩張牌的牌，以較高的牌領先或在較低的牌之前打出較高的牌來表示。</span></td>
+</tr>
+<tr>
+<td><span>Drawing trumps</span></td>
+<td><span>清王牌</span></td>
+<td><span>繼續引王牌，直到對手沒有剩餘 - 這涉及計算所打的牌以確保所有對手王牌都已抽王</span></td>
+</tr>
+<tr>
+<td><span>Ducking (hold-up</span></td>
+<td><span>忍讓/扣住</span></td>
+<td><span>故意保留一張本來可以贏得一墩的大牌</span></td>
+</tr>
+<tr>
+<td><span>Dummy</span></td>
+<td><span>夢家</span></td>
+<td><span>莊家的搭檔，其牌在首引後被攤開</span></td>
+</tr>
+<tr>
+<td><span>Duplicate competition</span></td>
+<td><span>複式競賽</span></td>
+<td><span>每副牌局的結果是透過與同一牌的其他桌分數進行比較來確定的</span></td>
+</tr>
+<tr>
+<td><span>Duplication</span></td>
+<td><span>重複</span></td>
+<td><span>牌型重複是指搭檔中的每種花色的長度相同。牌力重複是指一手的大牌面對同伴手中同花色的大牌，而因張數不夠而浪費，例如 AQ 與 KJ 相對</span></td>
+</tr>
+<tr>
+<td><span>Eight-card fit</span></td>
+<td><span>八張配合</span></td>
+<td><span>合夥人的兩手在同一花色中總共持有八張牌，比敵方的五張有優勢</span></td>
+</tr>
+<tr>
+<td><span>Entry</span></td>
+<td><span>橋引</span></td>
+<td><span>上手張，進張，可進入特定手牌的牌張</span></td>
+</tr>
+<tr>
+<td><span>Establishing</span></td>
+<td><span>建立</span></td>
+<td><span>透過強制逼出敵方大牌將一張或多張特定牌建立成贏張</span></td>
+</tr>
+<tr>
+<td><span>Etiquette and Ethics</span></td>
+<td><span>禮儀與道德</span></td>
+<td><span>橋牌桌上有良好的禮儀和良好的行為</span></td>
+</tr>
+<tr>
+<td><span>Exit</span></td>
+<td><span>脫手</span></td>
+<td><span>透過打出一張你預期對方會贏的牌來「擺脫引牌」－盡量在不放棄不必要的贏墩的情況下這樣做</span></td>
+</tr>
+<tr>
+<td><span>Finesse</span></td>
+<td><span>偷牌</span></td>
+<td><span>一種紙牌遊戲技巧，當對手持有同花色中較高的牌時，試圖用特定的牌贏得一墩牌</span></td>
+</tr>
+<tr>
+<td><span>Fit</span></td>
+<td><span>配合</span></td>
+<td><span>配合是指夥伴中兩手聯合握持任何一套花色。配合是 8 張或更多。雙門配合是指在同一副牌中搭配兩門配合，通常非常有用</span></td>
+</tr>
+<tr>
+<td><span>Flat hand</span></td>
+<td><span>平均牌型</span></td>
+<td><span>特別是 4 3 3 3 分配</span></td>
+</tr>
+<tr>
+<td><span>Following suit</span></td>
+<td><span>跟牌</span></td>
+<td><span>打出與引牌同花色的牌</span></td>
+</tr>
+<tr>
+<td><span>Fourth highest</span></td>
+<td><span>第四高</span></td>
+<td><span>花色中從上數第四張牌的引牌。例如 KJ964 引 6</span></td>
+</tr>
+<tr>
+<td><span>Game</span></td>
+<td><span>成局</span></td>
+<td><span>合約基本分為 100 分或以上的成局合約，即 3NT、4♠、4</span><font color="red"><span>♥</span></font><span>、5</span><font color="red"><span>♦</span></font><span>、5♣</span></td>
+</tr>
+<tr>
+<td><span>Get a count</span></td>
+<td><span>算牌</span></td>
+<td><span>數一數發現看不見的手的分佈</span></td>
+</tr>
+<tr>
+<td><span>Give count</span></td>
+<td><span>給出計數</span></td>
+<td><span>發出張數訊號</span></td>
+</tr>
+<tr>
+<td><span>Go down</span></td>
+<td><span>當掉</span></td>
+<td><span>或 Go Off。得墩比你的目標少</span></td>
+</tr>
+<tr>
+<td><span>High card points</span></td>
+<td><span>大牌點</span></td>
+<td><span>大牌點數如下：ace=4，king=3，queen=2，jack=1。一副牌有 40 個大牌點 (HCP)</span></td>
+</tr>
+<tr>
+<td><span>Honours</span></td>
+<td><span>尊張</span></td>
+<td><span>一門花色中最大的五張牌（A、K、Q、J、10）。</span></td>
+</tr>
+<tr>
+<td><span>Intermediates</span></td>
+<td><span>中間張</span></td>
+<td><span>中間大小的牌，如十、九和八，可能會贏得墩數</span></td>
+</tr>
+<tr>
+<td><span>Laydown</span></td>
+<td><span>攤牌</span></td>
+<td><span>一份非常確定的合約，莊家可以在第一墩就提出宣稱</span></td>
+</tr>
+<tr>
+<td><span>Lead</span></td>
+<td><span>引牌</span></td>
+<td><span>一墩中第一張打出的牌</span></td>
+</tr>
+<tr>
+<td><span>LHO</span></td>
+<td><span>左敵方</span></td>
+<td><span>Left-hand opponent</span></td>
+</tr>
+<tr>
+<td><span>Long suit</span></td>
+<td><span>長門花色</span></td>
+<td><span>同一手中有四張或更多牌的花色</span></td>
+</tr>
+<tr>
+<td><span>Major</span></td>
+<td><span>高花</span></td>
+<td><span>黑桃和紅心，各墩得分為 30 分</span></td>
+</tr>
+<tr>
+<td><span>Minor</span></td>
+<td><span>低花</span></td>
+<td><span>方塊和梅花，每墩得分為 20 分</span></td>
+</tr>
+<tr>
+<td><span>No trumps</span></td>
+<td><span>無王</span></td>
+<td><span>沒有王牌的合約（所引花色中最大的牌總是贏得該墩）</span></td>
+</tr>
+<tr>
+<td><span>Openning lead</span></td>
+<td><span>首引</span></td>
+<td><span>第一墩引出的牌</span></td>
+</tr>
+<tr>
+<td><span>Overtrick</span></td>
+<td><span>超墩</span></td>
+<td><span>莊家所完成的墩數超過合約所需墩數</span></td>
+</tr>
+<tr>
+<td><span>Pair</span></td>
+<td><span>對</span></td>
+<td><span>兩個玩家的夥伴關係</span></td>
+</tr>
+<tr>
+<td><span>Part score</span></td>
+<td><span>部分合約</span></td>
+<td><span>一份至少需要 7 墩的合約</span></td>
+</tr>
+<tr>
+<td><span>Penalty</span></td>
+<td><span>罰分</span></td>
+<td><span>當莊家未能成約時，防守者所獲得的奬分</span></td>
+</tr>
+<tr>
+<td><span>Puppet</span></td>
+<td><span>木偶</span></td>
+<td><span>夢家的替代名稱</span></td>
+</tr>
+<tr>
+<td><span>Quit a trick</span></td>
+<td><span>一墩打完</span></td>
+<td><span>在所有玩家皆打出後，把牌蓋起來完成該墩</span></td>
+</tr>
+<tr>
+<td><span>Revoke</span></td>
+<td><span>應跟未跟</span></td>
+<td><span>在可能的情況下未能打出該花色的牌。如果這墩還沒有打完，可以修正。否則尋求裁判協助</span></td>
+</tr>
+<tr>
+<td><span>RHO</span></td>
+<td><span>右敵方</span></td>
+<td><span>Righr-hand opponent</span></td>
+</tr>
+<tr>
+<td><span>Ruff</span></td>
+<td><span>王吃</span></td>
+<td><span>當所引的旁門花色中沒有牌（缺門了）時，打出王牌</span></td>
+</tr>
+<tr>
+<td><span>Second hand</span></td>
+<td><span>第二家</span></td>
+<td><span>位於目前墩引牌者左邊的玩家，打出該墩的第二張牌。 「二手低」通常是正確的，這意味著第二家通常不會試圖贏得這一墩</span></td>
+</tr>
+<tr>
+<td><span>Sequence</span></td>
+<td><span>連續張</span></td>
+<td><span>三張或更多相同花色的連續號碼牌。例如 J 10 9</span></td>
+</tr>
+<tr>
+<td><span>Side suit</span></td>
+<td><span>旁門花色</span></td>
+<td><span>王牌以外的任何花色</span></td>
+</tr>
+<tr>
+<td><span>Singleton</span></td>
+<td><span>單張</span></td>
+<td><span>僅持有特定花色中的一張牌</span></td>
+</tr>
+<tr>
+<td><span>Slam</span></td>
+<td><span>滿貫</span></td>
+<td><span>一副叫到並完成12或13墩的合約。或者，可以將滿貫合約引入 Minibridge，除了成局獎金之外還可以獲得 500 點的額外滿貫獎分</span></td>
+</tr>
+<tr>
+<td><span>Stopper</span></td>
+<td><span>擋張</span></td>
+<td><span>一張或多張牌，在一套花色中，可以防止對手吃通該花色（將所有花色兌現為贏墩）。亦稱護衛(Guard)</span></td>
+</tr>
+<tr>
+<td><span>Tenace</span></td>
+<td><span>卡張</span></td>
+<td><span>一種花色中的牌組合，它不是連續張，因為存在間隙，例如AQ或KJ10</span></td>
+</tr>
+<tr>
+<td><span>Third hand</span></td>
+<td><span>第三家</span></td>
+<td><span>引出該墩之玩家的搭檔，通常是「第三手高」</span></td>
+</tr>
+<tr>
+<td><span>Trick</span></td>
+<td><span>墩</span></td>
+<td><span>四張牌，每位玩家順時針方向打一張</span></td>
+</tr>
+<tr>
+<td><span>Trump</span></td>
+<td><span>王牌</span></td>
+<td><span>被莊家指定作為王牌的一門花色</span></td>
+</tr>
+<tr>
+<td><span>Unbalanced hand</span></td>
+<td><span>不平均牌型</span></td>
+<td><span>包含一個缺門或單張或兩個雙張</span></td>
+</tr>
+<tr>
+<td><span>Void</span></td>
+<td><span>缺門</span></td>
+<td><span>未持有特定花色的牌</span></td>
+</tr>
+<tr>
+<td><span>Wide open</span></td>
+<td><span>洞開</span></td>
+<td><span>一種花色，莊家在打無王時沒有擋張</span></td>
+</tr>
+<tr>
+<td><span>Winners</span></td>
+<td><span>贏張</span></td>
+<td><span>可以合理預期贏得墩數的牌張</span></td>
+</tr>
+<tr>
+<td><span>x</span></td>
+<td></td>
+<td><span>用來描述不重要的小牌，例如AKxx</span></td>
+</tr>
+<tr>
+<td><span>Yarborough</span></td>
+<td><span>雅伯樂</span></td>
+<td><span>一手牌，沒有一張牌大於 9  且牌型平均</span></td>
+</tr>
+</tbody>
+</table></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#EBU-迷你橋牌教師手冊" title="EBU 迷你橋牌教師手冊">EBU 迷你橋牌教師手冊</a><ul class="nav">
+<li><a href="#介紹" title="介紹">介紹</a><ul class="nav">
+<li><a href="#什麼是迷你橋？" title="什麼是迷你橋？">什麼是迷你橋？</a></li>
+<li><a href="#教育輔助" title="教育輔助">教育輔助</a></li>
+<li><a href="#如何使用本手冊" title="如何使用本手冊">如何使用本手冊</a></li>
+<li><a href="#迷你橋軟體" title="迷你橋軟體">迷你橋軟體</a></li>
+<li><a href="#英語橋聯盟的支持" title="英語橋聯盟的支持">英語橋聯盟的支持</a></li>
+</ul>
+</li>
+<li><a href="#如何玩迷你橋牌" title="如何玩迷你橋牌">如何玩迷你橋牌</a><ul class="nav">
+<li><a href="#遊戲概要" title="遊戲概要">遊戲概要</a></li>
+</ul>
+</li>
+<li><a href="#Minibridge-中的步驟" title="Minibridge 中的步驟">Minibridge 中的步驟</a></li>
+<li><a href="#迷你橋牌計分" title="迷你橋牌計分">迷你橋牌計分</a></li>
+</ul>
+</li>
+<li><a href="#教學迷你橋" title="教學迷你橋">教學迷你橋</a><ul class="nav">
+<li><a href="#1基礎知識" title="1.基礎知識">1.基礎知識</a><ul class="nav">
+<li><a href="#教學技巧" title="教學技巧">教學技巧</a></li>
+<li><a href="#只使用部分牌" title="只使用部分牌">只使用部分牌</a></li>
+<li><a href="#理牌" title="理牌">理牌</a></li>
+<li><a href="#贏取墩" title="贏取墩">贏取墩</a></li>
+</ul>
+</li>
+<li><a href="#2以夥伴方式玩" title="2.以夥伴方式玩">2.以夥伴方式玩</a><ul class="nav">
+<li><a href="#教學技巧1" title="教學技巧">教學技巧</a></li>
+<li><a href="#夥伴關係遊戲" title="夥伴關係遊戲">夥伴關係遊戲</a></li>
+<li><a href="#打過的牌" title="打過的牌">打過的牌</a></li>
+<li><a href="#一副打完計算贏墩" title="一副打完計算贏墩">一副打完計算贏墩</a></li>
+</ul>
+</li>
+<li><a href="#3獲取贏墩" title="3.獲取贏墩">3.獲取贏墩</a><ul class="nav">
+<li><a href="#教學技巧2" title="教學技巧">教學技巧</a></li>
+<li><a href="#尊牌" title="尊牌">尊牌</a></li>
+<li><a href="#花色長度" title="花色長度">花色長度</a></li>
+<li><a href="#保持引牌優勢" title="保持引牌優勢">保持引牌優勢</a></li>
+</ul>
+</li>
+<li><a href="#4開始迷你橋" title="4.開始迷你橋">4.開始迷你橋</a><ul class="nav">
+<li><a href="#教學技巧3" title="教學技巧">教學技巧</a></li>
+<li><a href="#計算大牌點數" title="計算大牌點數">計算大牌點數</a></li>
+<li><a href="#決定誰是誰來進行交易" title="決定誰是誰來進行交易">決定誰是誰來進行交易</a></li>
+<li><a href="#夢家" title="夢家">夢家</a></li>
+<li><a href="#打牌" title="打牌">打牌</a></li>
+<li><a href="#記錄贏取的墩數" title="記錄贏取的墩數">記錄贏取的墩數</a></li>
+<li><a href="#防守" title="防守">防守</a></li>
+<li><a href="#簡單計分" title="簡單計分">簡單計分</a></li>
+</ul>
+</li>
+<li><a href="#5長套的價值" title="5.長套的價值">5.長套的價值</a><ul class="nav">
+<li><a href="#教學技巧4" title="教學技巧">教學技巧</a></li>
+<li><a href="#長套" title="長套">長套</a></li>
+<li><a href="#計算預期的贏墩數" title="計算預期的贏墩數">計算預期的贏墩數</a></li>
+<li><a href="#建立贏墩" title="建立贏墩">建立贏墩</a></li>
+<li><a href="#首引-Opening-Lead" title="首引 (Opening Lead)">首引 (Opening Lead)</a></li>
+</ul>
+</li>
+<li><a href="#6王牌" title="6.王牌">6.王牌</a><ul class="nav">
+<li><a href="#教學技巧5" title="教學技巧">教學技巧</a></li>
+<li><a href="#打王牌合約" title="打王牌合約">打王牌合約</a></li>
+<li><a href="#哪種花色應該作為王牌？" title="哪種花色應該作為王牌？">哪種花色應該作為王牌？</a></li>
+<li><a href="#清王牌" title="清王牌">清王牌</a></li>
+</ul>
+</li>
+<li><a href="#7成局合約" title="7.成局合約">7.成局合約</a><ul class="nav">
+<li><a href="#教學技巧6" title="教學技巧">教學技巧</a></li>
+<li><a href="#Minibridge-計分方式" title="Minibridge 計分方式">Minibridge 計分方式</a></li>
+<li><a href="#嘗試成局" title="嘗試成局">嘗試成局</a></li>
+</ul>
+</li>
+<li><a href="#8莊家打法" title="8.莊家打法">8.莊家打法</a><ul class="nav">
+<li><a href="#教學技巧7" title="教學技巧">教學技巧</a></li>
+<li><a href="#計劃打法" title="計劃打法">計劃打法</a></li>
+<li><a href="#避免阻塞-blockages" title="避免阻塞 (blockages)">避免阻塞 (blockages)</a></li>
+<li><a href="#關注上手張" title="關注上手張">關注上手張</a></li>
+</ul>
+</li>
+<li><a href="#9競爭性的比賽" title="9.競爭性的比賽">9.競爭性的比賽</a><ul class="nav">
+<li><a href="#教學技巧8" title="教學技巧">教學技巧</a></li>
+<li><a href="#來場比賽怎麼樣？" title="來場比賽怎麼樣？">來場比賽怎麼樣？</a></li>
+<li><a href="#讓夢家參與其中" title="讓夢家參與其中">讓夢家參與其中</a></li>
+<li><a href="#禮儀" title="禮儀">禮儀</a></li>
+</ul>
+</li>
+<li><a href="#10計數、記憶和定位大牌點" title="10.計數、記憶和定位大牌點">10.計數、記憶和定位大牌點</a><ul class="nav">
+<li><a href="#教學技巧9" title="教學技巧">教學技巧</a></li>
+<li><a href="#計算點數" title="計算點數">計算點數</a></li>
+<li><a href="#使用有關大牌位置的信息" title="使用有關大牌位置的信息">使用有關大牌位置的信息</a></li>
+</ul>
+</li>
+<li><a href="#11首引" title="11.首引">11.首引</a><ul class="nav">
+<li><a href="#教學技巧10" title="教學技巧">教學技巧</a></li>
+<li><a href="#選擇引牌的花色" title="選擇引牌的花色">選擇引牌的花色</a></li>
+<li><a href="#選擇要引的牌張" title="選擇要引的牌張">選擇要引的牌張</a></li>
+<li><a href="#回引合作夥伴的引的花色" title="回引合作夥伴的引的花色">回引合作夥伴的引的花色</a></li>
+</ul>
+</li>
+<li><a href="#12防守戰術" title="12.防守戰術">12.防守戰術</a><ul class="nav">
+<li><a href="#教學技巧11" title="教學技巧">教學技巧</a></li>
+<li><a href="#在第三家打出手中正確的牌" title="在第三家打出手中正確的牌">在第三家打出手中正確的牌</a></li>
+<li><a href="#其他防禦訊號" title="其他防禦訊號">其他防禦訊號</a></li>
+<li><a href="#態度訊號" title="態度訊號">態度訊號</a></li>
+<li><a href="#花色長度訊號" title="花色長度訊號">花色長度訊號</a></li>
+</ul>
+</li>
+<li><a href="#練習1" title="練習1">練習1</a></li>
+<li><a href="#啟動-Minibridge" title="啟動 Minibridge">啟動 Minibridge</a></li>
+<li><a href="#練習2" title="練習2">練習2</a></li>
+<li><a href="#計算贏墩" title="計算贏墩">計算贏墩</a></li>
+<li><a href="#練習3" title="練習3">練習3</a></li>
+<li><a href="#MINIBRIDGE-計分" title="MINIBRIDGE 計分">MINIBRIDGE 計分</a></li>
+<li><a href="#練習4" title="練習4">練習4</a></li>
+<li><a href="#計畫主打" title="計畫主打">計畫主打</a></li>
+<li><a href="#練習5" title="練習5">練習5</a></li>
+<li><a href="#首引什麼？" title="首引什麼？">首引什麼？</a></li>
+<li><a href="#練習6" title="練習6">練習6</a></li>
+<li><a href="#發現合作夥伴的牌張" title="發現合作夥伴的牌張">發現合作夥伴的牌張</a></li>
+<li><a href="#練習7" title="練習7">練習7</a></li>
+<li><a href="#同伴引牌你應該打什麼？" title="同伴引牌你應該打什麼？">同伴引牌你應該打什麼？</a></li>
+</ul>
+</li>
+<li><a href="#練習牌例" title="練習牌例">練習牌例</a><ul class="nav">
+<li><a href="#1-王牌長度好過王牌強度" title="1-王牌長度好過王牌強度">1-王牌長度好過王牌強度</a></li>
+<li><a href="#2-無王總是比低花合約得分多" title="2-無王總是比低花合約得分多">2-無王總是比低花合約得分多</a></li>
+<li><a href="#3-但有時必須打低花合約" title="3-但有時必須打低花合約">3-但有時必須打低花合約</a></li>
+<li><a href="#4-無王合約，放棄一墩以建立花色" title="4-無王合約，放棄一墩以建立花色">4-無王合約，放棄一墩以建立花色</a></li>
+<li><a href="#5-無王合約，留意上手張" title="5-無王合約，留意上手張">5-無王合約，留意上手張</a></li>
+<li><a href="#6-無王合約，避免阻塞" title="6-無王合約，避免阻塞">6-無王合約，避免阻塞</a></li>
+<li><a href="#7-王牌合約，避免阻塞" title="7-王牌合約，避免阻塞">7-王牌合約，避免阻塞</a></li>
+<li><a href="#8-當少4張牌時擊落Q" title="8-當少4張牌時擊落Q">8-當少4張牌時擊落Q</a></li>
+<li><a href="#9-王牌合約，建立贏張" title="9-王牌合約，建立贏張">9-王牌合約，建立贏張</a></li>
+<li><a href="#10-防守時建立贏張" title="10-防守時建立贏張">10-防守時建立贏張</a></li>
+<li><a href="#11-找到最佳的首引" title="11-找到最佳的首引">11-找到最佳的首引</a></li>
+<li><a href="#12-找到轉攻及防禦信號" title="12-找到轉攻及防禦信號">12-找到轉攻及防禦信號</a></li>
+<li><a href="#使用-MiniBridge-軟體" title="使用 MiniBridge 軟體">使用 MiniBridge 軟體</a></li>
+</ul>
+</li>
+<li><a href="#迷你橋牌術語表" title="迷你橋牌術語表">迷你橋牌術語表</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a href="#EBU-迷你橋牌教師手冊" title="EBU 迷你橋牌教師手冊">EBU 迷你橋牌教師手冊</a><ul class="nav">
+<li><a href="#介紹" title="介紹">介紹</a><ul class="nav">
+<li><a href="#什麼是迷你橋？" title="什麼是迷你橋？">什麼是迷你橋？</a></li>
+<li><a href="#教育輔助" title="教育輔助">教育輔助</a></li>
+<li><a href="#如何使用本手冊" title="如何使用本手冊">如何使用本手冊</a></li>
+<li><a href="#迷你橋軟體" title="迷你橋軟體">迷你橋軟體</a></li>
+<li><a href="#英語橋聯盟的支持" title="英語橋聯盟的支持">英語橋聯盟的支持</a></li>
+</ul>
+</li>
+<li><a href="#如何玩迷你橋牌" title="如何玩迷你橋牌">如何玩迷你橋牌</a><ul class="nav">
+<li><a href="#遊戲概要" title="遊戲概要">遊戲概要</a></li>
+</ul>
+</li>
+<li><a href="#Minibridge-中的步驟" title="Minibridge 中的步驟">Minibridge 中的步驟</a></li>
+<li><a href="#迷你橋牌計分" title="迷你橋牌計分">迷你橋牌計分</a></li>
+</ul>
+</li>
+<li><a href="#教學迷你橋" title="教學迷你橋">教學迷你橋</a><ul class="nav">
+<li><a href="#1基礎知識" title="1.基礎知識">1.基礎知識</a><ul class="nav">
+<li><a href="#教學技巧" title="教學技巧">教學技巧</a></li>
+<li><a href="#只使用部分牌" title="只使用部分牌">只使用部分牌</a></li>
+<li><a href="#理牌" title="理牌">理牌</a></li>
+<li><a href="#贏取墩" title="贏取墩">贏取墩</a></li>
+</ul>
+</li>
+<li><a href="#2以夥伴方式玩" title="2.以夥伴方式玩">2.以夥伴方式玩</a><ul class="nav">
+<li><a href="#教學技巧1" title="教學技巧">教學技巧</a></li>
+<li><a href="#夥伴關係遊戲" title="夥伴關係遊戲">夥伴關係遊戲</a></li>
+<li><a href="#打過的牌" title="打過的牌">打過的牌</a></li>
+<li><a href="#一副打完計算贏墩" title="一副打完計算贏墩">一副打完計算贏墩</a></li>
+</ul>
+</li>
+<li><a href="#3獲取贏墩" title="3.獲取贏墩">3.獲取贏墩</a><ul class="nav">
+<li><a href="#教學技巧2" title="教學技巧">教學技巧</a></li>
+<li><a href="#尊牌" title="尊牌">尊牌</a></li>
+<li><a href="#花色長度" title="花色長度">花色長度</a></li>
+<li><a href="#保持引牌優勢" title="保持引牌優勢">保持引牌優勢</a></li>
+</ul>
+</li>
+<li><a href="#4開始迷你橋" title="4.開始迷你橋">4.開始迷你橋</a><ul class="nav">
+<li><a href="#教學技巧3" title="教學技巧">教學技巧</a></li>
+<li><a href="#計算大牌點數" title="計算大牌點數">計算大牌點數</a></li>
+<li><a href="#決定誰是誰來進行交易" title="決定誰是誰來進行交易">決定誰是誰來進行交易</a></li>
+<li><a href="#夢家" title="夢家">夢家</a></li>
+<li><a href="#打牌" title="打牌">打牌</a></li>
+<li><a href="#記錄贏取的墩數" title="記錄贏取的墩數">記錄贏取的墩數</a></li>
+<li><a href="#防守" title="防守">防守</a></li>
+<li><a href="#簡單計分" title="簡單計分">簡單計分</a></li>
+</ul>
+</li>
+<li><a href="#5長套的價值" title="5.長套的價值">5.長套的價值</a><ul class="nav">
+<li><a href="#教學技巧4" title="教學技巧">教學技巧</a></li>
+<li><a href="#長套" title="長套">長套</a></li>
+<li><a href="#計算預期的贏墩數" title="計算預期的贏墩數">計算預期的贏墩數</a></li>
+<li><a href="#建立贏墩" title="建立贏墩">建立贏墩</a></li>
+<li><a href="#首引-Opening-Lead" title="首引 (Opening Lead)">首引 (Opening Lead)</a></li>
+</ul>
+</li>
+<li><a href="#6王牌" title="6.王牌">6.王牌</a><ul class="nav">
+<li><a href="#教學技巧5" title="教學技巧">教學技巧</a></li>
+<li><a href="#打王牌合約" title="打王牌合約">打王牌合約</a></li>
+<li><a href="#哪種花色應該作為王牌？" title="哪種花色應該作為王牌？">哪種花色應該作為王牌？</a></li>
+<li><a href="#清王牌" title="清王牌">清王牌</a></li>
+</ul>
+</li>
+<li><a href="#7成局合約" title="7.成局合約">7.成局合約</a><ul class="nav">
+<li><a href="#教學技巧6" title="教學技巧">教學技巧</a></li>
+<li><a href="#Minibridge-計分方式" title="Minibridge 計分方式">Minibridge 計分方式</a></li>
+<li><a href="#嘗試成局" title="嘗試成局">嘗試成局</a></li>
+</ul>
+</li>
+<li><a href="#8莊家打法" title="8.莊家打法">8.莊家打法</a><ul class="nav">
+<li><a href="#教學技巧7" title="教學技巧">教學技巧</a></li>
+<li><a href="#計劃打法" title="計劃打法">計劃打法</a></li>
+<li><a href="#避免阻塞-blockages" title="避免阻塞 (blockages)">避免阻塞 (blockages)</a></li>
+<li><a href="#關注上手張" title="關注上手張">關注上手張</a></li>
+</ul>
+</li>
+<li><a href="#9競爭性的比賽" title="9.競爭性的比賽">9.競爭性的比賽</a><ul class="nav">
+<li><a href="#教學技巧8" title="教學技巧">教學技巧</a></li>
+<li><a href="#來場比賽怎麼樣？" title="來場比賽怎麼樣？">來場比賽怎麼樣？</a></li>
+<li><a href="#讓夢家參與其中" title="讓夢家參與其中">讓夢家參與其中</a></li>
+<li><a href="#禮儀" title="禮儀">禮儀</a></li>
+</ul>
+</li>
+<li><a href="#10計數、記憶和定位大牌點" title="10.計數、記憶和定位大牌點">10.計數、記憶和定位大牌點</a><ul class="nav">
+<li><a href="#教學技巧9" title="教學技巧">教學技巧</a></li>
+<li><a href="#計算點數" title="計算點數">計算點數</a></li>
+<li><a href="#使用有關大牌位置的信息" title="使用有關大牌位置的信息">使用有關大牌位置的信息</a></li>
+</ul>
+</li>
+<li><a href="#11首引" title="11.首引">11.首引</a><ul class="nav">
+<li><a href="#教學技巧10" title="教學技巧">教學技巧</a></li>
+<li><a href="#選擇引牌的花色" title="選擇引牌的花色">選擇引牌的花色</a></li>
+<li><a href="#選擇要引的牌張" title="選擇要引的牌張">選擇要引的牌張</a></li>
+<li><a href="#回引合作夥伴的引的花色" title="回引合作夥伴的引的花色">回引合作夥伴的引的花色</a></li>
+</ul>
+</li>
+<li><a href="#12防守戰術" title="12.防守戰術">12.防守戰術</a><ul class="nav">
+<li><a href="#教學技巧11" title="教學技巧">教學技巧</a></li>
+<li><a href="#在第三家打出手中正確的牌" title="在第三家打出手中正確的牌">在第三家打出手中正確的牌</a></li>
+<li><a href="#其他防禦訊號" title="其他防禦訊號">其他防禦訊號</a></li>
+<li><a href="#態度訊號" title="態度訊號">態度訊號</a></li>
+<li><a href="#花色長度訊號" title="花色長度訊號">花色長度訊號</a></li>
+</ul>
+</li>
+<li><a href="#練習1" title="練習1">練習1</a></li>
+<li><a href="#啟動-Minibridge" title="啟動 Minibridge">啟動 Minibridge</a></li>
+<li><a href="#練習2" title="練習2">練習2</a></li>
+<li><a href="#計算贏墩" title="計算贏墩">計算贏墩</a></li>
+<li><a href="#練習3" title="練習3">練習3</a></li>
+<li><a href="#MINIBRIDGE-計分" title="MINIBRIDGE 計分">MINIBRIDGE 計分</a></li>
+<li><a href="#練習4" title="練習4">練習4</a></li>
+<li><a href="#計畫主打" title="計畫主打">計畫主打</a></li>
+<li><a href="#練習5" title="練習5">練習5</a></li>
+<li><a href="#首引什麼？" title="首引什麼？">首引什麼？</a></li>
+<li><a href="#練習6" title="練習6">練習6</a></li>
+<li><a href="#發現合作夥伴的牌張" title="發現合作夥伴的牌張">發現合作夥伴的牌張</a></li>
+<li><a href="#練習7" title="練習7">練習7</a></li>
+<li><a href="#同伴引牌你應該打什麼？" title="同伴引牌你應該打什麼？">同伴引牌你應該打什麼？</a></li>
+</ul>
+</li>
+<li><a href="#練習牌例" title="練習牌例">練習牌例</a><ul class="nav">
+<li><a href="#1-王牌長度好過王牌強度" title="1-王牌長度好過王牌強度">1-王牌長度好過王牌強度</a></li>
+<li><a href="#2-無王總是比低花合約得分多" title="2-無王總是比低花合約得分多">2-無王總是比低花合約得分多</a></li>
+<li><a href="#3-但有時必須打低花合約" title="3-但有時必須打低花合約">3-但有時必須打低花合約</a></li>
+<li><a href="#4-無王合約，放棄一墩以建立花色" title="4-無王合約，放棄一墩以建立花色">4-無王合約，放棄一墩以建立花色</a></li>
+<li><a href="#5-無王合約，留意上手張" title="5-無王合約，留意上手張">5-無王合約，留意上手張</a></li>
+<li><a href="#6-無王合約，避免阻塞" title="6-無王合約，避免阻塞">6-無王合約，避免阻塞</a></li>
+<li><a href="#7-王牌合約，避免阻塞" title="7-王牌合約，避免阻塞">7-王牌合約，避免阻塞</a></li>
+<li><a href="#8-當少4張牌時擊落Q" title="8-當少4張牌時擊落Q">8-當少4張牌時擊落Q</a></li>
+<li><a href="#9-王牌合約，建立贏張" title="9-王牌合約，建立贏張">9-王牌合約，建立贏張</a></li>
+<li><a href="#10-防守時建立贏張" title="10-防守時建立贏張">10-防守時建立贏張</a></li>
+<li><a href="#11-找到最佳的首引" title="11-找到最佳的首引">11-找到最佳的首引</a></li>
+<li><a href="#12-找到轉攻及防禦信號" title="12-找到轉攻及防禦信號">12-找到轉攻及防禦信號</a></li>
+<li><a href="#使用-MiniBridge-軟體" title="使用 MiniBridge 軟體">使用 MiniBridge 軟體</a></li>
+</ul>
+</li>
+<li><a href="#迷你橋牌術語表" title="迷你橋牌術語表">迷你橋牌術語表</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

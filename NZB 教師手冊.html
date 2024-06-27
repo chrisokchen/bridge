@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        NZB 教師手冊 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="NZB-教師手冊" data-id="NZB-教師手冊"><a class="anchor hidden-xs" href="#NZB-教師手冊" title="NZB-教師手冊"><span class="octicon octicon-link"></span></a><span>NZB 教師手冊</span></h1><p><a href="https://www.nzbridge.co.nz/user/inline/1655/Teacher%27s%20Manual%202015.pdf" target="_blank" rel="noopener"><span>Teacher's Manual</span></a></p><p><a href="https://www.nzbridge.co.nz/teaching-materials.html" target="_blank" rel="noopener"><span>TEACHING MATERIALS - BEGINNERS</span></a></p><h2 id="整體教學理念" data-id="整體教學理念"><a class="anchor hidden-xs" href="#整體教學理念" title="整體教學理念"><span class="octicon octicon-link"></span></a><span>整體教學理念</span></h2><p><span>本教學手冊主要針對初學者課程。 每個模組都是獨立的，如果願意，可以按照稍微不同的順序進行教學。 請注意確保修改後的格式按邏輯順序排列。</span><br>
+<span>教導初學者必須有趣——也必須盡可能簡單。</span><br>
+<span>如果你在笑，享受自己，並讓初學者也能享受到樂趣，那麼它就會具有感染力。 他們也會玩得很開心。</span><br>
+<span>從開始課程開始，您有 3 到 4 個月的時間來教授基礎知識並讓他們熟悉遊戲。</span><br>
+<span>橋牌是一款非常棒的遊戲，並且會自我推銷。 如果您在這個關鍵時期取得成功，您將擁有終身會員。</span><br>
+<span>不要想像一個成熟的橋牌選手會從你的班級中脫穎而出。 你所能做的就是讓他們充滿熱情和著迷，這樣他們就會繼續玩下去。</span><br>
+<span>太多的資訊可能會讓人完全反感。 一開始就告訴全班同學你只會教基礎知識。 試著鼓勵初學者在上課期間只聽老師的講話。</span><br>
+<span>橋牌老師最糟糕的朋友之一是以前學過橋牌並認為自己可以提供幫助的配偶/朋友！</span><br>
+<span>儘早讓現有的俱樂部會員參與進來，特別是在初學者將要參加的會議上。 告訴他們已經出現的數字，告訴他們他們的進展。 讓他們感覺自己是課程的一部分，即使他們不是。</span></p><h2 id="留住新玩家" data-id="留住新玩家"><a class="anchor hidden-xs" href="#留住新玩家" title="留住新玩家"><span class="octicon octicon-link"></span></a><span>留住新玩家</span></h2><ul>
+<li>
+<p><span>介紹</span><br>
+<span>橋牌課程和打牌練習僅佔留住新會員任務的 20%。 接下來的 80% 取決於俱樂部如何處理將新玩家引入俱樂部的情況。</span><br>
+<span>不幸的是，許多新玩家因一些俱樂部會員的不可接受的行為而「望而卻步」。 俱樂部需要控制橋桌上的粗魯行為。 他們應對粗魯行為採取「零容忍」。</span><br>
+<span>幫助初學者度過接下來幾週的是友善、善意和鼓勵。 在您向初學者介紹的會話中提醒玩家，他們有責任讓新玩家感到舒適的歡迎，最重要的是，讓新玩家不受威脅。</span><br>
+<span>為初學者課程選擇最有幫助和最耐心的導員或裁判 (Director)。</span><br>
+<span>該裁判應該參加一節課並解釋他的角色 - 他應該告訴全班：</span><br>
+<span>▪ 他是朋友而不是批評者</span><br>
+<span>▪ 他比球員更了解規則－他是比賽的主裁/裁判</span><br>
+<span>▪ 要求裁判做出裁決是正常做法</span><br>
+<span>老牌選手不應因新選手的輕微違規行為而向裁判舉報。</span><br>
+<span>不要指望初學者一開始就能以每次 24+ 牌的正常速度進行遊戲。 玩 16 到 22 牌會更現實。</span></p>
+</li>
+<li>
+<p><span>將初學者引入更大的俱樂部</span><br>
+<span>將他們作為一個單獨的小組進行比賽，直到球員們準備好加入俱樂部的其餘部分。</span><br>
+<span>允許備忘單(cheat sheets)使用至少幾個月。 使用備忘單可能會佔用額外的時間—受監督的會話可能會更快、更容易管理。</span></p>
+</li>
+<li>
+<p><span>將初學者引入較小的俱樂部</span><br>
+<span>如果小俱樂部只有一個房間，他們很可能會在單獨的晚上/會議上授課。</span><br>
+<span>課程結束時，初學者將參加常規的牌賽。 重要的是讓他們作為一個單獨的群體，直到他們準備好加入其他玩家。 在此期間可以使用備忘單。</span><br>
+<span>新加入例行賽的玩家可以穿戴「L牌」("L plate")來彰顯自己的身分。 希望老玩家能夠忽視輕微的違規行為，對新玩家給予鼓勵和讚美。</span></p>
+</li>
+<li>
+<p><span>其他舉措</span><br>
+<span>當俱樂部引入新球員時，召集人或裁判將介紹新球員，並提醒現有會員鼓勵和友好。</span><br>
+<span>第一個晚上實際上是初學者的畢業之夜，所以讓這個晚上成為一個有趣和快樂的夜晚 - 吃點東西、喝點東西或吃點晚飯，例如吃點東西怎麼樣？ 鬆餅或餅乾。</span><br>
+<span>最初，讓初學者坐在東/西位置，這樣他們就不必計分。 這樣做的時間有限，因為他們確實需要同時學習計分和比賽。</span><br>
+<span>為任何希望重複全部或部分初學者課程的俱樂部會員提供免費課程。</span><br>
+<span>為初學者舉辦有監督的課程－仔細選擇你的助手！</span><br>
+<span>為初學者和中級人員舉辦簡單的研討會和持續課程。</span><br>
+<span>將這些社交/研討會會議限制在大約兩個小時。 這將使參與者有時間進行社交。</span><br>
+<span>將新玩家溶入俱樂部的建議是舉辦個別（無特約）賽。 這需要仔細的組織，但如果成功的話，這是整合新成員的好方法。</span><br>
+<span>如果您的俱樂部決定使用導師來幫助新球員，請務必小心挑選他們 - 不要要求志工。 選擇耐心和熱情的導師－與橋牌能力無關！</span></p>
+</li>
+</ul><h2 id="初學者課程廣告" data-id="初學者課程廣告"><a class="anchor hidden-xs" href="#初學者課程廣告" title="初學者課程廣告"><span class="octicon octicon-link"></span></a><span>初學者課程廣告</span></h2><ul>
+<li>
+<p><span>介紹</span><br>
+<span>讓新成員加入您的初學者課程並不容易。 俱樂部需要嘗試盡可能多的方式向更廣泛的公眾傳達他們的訊息。 以下是紐西蘭各地俱樂部使用的一些想法。 廣告活動的合適長度約為 4 至 6 週。 在適當的情況下，附錄中有海報、傳單、信箱、各種描述的廣告等範例</span></p>
+</li>
+<li>
+<p><span>廣播廣告</span><br>
+<span>使用社區廣播電台的免費廣告部分。 有些電台也會為您的課程投放付費廣告，但成本可能是一個問題。</span><br>
+<span>另外，有些電台確實為俱樂部/社團提供更便宜的短廣告費率。</span></p>
+</li>
+<li>
+<p><span>報紙廣告</span><br>
+<span>選擇投放此廣告的最佳日期 - 例如週六和/或週三晚上。</span><br>
+<span>如果資金是一個問題，請在活動的第一周和/或最後一周做廣告。</span><br>
+<span>您所在地區的免費社區報紙很樂意免費刊登俱樂部廣告。 在您準備宣傳您的初學者課程的同時嘗試獲取這篇文章。</span><br>
+<span>▪ 此廣告可以用於課程或只是宣傳您的俱樂部聚會時間。</span><br>
+<span>▪ 他們總是熱衷於獲取內容，並且會寫一篇關於您的俱樂部的文章（帶照片）。</span><br>
+<span>有些報紙進行「加入俱樂部」促銷活動。 詢問您當地的付費或免費報紙是否有此內容，並確保提及您的俱樂部。</span><br>
+<span>將您的課程廣告製作成折價券的形式。</span></p>
+</li>
+<li>
+<p><span>海報展示</span><br>
+<span>設計彩色海報（A4 和 A3 尺寸）並列印或影印到彩色紙上。</span><br>
+<span>您的許多俱樂部成員都會有生意，屬於其他俱樂部/社團或在學校工作，並且應該能夠協助將海報張貼到這些地方。</span><br>
+<span>計劃放置這些海報的位置，例如</span><br>
+<span>▪ 購物區/中心和商場</span><br>
+<span>▪ 退休村/養老院</span><br>
+<span>▪ 高爾夫、保齡球和其他運動俱樂部佈告欄</span><br>
+<span>▪ 超商公告欄</span><br>
+<span>▪ 圖書館、企業與社區佈告欄</span><br>
+<span>▪ 學校教職員室佈告欄</span><br>
+<span>▪ 服務俱樂部，例如 Probus、Over 60's、Zonta、Lions 等</span><br>
+<span>▪ 醫生、牙醫、會計師和其他專業實踐</span></p>
+</li>
+<li>
+<p><span>郵箱投遞－在較小的社區中可能更成功</span><br>
+<span>設計並列印用於郵箱投遞的講義（最大 A5 尺寸）。 俱樂部會員可以在遛狗或運動時完成這項工作。</span><br>
+<span>將 100 至 200 份小冊子紮成一捆，供會員收集。</span><br>
+<span>制定城鎮或社區的街道規劃，並在成員領取小冊子分發時突出顯示所覆蓋的區域。</span></p>
+</li>
+<li>
+<p><span>提供促銷傳單來宣傳您的課程和俱樂部</span><br>
+<span>它們可以放置在當地城鎮/市立圖書館和資訊辦公室。</span><br>
+<span>一些城鎮/城市設有旅遊辦公室 - 詢問是否可以留下傳單給他們。</span><br>
+<span>許多飯店/汽車旅館喜歡有這樣的傳單供客人領取。</span></p>
+</li>
+<li>
+<p><span>製作有關您的橋牌俱樂部的 PowerPoint 簡報</span><br>
+<span>這適用於有公共電視的地方，例如圖書館。 它必須簡短而切中要點，可以包括打橋牌的名人的評論、有關健康益處的評論以及您認為可能感興趣的任何內容。</span></p>
+</li>
+<li>
+<p><span>面對面推廣</span><br>
+<span>允許俱樂部會員為朋友和家人攜帶俱樂部宣傳單張。</span><br>
+<span>要求會員宣傳即將舉行的初學者課程 - 也許提供獎勵。</span><br>
+<span>如果您的俱樂部有的話，請在俱樂部通訊中加入通知。</span><br>
+<span>將此通知放置在俱樂部網站的顯眼位置。</span><br>
+<span>俱樂部計劃應包括初學者課程的日期。</span></p>
+</li>
+<li>
+<p><span>您當地的區域委員會可以協助推廣其所在地區的俱樂部</span><br>
+<span>它可以在該地區所有免費社區報紙上刊登廣告，列出俱樂部、聯絡資訊和地址。</span><br>
+<span>詢問您是否可以在地區網站上投放廣告——如果有的話。</span></p>
+</li>
+</ul><h2 id="橋牌教學資源" data-id="橋牌教學資源"><a class="anchor hidden-xs" href="#橋牌教學資源" title="橋牌教學資源"><span class="octicon octicon-link"></span></a><span>橋牌教學資源</span></h2><ul>
+<li>
+<p><span>介紹</span><br>
+<span>橋牌我們需要教什麼？ – 合適的人員、宜人的環境、可以寫字的黑板，當然還有卡片和筆記。</span><br>
+<span>俱樂部沒有必要提供下面列出的所有物品，但希望它們有助於讓您的課程更順利。</span></p>
+</li>
+<li>
+<p><span>人員選項</span><br>
+<span>無論俱樂部的規模如何，我們強烈建議俱樂部會員協助俱樂部秘書完成與初學者課程相關的許多行政任務。</span></p>
+</li>
+</ul><p><span>老師－你不需要成為優秀的橋牌手才能教好橋牌，只要你有紮實的基礎知識即可。 擁有友善的個性和對遊戲的熱情更為重要。</span></p><p><span>教師助理－可以在以下領域為教師提供幫助的成員：</span><br>
+<span>▪ 湊齊人數，使每桌有 4 個人</span><br>
+<span>▪ 在大班中幫助學生時遵循老師的指示</span><br>
+<span>▪ 協助老師處理事務</span></p><p><span>對老師的行政支援——讓俱樂部中的其他人透過聯繫/招收學生、開始時收錢、列印姓名標籤、編制電話清單和電子郵件地址來減輕老師的壓力是非常有幫助的。</span><br>
+<span>此支援人員可以負責出勤登記。 登記冊應包含姓名、地址、電話號碼和電子郵件地址的完整清單。 如果有人缺席，請打電話給該人以找出原因。</span><br>
+<span>如果可能的話，可以為缺課的人提供補課。 雖然這可能很難實現，但它可以降低輟學率。</span></p><ul>
+<li>
+<p><span>電子郵件聯繫</span><br>
+<span>在課程期間每週發送一封電子郵件是個好主意。 應該是歡快的、鼓勵性的，告訴他們不要擔心如果他們一開始沒有掌握它，並敦促他們在下節課之前完成測驗作業。</span><br>
+<span>家庭作業也應包括玩 Sky Bridge Club 網站 </span><a href="http://www.skybridgeclub.com" target="_blank" rel="noopener"><span>www.skybridgeclub.com</span></a><span> 上預先設定的手牌。</span></p>
+</li>
+<li>
+<p><span>初級課程期間的線上練習</span><br>
+<span>課間練習的能力對於橋樑知識和保持學生的積極性都是非常寶貴的。</span><br>
+<span>在課程期間，學生可以在 Sky Bridge Club 網站 (</span><a href="http://www.skybridgeclub.com" target="_blank" rel="noopener"><span>www.skybridgeclub.com</span></a><span>) 免費玩所有紐西蘭橋牌課程。 每手都有提示，學生可以依照自己的時間自由練習。</span><br>
+<span>每個班級都需要一個密碼來啟動網站的臨時會員資格。 該密碼的有效期限為 10 週。 學生註冊時，需提供電子郵件地址和班級專用密碼。</span><br>
+<span>教師必須向紙牌屋索取適合其班級的密碼。 </span><a href="mailto:bridge@houseofcards.co.nz" target="_blank" rel="noopener"><span>bridge@houseofcards.co.nz</span></a><span> 或 03 355 0643。</span><br>
+<span>如有任何問題，可撥打求助專線； 只要撥打海倫電話 0800 451 228</span></p>
+</li>
+<li>
+<p><span>資源選項</span><br>
+<span>乾淨的白板、氈筆（各種顏色）、白板擦、標牌、鉛筆、橡皮擦、桌號等</span><br>
+<span>學生筆記資料夾 – 20 口袋 A4 展示書非常完美！</span><br>
+<span>每組課程都有預發牌——對於擁有發牌機的俱樂部來說很容易。</span><br>
+<span>如果俱樂部沒有發牌機，另一個選擇是使用帶有支持指南的卡片，學生可以發出預先設定的手牌。 這些卡包稱為箭頭卡。</span><br>
+<span>有關箭頭卡的更多詳細信息，請參閱下文</span><br>
+<span>NZ Bridge 教學手冊 – 包含全套學生筆記、教師筆記以及帶有評論和測驗及答案的預設手牌。</span><br>
+<span>筆記型電腦和數據投影機或大尺寸電視將允許教師存取線上資源，例如 Sky Bridge Club 網站。 或者，一些教師可能會使用電腦來示範筆記、測驗和預設的手牌。</span></p>
+</li>
+<li>
+<p><span>教學環境</span><br>
+<span>確保房間乾淨整潔，並提供乾淨的桌布、預發牌或箭頭卡。 學生筆記應該準備好分發。 最重要的是，所有參與者都應該有名片，包括老師和助理。</span><br>
+<span>對於那些手拿 13 張牌有困難的人來說，應該可以提供持牌器。</span><br>
+<span>能提供茶和咖啡（和餅乾）或柳橙汁很好。 課中或課後休息讓全班有機會見面、打招呼和社交。</span></p>
+</li>
+<li>
+<p><span>箭頭卡 (Arrow Cards)</span><br>
+<span>這些箭頭卡非常有用，因為您無需在上課前預先發牌。 只需在每張桌子上放一疊牌，您的學生就可以自己發牌。</span><br>
+<span>因此，所有學生同時玩同一手牌是很簡單的。 這是一種有效的教學技巧，因為老師可以透過這手牌向全班同學講話。</span><br>
+<span>箭頭卡的另一個優點是班上永遠不會沒牌打。 如果一張牌桌特別快，他們可以玩其他牌局。</span><br>
+<span>NZ Bridge Arrow Card 套裝包含 4 包卡片，每張卡片有 24 副。</span></p>
+</li>
+</ul><p><span>第 1 包有第 1、2、3 課的八手牌</span><br>
+<span>第 2 包有第 4、5、6 課的八手牌</span><br>
+<span>第 3 包有第 7、8、9 課的八手牌</span><br>
+<span>第 4 包有 8 手牌，用於第 10 課、遊戲和防禦</span><br>
+<span>最後 16 手練習可用於改進課程或後續初學者課程。</span><br>
+<span>這些卡片附有手牌的列印輸出和每次拍賣的摘要，以便快速閱讀。 這些卡可從 NZ Bridge 購買，一套價格為 50 美元。</span></p><ul>
+<li><span>關於如何處理箭頭卡的說明</span></li>
+</ul><img src="https://chrisokchen.github.io/W00CMS/images/ArrowCards.png" class="offline-handled error-handled"><p><span>在上方您可以看到黑桃 A 的兩面。 每張牌的背面標明了每手牌的發牌者以及該牌將發給誰。</span><br>
+<span>你在發哪副牌？ 以數字“1”或“2”等表示</span><br>
+<span>誰負責發牌？ 由數字旁的“N”或“E”等表示</span><br>
+<span>這張牌發給誰？ 由箭頭方向指示</span></p><p><span>第 1 手牌由北發，這張牌（沿著箭頭）位於他們的左側（在本例中為東）。</span><br>
+<span>第 2 手牌由東發，這張牌（沿著箭頭向下）發給東，因為從東的角度來看，箭頭向下指向他們自己的手牌。</span><br>
+<span>第 3 手牌由 South 發牌，箭頭指向他們的左側（本例中為 West），依此類推。</span></p><h2 id="紐西蘭橋樑課程" data-id="紐西蘭橋樑課程"><a class="anchor hidden-xs" href="#紐西蘭橋樑課程" title="紐西蘭橋樑課程"><span class="octicon octicon-link"></span></a><span>紐西蘭橋樑課程</span></h2><ul>
+<li>
+<p><span>Acol – 使用的基本系統</span><br>
+<span>使用的系統是 Acol</span><br>
+<span>▪ 一階開叫4 張花色，</span><br>
+<span>▪ 弱 1NT (12-14 HCP)，</span><br>
+<span>▪ 弱 2</span><font color="red"><span>♦</span></font><span> 2</span><font color="red"><span>♥</span></font><span> 2♠ 開叫</span><br>
+<span>▪ 強的 2NT 和 2♣ 開叫</span><br>
+<span>▪ 搶先 3/4 階開叫</span><br>
+<span>除了 4NT 黑木 和強 2♣ 開叫及萁負性答叫之外，沒有任何特約。</span><br>
+<span>Stayman 不在這些初始課程中，但可能會在稍後的改進課程中教授。</span></p>
+</li>
+<li>
+<p><span>十節課</span><br>
+<span>這 10 節課程旨在全面涵蓋基本 Acol。 為了將這些課程安排在 10 週內，有些課程變得比其他課程更重要。</span><br>
+<span>教師可能希望參加超過 1 個課程來講授一門課程，例如： 第 5 課關於 1NT 開局和 NT 重叫。 或者，可以透過後續課程來強化所討論的課程。</span></p>
+</li>
+<li>
+<p><span>Acol 筆記包</span><br>
+<span>每節課有</span><br>
+<span>▪ 學生筆記</span><br>
+<span>▪ 教師筆記</span><br>
+<span>▪ 測驗和答案</span><br>
+<span>▪ 預設牌局</span><br>
+<span>還有一個</span><br>
+<span>▪ 教師手冊</span></p>
+</li>
+</ul><p><span>以上所有內容均可在 NZ Bridge 網站上找到。</span><br>
+<span>預設牌局也可用於發牌機，如 NZ Bridge 網站上的「bri」文件。 或者，您可以使用箭頭牌來處理這些預設的牌局。</span></p><ul>
+<li>
+<p><span>課程形式</span><br>
+<span>建議您的課程應分為兩部分</span></p>
+<ul>
+<li><span>第一小時最多通話 15-20 分鐘</span></li>
+<li><span>15 分鐘茶歇</span></li>
+<li><span>第 2 小時 15 分鐘以上的交談（如有必要），否則主要是玩耍</span><br>
+<span>一堂好課，是有充分準備的。 教師應該在課前研究學生的筆記和教師的筆記。 使用相同的術語很重要。 在課程中將兩者放在您面前會很有幫助。</span><br>
+<span>每節課有 8 個關於該主題的練習牌。 您應該嘗試玩至少 6 手牌，最好是全部 8 手牌。 理想情況下，每張牌桌應同時玩同一手牌——至少在課程的前半部分如此。 這樣你就可以向全班強調重要的教學要點。</span></li>
+</ul>
+</li>
+<li>
+<p><span>線上練習</span><br>
+<span>在課程期間，學生可以在 Sky Bridge Club 網站 (</span><a href="http://www.skybridgeclub.com" target="_blank" rel="noopener"><span>www.skybridgeclub.com</span></a><span>) 免費玩這些手牌。 請從 Sky Bridge Club 取得適合您班級的密碼。 本節已包含在橋牌教學資源中。</span></p>
+</li>
+</ul><h2 id="橋牌禮儀" data-id="橋牌禮儀"><a class="anchor hidden-xs" href="#橋牌禮儀" title="橋牌禮儀"><span class="octicon octicon-link"></span></a><span>橋牌禮儀</span></h2><p><span>當您教授課程時，您還應該包括橋牌禮儀。 對於新玩家來說，了解什麼是可接受的和不可接受的行為非常重要。 這是一個很難理解的話題，所以要小心不要用學生當例子。</span></p><ul>
+<li>
+<p><span>關於成為一名優秀的玩家</span><br>
+<span>永遠不要批評你的伴侶。 “做得好！” 和“運氣不好！” 是理想的評論。 你的夥伴不想聽到“方塊9大了，為什麼不打呢？” 這種評論只會分散你的伴侶對下一手牌的注意力。</span><br>
+<span>永遠不要向對手提供建議——這不關你的事。</span><br>
+<span>避免極端的面部表情，因為它們會洩露未經授權的訊息(UI,unauthorised information) 。</span><br>
+<span>不要發表評論或表明您犯了錯誤或不知道要叫什麼，因為這會提供未經授權的信息，並且也被認為是不道德的。</span><br>
+<span>感謝合作夥伴提供的夢家手牌，無論其品質如何。</span><br>
+<span>在玩第一墩之前要花點時間想。</span></p>
+</li>
+<li>
+<p><span>關於做個好夢家</span><br>
+<span>確保搭檔從正確的方向打牌。</span><br>
+<span>確保合作夥伴跟牌； “沒有嗎，夥伴？” 是一個合法的問題。</span><br>
+<span>打出被指定的牌，不要評論、猶豫或建議。</span></p>
+</li>
+</ul><h2 id="附錄" data-id="附錄"><a class="anchor hidden-xs" href="#附錄" title="附錄"><span class="octicon octicon-link"></span></a><span>附錄</span></h2><p><span>這些文件可在以下位置取得：行銷資料 | NZB (</span><a href="http://nzbridge.co.nz" target="_blank" rel="noopener"><span>nzbridge.co.nz</span></a><span>)</span><br>
+<a href="https://www.nzbridge.co.nz/marketing-material-for-clubs-regions.html" target="_blank" rel="noopener"><span>Marketing Materials | NZB (nzbridge.co.nz)</span></a></p><ul>
+<li>
+<p><span>廣告選項</span><br>
+<span>1.1 信箱投遞</span><br>
+<span>1.2 超市卡通知</span><br>
+<span>1.3 報紙俱樂部廣告 ± 來自當地報紙</span><br>
+<span>1.4 懷卡托豐盛灣俱樂部廣告 ± 社區報紙</span><br>
+<span>1.5 廣告海報±用於商店櫥窗、佈告欄等</span></p>
+</li>
+<li>
+<p><span>教學資源</span><br>
+<span>1.1 名牌±供學員配戴</span><br>
+<span>1.2 課程登記 ± 班級參加者人數</span><br>
+<span>包括家庭電話號碼和工作地址、電子郵件地址和電腦號碼</span><br>
+<span>1.3 課程評估調查</span><br>
+<span>1.4 備忘單 ± 玩家最多可使用 6 個月</span></p>
+</li>
+<li>
+<p><span>課程清單</span><br>
+<span>請注意：選項 A 課程首先教授 1 線叫牌</span><br>
+<span>第 1 課：橋牌簡介</span><br>
+<span>第 2A 課：1 線開叫</span><br>
+<span>第 3A 課：答叫者的有限叫牌 (Limit Bids)</span><br>
+<span>第 4A 課：答叫者的新花色叫牌</span><br>
+<span>第 5A 課：平均牌型</span><br>
+<span>第 2B 課：開叫 1NT</span><br>
+<span>第 3B 課：開叫 1 線花色</span><br>
+<span>第 4B 課：答叫者的有限叫牌</span><br>
+<span>第 5B 課：答叫者的新花色叫牌</span></p>
+</li>
+</ul><p><span>第 6 課：答叫者的再叫</span><br>
+<span>第 7 課：蓋叫與計分</span><br>
+<span>第 8 課：迫伴賭倍</span><br>
+<span>第 9 課：搶先 (Pre-emptive) 開叫</span><br>
+<span>第 10 課：強開叫</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#NZB-教師手冊" title="NZB 教師手冊">NZB 教師手冊</a><ul class="nav">
+<li><a href="#整體教學理念" title="整體教學理念">整體教學理念</a></li>
+<li><a href="#留住新玩家" title="留住新玩家">留住新玩家</a></li>
+<li><a href="#初學者課程廣告" title="初學者課程廣告">初學者課程廣告</a></li>
+<li><a href="#橋牌教學資源" title="橋牌教學資源">橋牌教學資源</a></li>
+<li><a href="#紐西蘭橋樑課程" title="紐西蘭橋樑課程">紐西蘭橋樑課程</a></li>
+<li><a href="#橋牌禮儀" title="橋牌禮儀">橋牌禮儀</a></li>
+<li><a href="#附錄" title="附錄">附錄</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a href="#NZB-教師手冊" title="NZB 教師手冊">NZB 教師手冊</a><ul class="nav">
+<li><a href="#整體教學理念" title="整體教學理念">整體教學理念</a></li>
+<li><a href="#留住新玩家" title="留住新玩家">留住新玩家</a></li>
+<li><a href="#初學者課程廣告" title="初學者課程廣告">初學者課程廣告</a></li>
+<li><a href="#橋牌教學資源" title="橋牌教學資源">橋牌教學資源</a></li>
+<li><a href="#紐西蘭橋樑課程" title="紐西蘭橋樑課程">紐西蘭橋樑課程</a></li>
+<li><a href="#橋牌禮儀" title="橋牌禮儀">橋牌禮儀</a></li>
+<li><a href="#附錄" title="附錄">附錄</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

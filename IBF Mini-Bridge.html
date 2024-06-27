@@ -1,0 +1,2714 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        IBF Mini-Bridge - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="IBF-Mini-Bridge" data-id="IBF-Mini-Bridge"><a class="anchor hidden-xs" href="#IBF-Mini-Bridge" title="IBF-Mini-Bridge"><span class="octicon octicon-link"></span></a><span>IBF Mini-Bridge</span></h1><p><a href="http://www.eurobridge.org/wp-content/uploads/2017/04/Mini-Bridge-Booklet-Translation-Ver-2-100715.pdf" target="_blank" rel="noopener"><span>The Next Generation booklet Part A: Mini-Bridge</span></a></p><p><span>A bookle of lessions for teaching Brideg to kids</span><br>
+<span>Part A : Mini-Bridge</span><br>
+<span>version d 4/2015</span><br>
+<span>The Official Boolet of the European Bridge League</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th><span>課程</span></th>
+<th><span>目標</span></th>
+<th><span>要點</span></th>
+<th><span>牌例</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>1</span></td>
+<td><a href="#%E7%AC%AC1%E8%AA%B2%EF%BC%9A%E7%B0%A1%E4%BB%8B"><span>簡介</span></a></td>
+<td><span>彼此熟悉</span><br><span>認識遊戲</span><br><span>基礎知識：方位、花色名稱、牌張和贏墩</span></td>
+<td><span>適當的行為，課堂規則</span><br><span>認識牌卡</span><br><span>理牌</span><br><span>輸贏墩的練習</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>2</span></td>
+<td><a href="#%E7%AC%AC2%E8%AA%B2%EF%BC%9A%E6%A9%8B%E7%89%8C%E6%98%AF%E6%90%AD%E6%AA%94%E7%9A%84%E9%81%8A%E6%88%B2"><span>橋牌是搭檔的遊戲</span></a></td>
+<td><span>學習橋牌搭檔原則</span><br><span>了解牌</span><br><span>基本術語：合約、莊家、夢家、確定贏墩</span></td>
+<td><span>搭檔原則</span><br><span>合約與獲取贏墩</span><br><span>打牌和夢家練習-引牌</span><br><span>熟悉「確定贏墩」</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B1"><span>1-確定贏墩</span></a><br><a href="##%E7%89%8C%E4%BE%8B2"><span>2-建立贏墩</span></a></td>
+</tr>
+<tr>
+<td><span>3</span></td>
+<td><a href="#%E7%AC%AC3%E8%AA%B2%EF%BC%9A%E7%99%BC%E5%B1%95%E8%B4%8F%E5%A2%A9"><span>發展贏墩</span></a></td>
+<td><span>熟悉術語「發展贏墩」</span><br><span>認識「尊牌」</span><br><span>了解尊牌的價值和點力數</span><br><span>了解「大牌點」</span><br><span>最少要取得的墩數</span><br><span>開叫最少墩數</span></td>
+<td><span>發展花色</span><br><span>尊牌及其價值</span><br><span>計分練習</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B3"><span>3-發展尊張</span></a></td>
+</tr>
+<tr>
+<td><span>4</span></td>
+<td><a href="#%E7%AC%AC4%E8%AA%B2%EF%BC%9A%E7%8D%B2%E5%8B%9D%E5%88%86%E6%95%B8"><span>獲勝分數</span></a></td>
+<td><span>熟悉無王合約的點數表</span><br><span>熟悉術語「第一墩」、「部分分數」和「成局」</span><br><span>「小滿貫」與「大滿貫」術語</span><br><span>當簽訂合約時會發生什麼事？</span></td>
+<td><span>按照規則處理牌和叫牌的練習</span><br></td>
+<td><a href="##%E7%89%8C%E4%BE%8B4"><span>4-發展花色</span></a><br><a href="##%E7%89%8C%E4%BE%8B5"><span>5-發展花色</span></a></td>
+</tr>
+<tr>
+<td><span>5</span></td>
+<td><a href="#%E7%AC%AC5%E8%AA%B2%EF%BC%9A%E4%B8%BB%E6%89%93"><span>主打</span></a></td>
+<td><span>計算花色中的尊張在兩手間的贏墩</span><br><span>學習術語「長邊」、「短邊」和「阻塞」</span><br><span>一般學習－先從短邊提取贏墩</span><br><span>保持兩手之間的溝通管道暢通</span><br><span>出現阻塞時怎麼辦？</span></td>
+<td><span>計算兩手間的尊牌與確定贏墩</span><br><span>長手和短手</span><br><span>保持兩手之間的溝通</span><br><span>我們如何克服阻塞？</span><br></td>
+<td><a href="##%E7%89%8C%E4%BE%8B6"><span>6-從短手邊先提大牌</span></a><br><a href="##%E7%89%8C%E4%BE%8B7"><span>7-短手的牌例</span></a></td>
+</tr>
+<tr>
+<td><span>6</span></td>
+<td><a href="#%E7%AC%AC6%E8%AA%B2%EF%BC%9A%E7%89%8C%E5%BC%B5%E6%89%93%E6%B3%95"><span>牌張打法</span></a></td>
+<td><span>克服阻塞的方法－解封或蓋吃大牌</span><br><span>從連續張引牌</span><br><span>花色開發——理想分配</span></td>
+<td><span>從連續張頂部開始的引牌</span><br><span>克服阻塞——「吞下」尊張</span><br><span>友善分配</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B8"><span>8-克服阻塞</span></a><br><a href="##%E7%89%8C%E4%BE%8B9"><span>9-友善分配</span></a></td>
+</tr>
+<tr>
+<td><span>7</span></td>
+<td><a href="#%E7%AC%AC7%E8%AA%B2%EF%BC%9A%E4%B8%BB%E6%89%93%E6%8A%80%E5%B7%A7--%E5%81%B7%E7%89%8C"><span>主打技巧</span><span class="smartypants">–</span><span>偷牌</span></a></td>
+<td><span>技巧發展——偷牌與僵局</span><br><span>簡單的偷牌和僵局</span></td>
+<td><span>簡單的偷牌</span><br><span>僵局(Impasse)</span><br><span>雙向偷牌</span><br></td>
+<td><a href="##%E7%89%8C%E4%BE%8B10"><span>10-偷牌與友善分配</span></a><br><a href="##%E7%89%8C%E4%BE%8B11"><span>11-偷牌與友善分配</span></a></td>
+</tr>
+<tr>
+<td><span>8</span></td>
+<td><a href="#%E7%AC%AC8%E8%AA%B2%EF%BC%9A%E6%89%93%E7%8E%8B%E7%89%8C%E5%90%88%E7%B4%84"><span>打王牌合約</span></a></td>
+<td><span>熟悉術語：Stopper、trump suit、trump、ruff 和 a fit</span><br><span>什麼時候使用王牌？如何用？</span><br><span>分配和基本術語：singleton、doubleton、void</span></td>
+<td><span>偏好打王牌合約</span><br><span>王吃</span><br><span>誰被允許王吃？</span><br><span>分配點</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B12"><span>12-打王牌合約比較好</span></a><br><a href="##%E7%89%8C%E4%BE%8B13"><span>13-分配點</span></a><br><a href="##%E7%89%8C%E4%BE%8B14"><span>14-清王</span></a></td>
+</tr>
+<tr>
+<td><span>9</span></td>
+<td><a href="#%E7%AC%AC9%E8%AA%B2%EF%BC%9A%E6%B1%BA%E5%AE%9A%E5%90%88%E7%B4%84%E5%9E%8B%E5%BC%8F"><span>決定合約型式</span></a></td>
+<td><span>叫牌卡的使用</span><br><span>確定合約型式－王牌還是無王？</span></td>
+<td><span>如何找到配合？</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B15"><span>15-清王</span></a><br><a href="##%E7%89%8C%E4%BE%8B16"><span>16-墊掉失墩</span></a></td>
+</tr>
+<tr>
+<td><span>10</span></td>
+<td><a href="#%E7%AC%AC10%E8%AA%B2%EF%BC%9A%E7%8E%8B%E7%89%8C%E5%90%88%E7%B4%84%E4%B8%AD%E8%A6%8F%E5%8A%83%E6%89%93%E6%B3%95"><span>王牌合約規劃打法</span></a></td>
+<td><span>規劃王牌合約的打法</span><br><span>熟悉術語－失張－辨識失張</span><br><span>用另一花色的大牌讓失張消失</span></td>
+<td><span>如何擺脫失張</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B17"><span>17-處理失張</span></a></td>
+</tr>
+<tr>
+<td><span>11</span></td>
+<td><a href="#%E7%AC%AC11%E8%AA%B2%EF%BC%9A%E8%A8%88%E5%8A%83%E9%98%B2%E7%A6%A6"><span>計劃防禦</span></a></td>
+<td><span>規劃防守</span><br><span>學習在有王牌和無王時，打牌的選擇不同</span><br><span>概念－不可避免的失張，和可能「消失」的贏張</span></td>
+<td><span>首引的重要性</span><br><span> 對抗 NT 的引牌規則</span><br><span>對抗王牌合約的引牌規則</span><br><span>從引牌張上得出結論</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B18"><span>18-首引與正確防禦</span></a><br><a href="##%E7%89%8C%E4%BE%8B19"><span>19-在短門王吃</span></a></td>
+</tr>
+<tr>
+<td><span>12</span></td>
+<td><a href="#%E7%AC%AC12%E8%AA%B2%EF%BC%9A%E7%8E%8B%E7%89%8C%E5%90%88%E7%B4%84%E7%9A%84%E4%B8%BB%E6%89%93%E8%A8%88%E5%8A%83"><span>王牌合約的主打計劃</span></a></td>
+<td><span>讓失張「消失」－在短門王吃</span><br><span>被「超王吃」的危險－用大王牌王吃</span></td>
+<td><span>1. 準備主打－選擇“基準方”</span><br><span>2. 規劃這手牌的打法 – 評估強度</span><br><span>3. 策劃主打－如何成約</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B20"><span>20-超王吃</span></a></td>
+</tr>
+<tr>
+<td><span>13</span></td>
+<td><a href="#%E7%AC%AC13%E8%AA%B2%EF%BC%9A%E8%A8%88%E5%8A%83%E7%8E%8B%E7%89%8C%E5%90%88%E7%B4%84%E4%B8%BB%E6%89%93"><span>計劃王牌合約主打</span></a></td>
+<td><span>快速通行證 (expass)</span><br><span>防禦－第二手低</span><br><span>防守－以大牌蓋大牌</span></td>
+<td><span>EXPASS</span><br><span>第二家跟小</span><br><span>防守－大牌蓋大牌</span><br><span>什麼時候我們不該蓋？</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B21"><span>21-EXPASS</span></a><br><a href="##%E7%89%8C%E4%BE%8B22"><span>22-EXPASS</span></a></td>
+</tr>
+<tr>
+<td><span>14</span></td>
+<td><a href="#%E7%AC%AC14%E8%AA%B2%EF%BC%9A%E9%AB%98%E8%8A%B1%E5%92%8C%E4%BD%8E%E8%8A%B1"><span>高花和低花</span></a></td>
+<td><span>熟悉叫牌決策全表</span><br><span>高花和低花的區別</span></td>
+<td><span>叫牌決策全表</span><br><span>首選高花，其次無法，最後才是低花</span><br></td>
+<td><a href="##%E7%89%8C%E4%BE%8B23"><span>23-低花合約</span></a><br><a href="##%E7%89%8C%E4%BE%8B24"><span>24-低花合約</span></a></td>
+</tr>
+<tr>
+<td><span>15</span></td>
+<td><a href="#%E7%AC%AC15%E8%AA%B2%EF%BC%9B%E6%89%A3%E4%BD%8F%EF%BC%8F%E5%BF%8D%E8%AE%93"><span>扣住／忍讓</span></a></td>
+<td><span>扣住／忍讓</span><br><span>防禦－第三家上大牌</span></td>
+<td><span>防禦</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B25"><span>25-忍讓</span></a><br><a href="##%E7%89%8C%E4%BE%8B26"><span>26-忍讓</span></a></td>
+</tr>
+<tr>
+<td><span>16</span></td>
+<td><a href="#%E7%AC%AC16%E8%AA%B2%EF%BC%9A%E8%8A%B1%E8%89%B2%E5%BB%BA%E7%AB%8B"><span>花色建立</span></a></td>
+<td><span>在沒有尊張的情況下建立花色</span><br><span>透過王吃建立花色</span></td>
+<td><span>在NT中建立一套花色－放棄一墩給防家</span><br><span>在王牌合約中建立贏張－透過王吃</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B27"><span>27-王吃建立花色</span></a><br><a href="##%E7%89%8C%E4%BE%8B28"><span>28-王吃建立花色</span></a></td>
+</tr>
+<tr>
+<td><span>17</span></td>
+<td><a href="#%E7%AC%AC17%E8%AA%B2%EF%BC%9A%E4%B8%BB%E6%89%93%E6%8A%80%E5%B7%A7"><span>主打技巧</span></a></td>
+<td><span>重複偷牌/雙偷</span><br><span>王吃偷牌</span></td>
+<td><span>王吃偷牌</span></td>
+<td><a href="##%E7%89%8C%E4%BE%8B29"><span>29-重複偷牌</span></a><br><a href="##%E7%89%8C%E4%BE%8B30"><span>30-重複偷牌</span></a><br><a href="##%E7%89%8C%E4%BE%8B31"><span>31-王吃偷牌</span></a></td>
+</tr>
+</tbody>
+</table><h1 id="第1課：簡介" data-id="第1課：簡介"><a class="anchor hidden-xs" href="#第1課：簡介" title="第1課：簡介"><span class="octicon octicon-link"></span></a><span>第1課：簡介</span></h1><h2 id="課程目的" data-id="課程目的"><a class="anchor hidden-xs" href="#課程目的" title="課程目的"><span class="octicon octicon-link"></span></a><span>課程目的</span></h2><ol>
+<li><span>彼此熟悉。</span></li>
+<li><span>認識遊戲。</span></li>
+<li><span>基礎知識：方位、花色名稱、牌張和贏墩。</span></li>
+</ol><h2 id="學生的知識" data-id="學生的知識"><a class="anchor hidden-xs" href="#學生的知識" title="學生的知識"><span class="octicon octicon-link"></span></a><span>學生的知識</span></h2><p><span>可以分發帶有名字的貼紙，以便您可以更快地學習熟悉大家。</span></p><ol>
+<li><span>老師自我介紹。</span></li>
+<li><span>學生輪流做自我介紹（名字+代表自己的一句話）</span></li>
+<li><span>問：誰熟悉撲克牌？你玩過哪些撲克牌遊戲？</span></li>
+</ol><h2 id="適當的行為" data-id="適當的行為"><a class="anchor hidden-xs" href="#適當的行為" title="適當的行為"><span class="octicon octicon-link"></span></a><span>適當的行為</span></h2><p><span>我們都喜歡玩，這就是我們更喜歡下課而不是上課的原因。但我們的課程會有點不同。</span><br>
+<span>我們會在課程中做我們喜歡做的事情——我們會玩。</span><br>
+<span>但是，如果不學習遊戲規則，就不可能學會玩遊戲。所以我們會學習規則，但我們會嘗試更多地玩。</span></p><h3 id="課堂規則" data-id="課堂規則"><a class="anchor hidden-xs" href="#課堂規則" title="課堂規則"><span class="octicon octicon-link"></span></a><span>課堂規則</span></h3><p><span>未經許可不准說話。</span><br>
+<span>不喊叫、不說髒話、不挑釁別人、不從桌子上站起來——即使你生氣了。輸得有尊嚴，贏得有禮貌。</span></p><h2 id="認識牌卡" data-id="認識牌卡"><a class="anchor hidden-xs" href="#認識牌卡" title="認識牌卡"><span class="octicon octicon-link"></span></a><span>認識牌卡</span></h2><p><span>我是來教你們打橋牌的。</span><br>
+<strong><span>誰知道玩橋牌遊戲需要多少玩家？</span></strong><br>
+<span>正確，我們需要一副 52 張牌和 4 名坐在桌子周圍的玩家。</span><br>
+<span>這就是房間如此佈置的原因。</span></p><p><span>在課程過程中，您將根據我掛在牆上的表格交換位置。</span><br>
+<span>為了正確完成此操作，我們將對桌子進行編號。我已經把數字放在桌上了。桌上有牌盒，每塊牌盒的中間都有一個數字。</span><br>
+<strong><span>你在牌盒的上邊看到了什麼？</span></strong><span> 正確的！字。</span><br>
+<strong><span>你看到桌子邊寫的是什麼嗎？</span></strong><br>
+<span>正確，我們可以看到東南西北方向的記號。所以所有坐在窗邊的人都是北邊，所有坐在牌邊的人都是東邊。</span></p><h2 id="發放沒有小丑的牌" data-id="發放沒有小丑的牌"><a class="anchor hidden-xs" href="#發放沒有小丑的牌" title="發放沒有小丑的牌"><span class="octicon octicon-link"></span></a><span>發放沒有小丑的牌</span></h2><p><span>現在，每張桌子上坐在北邊的玩家將把它們按花色排列在桌子上。</span><br>
+<strong><span>你能看到多少種花色？</span></strong><span> 正確4套！</span><br>
+<span>每個花色都有一個名稱：黑桃(Spade) ♠、紅心(Heart) </span><font color="red"><span>♥</span></font><span>、方塊 (Diamond) </span><font color="red"><span>♦</span></font><span> 和 梅花 (Club) ♣</span></p><h2 id="牌卡簡介" data-id="牌卡簡介"><a class="anchor hidden-xs" href="#牌卡簡介" title="牌卡簡介"><span class="octicon octicon-link"></span></a><span>牌卡簡介</span></h2><p><strong><span>你能數出每種花色中有多少張牌？</span></strong><span> 正確13張牌！</span><br>
+<span>那麼，一整包卡片有多少張？正確52張牌！</span><br>
+<strong><span>你知道哪張牌是整張牌中最大的牌嗎？</span></strong><span> 正確 - Ace。</span><br>
+<span>那麼最低的呢？2！</span><br>
+<span>我希望你們每人拿一包，並按照從高到低的順序排列。</span><br>
+<span>高牌是 A、K、Q 和 J，接下來是 10，然後再降序一直到 2。</span></p><h2 id="整理牌卡的練習" data-id="整理牌卡的練習"><a class="anchor hidden-xs" href="#整理牌卡的練習" title="整理牌卡的練習"><span class="octicon octicon-link"></span></a><span>整理牌卡的練習</span></h2><p><span>坐在東邊的人現在洗牌。</span><br>
+<span>東將順時針方向發牌，面朝下，直到所有牌都發完。</span><br>
+<span>每個玩家都會拿起他的牌並查看它們。</span><strong><span>每個玩家有多少張牌？</span></strong><span> 正確13！</span><br>
+<span>現在每個人都應該按花色排列牌，並且按花色的降序排列！</span></p><ul>
+<li><span>拿出一名學生的牌並展示如何對這手牌進行排序。經過每個學生，確保他排的正確。</span></li>
+</ul><h2 id="獲取贏墩和跟牌的練習" data-id="獲取贏墩和跟牌的練習"><a class="anchor hidden-xs" href="#獲取贏墩和跟牌的練習" title="獲取贏墩和跟牌的練習"><span class="octicon octicon-link"></span></a><span>獲取贏墩和跟牌的練習</span></h2><p><span>在每張桌子上，南家打一張牌放在所有人都能看到的桌子上。</span><br>
+<span>現在，下一位玩家將依序（西）順時針放置一張與第一張打出的牌</span><ins><span>相同花色</span></ins><span>的牌。然後依序向北，最後向東將「跟牌」。</span></p><ul>
+<li><span>從一張桌子走到另一張桌子，詢問 South 他選擇了哪張牌。</span></li>
+</ul><blockquote>
+<p><span>規則：每個人都必須跟同花色的牌 (如果有的話)</span></p>
+</blockquote><p><span>東家現在數桌上的牌。</span></p><ul>
+<li><span>挨桌詢問東，桌上有什麼牌？</span><br>
+<span>桌上的 4 張牌是一墩。誰出的最大，誰就贏了這一墩。</span><br>
+<strong><span>如果您沒有同花色的牌怎麼辦？</span></strong><span> 你必須抛棄掉 (墊牌) 一張不同花色的牌，但你卻輸掉了這墩。</span></li>
+</ul><h2 id="輸贏墩的練習" data-id="輸贏墩的練習"><a class="anchor hidden-xs" href="#輸贏墩的練習" title="輸贏墩的練習"><span class="octicon octicon-link"></span></a><span>輸贏墩的練習</span></h2><p><span>贏得該墩的玩家將他的牌垂直放置（直擺）</span><br>
+<span>輸掉這墩牌的玩家水平放置他的牌（横擺）</span></p><p><span>現在讓我們繼續下一墩——贏得這一墩的玩家將從他的手上抽出一張牌（任何牌），其他玩家也將跟牌。如此玩下去，直到所有牌都打完為止。 * 等待所有牌都打完。</span><br>
+<strong><span>你有多少張垂直放置的卡片？</span></strong><br>
+<span>這是您贏得的墩數。</span></p><h2 id="遊戲目的的解釋" data-id="遊戲目的的解釋"><a class="anchor hidden-xs" href="#遊戲目的的解釋" title="遊戲目的的解釋"><span class="octicon octicon-link"></span></a><span>遊戲目的的解釋</span></h2><p><span>遊戲的目的是贏得最多墩。</span><strong><span>您認為最多能拿下多少墩？</span></strong><span> 正確13招！</span><br>
+<span>讓孩子玩幾輪，這樣他們就可以得出自己的結論，哪些牌最有價值。</span></p><h2 id="總結課程並分發練習一" data-id="總結課程並分發練習一"><a class="anchor hidden-xs" href="#總結課程並分發練習一" title="總結課程並分發練習一"><span class="octicon octicon-link"></span></a><span>總結課程並分發練習一</span></h2><h1 id="第2課：橋牌是搭檔的遊戲" data-id="第2課：橋牌是搭檔的遊戲"><a class="anchor hidden-xs" href="#第2課：橋牌是搭檔的遊戲" title="第2課：橋牌是搭檔的遊戲"><span class="octicon octicon-link"></span></a><span>第2課：橋牌是搭檔的遊戲</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>學習橋牌搭檔原則。</span></li>
+<li><span>了解牌。</span></li>
+<li><span>基本術語：合約、莊家、夢家、確定贏墩。</span></li>
+</ol><h2 id="搭檔原則" data-id="搭檔原則"><a class="anchor hidden-xs" href="#搭檔原則" title="搭檔原則"><span class="octicon octicon-link"></span></a><span>搭檔原則</span></h2><p><span>在上一課中，每個人都與其他所有人進行比賽。但在橋牌中，這是一種夥伴關係的遊戲。北是南的夥伴，東是西的夥伴。</span><br>
+<strong><span>誰知道橋牌中夥伴關係的重要性？</span></strong><br>
+<span>正確的，當南方贏得一墩時，事實上北方也贏得了這一墩。然後這將被記錄為兩名玩家的勝利。</span><br>
+<span>其他玩家均已輸掉該墩，並將牌擺横的。</span></p><ul>
+<li><span>如果你的搭檔在你「跟牌」之前就贏了這墩——你可以讓他贏這墩。</span></li>
+</ul><h2 id="確認理解的問題－有多少墩" data-id="確認理解的問題－有多少墩"><a class="anchor hidden-xs" href="#確認理解的問題－有多少墩" title="確認理解的問題－有多少墩"><span class="octicon octicon-link"></span></a><span>確認理解的問題－有多少墩</span></h2><p><strong><span>你還記得可能的總墩數是多少嗎？</span></strong><span> 正確 13.</span><br>
+<strong><span>你們南北贏了 9 墩，東西方贏了多少墩？</span></strong><span> 正確，4</span><br>
+<strong><span>南北贏了10墩，東西方贏了多少墩？</span></strong><span> 正確，3</span><br>
+<strong><span>你們南北贏了 6 墩，東西方贏了多少墩？</span></strong><span> 正確，7</span><br>
+<span>*作為夥伴進行隨機遊戲的練習</span></p><h2 id="遊戲各階段的知識：合約與獲取贏墩" data-id="遊戲各階段的知識：合約與獲取贏墩"><a class="anchor hidden-xs" href="#遊戲各階段的知識：合約與獲取贏墩" title="遊戲各階段的知識：合約與獲取贏墩"><span class="octicon octicon-link"></span></a><span>遊戲各階段的知識：合約與獲取贏墩</span></h2><p><strong><span>誰能告訴我我們什麼時候贏了一墩？</span></strong><span> 正確，當我們有最大的牌。當某人拿到較小的牌時，他就更難獲勝。</span><br>
+<span>這似乎是個運氣問題：誰拿到最大的牌就獲勝，誰拿到最小的牌就輸——但這並不準確。</span><br>
+<span>橋牌遊戲有 2 個階段：</span><br>
+<span>第一階段，合夥人簽定合約：事先承諾贏得一定墩數。合夥同伴決定合約。</span><br>
+<span>第二階段，試著完成你承諾的合約：贏夠墩數。稍後我們討論簽訂合約時會討論這個問題。</span></p><h2 id="桌子周圍玩家的角色" data-id="桌子周圍玩家的角色"><a class="anchor hidden-xs" href="#桌子周圍玩家的角色" title="桌子周圍玩家的角色"><span class="octicon octicon-link"></span></a><span>桌子周圍玩家的角色</span></h2><p><span>每個玩家都有自己的角色要扮演。玩這手牌的玩家稱為「莊家」(declarer)。</span><br>
+<span>他的搭檔是「夢家」(dummy)。夢家攤開他的牌，每個人都可以看到它們。夢家幫助莊家按照莊家的指示出他的牌。</span></p><ul>
+<li><span>夢家的牌由莊家控制</span></li>
+</ul><p><span>桌上的其他玩家都成為防守者 (defenders)，他們的任務就是擊毀垮合約。</span><br>
+<span>首引 (First Lead) 的牌將由坐在莊家左邊的玩家打出。</span></p><h2 id="打牌和夢家練習---引牌" data-id="打牌和夢家練習---引牌"><a class="anchor hidden-xs" href="#打牌和夢家練習---引牌" title="打牌和夢家練習---引牌"><span class="octicon octicon-link"></span></a><span>打牌和夢家練習 - 引牌</span></h2><p><span>從現在開始，在我們學會如何叫牌 (簽定合約) 之前，您將在牌盒裡拿到準備好的牌卡。牌盒以方向指示了各玩家的牌，每個牌盒包含為每位玩家準備的 13 張牌。順便說一句，這就是真正的錦標賽使用牌盒進行的方式。</span><br>
+<span>此外，在我們學會叫牌之前，我將向您說明誰是莊家以及首引是什麼。</span></p><h2 id="牌例1" data-id="牌例1"><a class="anchor hidden-xs" href="#牌例1" title="牌例1"><span class="octicon octicon-link"></span></a><span>牌例1</span></h2><p><span>目標：確定贏墩</span><br>
+<span>莊家：S</span><br>
+<span>首引：♣ K</span><br>
+<span>合約：2NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ KJ94</span><br><font color="red"><span>♥</span></font><span> QJ5</span><br><font color="red"><span>♦</span></font><span> A43</span><br><span>♣ 876</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ T83</span><br><font color="red"><span>♥</span></font><span> KT32</span><br><font color="red"><span>♦</span></font><span> T</span><br><span>♣ KQJT5</span></td>
+<td></td>
+<td><span>♠ 765</span><br><span> </span><font color="red"><span>♥</span></font><span> 874</span><br><font color="red"><span>♦</span></font><span> QJ876</span><br><span>♣ 93</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AQ2</span><br><font color="red"><span>♥</span></font><span> A96</span><br><font color="red"><span>♦</span></font><span> K852</span><br><span>♣ A42</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>您必須根據牌桌安排牌盒，每位玩家將整理自己的手牌。</span><br>
+<strong><span>South是莊家</span></strong><span> ，他的合約是至少贏取8墩。如果他成功了，他將成為勝利者。</span><br>
+<strong><span>如果南方是莊家，那麼誰是夢家？</span></strong><span> 正確的北！</span><br>
+<strong><span>防家是誰？</span></strong><span> 正確的東方和西方！</span><br>
+<strong><span>東西方到底要取得多少墩才能擊垮合約？</span></strong><span> 正確，5個或更多。</span><br>
+<strong><span>誰首引？</span></strong><span> 正確，莊家左邊的玩家——那就是西家。</span></p><ul>
+<li><span>首先，首引牌後，夢家才攤出他的牌。他根據花色放置它們，其中最大的牌最接近夢家，最低的牌最接近莊家。</span></li>
+</ul><h2 id="牌例2" data-id="牌例2"><a class="anchor hidden-xs" href="#牌例2" title="牌例2"><span class="octicon octicon-link"></span></a><span>牌例2</span></h2><p><span>目標：建立贏墩</span><br>
+<span>莊家：S</span><br>
+<span>首引：♣ 3</span><br>
+<span>合約：2NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 872</span><br><font color="red"><span>♥</span></font><span> A2</span><br><font color="red"><span>♦</span></font><span> KJ853</span><br><span>♣ 764</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ KT4</span><br><font color="red"><span>♥</span></font><span> QJ7</span><br><font color="red"><span>♦</span></font><span> 87</span><br><span>♣ AT532</span></td>
+<td></td>
+<td><span>♠ J963</span><br><span> </span><font color="red"><span>♥</span></font><span> T854</span><br><font color="red"><span>♦</span></font><span> A64</span><br><span>♣ J9</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AQ5</span><br><font color="red"><span>♥</span></font><span> K963</span><br><font color="red"><span>♦</span></font><span> QT2</span><br><span>♣ KQ8</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong><span>南將擔任莊家，必須嘗試贏得 8 墩。</span></strong><br>
+<strong><span>誰是夢家？</span></strong><span> 正確，北。</span><br>
+<strong><span>誰是防守者？</span></strong><span> 正確，東西方。</span><br>
+<strong><span>誰首引？</span></strong><span> 正確，西。</span></p><ul>
+<li><span>遊戲結束時，請每位學生描述發生了什麼事（沒有足夠的確定贏墩）</span></li>
+</ul><h2 id="熟悉「確定贏墩」sure-tricks-一詞" data-id="熟悉「確定贏墩」sure-tricks-一詞"><a class="anchor hidden-xs" href="#熟悉「確定贏墩」sure-tricks-一詞" title="熟悉「確定贏墩」sure-tricks-一詞"><span class="octicon octicon-link"></span></a><span>熟悉「確定贏墩」(sure tricks) 一詞</span></h2><p><span>當夢家攤下牌時，我們必須與夢家一起計算確定的贏墩。</span><br>
+<span>確定贏墩是我們一定會贏的，因為我們拿著最大的牌，而防守者沒有辦法阻止我們。</span></p><p><span>例如，當我們有 A 時，我們可以確定它會贏得一墩，因為它是最大的牌。當我們將 A 和 K 放在一起時，它們是 2 個確定的墩數，而 A-K-Q 是 3 個確定的墩數，依此類推。</span></p><ul>
+<li><span>在黑板上畫出莊家和明手的牌，並展示我們如何計算確定贏墩。</span></li>
+</ul><p><span>有時，當夢家攤牌時，我們會發現沒有足夠的確定贏墩。在下一課中，我們將嘗試了解如何開發額外的贏墩來履行我們的合約。</span><br>
+<span>總結課程並分發工作紙練習 2</span></p><h1 id="第3課：發展贏墩" data-id="第3課：發展贏墩"><a class="anchor hidden-xs" href="#第3課：發展贏墩" title="第3課：發展贏墩"><span class="octicon octicon-link"></span></a><span>第3課：發展贏墩</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>熟悉術語「發展贏墩」。</span></li>
+<li><span>認識「尊牌」一詞。</span></li>
+<li><span>了解尊牌的價值和手牌中的點力數。</span></li>
+<li><span>了解「大牌點」(HCP, high card points)。</span></li>
+<li><span>最少要取得的墩數。</span></li>
+<li><span>開叫最少墩數。</span></li>
+</ol><h2 id="發展花色" data-id="發展花色"><a class="anchor hidden-xs" href="#發展花色" title="發展花色"><span class="octicon octicon-link"></span></a><span>發展花色</span></h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>♠</span></td>
+<td><span>872</span></td>
+</tr>
+<tr>
+<td><font color="red"><span>♥</span></font></td>
+<td><span>A2</span></td>
+</tr>
+<tr>
+<td><font color="red"><span>♦</span></font></td>
+<td><span>KJ953</span></td>
+</tr>
+<tr>
+<td><span>♣</span></td>
+<td><span>764</span></td>
+</tr>
+<tr>
+<td><span class="smartypants">–</span></td>
+<td><span class="smartypants">–</span><span class="smartypants">–</span><span class="smartypants">–</span><span class="smartypants">–</span><span class="smartypants">–</span><span class="smartypants">–</span><span class="smartypants">–</span></td>
+</tr>
+<tr>
+<td><span>♠</span></td>
+<td><span>AQ5</span></td>
+</tr>
+<tr>
+<td><font color="red"><span>♥</span></font></td>
+<td><span>K963</span></td>
+</tr>
+<tr>
+<td><font color="red"><span>♦</span></font></td>
+<td><span>QT2</span></td>
+</tr>
+<tr>
+<td><span>♣</span></td>
+<td><span>KQ8</span></td>
+</tr>
+</tbody>
+</table><p><span>在上面的牌局中，莊家承包了8墩。我們能看出</span><strong><span>多少確定贏墩？</span></strong><span> 正確 3.</span><br>
+<span>有時，當夢家攤下牌時，我們看到的贏墩比合約所需的墩數要少。</span></p><p><strong><span>我們可以做些什麼呢？</span></strong><span> 正確，開發更多贏墩。</span><br>
+<strong><span>如何發展額外的贏墩？</span></strong><span> 透過發展榮譽。</span><br>
+<span>我們先來看看方塊這門花色。我們可以看到 N-S 只缺 A。除此之外，我們有所有的尊牌。</span><br>
+<strong><span>你認為我們應該怎麼做才能讓這些牌成為贏墩？</span></strong><span> 我們將不得不輸給 Ace，然後，當 Ace 被打出時，我們手上所有剩餘的牌都將變贏墩。</span><br>
+<strong><span>什麼時候值得失去這墩？</span></strong><span> 盡快地。</span></p><h2 id="牌例3" data-id="牌例3"><a class="anchor hidden-xs" href="#牌例3" title="牌例3"><span class="octicon octicon-link"></span></a><span>牌例3</span></h2><p><span>目標：發展尊張</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠ 5</span><br>
+<span>合約：1NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ K8</span><br><font color="red"><span>♥</span></font><span> T97</span><br><font color="red"><span>♦</span></font><span> 864</span><br><span>♣ QT972</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QT753</span><br><font color="red"><span>♥</span></font><span> Q42</span><br><font color="red"><span>♦</span></font><span> KT9</span><br><span>♣ 43</span></td>
+<td></td>
+<td><span>♠ J62</span><br><span> </span><font color="red"><span>♥</span></font><span> A853</span><br><font color="red"><span>♦</span></font><span> Q32</span><br><span>♣ A65</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A94</span><br><font color="red"><span>♥</span></font><span> KJ6</span><br><font color="red"><span>♦</span></font><span> AJ75</span><br><span>♣ KJ8</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>南叫牌，並承包了7墩。</span><br>
+<span>檢查孩子們是否知道誰是夢家？誰在防守？誰首引？</span></p><h3 id="牌局分析" data-id="牌局分析"><a class="anchor hidden-xs" href="#牌局分析" title="牌局分析"><span class="octicon octicon-link"></span></a><span>牌局分析</span></h3><p><strong><span>我們看到了多少確定贏墩？</span></strong><span> 正確 3</span><br>
+<strong><span>我們對於它可以做些什麼呢？</span></strong><span> 發展額外的贏墩。</span><br>
+<strong><span>我們可以從哪些花色中發展額外的贏墩？</span></strong><span> 從輸給 A 後的梅花牌組。</span><br>
+<strong><span>什麼時候值得失去這一墩？</span></strong><span> 盡快地。</span></p><ul>
+<li><span>當我們看到必須輸掉一墩才能開發一門花色時，我們應該優先考慮並在第一時間這麼做。</span></li>
+</ul><h2 id="尊牌及其價值" data-id="尊牌及其價值"><a class="anchor hidden-xs" href="#尊牌及其價值" title="尊牌及其價值"><span class="octicon octicon-link"></span></a><span>尊牌及其價值</span></h2><p><span>有些牌張價值較高，有些牌張價值較低。</span><strong><span>您認為哪些牌張更有價值？</span></strong><span> 正確，重要的牌是 A、K、Q、J； 10 到 2 的牌不太重要。我們將這些重要的牌張卡稱為尊張(honors)，並給予相對的大牌點。</span></p><ul>
+<li><span>大牌點： A=4, K=3, Q=2, J=1</span></li>
+</ul><p><span>每個花色都有四個尊張－AKQJ。</span><br>
+<strong><span>每套花色有多少點？</span></strong><span> 正確，10分。</span><br>
+<strong><span>整副牌有多少點？</span></strong><span> 正確 4X10 = 40</span><br>
+<span>我們將這些點數稱為</span><strong><span>大牌點</span></strong><span> (HCP, High Card Point)，因為它們代表每種花色裡重要大牌的點數。</span></p><h2 id="計分練習－在每張桌子上分發一副卡片" data-id="計分練習－在每張桌子上分發一副卡片"><a class="anchor hidden-xs" href="#計分練習－在每張桌子上分發一副卡片" title="計分練習－在每張桌子上分發一副卡片"><span class="octicon octicon-link"></span></a><span>計分練習－在每張桌子上分發一副卡片</span></h2><p><span>老師指導：</span></p><ul>
+<li><span>North 洗牌並向每位玩家發 13 張牌。</span></li>
+<li><span>檢查每個人都有 13 張面朝下的牌。</span></li>
+<li><span>依照花色對牌進行排序，從左邊最高的牌到右邊最低的牌。</span></li>
+<li><span>計算大牌點。</span></li>
+<li><strong><span>每人有多少點？</span></strong><span> （學生按順序宣布）。</span></li>
+<li><span>將每個人所得到的大牌點加起來，</span><strong><span>總共是多少？</span></strong><span> （如果加起來未達到 40，則重新計數）。</span></li>
+</ul><h2 id="合約中的最少墩數" data-id="合約中的最少墩數"><a class="anchor hidden-xs" href="#合約中的最少墩數" title="合約中的最少墩數"><span class="octicon octicon-link"></span></a><span>合約中的最少墩數</span></h2><p><span>現在我們將開始了解我們如何「投標」合約。</span><br>
+<span>首先我們要明白的是，最少的墩數是 7 墩。讓我們試著理解為什麼 7 是最小值。</span><br>
+<strong><span>一副牌有多少墩呢？</span></strong><span> 正確 13.</span><br>
+<span>想要進入拍賣會競拍合約，我們需要獲得一半以上的墩數，否則就沒有資格。 13 的一半是多少？正確6.5。因此，要叫牌，我們需要保證贏得至少 7 墩。</span></p><h2 id="最低開標價要求" data-id="最低開標價要求"><a class="anchor hidden-xs" href="#最低開標價要求" title="最低開標價要求"><span class="octicon octicon-link"></span></a><span>最低開標價要求</span></h2><p><span>我們如何知道是否有可能贏得 7 墩？</span><br>
+<span>正確，借助我們所掌握的要點。如果您至少有 12 分，則表示您可以嘗試贏得 7 墩。</span><br>
+<span>您認為誰是第一個投標的？沒錯，發牌者是第一個出價的。</span><br>
+<span>這是否意味著他將成為莊家？不可以，如果發牌者沒有足夠的大牌點（至少 12 點），他就不能開叫，因此不能成為莊家。</span></p><h1 id="第4課：獲勝分數" data-id="第4課：獲勝分數"><a class="anchor hidden-xs" href="#第4課：獲勝分數" title="第4課：獲勝分數"><span class="octicon octicon-link"></span></a><span>第4課：獲勝分數</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>熟悉無王合約的點數表（表1）</span></li>
+<li><span>熟悉術語「第一墩」、「部分分數」和「成局」。</span></li>
+<li><span>熟悉「小滿貫」與「大滿貫」術語</span></li>
+<li><span>當您簽訂合約時會發生什麼事？</span></li>
+</ol><h2 id="按照規則處理牌和叫牌的練習" data-id="按照規則處理牌和叫牌的練習"><a class="anchor hidden-xs" href="#按照規則處理牌和叫牌的練習" title="按照規則處理牌和叫牌的練習"><span class="octicon octicon-link"></span></a><span>按照規則處理牌和叫牌的練習</span></h2><p><span>墩數和得分表</span><br>
+<span>當你玩遊戲時，有時你會準確地完成所需的墩數，有時你會完成更多，有時你無法完成所需的墩數。</span><br>
+<span>現在我們將了解當我們完成合約時我們會得到多少分，當我們做出更多墩時會發生什麼，以及當我們無法履行合約時我們的分數會發生什麼？</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>墩數</span></th>
+<th style="text-align:center"><span>分數</span></th>
+<th style="text-align:center"><span>奬分</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1NT</span></td>
+<td style="text-align:center"><strong><span>1</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40</span></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><span>90</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2NT</span></td>
+<td style="text-align:center"><strong><span>2</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><span>120</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3NT</span></td>
+<td style="text-align:center"><strong><span>3</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><strong><span>300</span></strong></td>
+<td style="text-align:center"><span>400</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4NT</span></td>
+<td style="text-align:center"><strong><span>4</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>300</span></td>
+<td style="text-align:center"><span>430</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5NT</span></td>
+<td style="text-align:center"><strong><span>5</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>300</span></td>
+<td style="text-align:center"><span>460</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6NT</span></td>
+<td style="text-align:center"><strong><span>6</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>300+</span><strong><span>500</span></strong></td>
+<td style="text-align:center"><span>980</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6NT</span></td>
+<td style="text-align:center"><strong><span>6</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>40+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong><span>+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>300+</span><strong><span>1000</span></strong></td>
+<td style="text-align:center"><span>1520</span></td>
+</tr>
+</tbody>
+</table><p><span>前 6 墩不累積任何分數。我們只從第 7 墩開始得分。這就是它被稱為</span><ins><span>第一墩</span></ins><span>的原因。</span><br>
+<strong><span>你看到了多少個等級的墩數？</span></strong><span> 正確 7。它們與前六墩之後的七墩相關。</span><br>
+<span>看著表回答我，如果我們做 7 墩，會得多少分？正確的是 40 點，但如果我們成功履行合同，我們將獲得額外的 50 點獎金。總共我們會拿到90分。</span><br>
+<span>如果我們得分更多，那麼第 7 墩之後每增加一墩，我們就會再獲得 30 分。</span><br>
+<span>誰能告訴我，如果我們做8招，我們能得多少分（算一下？）</span><br>
+<span>如果我們做出更多的戲法，那麼每超過 7 個“過度戲法”，我們就會再獲得 30 分）。我們將獲得120分。前7墩的計算為40，第8墩的計算為30，另外還有50的獎金。</span><br>
+<span>注意第三級獎金，有什麼差別？正確，獎金發生變動。從第 9 墩開始，我們將獲得 300 分的更大獎勵（前 3 墩每墩 100 分）。</span><br>
+<span>當我們收到 300 的獎金時，我們就知道我們已經成局了。</span><br>
+<span>每個技巧給我們的獎金少於 100 分的遊戲稱為部分得分。</span></p><h2 id="檢視理解程度的問題—贏墩和點力表" data-id="檢視理解程度的問題—贏墩和點力表"><a class="anchor hidden-xs" href="#檢視理解程度的問題—贏墩和點力表" title="檢視理解程度的問題—贏墩和點力表"><span class="octicon octicon-link"></span></a><span>檢視理解程度的問題—贏墩和點力表</span></h2><p><strong><span>如果我們完成 10 墩，我們會得多少分？</span></strong><span> 正確430分。**這是成局還是部分得分？**這是成局。</span><br>
+<strong><span>如果我們完成 11 墩，我們能得多少分？</span></strong><span> 正確460分。</span><strong><span>這是成局還是部分得分？</span></strong><span> 這是成局。</span></p><h2 id="熟悉術語–小滿貫和大滿貫" data-id="熟悉術語–小滿貫和大滿貫"><a class="anchor hidden-xs" href="#熟悉術語–小滿貫和大滿貫" title="熟悉術語–小滿貫和大滿貫"><span class="octicon octicon-link"></span></a><span>熟悉術語</span><span class="smartypants">–</span><span>小滿貫和大滿貫</span></h2><p><strong><span>達到6階需要多少墩？</span></strong><span> 正確，12墩－幾乎所有墩數？</span><br>
+<strong><span>當我們完成 12 墩時，我們會得到什麼獎勵？</span></strong><span> 我們獲得成局獎分，以及額外 500 分的小滿貫獎分。</span><br>
+<strong><span>為什麼我們能得到這麼多奬分？</span></strong><span> 因為我們贏取了絕大部分的贏墩。這不僅僅是一個成局，被稱為</span><ins><span>小滿貫(small slam)</span></ins><span>。</span><br>
+<strong><span>完成全部 13 墩我們能得到什麼獎勵？</span></strong><span> 我們獲得遊戲成局獎分以及額外的 1000 分。當我們承諾並完成所有 13 墩時，我們稱之為</span><ins><span>大滿貫(grand slam)</span></ins><span>。</span></p><blockquote>
+<p><span>我們會爭取小滿貫或大滿貫，以獲得更高的分數，但前提是我們有足夠的點力</span></p>
+</blockquote><h2 id="如果我們沒完成合約會怎樣？" data-id="如果我們沒完成合約會怎樣？"><a class="anchor hidden-xs" href="#如果我們沒完成合約會怎樣？" title="如果我們沒完成合約會怎樣？"><span class="octicon octicon-link"></span></a><span>如果我們沒完成合約會怎樣？</span></h2><p><span>當我們完成合約甚至贏得更多墩時，都沒有問題。但是，</span><strong><span>當莊家未能完成合約時，您認為會發生什麼事？</span></strong><br>
+<span>當然，我們不會根據贏墩表獲得分數，但也會有罰則。表現出色的防家將獲得積分。每不足一墩，防家將獲得 50 分。</span></p><h2 id="幫助理解的問題" data-id="幫助理解的問題"><a class="anchor hidden-xs" href="#幫助理解的問題" title="幫助理解的問題"><span class="octicon octicon-link"></span></a><span>幫助理解的問題</span></h2><p><strong><span>如果莊家當 2，他會得分嗎？</span></strong><span> 不。</span><br>
+<strong><span>防守方能得多少分？</span></strong><span> 正確，100分。</span><br>
+<strong><span>若莊家當 3，防守方得多少分？</span></strong><span> 正確，150分。</span></p><h2 id="牌例4" data-id="牌例4"><a class="anchor hidden-xs" href="#牌例4" title="牌例4"><span class="octicon octicon-link"></span></a><span>牌例4</span></h2><p><span>目標：發展花色</span><br>
+<span>莊家：N</span><br>
+<span>首引：♣ Q</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ K7</span><br><font color="red"><span>♥</span></font><span> AT5</span><br><font color="red"><span>♦</span></font><span> KT42</span><br><span>♣ KT83</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QJT84</span><br><font color="red"><span>♥</span></font><span> 74</span><br><font color="red"><span>♦</span></font><span> 96</span><br><span>♣ AJ42</span></td>
+<td></td>
+<td><span>♠ 932</span><br><span> </span><font color="red"><span>♥</span></font><span> 9632</span><br><font color="red"><span>♦</span></font><span> A76</span><br><span>♣ Q97</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A65</span><br><font color="red"><span>♥</span></font><span> KQJ8</span><br><font color="red"><span>♦</span></font><span> QJ83</span><br><span>♣ K63</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="牌例5" data-id="牌例5"><a class="anchor hidden-xs" href="#牌例5" title="牌例5"><span class="octicon octicon-link"></span></a><span>牌例5</span></h2><p><span>目標：發展花色</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> K</span><br>
+<span>合約：2NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ J853</span><br><font color="red"><span>♥</span></font><span> KT</span><br><font color="red"><span>♦</span></font><span> 964</span><br><span>♣ AQ75</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QT7</span><br><font color="red"><span>♥</span></font><span> 964</span><br><font color="red"><span>♦</span></font><span> KQJ75</span><br><span>♣ T2</span></td>
+<td></td>
+<td><span>♠ K642</span><br><span> </span><font color="red"><span>♥</span></font><span> A872</span><br><font color="red"><span>♦</span></font><span> T</span><br><span>♣ J984</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A9</span><br><font color="red"><span>♥</span></font><span> QJ53</span><br><font color="red"><span>♦</span></font><span> A832</span><br><span>♣ K63</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><h1 id="第5課：主打" data-id="第5課：主打"><a class="anchor hidden-xs" href="#第5課：主打" title="第5課：主打"><span class="octicon octicon-link"></span></a><span>第5課：主打</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>計算花色中的尊張在兩手之間分配時的贏墩。</span></li>
+<li><span>學習術語「長邊」、「短邊」和「阻塞」。</span></li>
+<li><span>一般學習－先從短邊提取贏墩。</span></li>
+<li><span>保持兩手之間的溝通管道暢通。</span></li>
+<li><span>出現阻塞時怎麼辦？</span></li>
+</ol><h2 id="計算兩手間的尊牌與確定贏墩" data-id="計算兩手間的尊牌與確定贏墩"><a class="anchor hidden-xs" href="#計算兩手間的尊牌與確定贏墩" title="計算兩手間的尊牌與確定贏墩"><span class="octicon octicon-link"></span></a><span>計算兩手間的尊牌與確定贏墩</span></h2><p><span>我們已經知道，一個確定贏墩是我們能夠在不給防守者上手的情況下就能取得的贏墩。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>7643</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>AKQJ</span></td>
+</tr>
+</tbody>
+</table><p><span>例一：我們手上有AKQJ，另一手有4張小牌。我們可以從手上的尊牌看出我們手上有一定的牌，還有我們可以打的夢家小牌。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AQ3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KJ2</span></td>
+</tr>
+</tbody>
+</table><p><span>例二：我們擁有所有的尊牌，但它們分配在兩手之間。無論我們怎麼看，我們都不能取得超過 3 墩。</span></p><h2 id="長手和短手" data-id="長手和短手"><a class="anchor hidden-xs" href="#長手和短手" title="長手和短手"><span class="octicon octicon-link"></span></a><span>長手和短手</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>A73</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KQJ4</span></td>
+</tr>
+</tbody>
+</table><p><span>當我們有一門花色分佈在兩手牌之間時，其中一隻手牌比另一手牌少，這稱為“</span><ins><span>短手牌</span></ins><span>”，而另一手牌在該花色中擁有更多牌的稱為“</span><ins><span>長手牌</span></ins><span>”。</span><br>
+<strong><span>範例中哪手更長？</span></strong><span> 正確, 南手。</span><br>
+<strong><span>我們在這門花色有多少確定贏墩？</span></strong><span> 是的，我們擁有所有的尊牌，我們可以拿下長手牌中的所有墩數，總共 4 墩。</span></p><h2 id="牌例6" data-id="牌例6"><a class="anchor hidden-xs" href="#牌例6" title="牌例6"><span class="octicon octicon-link"></span></a><span>牌例6</span></h2><p><span>目標：從短手邊先提大牌</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♥</span></font><span> K</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ T73</span><br><font color="red"><span>♥</span></font><span> A4</span><br><font color="red"><span>♦</span></font><span> 875</span><br><span>♣ AKJ64</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ J8</span><br><font color="red"><span>♥</span></font><span> KQJ82</span><br><font color="red"><span>♦</span></font><span> QT64</span><br><span>♣ 72</span></td>
+<td></td>
+<td><span>♠ Q952</span><br><span> </span><font color="red"><span>♥</span></font><span> 975</span><br><font color="red"><span>♦</span></font><span> K9</span><br><span>♣ T985</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AK64</span><br><font color="red"><span>♥</span></font><span> T63</span><br><font color="red"><span>♦</span></font><span> AJ32</span><br><span>♣ Q3</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>南為莊家，按競價表出價3NT。</span><br>
+<font color="red"><span>♥</span></font><span> K 被指定為首引。</span></p><ul>
+<li><span>許多學生將無法完成合約，因為梅廿花套會堵塞</span></li>
+</ul><p><strong><span>誰成功打成9墩？</span></strong><span> 非常好。</span><strong><span>讓我們試著了解那些沒有成功的人發生了什麼事？</span></strong><br>
+<strong><span>你看得出多少確定贏墩？</span></strong><span> 正確 9. </span><strong><span>那麼沒能拿到它們是怎麼回事？</span></strong><br>
+<span>在梅花花色中，我們可以看到 5 墩，但無論誰先拿到 A，然後向 Q 打出梅花，都會發現自己「卡住」在手中，不可能返回夢家來打出其餘的大牌。</span><br>
+<span>這種情況稱為阻塞 (blockage)，為了避免這種情況，我們必須先從短手牌中打出大牌，然後用短手牌中的最後一張牌向長手牌打小牌。短手的最後一張牌是兩隻手之間的溝通橋樑。</span></p><blockquote>
+<p><span>當兩手牌的牌數分佈不均時，我們必須先打出短手牌的尊張，然後再打長手牌的尊張。</span></p>
+</blockquote><h2 id="保持兩手之間的溝通" data-id="保持兩手之間的溝通"><a class="anchor hidden-xs" href="#保持兩手之間的溝通" title="保持兩手之間的溝通"><span class="octicon octicon-link"></span></a><span>保持兩手之間的溝通</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>A73</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KQJ4</span></td>
+</tr>
+</tbody>
+</table><p><span>根據我們學到的規則，我們將如何打範例中的花色？</span><br>
+<span>首先我們會打小牌到A，然後我們會使用其中一張小牌到達我們的手牌。這將是長手（南）的入口，我們將能夠取得其餘的贏墩。如果我們不這樣打，就會出現堵塞。</span></p><h2 id="我們如何克服阻塞？" data-id="我們如何克服阻塞？"><a class="anchor hidden-xs" href="#我們如何克服阻塞？" title="我們如何克服阻塞？"><span class="octicon octicon-link"></span></a><span>我們如何克服阻塞？</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AK</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>QJ43</span></td>
+</tr>
+</tbody>
+</table><p><span>即使我們打得正確，有時也會出現阻塞。</span><br>
+<strong><span>當我們玩上面的例子時，我們能取得多少墩？</span></strong><br>
+<span>原則上，我們可以看到4個贏墩。</span><br>
+<span>我們將如何玩這套花色？根據規則，我們用 A 和 K 抽出前兩墩。但還有一個問題，</span><br>
+<strong><span>誰能看出有什麼問題？</span></strong><span> 正確，在我們從短手中打出尊張後，正如我們該做的，但我們沒有辦法回到手上。</span><br>
+<strong><span>那我們該怎麼做？</span></strong><span> 我們在其他花色中找上手張(尊張)，來找到回來到“長”手的橋路。</span></p><blockquote>
+<p><span>如果在某門花色我們沒有小牌可以打到對面，我們就必須盡快從短手牌中提取頂張。然後我們在其他花色中尋找上手張，以便過橋到「長」手牌兌現其餘贏墩。</span></p>
+</blockquote><h2 id="牌例7" data-id="牌例7"><a class="anchor hidden-xs" href="#牌例7" title="牌例7"><span class="octicon octicon-link"></span></a><span>牌例7</span></h2><p><span>目標：短手的牌例</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠ 6</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 84</span><br><font color="red"><span>♥</span></font><span> KJ6</span><br><font color="red"><span>♦</span></font><span> KJ964</span><br><span>♣ AT3</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QT763</span><br><font color="red"><span>♥</span></font><span> 87</span><br><font color="red"><span>♦</span></font><span> T82</span><br><span>♣ 742</span></td>
+<td></td>
+<td><span>♠ KJ2</span><br><span> </span><font color="red"><span>♥</span></font><span> T943</span><br><font color="red"><span>♦</span></font><span> 75</span><br><span>♣ KQ98</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A95</span><br><font color="red"><span>♥</span></font><span> AQ52</span><br><font color="red"><span>♦</span></font><span> AQ3</span><br><span>♣ J65</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>南為莊家，按競價表出價3NT。</span><br>
+<span>♠ 6 被指定為首引。</span></p><p><strong><span>莊家有多少個確定贏墩？</span></strong><span> 正確，11個確定贏墩。</span><br>
+<strong><span>你需要怎麼打才能做成？</span></strong><span> 正確，您必須確保首先從短花色中提取尊張。在這手牌中，即使你沒有遵守這條規則，你仍然可以完成合約，因為即使發生了阻塞，你仍然可以使用其他花色中的頂張來進入長手。</span><br>
+<span>但你並不總是有機會這樣做，這就是為什麼你應該確保你打得正確。</span></p><h1 id="第6課：牌張打法" data-id="第6課：牌張打法"><a class="anchor hidden-xs" href="#第6課：牌張打法" title="第6課：牌張打法"><span class="octicon octicon-link"></span></a><span>第6課：牌張打法</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>克服阻塞的方法－解封 (unblocking) 或蓋吃大牌。</span></li>
+<li><span>從連續張引牌。</span></li>
+<li><span>花色開發——理想分配。</span></li>
+</ol><h2 id="牌例8" data-id="牌例8"><a class="anchor hidden-xs" href="#牌例8" title="牌例8"><span class="octicon octicon-link"></span></a><span>牌例8</span></h2><p><span>目標：克服阻塞</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> Q</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A96</span><br><font color="red"><span>♥</span></font><span> QJ53</span><br><font color="red"><span>♦</span></font><span> 983</span><br><span>♣ 763</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ Q7</span><br><font color="red"><span>♥</span></font><span> T96</span><br><font color="red"><span>♦</span></font><span> AQJT5</span><br><span>♣ T52</span></td>
+<td></td>
+<td><span>♠ KJ42</span><br><span> </span><font color="red"><span>♥</span></font><span> 8742</span><br><font color="red"><span>♦</span></font><span> 7</span><br><span>♣ J984</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ T853</span><br><font color="red"><span>♥</span></font><span> AK</span><br><font color="red"><span>♦</span></font><span> K642</span><br><span>♣ AKQJ</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>南為莊家，按競價表出價3NT。</span><br>
+<font color="red"><span>♦</span></font><span> Q 被指定為首引。</span></p><p><strong><span>莊家有多少確定贏墩？</span></strong><span> 正確 9.</span><br>
+<strong><span>那些失掉的墩數怎麼了？</span></strong><span> 防守者首引 </span><font color="red"><span>♦</span></font><span> Q，我們可以用 K 贏此墩。</span><br>
+<strong><span>我們怎麼知道某門花色被阻塞了？</span></strong><span> 當一手牌單有尊張而沒有小牌時，這就是阻塞。</span><br>
+<strong><span>當某門花色被阻塞時我們該怎麼辦？</span></strong></p><blockquote>
+<ol>
+<li><span>第一階段“解堵”，我們將打出堵塞花色的單獨尊張。</span></li>
+<li><span>在第二階段，我們將尋找第二門花色，它可以幫助我們進入目標手並贏得剩餘的牌。</span></li>
+</ol>
+</blockquote><p><strong><span>我們可以透過哪種花色進入夢家？</span></strong><span> 正確，黑桃，因為我們有 A。</span></p><h2 id="從連續張頂部開始的引牌" data-id="從連續張頂部開始的引牌"><a class="anchor hidden-xs" href="#從連續張頂部開始的引牌" title="從連續張頂部開始的引牌"><span class="octicon octicon-link"></span></a><span>從連續張頂部開始的引牌</span></h2><p><strong><span>看看你剛剛玩過的例子。防守者是否可以阻止我們從手牌轉向黑桃明手？</span></strong><span> 不，這是不可能的。</span><br>
+<span>但如果開局領先是 ♠ Q，那麼莊家就必須在第一墩中立即以 A 獲勝，從而阻止我們在後續中進入夢家的橋引。</span><br>
+<span>如果是這樣的話，為什麼我們首引的是方塊而不是黑桃？正如您所看到的，首引至關重要。有時它有助於莊家完成合約，有時它是合約敗的原因。</span><br>
+<span>我們將教您如何正確引牌，但在這個階段我們將專注於解釋一個功能：</span></p><blockquote>
+<p><span>當我們有一串連續大牌時，我們會更偏向從連續張頂部引牌來快速發展我們的贏張。</span></p>
+</blockquote><p><span>以下是從連續張頂部開始的一些範例：</span><br>
+<strong><span>K</span></strong><span>QJT8、</span><strong><span>Q</span></strong><span>JT8、</span><strong><span>J</span></strong><span>T987、</span><strong><span>A</span></strong><span>KQ87</span></p><h2 id="當還有一張更大的牌時，一樣是從連續張頂部開始引牌" data-id="當還有一張更大的牌時，一樣是從連續張頂部開始引牌"><a class="anchor hidden-xs" href="#當還有一張更大的牌時，一樣是從連續張頂部開始引牌" title="當還有一張更大的牌時，一樣是從連續張頂部開始引牌"><span class="octicon octicon-link"></span></a><span>當還有一張更大的牌時，一樣是從連續張頂部開始引牌</span></h2><p><span>由於我們希望快速開發我們的贏張，因此每當我們的連續張之上還有更大的牌時，我們都會更願意開發該花色。當我們有以 A 為首的花色時，我們可以立即提取這墩。當我們有一個以 K 為首的連續張時，我們將不得不輸掉第一墩，然後才能贏得我們的墩。但是，當我們在連續張之上還有更大的牌時，我們仍然可以引該花色，例如：K</span><strong><span>J</span></strong><span>T93，A</span><strong><span>J</span></strong><span>T93，Q</span><strong><span>T</span></strong><span>984，K</span><strong><span>J</span></strong><span>T98。</span></p><h2 id="克服阻塞——「吞下」swallowing-蓋吃尊張" data-id="克服阻塞——「吞下」swallowing-蓋吃尊張"><a class="anchor hidden-xs" href="#克服阻塞——「吞下」swallowing-蓋吃尊張" title="克服阻塞——「吞下」swallowing-蓋吃尊張"><span class="octicon octicon-link"></span></a><span>克服阻塞——「吞下」(swallowing, 蓋吃)尊張</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AQ</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KJ2</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>您能在上面的範例中看到阻塞嗎？</span></strong><span> 正確，北手有 AQ，但沒有小牌，阻塞了到達南手。</span><br>
+<span>在第一階段玩Ace，然後玩Q，然後我們要如何到達長手？可以尋找另一套花色，但還有另一種方法。</span><br>
+<span>在這種情況下，K“蓋吃”了Q並贏得了這一墩。現在我們可以打 J 而無需尋找其他花色。在這種情況下，我們可以「吞下」一張尊張，因為我們還有接下來的尊張(J)。</span></p><h2 id="友善分配" data-id="友善分配"><a class="anchor hidden-xs" href="#友善分配" title="友善分配"><span class="octicon octicon-link"></span></a><span>友善分配</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><span>A43</span></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>JT8</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>976</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>KQ52</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>South 是莊家，North 是明手。這門花色你看出多少贏墩了？ 3個贏墩。</span><br>
+<span>是不是可以做出更多的贏墩呢？我們的花色有 7 張牌，還缺 6 張牌。如果缺少的牌在防守者之間平均分配（3:3），我們就可以贏得額外一墩。</span></p><ol>
+<li><span>我們對 A 玩小牌，2) 對 K 打小牌，3) 打 Q 從夢家手中丟出一張小牌。 3回合後，防守方的同花色牌已無，我們手中的第4張牌變成大牌。</span></li>
+</ol><blockquote>
+<p><span>當我們尋找額外的贏墩時，我們可以利用防守者的友好分配</span></p>
+</blockquote><h2 id="牌例9" data-id="牌例9"><a class="anchor hidden-xs" href="#牌例9" title="牌例9"><span class="octicon octicon-link"></span></a><span>牌例9</span></h2><p><span>目標：友善分配</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> Q</span><br>
+<span>合約：2NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ AKQ</span><br><font color="red"><span>♥</span></font><span> 985</span><br><font color="red"><span>♦</span></font><span> 632</span><br><span>♣ T763</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 9742</span><br><font color="red"><span>♥</span></font><span> 764</span><br><font color="red"><span>♦</span></font><span> K84</span><br><span>♣ AJ5</span></td>
+<td></td>
+<td><span>♠ J83</span><br><span> </span><font color="red"><span>♥</span></font><span> JT3</span><br><font color="red"><span>♦</span></font><span> JT75</span><br><span>♣ KQ4</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ T65</span><br><font color="red"><span>♥</span></font><span> AKQ2</span><br><font color="red"><span>♦</span></font><span> AQ9</span><br><span>♣ 962</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><h1 id="第7課：主打技巧–偷牌" data-id="第7課：主打技巧–偷牌"><a class="anchor hidden-xs" href="#第7課：主打技巧–偷牌" title="第7課：主打技巧–偷牌"><span class="octicon octicon-link"></span></a><span>第7課：主打技巧</span><span class="smartypants">–</span><span>偷牌</span></h1><p><span>本課目的</span></p><ol>
+<li><span>技巧發展——偷牌(finesse)與僵局(impasse)。</span></li>
+<li><span>簡單的偷牌和僵局</span></li>
+</ol><h2 id="簡單的偷牌" data-id="簡單的偷牌"><a class="anchor hidden-xs" href="#簡單的偷牌" title="簡單的偷牌"><span class="octicon octicon-link"></span></a><span>簡單的偷牌</span></h2><p><span>有時我們會面臨以下情況：</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AQ</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>42</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>我們在這門花色最少能做出多少贏墩？</span></strong><span> 正確1，A。</span><br>
+<strong><span>有沒有辦法再取得一個贏墩？</span></strong><span> 如果 K 是單張，它將打 A 時會被擊落，因此 Q 將被建立。但這種情況機率很小，我們不能將其考慮在內。我們不會打A（因為沒有機會抓住K）。但如果K在我們的左邊，那麼我們有機會用Q獲勝（通常西方玩家不會打K，因為他會希望我們打A，他的K就會建立）。</span><br>
+<strong><span>如果東有 K 會發生什麼事？</span></strong><span> 那這墩就失敗了，但我們必須這樣試試看，假設我們有機會抓住它，否則我們無能為力。這種偷牌讓我們有 50% 的成功機會。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>A32</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KJ6</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>在下一個例子中，我們缺少哪個大牌？</span></strong><span> 正確，Q。</span><br>
+<strong><span>我們有多少確定贏墩？</span></strong><span> 正確，2。</span><br>
+<strong><span>什麼情況下才能獲得額外的贏墩？</span></strong><span> 如果 Q 是在 K J 尊張之前（即東家）。</span><br>
+<strong><span>我們要怎麼打才能捕捉住女王呢？</span></strong><span> 正確，我們將首先打 A（也許 Q 是單張），然後對著 K J打小偷牌。</span></p><blockquote>
+<p><span>為了實現一個簡單的偷牌——「我們必須識別陷阱(trap)/卡張(fork)」。</span><br>
+<span>陷阱是我們擁有一個尊張和另一個比缺少的尊張更低的尊張（AQ，KJ），並且假設缺少的尊張可被捕捉，我們對著卡張打出一張小牌。</span></p>
+</blockquote><h2 id="牌例10" data-id="牌例10"><a class="anchor hidden-xs" href="#牌例10" title="牌例10"><span class="octicon octicon-link"></span></a><span>牌例10</span></h2><p><span>目標：偷牌與友善分配</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠ 6</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 853</span><br><font color="red"><span>♥</span></font><span> A86</span><br><font color="red"><span>♦</span></font><span> A653</span><br><span>♣ T42</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ KJ764</span><br><font color="red"><span>♥</span></font><span> 942</span><br><font color="red"><span>♦</span></font><span> T2</span><br><span>♣ KJ8</span></td>
+<td></td>
+<td><span>♠ QT</span><br><span> </span><font color="red"><span>♥</span></font><span> QT53</span><br><font color="red"><span>♦</span></font><span> J97</span><br><span>♣ Q973</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A92</span><br><font color="red"><span>♥</span></font><span> KJ7</span><br><font color="red"><span>♦</span></font><span> KQ84</span><br><span>♣ A65</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="僵局Impasse" data-id="僵局Impasse"><a class="anchor hidden-xs" href="#僵局Impasse" title="僵局Impasse"><span class="octicon octicon-link"></span></a><span>僵局(Impasse)</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>A4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>Q2</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>下一個例子：我們可以做 2 個贏墩嗎？</span></strong><br>
+<span>無論 K坐在哪裡，我們永遠無法完成兩墩。(除非防家自己打出來，</span><strong><span>剝光投入</span></strong><span>讓防家被迫自己打)</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>A4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>QJ</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>現在我們打 Q 會發生什麼事？</span></strong><span> 如果 K 在西家，我們總是可拿 2 墩。</span><br>
+<span>這是一個僵局，為了成功，我們需要連續的尊牌（在本例中是 QJ）</span></p><blockquote>
+<p><span>僵局——我們從手中打出尊牌，向著桌上更大的尊牌打</span></p>
+</blockquote><h2 id="僵局或偷牌？" data-id="僵局或偷牌？"><a class="anchor hidden-xs" href="#僵局或偷牌？" title="僵局或偷牌？"><span class="octicon octicon-link"></span></a><span>僵局或偷牌？</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AQ</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>32</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>我們這裡需要什麼樣的打法？</span></strong><span> 正確，偷牌。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AK2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>JT3</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>我們這裡需要什麼樣的打法？</span></strong><span> 正確，僵局。</span></p><h2 id="雙向偷牌" data-id="雙向偷牌"><a class="anchor hidden-xs" href="#雙向偷牌" title="雙向偷牌"><span class="octicon octicon-link"></span></a><span>雙向偷牌</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AJT</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>K32</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>我們應該朝哪個方向採取策略？</span></strong><br>
+<span>我們可以將其視為朝向 J 的簡單偷牌，或朝向 K 的僵局。</span></p><h2 id="牌例11" data-id="牌例11"><a class="anchor hidden-xs" href="#牌例11" title="牌例11"><span class="octicon octicon-link"></span></a><span>牌例11</span></h2><p><span>目標：偷牌與友善分配</span><br>
+<span>莊家：E</span><br>
+<span>首引：♠ Q</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ K82</span><br><font color="red"><span>♥</span></font><span> JT3</span><br><font color="red"><span>♦</span></font><span> QJ74</span><br><span>♣ Q65</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 654</span><br><font color="red"><span>♥</span></font><span> A76</span><br><font color="red"><span>♦</span></font><span> 932</span><br><span>♣ A873</span></td>
+<td></td>
+<td><span>♠ A97</span><br><span> </span><font color="red"><span>♥</span></font><span> KQ84</span><br><font color="red"><span>♦</span></font><span> A85</span><br><span>♣ KJ8</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ QJT3</span><br><font color="red"><span>♥</span></font><span> 952</span><br><font color="red"><span>♦</span></font><span> KT6</span><br><span>♣ T42</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>確保 S 從連續張頂部首引。合約的成功取決於偷牌和友好分配的結合。</span></li>
+</ul><h1 id="第8課：打王牌合約" data-id="第8課：打王牌合約"><a class="anchor hidden-xs" href="#第8課：打王牌合約" title="第8課：打王牌合約"><span class="octicon octicon-link"></span></a><span>第8課：打王牌合約</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>熟悉術語：Stopper、trump suit、trump、ruff 和 a fit</span></li>
+<li><span>什麼時候使用王牌？如何用？</span></li>
+<li><span>分配和一些基本術語：singleton、doubleton、void。</span></li>
+</ol><h2 id="牌例12" data-id="牌例12"><a class="anchor hidden-xs" href="#牌例12" title="牌例12"><span class="octicon octicon-link"></span></a><span>牌例12</span></h2><p><span>目標：打王牌合約比較好</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♥</span></font><span> A</span><br>
+<span>合約：1NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ T9632</span><br><font color="red"><span>♥</span></font><span> 5</span><br><font color="red"><span>♦</span></font><span> KJ43</span><br><span>♣ AQ4</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ </span><span class="smartypants">–</span><br><font color="red"><span>♥</span></font><span> AKQJ842</span><br><font color="red"><span>♦</span></font><span> 52</span><br><span>♣ T762</span></td>
+<td></td>
+<td><span>♠ QJ</span><br><span> </span><font color="red"><span>♥</span></font><span> T974</span><br><font color="red"><span>♦</span></font><span> T987</span><br><span>♣ J953</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AK8754</span><br><font color="red"><span>♥</span></font><span> 63</span><br><font color="red"><span>♦</span></font><span> AQ6</span><br><span>♣ K8</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>打無王的話，誰都無法完成 7 墩。</span></li>
+</ul><p><strong><span>沒有人簽約成功的？</span></strong><span> 沒關係，不可能做到。</span><br>
+<span>但以大牌點計算，南北有26點，應該可以打出9墩。</span><strong><span>那為什麼合約失敗了呢？</span></strong><span> 原因是我們在首引的紅心花色中沒有「擋張」(stopper)。</span><br>
+<ins><span>擋張是一張可以阻止對手奔吃所引花色的牌</span></ins><span>，就像他們引的紅心花色一樣：例如A、K8、Q87、J976。</span><br>
+<span>在紅心花色上，我們沒有擋張。</span><strong><span>如果我們在特定的花色中沒有保護怎麼辦？</span></strong></p><h2 id="偏好打王牌Trumps合約" data-id="偏好打王牌Trumps合約"><a class="anchor hidden-xs" href="#偏好打王牌Trumps合約" title="偏好打王牌Trumps合約"><span class="octicon octicon-link"></span></a><span>偏好打王牌(Trumps)合約</span></h2><p><span>到目前為止，我們玩過的所有遊戲都是基於無王牌：引牌決定了每墩的王牌花色 (墊其它花色不能贏得這墩)。這稱為 </span><ins><span>NO TRUMP</span></ins><span>（或簡稱 NT，無王）。</span><br>
+<ins><span>但我們不必總是玩NT</span></ins><span>。當我們有很多同花色的牌時，我們可以選擇該花色比其他花色更強，換句話說，它將是</span><ins><span>王牌花色 (trump suit)</span></ins><span>。這門王牌花色中的牌稱為「王牌」。</span><br>
+<strong><span>您知道需要多少張牌才適合打王牌嗎？</span></strong><span> 至少8張。</span><br>
+<span>當一對在一門花色合起來至少有 8 張牌時，這稱為「</span><ins><span>配合 (fit)</span></ins><span>」。</span><br>
+<strong><span>你能猜到玩王牌的優勢嗎？</span></strong><span> 如果我們打無王，當在引出花色沒有牌可以跟牌時，我們必須墊牌，棄掉一張不同花色的牌，不能贏得這墩。但當我們打王牌合約，而沒有牌可跟時，我們可以打出王牌並贏得這一墩。</span></p><h2 id="王吃-Ruff" data-id="王吃-Ruff"><a class="anchor hidden-xs" href="#王吃-Ruff" title="王吃-Ruff"><span class="octicon octicon-link"></span></a><span>王吃 (Ruff)</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><span>♠3</span></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>♠5</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><font color="red"><span>♥</span></font><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>♠A</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>在這個例子中，王牌花色是紅心。</span><br>
+<span>E 是莊家，S 出 ♠A，W 跟牌，N 跟牌，但 E 沒有黑桃可以跟牌。他打的是小王牌。</span><br>
+<strong><span>你認為誰贏了這墩？ 是 A 這張大牌，還是 2 這張王牌？</span></strong><span> 正確，即使王牌是小牌，它仍然可以擊敗其他花色的大牌。</span></p><h2 id="誰被允許王吃？" data-id="誰被允許王吃？"><a class="anchor hidden-xs" href="#誰被允許王吃？" title="誰被允許王吃？"><span class="octicon octicon-link"></span></a><span>誰被允許王吃？</span></h2><p><strong><span>我們什麼時候可以王吃？</span></strong><span> 只有當我們無法跟牌時。</span><br>
+<strong><span>王牌的作用是什麼？</span></strong><span> 壓制對手的大牌並確保我們不會失去控制。</span><br>
+<strong><span>只有莊家允許王吃嗎？</span></strong><span> 不，當防守者無法跟牌時，他們也可以王吃。</span><br>
+<strong><span>如果是這樣，您認為莊家在打王牌時值得做什麼？</span></strong><span> 是的，他</span><ins><span>需要快速抽王(draw trumps)</span></ins><span class="smartypants">–</span><span>從防守者手中把王牌清掉。</span><br>
+<strong><span>當他不能跟牌時，他是否必須王吃？</span></strong><br>
+<span>不，</span><ins><span>這不是必須的</span></ins><span>——但王吃有它的優點。</span></p><ul>
+<li><span>學生現在再嘗試重玩牌例12。 South 是莊家，黑桃是王牌，他必須拿 10 墩。首引是 </span><font color="red"><span>♥</span></font><span>A。學生現在會發現合約是可以完成的。</span></li>
+</ul><h2 id="牌例13" data-id="牌例13"><a class="anchor hidden-xs" href="#牌例13" title="牌例13"><span class="octicon octicon-link"></span></a><span>牌例13</span></h2><p><span>目標：分配點</span><br>
+<span>莊家：W</span><br>
+<span>首引：♠ A</span><br>
+<span>合約：4</span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ AKQT98</span><br><font color="red"><span>♥</span></font><span> </span><span class="smartypants">–</span><br><font color="red"><span>♦</span></font><span> T98</span><br><span>♣ T865</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 43</span><br><font color="red"><span>♥</span></font><span> AK7643</span><br><font color="red"><span>♦</span></font><span> KQ4</span><br><span>♣ A7</span></td>
+<td></td>
+<td><span>♠ J</span><br><span> </span><font color="red"><span>♥</span></font><span> T9853</span><br><font color="red"><span>♦</span></font><span> AJ63</span><br><span>♣ KQ9</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 7652</span><br><font color="red"><span>♥</span></font><span> QJ</span><br><font color="red"><span>♦</span></font><span> 752</span><br><span>♣ 7432</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>你能看出，在第一墩之後，莊家就可以王吃，並做出比承諾的更多的墩數嗎？關鍵是，由於莊家在防家的花色上很短，這對他有幫助。如果是打無王合約，會發生什麼事？防守者會拿下前 6 墩，合約就會被擊垮。</span></p><h2 id="分配點" data-id="分配點"><a class="anchor hidden-xs" href="#分配點" title="分配點"><span class="octicon octicon-link"></span></a><span>分配點</span></h2><p><span>當我們打王牌合約時，短門/缺門是一個明確的優勢。因此，我們不僅會考慮大牌點，還會根據以下重點考慮「分配點」：</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>分配點</span></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>5 點</span></td>
+<td><span>缺門 (void)</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3 點</span></td>
+<td><span>單張 (singleton)</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1 點</span></td>
+<td><span>雙張 (doubleton)</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>1 點</span></td>
+<td><span>王牌合起來至少8點，每超過一張加1點</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>為什麼我們每多一張王牌就加點？</span></strong><span> 因為我們擁有的越多，對手的王牌就越少，我們可以快速清王，在必要時留下更多的王牌來進行王吃。</span></p><ul>
+<li><span>想要計算分配點和長度點，我們必須先找到王牌配合。在 NT 合約中，我們不能添加分配點，因為短缺會造成損害。</span></li>
+</ul><h2 id="牌例14" data-id="牌例14"><a class="anchor hidden-xs" href="#牌例14" title="牌例14"><span class="octicon octicon-link"></span></a><span>牌例14</span></h2><p><span>目標：清王</span><br>
+<span>莊家：S</span><br>
+<span>首引：♣ K</span><br>
+<span>合約：4♠</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ K642</span><br><font color="red"><span>♥</span></font><span> 982</span><br><font color="red"><span>♦</span></font><span> QJT</span><br><span>♣ T87</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 87</span><br><font color="red"><span>♥</span></font><span> QT53</span><br><font color="red"><span>♦</span></font><span> 94</span><br><span>♣ KQJ53</span></td>
+<td></td>
+<td><span>♠ 95</span><br><span> </span><font color="red"><span>♥</span></font><span> J7</span><br><font color="red"><span>♦</span></font><span> K8765</span><br><span>♣ A962</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AQJT3</span><br><font color="red"><span>♥</span></font><span> AK64</span><br><font color="red"><span>♦</span></font><span> A32</span><br><span>♣ 4</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>分析這手牌</span><br>
+<strong><span>從首引的線索我們可以得到什麼結論？</span></strong><span> 西家有 KQ 甚至 KQJ 的連續張。</span><br>
+<strong><span>我們應該立即清王牌嗎？</span></strong><span> 當然，由於我們手中和夢家有足夠的王牌，我們會先清王牌。</span><br>
+<strong><span>我們該如何處理方塊花色呢？</span></strong><span> 正確，我們可以偷 K。我們必須打出 Q，如果東家沒有蓋 K，南家將跟一張小牌，然後再打出 J（重覆偷牌）。</span><br>
+<span>如果東方蓋 K，我們就用 A 蓋，然後 J 跟 T 就大了。</span></li>
+</ul><h1 id="第9課：決定合約型式" data-id="第9課：決定合約型式"><a class="anchor hidden-xs" href="#第9課：決定合約型式" title="第9課：決定合約型式"><span class="octicon octicon-link"></span></a><span>第9課：決定合約型式</span></h1><p><span>本課目的</span><br>
+<span>4. 叫牌卡(bidding cards)的使用。</span><br>
+<span>5. 確定合約型式－王牌還是無王？</span></p><h2 id="我們如何找到配合？" data-id="我們如何找到配合？"><a class="anchor hidden-xs" href="#我們如何找到配合？" title="我們如何找到配合？"><span class="octicon octicon-link"></span></a><span>我們如何找到配合？</span></h2><table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>♠ K852</span><br><font color="red"><span>♥</span></font><span> A95</span><br><font color="red"><span>♦</span></font><span> Q743</span><br><span>♣ T8</span></td>
+</tr>
+<tr>
+<td><span>♠ A9643</span><br><font color="red"><span>♥</span></font><span> 72</span><br><font color="red"><span>♦</span></font><span> KJ95</span><br><span>♣ AQ</span></td>
+</tr>
+</tbody>
+</table><p><span>要打王牌合約，我們需要找到某個花色中至少有 8 張牌的組合。</span><br>
+<strong><span>我們如何知道搭擋不同花色有多少張牌？</span></strong><span> 我們將使用叫牌卡。</span></p><ol>
+<li><span>South發牌，有 14 點並宣布「</span><strong><span>我開叫(open)</span></strong><span>」。</span></li>
+<li><span>北家（North）是</span><strong><span>答叫者 (responder)</span></strong><span>，有 9 點，填寫一張叫牌表，其中寫下他在每種花色中有多少張牌以及點數。</span></li>
+<li><span>South 寫下他各門有多少張牌，並</span><ins><span>檢查是否其中一門花色有配合</span></ins><span>。</span></li>
+<li><span>如果有配合的，那就是王牌。 （如果有不只一門花色配合，那麼他會選擇更配合的那門花色 - 有更多張牌）。</span></li>
+<li><span>如果沒有配合，則合約為NT。 （在這個例子中，我們的黑桃非常配合）</span></li>
+<li><span>現在，開局者將雙方的點力相加，並計算其搭檔的分配點。</span></li>
+<li><ins><span>把 大牌點+分配點+長度點 加起來</span></ins><span> （本例中是27）。 根據決策表，他將決定合約的階級(level)。 （在這種情況下，合約將是 6+4 墩；因此最終合約將是 4 黑桃。）</span></li>
+</ol><ul>
+<li><span>注意：如果答叫者的點力低於 8，他將不會填寫叫牌表，但會宣布他有多少點。開叫者將計算總點力。如果有20個或更多，他會要求他的搭檔填寫表格。如果合夥人的點力少於 20，他將 Pass 並允許他的左手對手開始叫牌。為什麼我們需要8點？如果開叫者至少有12點，那麼他的搭檔必須帶上8點，讓總點力達到20分才能叫牌。</span></li>
+</ul><h2 id="牌例15" data-id="牌例15"><a class="anchor hidden-xs" href="#牌例15" title="牌例15"><span class="octicon octicon-link"></span></a><span>牌例15</span></h2><p><span>目標：清王</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠ K</span><br>
+<span>合約：4</span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 94</span><br><font color="red"><span>♥</span></font><span> K972</span><br><font color="red"><span>♦</span></font><span> QT52</span><br><span>♣ K62</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ KQJ75</span><br><font color="red"><span>♥</span></font><span> T63</span><br><font color="red"><span>♦</span></font><span> A6</span><br><span>♣ QT7</span></td>
+<td></td>
+<td><span>♠ T863</span><br><span> </span><font color="red"><span>♥</span></font><span> J8</span><br><font color="red"><span>♦</span></font><span> 984</span><br><span>♣ J854</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A2</span><br><font color="red"><span>♥</span></font><span> AQ54</span><br><font color="red"><span>♦</span></font><span> KJ73</span><br><span>♣ A93</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong><span>誰打當了？為什麼？</span></strong><br>
+<span>無論誰在抽到王牌之前打方塊，會受到防守者的王吃。因此，我們必須在對手王吃前清王牌。</span></p><ul>
+<li><span>請學生再玩一次這手牌，這次先清王牌。</span></li>
+</ul><h2 id="牌例16" data-id="牌例16"><a class="anchor hidden-xs" href="#牌例16" title="牌例16"><span class="octicon octicon-link"></span></a><span>牌例16</span></h2><p><span>目標：在方塊牌組上墊掉失墩</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♥</span></font><span> J</span><br>
+<span>合約：3♠</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 9876</span><br><font color="red"><span>♥</span></font><span> Q43</span><br><font color="red"><span>♦</span></font><span> AKJ4</span><br><span>♣ A3</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 2</span><br><font color="red"><span>♥</span></font><span> JT9</span><br><font color="red"><span>♦</span></font><span> T8653</span><br><span>♣ KT87</span></td>
+<td></td>
+<td><span>♠ 543</span><br><span> </span><font color="red"><span>♥</span></font><span> AK76</span><br><font color="red"><span>♦</span></font><span> 97</span><br><span>♣ QJ94</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AKQJT</span><br><font color="red"><span>♥</span></font><span> 852</span><br><font color="red"><span>♦</span></font><span> Q2</span><br><span>♣ 652</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong><span>大家都完成合約了嗎？</span></strong><span> 如果我們在打方塊牌組時墊掉梅花小牌，就有可能贏更多墩。在下一課中，我們將學習如何規劃打法以及如何應對失墩。</span></p><h2 id="結論性問題" data-id="結論性問題"><a class="anchor hidden-xs" href="#結論性問題" title="結論性問題"><span class="octicon octicon-link"></span></a><span>結論性問題</span></h2><p><span>打王牌和NT有什麼差別？</span><br>
+<span>打王牌有哪些優點/缺點？</span><br>
+<span>在 NT 中玩有哪些優點/缺點？</span><br>
+<span>你比較喜歡玩哪一種呢？為什麼？</span></p><h1 id="第10課：王牌合約中規劃打法" data-id="第10課：王牌合約中規劃打法"><a class="anchor hidden-xs" href="#第10課：王牌合約中規劃打法" title="第10課：王牌合約中規劃打法"><span class="octicon octicon-link"></span></a><span>第10課：王牌合約中規劃打法</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>規劃王牌合約的打法</span></li>
+<li><span>熟悉術語－失張 (loser) －辨識失張。</span></li>
+<li><span>用另一花色的大牌讓失張消失 (墊掉失張)。</span></li>
+</ol><h2 id="牌例17" data-id="牌例17"><a class="anchor hidden-xs" href="#牌例17" title="牌例17"><span class="octicon octicon-link"></span></a><span>牌例17</span></h2><p><span>目標：處理失張</span><br>
+<span>發牌：S</span><br>
+<span>莊家：N</span><br>
+<span>首引：♠ K</span><br>
+<span>合約：4</span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A83</span><br><font color="red"><span>♥</span></font><span> Q632</span><br><font color="red"><span>♦</span></font><span> AQ5</span><br><span>♣ J54</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ KQT4</span><br><font color="red"><span>♥</span></font><span> 9</span><br><font color="red"><span>♦</span></font><span> T943</span><br><span>♣ K982</span></td>
+<td></td>
+<td><span>♠ 9752</span><br><span> </span><font color="red"><span>♥</span></font><span> A4</span><br><font color="red"><span>♦</span></font><span> J862</span><br><span>♣ A76</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ J6</span><br><font color="red"><span>♥</span></font><span> KJT875</span><br><font color="red"><span>♦</span></font><span> K7</span><br><span>♣ QT3</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><ul>
+<li><span>北家是莊家（南邊和西邊都是 Pass）</span><br>
+<span>大多數學生都會失敗，因為他們不知道如何處理 ♠ 失張。</span></li>
+</ul><p><strong><span>誰成功了？誰沒有？為什麼沒有成功？</span></strong><br>
+<strong><span>在開始主打之前，我們在NT中做什麼？</span></strong><span> 我們計算我們的確定贏墩</span><br>
+<strong><span>為什麼我們可以用確定贏墩來想呢？</span></strong><span> 因為防守者無法阻止我們手上的贏墩。</span><br>
+<strong><span>為什麼他們不能阻止我們？</span></strong><span> 因為沒有王牌，他們無法王吃我們的贏墩。</span><br>
+<strong><span>現在我們考慮王牌，如果我們打王牌合約，是否可以算出確定贏墩？</span></strong><br>
+<span>不行，因為防守方可能會用王牌王吃。</span></p><blockquote>
+<p><span>當打王牌合約時，我們必須計算失張 (losers)</span></p>
+</blockquote><p><span>讓我們來數一下我們的失墩：</span><br>
+<span>♠ 上 1 失張（我們沒有 K，所以我們會輸掉第二墩）。我們不擔心第三輪，因為南隊沒有黑桃了，我們可以王吃。</span><br>
+<font color="red"><span>♥</span></font><span> 上 1 失墩 – （我們沒有了 A 紅心，因為它是王牌花色，我們將一定要丟這一墩）。</span><br>
+<font color="red"><span>♦</span></font><span> 沒有失張－我們擁有所有的尊牌。</span><br>
+<span>♣ 上 2 失張 - 我們有 Q 和 J，我們總是會輸給 A 和 K，這是更大的牌。</span><br>
+<span>我們總共有 4 個輸張——多了一個，超出了我們要完成 4</span><font color="red"><span>♥</span></font><span> 合約可允許的。</span><br>
+<strong><span>如果我們想完成合約，我們必須做什麼？</span></strong><span> 正確，要擺脫黑桃中的失張。</span><strong><span>試著想想我們怎麼能做到這一點？</span></strong></p><h2 id="如何擺脫失張" data-id="如何擺脫失張"><a class="anchor hidden-xs" href="#如何擺脫失張" title="如何擺脫失張"><span class="octicon octicon-link"></span></a><span>如何擺脫失張</span></h2><p><span>讓我們來看看方塊這門花色——我們可以在方上贏得 3 個贏墩。但你看，南方在該花色中只有 2 張牌，北方有 3 張。</span><br>
+<strong><span>方塊花色上最好墊掉哪張牌？</span></strong><br>
+<span>如果我們墊掉一張梅花，這對我們沒有幫助，因為還是有 2 個梅花輸張，無論如何——我們的梅花上總會有 2 個輸張。因此，最好丟棄 ♠，這樣我們就可以擺脫第四個失張。</span></p><ul>
+<li><span>我們什麼時候要擺脫失張？</span><br>
+<strong><span>在 ♠ A 首引之後，我們要打的第二張牌是什麼？</span></strong><span> 答案 </span><font color="red"><span>♦</span></font><span> 5。</span></li>
+</ul><blockquote>
+<p><span>有時候，擺脫失張比清王牌還要優先</span></p>
+</blockquote><ul>
+<li><span>可以重打 牌例16</span></li>
+</ul><h1 id="第11課：計劃防禦" data-id="第11課：計劃防禦"><a class="anchor hidden-xs" href="#第11課：計劃防禦" title="第11課：計劃防禦"><span class="octicon octicon-link"></span></a><span>第11課：計劃防禦</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>規劃防守。</span></li>
+<li><span>學習在有王牌和無王時，打牌的選擇不同。</span></li>
+<li><span>概念－不可避免的失張，和可能「消失」的贏張。</span></li>
+</ol><h2 id="首引的重要性" data-id="首引的重要性"><a class="anchor hidden-xs" href="#首引的重要性" title="首引的重要性"><span class="octicon octicon-link"></span></a><span>首引的重要性</span></h2><p><strong><span>你在牌桌上喜歡扮演哪個角色？</span></strong><span> 每個人都喜歡成為莊家，計劃牌局並控制比賽。莊家通常擁有更強的實力－更好的牌。儘管如此，許多人還是更喜歡防守。</span><br>
+<strong><span>防守時你喜歡什麼？</span></strong><span> 即使對手實力更強，也要擊敗合約。</span><br>
+<span>當你計劃正確時，就有可能成功地擊敗合約。</span><br>
+<strong><span>我們如何知道要引哪一種花色？</span></strong><span> 有一些規則可以幫助我們選擇正確的引牌。</span></p><h2 id="對抗-NT-的引牌規則" data-id="對抗-NT-的引牌規則"><a class="anchor hidden-xs" href="#對抗-NT-的引牌規則" title="對抗-NT-的引牌規則"><span class="octicon octicon-link"></span></a><span>對抗 NT 的引牌規則</span></h2><blockquote>
+<p><span>一般來說 – 對抗 NT 我們會更願意引最長的花色來發展它們</span></p>
+</blockquote><p><span>規則 1 – 當我們有一個長花色且有連續張（至少 3 張），其中最高的是尊張 – 引連續張的頂部 – </span><strong><span>K</span></strong><span>QJ85。</span><br>
+<span>規則 2 – 當我們沒有連續張時，領先第四高 = J87</span><strong><span>5</span></strong><span>42。</span><br>
+<span>規則 3 – 當我們有 3 張帶一張尊張時 – 引一張小牌 = K8</span><strong><span>2</span></strong><span>。</span><br>
+<span>規則 4 - 當我們有 4 張沒有尊張的小牌時 - 我們引第二高 - 9</span><strong><span>7</span></strong><span>52</span></p><h2 id="對抗王牌合約的引牌規則" data-id="對抗王牌合約的引牌規則"><a class="anchor hidden-xs" href="#對抗王牌合約的引牌規則" title="對抗王牌合約的引牌規則"><span class="octicon octicon-link"></span></a><span>對抗王牌合約的引牌規則</span></h2><p><span>規則 1 – 當我們手上有一門花色至少 3 張，且在這花色有連續尊張時 – 引連續尊張中最大的 – </span><strong><span>K</span></strong><span>Q4。 （發展快速贏張）。</span><br>
+<span>規則 2 – 當有足夠的王牌可以王吃時，從其它花色中引單張（不是尊張）。</span><br>
+<span>規則 3 – 當您某門花色有 2 張牌（非尊張）時，引其中較大者 – </span><strong><span>7</span></strong><span>4。</span><br>
+<span>規則 4 – 當你有一門以尊張為首的花色時，在該花色中先引一張低牌 – K864。</span><br>
+<span>規則 5 – 不要引有 A 的那門花色 – 如果別無選擇，則引 A 本身</span></p><h2 id="從引牌張上得出結論" data-id="從引牌張上得出結論"><a class="anchor hidden-xs" href="#從引牌張上得出結論" title="從引牌張上得出結論"><span class="octicon octicon-link"></span></a><span>從引牌張上得出結論</span></h2><p><span>引牌規則引導我們引出正確的牌，但我們的搭檔可以試著理解我們為什麼選擇那張特定的牌。</span><br>
+<strong><span>還有誰能從引牌張得到結論？</span></strong><span> 正確，莊家也必須注意引出的牌。嘗試想像首引意味著什麼，並相應地計劃如何主打。</span></p><h2 id="牌例18" data-id="牌例18"><a class="anchor hidden-xs" href="#牌例18" title="牌例18"><span class="octicon octicon-link"></span></a><span>牌例18</span></h2><p><span>目標：首引與正確防禦</span><br>
+<span>發牌：E</span><br>
+<span>莊家：E</span><br>
+<span>首引：♠ 3</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ AT8</span><br><font color="red"><span>♥</span></font><span> 965</span><br><font color="red"><span>♦</span></font><span> K98</span><br><span>♣ Q876</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 542</span><br><font color="red"><span>♥</span></font><span> AKJ4</span><br><font color="red"><span>♦</span></font><span> J43</span><br><span>♣ A53</span></td>
+<td></td>
+<td><span>♠ Q76</span><br><span> </span><font color="red"><span>♥</span></font><span> Q86</span><br><font color="red"><span>♦</span></font><span> AQ52</span><br><span>♣ K42</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ KJ93</span><br><font color="red"><span>♥</span></font><span> T32</span><br><font color="red"><span>♦</span></font><span> T76</span><br><span>♣ JT9</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>不干擾首引，讓學生自己去打這個合約</span><br>
+<span>比賽結束時檢查誰成功了，並祝賀擊敗合約的防守者。</span></p>
+</blockquote><p><ins><span>分析牌局</span></ins><span>（從現在開始，除了牌局的規劃之外，你還應該解釋首引和正確的防守）。</span><br>
+<span>防守方從長門花色首引——第四高的 ♠ 3。</span><br>
+<span>北家將以Ace贏取，並打出 T（一張大牌，旨在穿梭(trap)莊家的尊牌）。</span><br>
+<span>贏得前4墩後，南家將引 ♣ J。 （連續張頂部）</span><br>
+<span>莊家可以計算出紅心 4 墩、方塊 1 墩和梅花 2 墩。他將嘗試透過偷牌對北家手中的 K 來開發方塊贏墩——這將會成功。然而，只要北家用 </span><font color="red"><span>♦</span></font><span> K 覆蓋 </span><font color="red"><span>♦</span></font><span> J，他夥伴的 T 就建立了。如果防守良好，則不可能成約（防守方必須避免在第四墩紅心上墊掉方塊）。</span></p><h2 id="牌例19" data-id="牌例19"><a class="anchor hidden-xs" href="#牌例19" title="牌例19"><span class="octicon octicon-link"></span></a><span>牌例19</span></h2><p><span>目標：在短門王吃</span><br>
+<span>發牌：E</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♥</span></font><br>
+<span>合約：4♠</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ QJT4</span><br><font color="red"><span>♥</span></font><span> K6</span><br><font color="red"><span>♦</span></font><span> A763</span><br><span>♣ 653</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 987</span><br><font color="red"><span>♥</span></font><span> QJT8</span><br><font color="red"><span>♦</span></font><span> K94</span><br><span>♣ J98</span></td>
+<td></td>
+<td><span>♠ 65</span><br><span> </span><font color="red"><span>♥</span></font><span> 753</span><br><font color="red"><span>♦</span></font><span> QJ52</span><br><span>♣ AT74</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AK32</span><br><font color="red"><span>♥</span></font><span> A942</span><br><font color="red"><span>♦</span></font><span> T8</span><br><span>♣ KQ2</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>不干擾首引，讓學生自己去打這個合約</span><br>
+<span>比賽結束時檢查誰成功了，並祝賀擊敗合約的防守者。</span></p>
+</blockquote><h2 id="牌局分析1" data-id="牌局分析"><a class="anchor hidden-xs" href="#牌局分析1" title="牌局分析1"><span class="octicon octicon-link"></span></a><span>牌局分析</span></h2><p><span>首引是 </span><font color="red"><span>♥</span></font><span> Q。莊家計算輸張 – 2 墩紅心、1 墩方塊和 1 或 2 墩梅花（取決於 A 的位置）。當我們只允許輸3墩時，總共有4-5個輸張。</span><strong><span>-5個失敗者中有2個是不可避免的，這些是？</span></strong><span> 正確，梅花和方塊中的失張。另一方面，</span><strong><span>紅心中的2個失張可以“消失”，也可以轉變為贏墩</span></strong><span>，如何做？透過用短手來王吃那些紅心。</span></p><h1 id="第12課：王牌合約的主打計劃" data-id="第12課：王牌合約的主打計劃"><a class="anchor hidden-xs" href="#第12課：王牌合約的主打計劃" title="第12課：王牌合約的主打計劃"><span class="octicon octicon-link"></span></a><span>第12課：王牌合約的主打計劃</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>計畫打法－讓失張「消失」－在短門王吃。</span></li>
+<li><span>計畫打法－被「超王吃」(overruffing) 的危險－用大王牌王吃</span></li>
+</ol><h2 id="第一階段-準備主打－選擇“基準方”-base-hand" data-id="第一階段-準備主打－選擇“基準方”-base-hand"><a class="anchor hidden-xs" href="#第一階段-準備主打－選擇“基準方”-base-hand" title="第一階段-準備主打－選擇“基準方”-base-hand"><span class="octicon octicon-link"></span></a><span>第一階段 準備主打－選擇“基準方” (base hand)</span></h2><table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>♠ AJ864</span><br><font color="red"><span>♥</span></font><span> K93</span><br><font color="red"><span>♦</span></font><span> 42</span><br><span>♣ QJ5</span></td>
+</tr>
+<tr>
+<td><span>♠ KQ72</span><br><font color="red"><span>♥</span></font><span> A4</span><br><font color="red"><span>♦</span></font><span> Q853</span><br><span>♣ K72</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>當合約為 4♠ 時，莊家能贏幾墩？</span></strong><span> 正確，10墩。</span><br>
+<span>當我們要估計我們兩手牌的價值和輸張時，我們必須先選擇「基準方」——王牌較長的那方。</span></p><blockquote>
+<p><span>這手牌顯示了較少的輸張，它告訴我們透過輸張的數量來評估我們的手牌。</span></p>
+<blockquote>
+<p><span>用長王方王吃方塊並不會多出贏墩或少掉失墩</span></p>
+</blockquote>
+</blockquote><h2 id="第二階段-規劃這手牌的打法-–-評估強度" data-id="第二階段-規劃這手牌的打法-–-評估強度"><a class="anchor hidden-xs" href="#第二階段-規劃這手牌的打法-–-評估強度" title="第二階段-規劃這手牌的打法-–-評估強度"><span class="octicon octicon-link"></span></a><span>第二階段 規劃這手牌的打法 – 評估強度</span></h2><p><span>現在我們必須從基準方來估算每門花色，看看我們在哪裡有輸張，以及使用另一方的牌來擺脫那些輸家的可能性是什麼。</span><br>
+<strong><span>我們在 ♠ 裡有多少失張？</span></strong><span> 0 (北家3個失張可被南家大牌覆蓋)。</span><br>
+<span>在 </span><font color="red"><span>♥</span></font><span>？ 1 (AK 允許我們拿 2 墩，但第三張是輸張）</span><br>
+<span>在 </span><font color="red"><span>♦</span></font><span>？ 2 個失張。</span><br>
+<span>在 ♣? 1 個失張（因為我們手中握有 A 以外的所有尊張）。</span><br>
+<span>總共有 4 個失張，而我們只允許給 3 墩。</span></p><h2 id="第三階段-策劃主打－如何成約" data-id="第三階段-策劃主打－如何成約"><a class="anchor hidden-xs" href="#第三階段-策劃主打－如何成約" title="第三階段-策劃主打－如何成約"><span class="octicon octicon-link"></span></a><span>第三階段 策劃主打－如何成約</span></h2><p><strong><span>您是否看到“不可避免”的失張？</span></strong><span> 方塊有 2 個，梅花有 1 個。我們有什麼辦法可以擺脫它們嗎？</span><br>
+<strong><span>結論是什麼？</span></strong><span> 我們必須集中全力擺脫 </span><font color="red"><span>♥</span></font><span> 中的失張。 （這個是我們必須擺脫的「不同」失張。）</span><br>
+<strong><span>您認為我們能做什麼？</span></strong><span> 是的，我們必須把注意力集中在短邊上。短邊是紅心較少的那手）。</span></p><blockquote>
+<p><span>我們必須集中精力避免不同的失張，那些可能消失的失張。</span></p>
+</blockquote><h2 id="牌例20" data-id="牌例20"><a class="anchor hidden-xs" href="#牌例20" title="牌例20"><span class="octicon octicon-link"></span></a><span>牌例20</span></h2><p><span>目標：超王吃</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠ Q</span><br>
+<span>合約：4</span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ K62</span><br><font color="red"><span>♥</span></font><span> Q73</span><br><font color="red"><span>♦</span></font><span> J4</span><br><span>♣ QT764</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QJ95</span><br><font color="red"><span>♥</span></font><span> 5</span><br><font color="red"><span>♦</span></font><span> T832</span><br><span>♣ K952</span></td>
+<td></td>
+<td><span>♠ AT3</span><br><span> </span><font color="red"><span>♥</span></font><span> 984</span><br><font color="red"><span>♦</span></font><span> Q96</span><br><span>♣ AJ83</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 874</span><br><font color="red"><span>♥</span></font><span> AKJT62</span><br><font color="red"><span>♦</span></font><span> AK75</span><br><span>♣ </span><span class="smartypants">–</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>學生將叫牌並嘗試玩這手牌。他們應該會當。防守方應在 ♠ 取得 3 墩，然後繼續引 ♣ 2。</span><br>
+<span>過早清王牌的學生將無法王吃，並且會當一墩。</span><br>
+<span>還有那些王吃的人，如果他們用小王牌王吃，那麼東家就會超王吃，他們也會當。</span></p>
+</blockquote><h2 id="莊家牌局分析" data-id="莊家牌局分析"><a class="anchor hidden-xs" href="#莊家牌局分析" title="莊家牌局分析"><span class="octicon octicon-link"></span></a><span>莊家牌局分析</span></h2><p><strong><span>那邊基準方？</span></strong><span> 正確，South 是基準方，因為他有更多的王牌。</span><br>
+<strong><span>讓我們來數一下 ♠ 中的失張？</span></strong><span> 3 個失墩是不可避免的（因為首引）。</span><br>
+<strong><span>在 </span><font color="red"><span>♥</span></font><span>？</span></strong><span> 沒有失張，因為我們掌握所有大牌。</span><br>
+<strong><span>在 </span><font color="red"><span>♦</span></font></strong><span> ？ 2 失張</span><br>
+<strong><span>在 ♣ ？</span></strong><span> 沒有張。總共 – 5 個失張，我們只允許輸 3 墩。</span><br>
+<strong><span>讓我們繼續討論主打計劃，我們應該專注於黑桃還是方塊？</span></strong><span> 黑桃的輸墩是不可避免的，所以我們會專注於消除方塊的輸張。</span><br>
+<strong><span>我們如何讓方塊的輸張消失？</span></strong><span> 正確，我們可以由夢家王吃 2 輪方塊。</span><br>
+<strong><span>我們應該先清王牌嗎？</span></strong><span> 不，因為如果我們先清王牌，我們將沒有足夠的王牌來王吃方塊。因此，在贏得這一墩後，我們必須打出 AK 方塊，並王吃第三圈方塊。</span><br>
+<strong><span>現在我們可以王吃梅花回到我們的手上，但是接下來會發生什麼？</span></strong><span> 如果有誰計算了打了多少方塊，就會意識到東家會超王吃。</span><br>
+<strong><span>如果是這樣的情況，我們能做什麼呢？</span></strong><span> 我們必須用一張大王牌來王吃我們的第四張方塊——比對手更大的王牌。 （由於我們缺少了8和9，所以我們必須用Q心來王吃。我們不怕浪費它，因為除了Q之外我們擁有王牌花色中的所有尊張。)</span></p><blockquote>
+<p><span>當其中一名防守者有超王吃的危險時，必須用比防家持有的更大的王牌來王吃。</span></p>
+</blockquote><h1 id="第13課：計劃王牌合約主打" data-id="第13課：計劃王牌合約主打"><a class="anchor hidden-xs" href="#第13課：計劃王牌合約主打" title="第13課：計劃王牌合約主打"><span class="octicon octicon-link"></span></a><span>第13課：計劃王牌合約主打</span></h1><p><span>課程目的</span></p><ol>
+<li><span>快速通行證 (expass)</span></li>
+<li><span>防禦－第二手低。</span></li>
+<li><span>防守－以大牌蓋大牌</span></li>
+</ol><h2 id="EXPASS" data-id="EXPASS"><a class="anchor hidden-xs" href="#EXPASS" title="EXPASS"><span class="octicon octicon-link"></span></a><span>EXPASS</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>42</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>K3</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>你能明白如何在這套花色中贏得一墩嗎？必須發生什麼？</span></strong><br>
+<span>如果你從南家打出一張的小牌，你就沒有機會贏得一墩。(除非單張 A，機會太小)</span><br>
+<strong><span>另一方面，如果你對著 K 打 2 會發生什麼事？</span></strong><span> 如果 A 在 K 前面，我們就贏一墩。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>AQ</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>32</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>在這個例子中你能看到什麼技巧？</span></strong><span> 正確，一個簡單的偷牌。</span><br>
+<strong><span>當我們想要做簡單偷牌時，我們該怎麼打呢？</span></strong><span> 是的，我們會打小牌到卡張，希望少的尊張能夠「對位」。</span></p><ul>
+<li><span>這兩種情況有什麼差別？**</span><br>
+<span>在簡單偷牌情況下，我們朝著卡張打，在另一個例子中，我們朝著尊張方向打。</span><br>
+<span>我們都稱它們為“偷牌”，因為在這兩種情況下我們都需要大牌能夠對位。</span></li>
+</ul><h2 id="牌例21" data-id="牌例21"><a class="anchor hidden-xs" href="#牌例21" title="牌例21"><span class="octicon octicon-link"></span></a><span>牌例21</span></h2><p><span>目標：EXPASS</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠ Q</span><br>
+<span>合約：5</span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A42</span><br><font color="red"><span>♥</span></font><span> KT63</span><br><font color="red"><span>♦</span></font><span> K54</span><br><span>♣ Q82</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QJT53</span><br><font color="red"><span>♥</span></font><span> J4</span><br><font color="red"><span>♦</span></font><span> T76</span><br><span>♣ K94</span></td>
+<td></td>
+<td><span>♠ K76</span><br><span> </span><font color="red"><span>♥</span></font><span> 87</span><br><font color="red"><span>♦</span></font><span> J982</span><br><span>♣ JT76</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 96</span><br><font color="red"><span>♥</span></font><span> AK952</span><br><font color="red"><span>♦</span></font><span> AQ3</span><br><span>♣ A53</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>學生將叫牌並嘗試完成合約。他們應該會當。這是因為他們中的大多數人都會將 Q 打向 A。</span></p>
+</blockquote><p><strong><span>誰成功了？誰當了？</span></strong><br>
+<strong><span>我們有多少張？</span></strong><span> 3 個失張－1 個黑桃，2 個梅花。</span><br>
+<strong><span>哪些失張是不可避免的？</span></strong><span> 黑桃中的失張是不可避免的。</span><br>
+<strong><span>是否有可能讓其中一個失張消失或減少梅花中的失張？</span></strong><span> 是的，如果 ♣ K 在 W 手中。</span><br>
+<strong><span>你是怎麼玩 C 花色的？</span></strong><span> 無論誰用 Q 來偷 K，都失敗了。當我們「跑」一張牌時，我們必須確保我們還有一張等值的額外尊張，例如 J。</span><br>
+<strong><span>那我們要怎麼玩 C 花色呢？</span></strong><span> 我們必須希望 K 位於 Q 前面並打 3。這個動作被稱為 “Expass”，就像偷牌一樣，它有 50% 的成功機會。</span></p><h2 id="第二家跟小" data-id="第二家跟小"><a class="anchor hidden-xs" href="#第二家跟小" title="第二家跟小"><span class="octicon octicon-link"></span></a><span>第二家跟小</span></h2><p><strong><span>當莊家打出一張牌時，你對自己作為防守者打出的牌有何看法？</span></strong><br>
+<strong><span>大牌還是小牌？</span></strong><br>
+<span>正確，你應該打出一張小牌，因為你不知道你的夥伴有什麼牌？</span><br>
+<span>也許他有更大的牌。</span><br>
+<strong><span>但是當莊家打尊牌時會發生什麼事呢？下一個玩家該打小牌嗎？</span></strong></p><h2 id="防守－大牌蓋大牌" data-id="防守－大牌蓋大牌"><a class="anchor hidden-xs" href="#防守－大牌蓋大牌" title="防守－大牌蓋大牌"><span class="octicon octicon-link"></span></a><span>防守－大牌蓋大牌</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>Q82</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>A53</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>我們再來看看剛才玩的 C 花色。如果東方有 K，北家打 Q，東家該怎麼辦？</span></strong><span> 他應該打 K。</span></p><blockquote>
+<p><span>防家應該以大牌蓋大牌</span></p>
+</blockquote><h2 id="為什麼要蓋？如果不蓋會怎樣？" data-id="為什麼要蓋？如果不蓋會怎樣？"><a class="anchor hidden-xs" href="#為什麼要蓋？如果不蓋會怎樣？" title="為什麼要蓋？如果不蓋會怎樣？"><span class="octicon octicon-link"></span></a><span>為什麼要蓋？如果不蓋會怎樣？</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>AJ2</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>K93</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>T87</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>Q53</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>南家向夢家打 Q。我們坐西家在夢家前面。</span><strong><span>我們該做什麼？</span></strong><span> 正確，根據我們剛剛學到的規則，我們必須用 K 覆蓋 Q。</span><strong><span>為什麼？</span></strong><br>
+<span>我們不知道莊家手上有什麼，但我們知道他會偷牌。由於橋牌是雙人遊戲，我們願意犧牲我們的 K，希望我們的同伴能夠在接下來贏得一墩。</span><br>
+<span>看這個例子，如果我們嘗試 K，那麼夥伴的 T 將在第二輪建立。如果我們不蓋，T 就不會大。</span></p><h2 id="什麼時候我們不該蓋？" data-id="什麼時候我們不該蓋？"><a class="anchor hidden-xs" href="#什麼時候我們不該蓋？" title="什麼時候我們不該蓋？"><span class="octicon octicon-link"></span></a><span>什麼時候我們不該蓋？</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>QJT5</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>A</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>K32</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>98764</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>現在我們的 K 坐在夢家之後的位置，我們可以看到莊家在打 Q 之後還有一串連續張。</span><strong><span>我們覆蓋嗎？</span></strong><br>
+<span>有時覆蓋並沒有幫助，在這個例子中它甚至可能是災難性的。</span></p><h2 id="牌例22" data-id="牌例22"><a class="anchor hidden-xs" href="#牌例22" title="牌例22"><span class="octicon octicon-link"></span></a><span>牌例22</span></h2><p><span>目標：方塊上的 EXPASS</span><br>
+<span>發牌：W</span><br>
+<span>莊家：W</span><br>
+<span>首引：♣ Q</span><br>
+<span>合約：4♠</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ J4</span><br><font color="red"><span>♥</span></font><span> J4</span><br><font color="red"><span>♦</span></font><span> J942</span><br><span>♣ QJT53</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ AK952</span><br><font color="red"><span>♥</span></font><span> KQ2</span><br><font color="red"><span>♦</span></font><span> Q76</span><br><span>♣ 96</span></td>
+<td></td>
+<td><span>♠ QT73</span><br><span> </span><font color="red"><span>♥</span></font><span> A53</span><br><font color="red"><span>♦</span></font><span> A53</span><br><span>♣ A42</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 86</span><br><font color="red"><span>♥</span></font><span> T9876</span><br><font color="red"><span>♦</span></font><span> KT8</span><br><span>♣ K87</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>學生將叫牌並嘗試完成合約。</span></p>
+</blockquote><h1 id="第14課：高花和低花" data-id="第14課：高花和低花"><a class="anchor hidden-xs" href="#第14課：高花和低花" title="第14課：高花和低花"><span class="octicon octicon-link"></span></a><span>第14課：高花和低花</span></h1><p><span>本課的目的</span></p><ol>
+<li><span>熟悉叫牌決策全表。</span><br>
+<span>2、高花(Major)和低花(Minor)的區別。</span></li>
+</ol><h2 id="叫牌決策全表" data-id="叫牌決策全表"><a class="anchor hidden-xs" href="#叫牌決策全表" title="叫牌決策全表"><span class="octicon octicon-link"></span></a><span>叫牌決策全表</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>總點力</span></th>
+<th style="text-align:center"><span>贏墩</span></th>
+<th style="text-align:center"><span>NT</span></th>
+<th style="text-align:center"><span>奬分</span></th>
+<th style="text-align:center"><span>高花 ♠ / </span><font color="red"><span>♥</span></font></th>
+<th style="text-align:center"><span>奬分</span></th>
+<th style="text-align:center"><span>低花 </span><font color="red"><span>♦</span></font><span> / ♣</span></th>
+<th style="text-align:center"><span>奬分</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>20~22</span></td>
+<td style="text-align:center"><strong><span>1</span></strong><span>+6</span></td>
+<td style="text-align:center"><strong><span>40</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><strong><span>20</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>23~24</span></td>
+<td style="text-align:center"><strong><span>2</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>30+</span><strong><span>40</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><span>30+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><span>20+</span><strong><span>20</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>25~26</span></td>
+<td style="text-align:center"><strong><span>3</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>30+30+</span><strong><span>40</span></strong></td>
+<td style="text-align:center"><strong><span>300</span></strong></td>
+<td style="text-align:center"><span>30+30+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+<td style="text-align:center"><span>20+20+</span><strong><span>20</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>27~29</span></td>
+<td style="text-align:center"><strong><span>4</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>30+30+30+</span><strong><span>40</span></strong></td>
+<td style="text-align:center"><span>300</span></td>
+<td style="text-align:center"><span>30+30+30+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><strong><span>300</span></strong></td>
+<td style="text-align:center"><span>20+20+20+</span><strong><span>20</span></strong></td>
+<td style="text-align:center"><span>50</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>30~32</span></td>
+<td style="text-align:center"><strong><span>5</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>30+30+30+30+</span><strong><span>40</span></strong></td>
+<td style="text-align:center"><span>300</span></td>
+<td style="text-align:center"><span>30+30+30+30+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><span>300</span></td>
+<td style="text-align:center"><span>20+20+20+20+</span><strong><span>20</span></strong></td>
+<td style="text-align:center"><strong><span>300</span></strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>33~36</span></td>
+<td style="text-align:center"><strong><span>6</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>30+30+30+30+30+</span><strong><span>40</span></strong></td>
+<td style="text-align:center"><strong><span>800</span></strong></td>
+<td style="text-align:center"><span>30+30+30+30+30+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><strong><span>800</span></strong></td>
+<td style="text-align:center"><span>20+20+20+20+20+</span><strong><span>20</span></strong></td>
+<td style="text-align:center"><strong><span>800</span></strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>37~40</span></td>
+<td style="text-align:center"><strong><span>7</span></strong><span>+6</span></td>
+<td style="text-align:center"><span>30+30+30+30+30+30+</span><strong><span>40</span></strong></td>
+<td style="text-align:center"><strong><span>1300</span></strong></td>
+<td style="text-align:center"><span>30+30+30+30+30+30+</span><strong><span>30</span></strong></td>
+<td style="text-align:center"><strong><span>1300</span></strong></td>
+<td style="text-align:center"><span>20+20+20+20+20+20+</span><strong><span>20</span></strong></td>
+<td style="text-align:center"><strong><span>1300</span></strong></td>
+</tr>
+</tbody>
+</table><p><span>我們已經玩過“無王”和王牌了。到目前為止，王牌一直是 ♠ 或 </span><font color="red"><span>♥</span></font><span>。</span><br>
+<strong><span>看看您收到的表格，您能看到我們所說的 ♠ 和 </span><font color="red"><span>♥</span></font><span> 嗎？</span></strong><br>
+<span>正確，這些是高花 (Major)，另外還有低花 (Minor)，即 </span><font color="red"><span>♦</span></font><span> 和 ♣。</span><br>
+<strong><span>為什麼這樣稱呼他們？高花和低花有什麼差別？</span></strong><br>
+<span>正確，打高花合約時每一墩，我們得到 30 分，而打低花合約時我們只能得到 20 分。</span><br>
+<strong><span>您還看到另一個差異嗎？查看花色下的獎分欄。</span></strong><span> 當我們打高花合約時，每當合約在四線(承諾吃到 10 墩)時，我們就會獲得成局獎分。而當我們打低花合約時，我們只有在五線 (承諾吃到 11 墩)時，才能獲得成局獎分。</span><br>
+<strong><span>以 </span><font color="red"><span>♥</span></font><span> 合約承諾並完成 10 墩，和以 ♣ 合約承諾並完成 10 墩有什麼不同？</span></strong><span> 420 而不是 130。</span></p><blockquote>
+<p><span>結論－高花配合比低花配合更有利</span></p>
+</blockquote><h2 id="牌例23" data-id="牌例23"><a class="anchor hidden-xs" href="#牌例23" title="牌例23"><span class="octicon octicon-link"></span></a><span>牌例23</span></h2><p><span>目標：低花合約</span><br>
+<span>發牌：W</span><br>
+<span>莊家：S</span><br>
+<span>首引：♠</span><br>
+<span>合約：4</span><font color="red"><span>♦</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 9543</span><br><font color="red"><span>♥</span></font><span> 8</span><br><font color="red"><span>♦</span></font><span> J9652</span><br><span>♣ AQ6</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ QJ86</span><br><font color="red"><span>♥</span></font><span> KT53</span><br><font color="red"><span>♦</span></font><span> 3</span><br><span>♣ K952</span></td>
+<td></td>
+<td><span>♠ KT2</span><br><span> </span><font color="red"><span>♥</span></font><span> Q974</span><br><font color="red"><span>♦</span></font><span> A8</span><br><span>♣ JT84</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A7</span><br><font color="red"><span>♥</span></font><span> AJ62</span><br><font color="red"><span>♦</span></font><span> KQT74</span><br><span>♣ 73</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>學生將叫牌並嘗試完成合約。</span><br>
+<span>玩法比較簡單。祝賀那些超墩的人。請莊家寫下他們完成的墩數。</span></p>
+</blockquote><p><ins><span>打法分析</span></ins><br>
+<strong><span>基準方是哪邊？</span></strong><span> 因為我們兩手牌的王牌數量相同，所以應該從兩手牌中較強的一方（南手）中選擇基準手牌。</span><br>
+<strong><span>莊家有幾個失張？</span></strong><span> ♠ – 1、</span><font color="red"><span>♥</span></font><span> – 3、</span><font color="red"><span>♦</span></font><span> - 1 和 ♣ - 1 失張。</span><br>
+<strong><span>是否可以減少失張數量？</span></strong><span> 是的，如果我們短手王吃 3 個紅心失張，我們就可以完約。</span><br>
+<strong><span>我們需要多少張王牌才能王吃紅心失張？</span></strong><span> 3 張王牌。</span><br>
+<strong><span>我們要立即清王牌嗎？還是我們應該先王吃？</span></strong><span> 由於我們有 10 張王牌，而缺少 3 張王牌，我們可以先清 2 輪，如果所有的王牌都清完，我們仍然有足夠的王牌來王吃。</span><br>
+<span>在梅花上也可以採取偷牌，這將減少我們的失張之一。梅花的偷牌不會危及我們的合約，所以值得嘗試。</span><ins><span>誰在梅花上偷牌，將會做出額外的贏墩</span></ins><span>。</span></p><blockquote>
+<p><span>始終尋找超墩，以獲得更多積分，前提是它不會危及合約。</span></p>
+</blockquote><p><strong><span>我們什麼時候進行梅花偷牌呢？</span></strong><span> 在我們王吃失張之前，否則我們會發現自己陷落在夢家，而無法回到莊家手上偷梅花。</span></p><blockquote>
+<p><span>比較每桌的結果，並指出那些完成 11 墩的人比只完成 10 墩的人得到了更好的結果。</span></p>
+</blockquote><h2 id="首選高花，其次無法，最後才是低花" data-id="首選高花，其次無法，最後才是低花"><a class="anchor hidden-xs" href="#首選高花，其次無法，最後才是低花" title="首選高花，其次無法，最後才是低花"><span class="octicon octicon-link"></span></a><span>首選高花，其次無法，最後才是低花</span></h2><p><span>我們了解到，當我們在高花中擁有 8 張配合時，我們會更偏向打王牌而不是 NT。</span><br>
+<span>如果我們在低花 8 張配合，</span><strong><span>您認為打王牌還是 NT 哪個比較好？讓我們來看看：如果我們在 NT 中完成 7 墩，我們會得到多少分？</span></strong><span> 正確，90分。</span><br>
+<strong><span>而在</span><font color="red"><span>♦</span></font><span> 或 ♣ 中獲得相同的分數，我們需要贏取多少墩？</span></strong><span> 正確， 8.</span><br>
+<strong><span>如果我們總共有 25 點，那麼叫哪個比較好？ 打 NT 拿  9 墩，還是打低花拿 9 墩？</span></strong><span> 正確，我們更願意打 NT 合約，因為我們將成局並且我們將獲得更多奬分。</span></p><blockquote>
+<p><span>詢問更多的分數比較，以確保學生知道王牌分數、NT 分數、高花和低花、成局分數和部分分數之間以及大滿貫之間的差異。</span></p>
+</blockquote><ul>
+<li><span>大多數合約將以無王或高花進行。那什麼時候打低花合約？</span>
+<ul>
+<li><span>如果我們在高花中沒有 8 張配合，</span></li>
+<li><span>如果我們沒有25點，而我們不能打 NT (某門花色沒有擋張)，</span></li>
+<li><span>如果我們有 9 張低花配合（有 8 張牌，我們更偏向打 NT）。</span></li>
+</ul>
+</li>
+</ul><h2 id="牌例24" data-id="牌例24"><a class="anchor hidden-xs" href="#牌例24" title="牌例24"><span class="octicon octicon-link"></span></a><span>牌例24</span></h2><p><span>目標：低花合約</span><br>
+<span>發牌：E</span><br>
+<span>莊家：W</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> Q</span><br>
+<span>合約：4♣</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ KQ7</span><br><font color="red"><span>♥</span></font><span> J952</span><br><font color="red"><span>♦</span></font><span> QJT94</span><br><span>♣ 3</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ AJ43</span><br><font color="red"><span>♥</span></font><span> 73</span><br><font color="red"><span>♦</span></font><span> AK</span><br><span>♣ JT976</span></td>
+<td></td>
+<td><span>♠ T92</span><br><span> </span><font color="red"><span>♥</span></font><span> AQ4</span><br><font color="red"><span>♦</span></font><span> 874</span><br><span>♣ KQ542</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 865</span><br><font color="red"><span>♥</span></font><span> KT86</span><br><font color="red"><span>♦</span></font><span> 6532</span><br><span>♣ A8</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>跟打 1NT 比較</span></p>
+</blockquote><h1 id="第15課；扣住／忍讓" data-id="第15課；扣住／忍讓"><a class="anchor hidden-xs" href="#第15課；扣住／忍讓" title="第15課；扣住／忍讓"><span class="octicon octicon-link"></span></a><span>第15課；扣住／忍讓</span></h1><p><span>本課目的</span></p><ol>
+<li><span>扣住／忍讓。</span></li>
+<li><span>防禦－第三家上大牌。</span></li>
+</ol><h2 id="牌例25" data-id="牌例25"><a class="anchor hidden-xs" href="#牌例25" title="牌例25"><span class="octicon octicon-link"></span></a><span>牌例25</span></h2><p><span>目標：忍讓</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> 4</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A92</span><br><font color="red"><span>♥</span></font><span> K965</span><br><font color="red"><span>♦</span></font><span> 75</span><br><span>♣ K932</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 85</span><br><font color="red"><span>♥</span></font><span> J843</span><br><font color="red"><span>♦</span></font><span> QT842</span><br><span>♣ 74</span></td>
+<td></td>
+<td><span>♠ JT76</span><br><span> </span><font color="red"><span>♥</span></font><span> QT2</span><br><font color="red"><span>♦</span></font><span> KJ3</span><br><span>♣ A65</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ KQ43</span><br><font color="red"><span>♥</span></font><span> A7</span><br><font color="red"><span>♦</span></font><span> A96</span><br><span>♣ QJT8</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>學生將投標並嘗試簽訂合約。</span></p>
+</blockquote><ul>
+<li><span>防守失敗的學生將從梅花開始，不採取任何預防措施。</span></li>
+</ul><p><ins><span>打法分析</span></ins><br>
+<strong><span>莊家有多少確定贏墩？</span></strong><span> 正確，6 墩（黑桃 3 墩，紅心 2 墩，方塊 1 墩）。</span><br>
+<strong><span>他將如何彌補缺失的贏墩呢？</span></strong><span> 透過建立梅花贏張。但是，如果我們用 A 贏得方塊並打梅花，防家將贏取 A 並打已建立的方塊，合約將會當掉。因此，在處理梅花之前採取預防措施至關重要。</span><br>
+<strong><span>必須做什麼才能確保合約？</span></strong><span> 沒錯，我們必須希望梅花 A 對位在東家，並且我們需要確保東家吃到後不能打方塊給他的搭檔繼綾提方塊。</span><br>
+<span>我們必須能夠確保東家在拿到梅花 A 時沒有任何方塊可打。</span><br>
+<strong><span>我們對首引了解多少？</span></strong><span> 西家首引 </span><font color="red"><span>♦</span></font><span> 4，根據第四高規則，這對莊家來說是一個</span><ins><span>有危險的首引</span></ins><span>，因為他在方塊中只有一擋。西家至少有 4 張方塊，甚至可能有 5 張，他有尊張。</span><br>
+<span>如果西方以 5 張牌的花色首引，那麼我們就有機會，因為這意味著東方在該花色中只有 3 張牌。</span><br>
+<span>值得我們</span><ins><span>扣住兩圈</span></ins><span>，第三輪才贏這門花色。</span></p><ul>
+<li><span>向學生展示如何扣住以切斷防守者之間的聯繫 (斷橋)。</span><br>
+<span>聯通中斷後，我們可以打梅花，希望東方有梅花 A。</span></li>
+</ul><blockquote>
+<p><span>當我們打 NT 合約時，如果我們受攻擊的花色只有1個贏墩，我們必須盡可能晚地贏取，以切斷防守方之間的溝通</span></p>
+</blockquote><h2 id="防禦" data-id="防禦"><a class="anchor hidden-xs" href="#防禦" title="防禦"><span class="octicon octicon-link"></span></a><span>防禦</span></h2><p><span>西家首引第4高後，東家要打什麼牌？** 防禦是種夥伴關係，因此我們必須幫助我們的夥伴發展他希望建立的花色。如果他首引一張小牌時，則尤其如此。因此，在你打的這手牌中，東家 必須打出他擁有的最大牌。如果真是這樣，</span><strong><span>當 K 贏得後他該打出什麼牌呢？</span></strong><span> 東家應該出 J（短手牌中的高牌），然後才出 3，以避免花色堵塞。</span></p><blockquote>
+<p><span>規則：第三家上大牌</span></p>
+</blockquote><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>862</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>K954</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>在第一個例子中，西家引 3（很明顯，這是第四高，因為我們在該花色中至少有一個尊張）</span><br>
+<span>東家必須打 K 才能迫使莊家使用他的尊張。當莊家以 A 贏取後，西家的尊張就大了。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>862</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>AJ73</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>K954</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>QT</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>在第二個例子中，我們可以看到，如果此花色按這樣分佈，則防守方將贏得該花色中的 4 墩。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>862</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>QT73</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>K954</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>AJ</span></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>在第三個例子中，分佈有所不同。如果他打出 K，他會迫使莊家拿 A，並且在後續中，防守方將在該花色中拿下 3 墩。如果他不打 K，他將讓南家在該花色中贏得 2 墩。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>K4</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>Q72</span></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><p><span>在這個例子中，西家在此花色引 3 之後，明手下 K。</span><br>
+<span>如果防守者不能打出比明手更高的牌，那麼打出 Q 就沒有任何好處，應該將其保留下來以供繼續，以便贏得墩數或在花色中建立贏張。</span></p><h2 id="牌例26" data-id="牌例26"><a class="anchor hidden-xs" href="#牌例26" title="牌例26"><span class="octicon octicon-link"></span></a><span>牌例26</span></h2><p><span>目標：忍讓</span><br>
+<span>發牌：E</span><br>
+<span>莊家：E</span><br>
+<span>首引：♠ 4</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ QJ3</span><br><font color="red"><span>♥</span></font><span> A76</span><br><font color="red"><span>♦</span></font><span> KT32</span><br><span>♣ J97</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 98</span><br><font color="red"><span>♥</span></font><span> QJ82</span><br><font color="red"><span>♦</span></font><span> QJ96</span><br><span>♣ A86</span></td>
+<td></td>
+<td><span>♠ A65</span><br><span> </span><font color="red"><span>♥</span></font><span> KT93</span><br><font color="red"><span>♦</span></font><span> A8</span><br><span>♣ KQT4</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ KT742</span><br><font color="red"><span>♥</span></font><span> 54</span><br><font color="red"><span>♦</span></font><span> 754</span><br><span>♣ 532</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><h1 id="第16課：花色建立" data-id="第16課：花色建立"><a class="anchor hidden-xs" href="#第16課：花色建立" title="第16課：花色建立"><span class="octicon octicon-link"></span></a><span>第16課：花色建立</span></h1><p><span>本課目的</span></p><ol>
+<li><span>在沒有尊張的情況下建立某門花色。</span></li>
+<li><span>透過王吃建立花色。</span></li>
+</ol><h2 id="在NT中建立一套花色－放棄一墩給防家" data-id="在NT中建立一套花色－放棄一墩給防家"><a class="anchor hidden-xs" href="#在NT中建立一套花色－放棄一墩給防家" title="在NT中建立一套花色－放棄一墩給防家"><span class="octicon octicon-link"></span></a><span>在NT中建立一套花色－放棄一墩給防家</span></h2><p><span>我們知道橋牌中的長門花色非常有用，因為它們可以讓我們贏得很多墩或讓我們墊掉失張。</span><br>
+<span>然而有時，我們在一套花色中擁有的並非都是贏張，我們必須建立它們。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>42</span></td>
+<td style="text-align:center"><span class="smartypants">–</span><span>-</span></td>
+<td style="text-align:center"><span>AK753</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>打無王合約，這門花色中你看到了多少贏墩？</span></strong><span> 正確，2。</span><br>
+<strong><span>是否有可能贏得更多此花色贏墩？</span></strong></p><p><span>在此範例中，我們使用 NT 進行遊戲。我們有兩個確定贏墩。</span><strong><span>是否有可能贏得更多的墩？</span></strong><span> 當然。</span><strong><span>如何做？</span></strong><span> 我們必須建立此花色中的小牌。</span><br>
+<strong><span>我們要怎麼做才能在此花色中做出贏張呢？</span></strong><span> 我們必須輸一墩給防守者。</span><br>
+<strong><span>我們可以在這門花色中建立多少墩？</span></strong><span> 這將取決於防守方的牌分配。</span><br>
+<span>如果此花色是 3-3 分配，則可以建立 2 墩。如果是 4-2 分配，我們只能建立 1 墩。</span></p><h2 id="在王牌合約中建立贏張－透過王吃" data-id="在王牌合約中建立贏張－透過王吃"><a class="anchor hidden-xs" href="#在王牌合約中建立贏張－透過王吃" title="在王牌合約中建立贏張－透過王吃"><span class="octicon octicon-link"></span></a><span>在王牌合約中建立贏張－透過王吃</span></h2><p><span>讓我們來看看前面的例子。我們試圖建立的花色是方塊，而我們正在打王牌合約——王牌花色是黑桃。</span><br>
+<strong><span>我們如何在不放棄引牌優勢給防家的情況下建立此門花色？</span></strong><br>
+<span>當打王牌合約時，我們有優勢，我們可以打出此門花色，迫使防家跟牌，王吃他們的大牌。</span><br>
+<span>我們可以多次這樣做，直到我們建立一張或多張贏張。</span><br>
+<span>在前面範例中，可以在第三輪花色上王吃，並且 - 如果是 3-3 分配，那麼我們將成功地建立 2 墩而不失一墩。</span><br>
+<span>如果此花色是 4-2 分配，我們會再王吃另一輪，然後我們的小牌就會大了。</span></p><h2 id="牌例27" data-id="牌例27"><a class="anchor hidden-xs" href="#牌例27" title="牌例27"><span class="octicon octicon-link"></span></a><span>牌例27</span></h2><p><span>目標：王吃建立花色</span><br>
+<span>發牌：E</span><br>
+<span>莊家：E</span><br>
+<span>首引：♠ 2</span><br>
+<span>合約：7♠</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ Q63</span><br><font color="red"><span>♥</span></font><span> A3</span><br><font color="red"><span>♦</span></font><span> AQ853</span><br><span>♣ A94</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ T82</span><br><font color="red"><span>♥</span></font><span> T874</span><br><font color="red"><span>♦</span></font><span> T4</span><br><span>♣ QT87</span></td>
+<td></td>
+<td><span>♠ 9</span><br><span> </span><font color="red"><span>♥</span></font><span> KJ942</span><br><font color="red"><span>♦</span></font><span> J972</span><br><span>♣ 532</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AKJ754</span><br><font color="red"><span>♥</span></font><span> Q6</span><br><font color="red"><span>♦</span></font><span> K6</span><br><span>♣ KJ6</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>A 階段 - 學生叫牌</span><br>
+<span>B 階段 - 指導他們引牌－強調在大滿貫中引牌應該是中立的或保守的，以免幫助莊家猜牌。</span><br>
+<span>C 階段 – 要求莊家先不要打，但要找出問題（2 個輸張）和解決方案（在以 </span><font color="red"><span>♦</span></font><span> 上墊掉一個 </span><font color="red"><span>♥</span></font><span> 失張，或是透過 ♣ 偷牌。）</span></p><p><strong><span>誰成功了，誰沒有成功？</span></strong><br>
+<span>無論誰倒下，都是因為他忘記了從 </span><font color="red"><span>♦</span></font><span> 中的短手牌打，或者他未能發展出 </span><font color="red"><span>♦</span></font><span> 中的第五墩。請注意，</span><font color="red"><span>♦</span></font><span> 肯定能讓我們擺脫 1 個張。如果我們玩得正確，也有可能墊掉第二個失張；這只是時間問題。</span><br>
+<span>這手牌要這樣玩：</span></p><ol>
+<li><span>抽王牌。</span></li>
+<li><span>打方塊 K, A，並在 Q 墊掉 </span><font color="red"><span>♥</span></font><span> 6。</span></li>
+<li><span>現在王吃第 4 圈方塊，並建立最後一張方法。</span></li>
+<li><span>以其中一張 A 返回桌上，並用已建立的方塊墊掉梅花，而無需訴諸梅花偷牌。</span></li>
+</ol><h2 id="牌例28" data-id="牌例28"><a class="anchor hidden-xs" href="#牌例28" title="牌例28"><span class="octicon octicon-link"></span></a><span>牌例28</span></h2><p><span>目標：王吃建立花色</span><br>
+<span>發牌：W</span><br>
+<span>莊家：W</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> J</span><br>
+<span>合約：7 </span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ QT87</span><br><font color="red"><span>♥</span></font><span> 543</span><br><font color="red"><span>♦</span></font><span> JT97</span><br><span>♣ T4</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ A94</span><br><font color="red"><span>♥</span></font><span> AQJ762</span><br><font color="red"><span>♦</span></font><span> K6</span><br><span>♣ Q9</span></td>
+<td></td>
+<td><span>♠ KJ6</span><br><span> </span><font color="red"><span>♥</span></font><span> K98</span><br><font color="red"><span>♦</span></font><span> A4</span><br><span>♣ AK853</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 532</span><br><font color="red"><span>♥</span></font><span> T</span><br><font color="red"><span>♦</span></font><span> Q8532</span><br><span>♣ J972</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>學生將叫牌並嘗試完成合約。</span><br>
+<span>清光王牌後，可以墊掉黑桃花色。</span><br>
+<span>在這種情況下，梅花花色上的開發技巧就沒有必要了。</span></p><h1 id="第17課：主打技巧" data-id="第17課：主打技巧"><a class="anchor hidden-xs" href="#第17課：主打技巧" title="第17課：主打技巧"><span class="octicon octicon-link"></span></a><span>第17課：主打技巧</span></h1><p><span>本課目的</span></p><ol>
+<li><span>重複偷牌/雙偷</span></li>
+<li><span>王吃偷牌。</span></li>
+</ol><h2 id="牌例29" data-id="牌例29"><a class="anchor hidden-xs" href="#牌例29" title="牌例29"><span class="octicon octicon-link"></span></a><span>牌例29</span></h2><p><span>目標：重複偷牌</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：♣ 6</span><br>
+<span>合約：3NT</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ K752</span><br><font color="red"><span>♥</span></font><span> A96</span><br><font color="red"><span>♦</span></font><span> 6542</span><br><span>♣ A8</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ T9</span><br><font color="red"><span>♥</span></font><span> J542</span><br><font color="red"><span>♦</span></font><span> T9</span><br><span>♣ KJ763</span></td>
+<td></td>
+<td><span>♠ J863</span><br><span> </span><font color="red"><span>♥</span></font><span> QT7</span><br><font color="red"><span>♦</span></font><span> K87</span><br><span>♣ Q54</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AQ4</span><br><font color="red"><span>♥</span></font><span> K83</span><br><font color="red"><span>♦</span></font><span> AQJ3</span><br><span>♣ T92</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span>學生將叫牌並嘗試完成合約。</span></p><ul>
+<li><span>恭喜那些完成了 11 墩的人，如果有人完成了 11 墩，說明這是一個「最高」分數。</span></li>
+</ul><p><ins><span>主打分析</span></ins><br>
+<strong><span>莊家有多少確定贏墩？</span></strong><span> 7 個確定贏墩（1 個 ♣、1 個 </span><font color="red"><span>♦</span></font><span>、2 個 </span><font color="red"><span>♥</span></font><span>、3 個 ♠）。</span><br>
+<span>怎樣才能取得更多的贏墩呢？至少在 </span><font color="red"><span>♦</span></font><span> 中多一些（如果偷牌成功的話），在 ♠ 中可能一墩（如果防家平均分配）。</span><br>
+<span>無論誰採取了 </span><font color="red"><span>♦</span></font><span> 偷牌，都會發現它是有效的。</span></p><blockquote>
+<p><span>當偷牌成功時，它應該可以重複</span></p>
+</blockquote><p><strong><span>我們如何打重複偷牌？</span></strong><span> 為了要重複偷牌，我們必須回到夢家。</span><br>
+<strong><span>我們如何回到夢家？</span></strong><span> 我們將以 ♠ K 作為上手張，再次偷牌。</span><br>
+<span>當兩位防家 </span><font color="red"><span>♦</span></font><span> 都跟牌之後，我們就知道最後兩張方塊是贏墩。</span></p><blockquote>
+<p><span>返回再重複偷牌的條件是：能夠從一手轉到另一手</span></p>
+</blockquote><p><ins><span>額外強調：</span></ins><br>
+<strong><span>我們需要扣住嗎？</span></strong><span> 無論是誰扣住都沒有造成任何傷害，但由於我們將在方塊偷牌時沒成功將進入具有梅花長度的防家，因此沒有多大意義；只能希望偷牌能夠成功。</span><br>
+<span>無論如何，如果偷牌不成功，只要梅花 4-4 分配，合約還是有可能的。 （那麼我們將失一墩方塊加 3 墩梅花，但我們仍然會完成合約，因為我們允許輸掉 4 墩）</span></p><h2 id="牌例30" data-id="牌例30"><a class="anchor hidden-xs" href="#牌例30" title="牌例30"><span class="octicon octicon-link"></span></a><span>牌例30</span></h2><p><span>目標：重複偷牌</span><br>
+<span>發牌：N</span><br>
+<span>莊家：S</span><br>
+<span>首引：</span><font color="red"><span>♦</span></font><span> T</span><br>
+<span>合約：6♣</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ KQJT</span><br><font color="red"><span>♥</span></font><span> AJ6</span><br><font color="red"><span>♦</span></font><span> KJ</span><br><span>♣ Q862</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 8642</span><br><font color="red"><span>♥</span></font><span> 8532</span><br><font color="red"><span>♦</span></font><span> T9875</span><br><span>♣ </span><span class="smartypants">–</span></td>
+<td></td>
+<td><span>♠ 93</span><br><span> </span><font color="red"><span>♥</span></font><span> Q97</span><br><font color="red"><span>♦</span></font><span> AQ643</span><br><span>♣ KT5</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ A75</span><br><font color="red"><span>♥</span></font><span> KT4</span><br><font color="red"><span>♦</span></font><span> 2</span><br><span>♣ AJ9743</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>為學生決定合約－梅花小滿貫（12墩）</span></p>
+</blockquote><p><ins><span>主打分析</span></ins><br>
+<strong><span>南家是基準方，莊家有多少輸張？</span></strong><span> 3 個失張（</span><font color="red"><span>♦</span></font><span> 中 1 個必失張、</span><font color="red"><span>♥</span></font><span> 中 1 個、♣  1 個）。</span><br>
+<strong><span>如何才能避免另外兩個失張呢？</span></strong><span> </span><font color="red"><span>♥</span></font><span> 失張我們可以在第 4 張 ♠ 墊掉。♣ 我們缺少 K 和 T。為了完成合約，我們希望梅花 K 在東家而到他偷牌。</span><br>
+<strong><span>我們將採取哪種偷牌？</span></strong><span> 一種強制性的偷牌。我們將打出尊張（Q）並嘗試迫使東家用梅花 K 覆蓋。當我們看到西家根本沒有任何梅花後，我們將回到夢家並對 T 進行重複偷牌。如果東家沒有覆蓋，那麼我們將以 Q 贏得，然後我們可以透過對著梅花 A J 卡張打小梅花來重複對 K 偷牌。在第三輪中，我們將打出 A，而 K 將被敲下。</span></p><h2 id="王吃偷牌Ruffing-Finesse" data-id="王吃偷牌Ruffing-Finesse"><a class="anchor hidden-xs" href="#王吃偷牌Ruffing-Finesse" title="王吃偷牌Ruffing-Finesse"><span class="octicon octicon-link"></span></a><span>王吃偷牌(Ruffing Finesse)</span></h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span class="smartypants">–</span><span>-</span></td>
+<td style="text-align:center"><span>AQJT6</span></td>
+</tr>
+</tbody>
+</table><p><span>您是東家作莊家，王牌是 ♠，您的 </span><font color="red"><span>♦</span></font><span> 花色，如範例所示。</span><br>
+<strong><span>值得偷牌嗎？</span></strong><span> 成功的機會是 50%，所以也許我們能成功，也許我們不會。</span><br>
+<strong><span>有其他方法可以給我們更好的機會嗎？</span></strong><span> 當然是有的，這就是所謂的「王吃偷牌」。在我們用 A 獲勝後，我們打 Q。</span><br>
+<span>如果南家用 K 蓋，我們可以王吃，然後我們所有此花色的牌都建立了，而不會失去任何方塊。</span><br>
+<span>如果在出 Q 後，南家沒有蓋 K，我們可以在墊掉其它花色的失張，而且其餘的方塊也建立了。</span></p><h2 id="牌例31" data-id="牌例31"><a class="anchor hidden-xs" href="#牌例31" title="牌例31"><span class="octicon octicon-link"></span></a><span>牌例31</span></h2><p><span>目標：王吃偷牌</span><br>
+<span>發牌：S</span><br>
+<span>莊家：S</span><br>
+<span>首引：♣ Q</span><br>
+<span>合約：4</span><font color="red"><span>♥</span></font></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ 2</span><br><font color="red"><span>♥</span></font><span> 9865</span><br><font color="red"><span>♦</span></font><span> T7653</span><br><span>♣ T98</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ KT3</span><br><font color="red"><span>♥</span></font><span> Q</span><br><font color="red"><span>♦</span></font><span> J942</span><br><span>♣ QJ742</span></td>
+<td></td>
+<td><span>♠ 8754</span><br><span> </span><font color="red"><span>♥</span></font><span> AT2</span><br><font color="red"><span>♦</span></font><span> KQ8</span><br><span>♣ 653</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ AQJ96</span><br><font color="red"><span>♥</span></font><span> KJ743</span><br><font color="red"><span>♦</span></font><span> A</span><br><span>♣ AK</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>決定最終合約 4</span><font color="red"><span>♥</span></font><span>，（紅心王牌10墩）</span></p>
+</blockquote><ul>
+<li><span>學生將使用王吃偷牌技巧。</span></li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#IBF-Mini-Bridge" title="IBF Mini-Bridge">IBF Mini-Bridge</a></li>
+<li><a href="#第1課：簡介" title="第1課：簡介">第1課：簡介</a><ul class="nav">
+<li><a href="#課程目的" title="課程目的">課程目的</a></li>
+<li><a href="#學生的知識" title="學生的知識">學生的知識</a></li>
+<li><a href="#適當的行為" title="適當的行為">適當的行為</a><ul class="nav">
+<li><a href="#課堂規則" title="課堂規則">課堂規則</a></li>
+</ul>
+</li>
+<li><a href="#認識牌卡" title="認識牌卡">認識牌卡</a></li>
+<li><a href="#發放沒有小丑的牌" title="發放沒有小丑的牌">發放沒有小丑的牌</a></li>
+<li><a href="#牌卡簡介" title="牌卡簡介">牌卡簡介</a></li>
+<li><a href="#整理牌卡的練習" title="整理牌卡的練習">整理牌卡的練習</a></li>
+<li><a href="#獲取贏墩和跟牌的練習" title="獲取贏墩和跟牌的練習">獲取贏墩和跟牌的練習</a></li>
+<li><a href="#輸贏墩的練習" title="輸贏墩的練習">輸贏墩的練習</a></li>
+<li><a href="#遊戲目的的解釋" title="遊戲目的的解釋">遊戲目的的解釋</a></li>
+<li><a href="#總結課程並分發練習一" title="總結課程並分發練習一">總結課程並分發練習一</a></li>
+</ul>
+</li>
+<li><a href="#第2課：橋牌是搭檔的遊戲" title="第2課：橋牌是搭檔的遊戲">第2課：橋牌是搭檔的遊戲</a><ul class="nav">
+<li><a href="#搭檔原則" title="搭檔原則">搭檔原則</a></li>
+<li><a href="#確認理解的問題－有多少墩" title="確認理解的問題－有多少墩">確認理解的問題－有多少墩</a></li>
+<li><a href="#遊戲各階段的知識：合約與獲取贏墩" title="遊戲各階段的知識：合約與獲取贏墩">遊戲各階段的知識：合約與獲取贏墩</a></li>
+<li><a href="#桌子周圍玩家的角色" title="桌子周圍玩家的角色">桌子周圍玩家的角色</a></li>
+<li><a href="#打牌和夢家練習---引牌" title="打牌和夢家練習 - 引牌">打牌和夢家練習 - 引牌</a></li>
+<li><a href="#牌例1" title="牌例1">牌例1</a></li>
+<li><a href="#牌例2" title="牌例2">牌例2</a></li>
+<li><a href="#熟悉「確定贏墩」sure-tricks-一詞" title="熟悉「確定贏墩」(sure tricks) 一詞">熟悉「確定贏墩」(sure tricks) 一詞</a></li>
+</ul>
+</li>
+<li><a href="#第3課：發展贏墩" title="第3課：發展贏墩">第3課：發展贏墩</a><ul class="nav">
+<li><a href="#發展花色" title="發展花色">發展花色</a></li>
+<li><a href="#牌例3" title="牌例3">牌例3</a><ul class="nav">
+<li><a href="#牌局分析" title="牌局分析">牌局分析</a></li>
+</ul>
+</li>
+<li><a href="#尊牌及其價值" title="尊牌及其價值">尊牌及其價值</a></li>
+<li><a href="#計分練習－在每張桌子上分發一副卡片" title="計分練習－在每張桌子上分發一副卡片">計分練習－在每張桌子上分發一副卡片</a></li>
+<li><a href="#合約中的最少墩數" title="合約中的最少墩數">合約中的最少墩數</a></li>
+<li><a href="#最低開標價要求" title="最低開標價要求">最低開標價要求</a></li>
+</ul>
+</li>
+<li><a href="#第4課：獲勝分數" title="第4課：獲勝分數">第4課：獲勝分數</a><ul class="nav">
+<li><a href="#按照規則處理牌和叫牌的練習" title="按照規則處理牌和叫牌的練習">按照規則處理牌和叫牌的練習</a></li>
+<li><a href="#檢視理解程度的問題—贏墩和點力表" title="檢視理解程度的問題—贏墩和點力表">檢視理解程度的問題—贏墩和點力表</a></li>
+<li><a href="#熟悉術語–小滿貫和大滿貫" title="熟悉術語–小滿貫和大滿貫">熟悉術語–小滿貫和大滿貫</a></li>
+<li><a href="#如果我們沒完成合約會怎樣？" title="如果我們沒完成合約會怎樣？">如果我們沒完成合約會怎樣？</a></li>
+<li><a href="#幫助理解的問題" title="幫助理解的問題">幫助理解的問題</a></li>
+<li><a href="#牌例4" title="牌例4">牌例4</a></li>
+<li><a href="#牌例5" title="牌例5">牌例5</a></li>
+</ul>
+</li>
+<li><a href="#第5課：主打" title="第5課：主打">第5課：主打</a><ul class="nav">
+<li><a href="#計算兩手間的尊牌與確定贏墩" title="計算兩手間的尊牌與確定贏墩">計算兩手間的尊牌與確定贏墩</a></li>
+<li><a href="#長手和短手" title="長手和短手">長手和短手</a></li>
+<li><a href="#牌例6" title="牌例6">牌例6</a></li>
+<li><a href="#保持兩手之間的溝通" title="保持兩手之間的溝通">保持兩手之間的溝通</a></li>
+<li><a href="#我們如何克服阻塞？" title="我們如何克服阻塞？">我們如何克服阻塞？</a></li>
+<li><a href="#牌例7" title="牌例7">牌例7</a></li>
+</ul>
+</li>
+<li><a href="#第6課：牌張打法" title="第6課：牌張打法">第6課：牌張打法</a><ul class="nav">
+<li><a href="#牌例8" title="牌例8">牌例8</a></li>
+<li><a href="#從連續張頂部開始的引牌" title="從連續張頂部開始的引牌">從連續張頂部開始的引牌</a></li>
+<li><a href="#當還有一張更大的牌時，一樣是從連續張頂部開始引牌" title="當還有一張更大的牌時，一樣是從連續張頂部開始引牌">當還有一張更大的牌時，一樣是從連續張頂部開始引牌</a></li>
+<li><a href="#克服阻塞——「吞下」swallowing-蓋吃尊張" title="克服阻塞——「吞下」(swallowing, 蓋吃)尊張">克服阻塞——「吞下」(swallowing, 蓋吃)尊張</a></li>
+<li><a href="#友善分配" title="友善分配">友善分配</a></li>
+<li><a href="#牌例9" title="牌例9">牌例9</a></li>
+</ul>
+</li>
+<li><a href="#第7課：主打技巧–偷牌" title="第7課：主打技巧–偷牌">第7課：主打技巧–偷牌</a><ul class="nav">
+<li><a href="#簡單的偷牌" title="簡單的偷牌">簡單的偷牌</a></li>
+<li><a href="#牌例10" title="牌例10">牌例10</a></li>
+<li><a href="#僵局Impasse" title="僵局(Impasse)">僵局(Impasse)</a></li>
+<li><a href="#僵局或偷牌？" title="僵局或偷牌？">僵局或偷牌？</a></li>
+<li><a href="#雙向偷牌" title="雙向偷牌">雙向偷牌</a></li>
+<li><a href="#牌例11" title="牌例11">牌例11</a></li>
+</ul>
+</li>
+<li><a href="#第8課：打王牌合約" title="第8課：打王牌合約">第8課：打王牌合約</a><ul class="nav">
+<li><a href="#牌例12" title="牌例12">牌例12</a></li>
+<li><a href="#偏好打王牌Trumps合約" title="偏好打王牌(Trumps)合約">偏好打王牌(Trumps)合約</a></li>
+<li><a href="#王吃-Ruff" title="王吃 (Ruff)">王吃 (Ruff)</a></li>
+<li><a href="#誰被允許王吃？" title="誰被允許王吃？">誰被允許王吃？</a></li>
+<li><a href="#牌例13" title="牌例13">牌例13</a></li>
+<li><a href="#分配點" title="分配點">分配點</a></li>
+<li><a href="#牌例14" title="牌例14">牌例14</a></li>
+</ul>
+</li>
+<li><a href="#第9課：決定合約型式" title="第9課：決定合約型式">第9課：決定合約型式</a><ul class="nav">
+<li><a href="#我們如何找到配合？" title="我們如何找到配合？">我們如何找到配合？</a></li>
+<li><a href="#牌例15" title="牌例15">牌例15</a></li>
+<li><a href="#牌例16" title="牌例16">牌例16</a></li>
+<li><a href="#結論性問題" title="結論性問題">結論性問題</a></li>
+</ul>
+</li>
+<li><a href="#第10課：王牌合約中規劃打法" title="第10課：王牌合約中規劃打法">第10課：王牌合約中規劃打法</a><ul class="nav">
+<li><a href="#牌例17" title="牌例17">牌例17</a></li>
+<li><a href="#如何擺脫失張" title="如何擺脫失張">如何擺脫失張</a></li>
+</ul>
+</li>
+<li><a href="#第11課：計劃防禦" title="第11課：計劃防禦">第11課：計劃防禦</a><ul class="nav">
+<li><a href="#首引的重要性" title="首引的重要性">首引的重要性</a></li>
+<li><a href="#對抗-NT-的引牌規則" title="對抗 NT 的引牌規則">對抗 NT 的引牌規則</a></li>
+<li><a href="#對抗王牌合約的引牌規則" title="對抗王牌合約的引牌規則">對抗王牌合約的引牌規則</a></li>
+<li><a href="#從引牌張上得出結論" title="從引牌張上得出結論">從引牌張上得出結論</a></li>
+<li><a href="#牌例18" title="牌例18">牌例18</a></li>
+<li><a href="#牌例19" title="牌例19">牌例19</a></li>
+<li><a href="#牌局分析1" title="牌局分析">牌局分析</a></li>
+</ul>
+</li>
+<li><a href="#第12課：王牌合約的主打計劃" title="第12課：王牌合約的主打計劃">第12課：王牌合約的主打計劃</a><ul class="nav">
+<li><a href="#第一階段-準備主打－選擇“基準方”-base-hand" title="第一階段 準備主打－選擇“基準方” (base hand)">第一階段 準備主打－選擇“基準方” (base hand)</a></li>
+<li><a href="#第二階段-規劃這手牌的打法-–-評估強度" title="第二階段 規劃這手牌的打法 – 評估強度">第二階段 規劃這手牌的打法 – 評估強度</a></li>
+<li><a href="#第三階段-策劃主打－如何成約" title="第三階段 策劃主打－如何成約">第三階段 策劃主打－如何成約</a></li>
+<li><a href="#牌例20" title="牌例20">牌例20</a></li>
+<li><a href="#莊家牌局分析" title="莊家牌局分析">莊家牌局分析</a></li>
+</ul>
+</li>
+<li><a href="#第13課：計劃王牌合約主打" title="第13課：計劃王牌合約主打">第13課：計劃王牌合約主打</a><ul class="nav">
+<li><a href="#EXPASS" title="EXPASS">EXPASS</a></li>
+<li><a href="#牌例21" title="牌例21">牌例21</a></li>
+<li><a href="#第二家跟小" title="第二家跟小">第二家跟小</a></li>
+<li><a href="#防守－大牌蓋大牌" title="防守－大牌蓋大牌">防守－大牌蓋大牌</a></li>
+<li><a href="#為什麼要蓋？如果不蓋會怎樣？" title="為什麼要蓋？如果不蓋會怎樣？">為什麼要蓋？如果不蓋會怎樣？</a></li>
+<li><a href="#什麼時候我們不該蓋？" title="什麼時候我們不該蓋？">什麼時候我們不該蓋？</a></li>
+<li><a href="#牌例22" title="牌例22">牌例22</a></li>
+</ul>
+</li>
+<li><a href="#第14課：高花和低花" title="第14課：高花和低花">第14課：高花和低花</a><ul class="nav">
+<li><a href="#叫牌決策全表" title="叫牌決策全表">叫牌決策全表</a></li>
+<li><a href="#牌例23" title="牌例23">牌例23</a></li>
+<li><a href="#首選高花，其次無法，最後才是低花" title="首選高花，其次無法，最後才是低花">首選高花，其次無法，最後才是低花</a></li>
+<li><a href="#牌例24" title="牌例24">牌例24</a></li>
+</ul>
+</li>
+<li><a href="#第15課；扣住／忍讓" title="第15課；扣住／忍讓">第15課；扣住／忍讓</a><ul class="nav">
+<li><a href="#牌例25" title="牌例25">牌例25</a></li>
+<li><a href="#防禦" title="防禦">防禦</a></li>
+<li><a href="#牌例26" title="牌例26">牌例26</a></li>
+</ul>
+</li>
+<li><a href="#第16課：花色建立" title="第16課：花色建立">第16課：花色建立</a><ul class="nav">
+<li><a href="#在NT中建立一套花色－放棄一墩給防家" title="在NT中建立一套花色－放棄一墩給防家">在NT中建立一套花色－放棄一墩給防家</a></li>
+<li><a href="#在王牌合約中建立贏張－透過王吃" title="在王牌合約中建立贏張－透過王吃">在王牌合約中建立贏張－透過王吃</a></li>
+<li><a href="#牌例27" title="牌例27">牌例27</a></li>
+<li><a href="#牌例28" title="牌例28">牌例28</a></li>
+</ul>
+</li>
+<li><a href="#第17課：主打技巧" title="第17課：主打技巧">第17課：主打技巧</a><ul class="nav">
+<li><a href="#牌例29" title="牌例29">牌例29</a></li>
+<li><a href="#牌例30" title="牌例30">牌例30</a></li>
+<li><a href="#王吃偷牌Ruffing-Finesse" title="王吃偷牌(Ruffing Finesse)">王吃偷牌(Ruffing Finesse)</a></li>
+<li><a href="#牌例31" title="牌例31">牌例31</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a href="#IBF-Mini-Bridge" title="IBF Mini-Bridge">IBF Mini-Bridge</a></li>
+<li><a href="#第1課：簡介" title="第1課：簡介">第1課：簡介</a><ul class="nav">
+<li><a href="#課程目的" title="課程目的">課程目的</a></li>
+<li><a href="#學生的知識" title="學生的知識">學生的知識</a></li>
+<li><a href="#適當的行為" title="適當的行為">適當的行為</a><ul class="nav">
+<li><a href="#課堂規則" title="課堂規則">課堂規則</a></li>
+</ul>
+</li>
+<li><a href="#認識牌卡" title="認識牌卡">認識牌卡</a></li>
+<li><a href="#發放沒有小丑的牌" title="發放沒有小丑的牌">發放沒有小丑的牌</a></li>
+<li><a href="#牌卡簡介" title="牌卡簡介">牌卡簡介</a></li>
+<li><a href="#整理牌卡的練習" title="整理牌卡的練習">整理牌卡的練習</a></li>
+<li><a href="#獲取贏墩和跟牌的練習" title="獲取贏墩和跟牌的練習">獲取贏墩和跟牌的練習</a></li>
+<li><a href="#輸贏墩的練習" title="輸贏墩的練習">輸贏墩的練習</a></li>
+<li><a href="#遊戲目的的解釋" title="遊戲目的的解釋">遊戲目的的解釋</a></li>
+<li><a href="#總結課程並分發練習一" title="總結課程並分發練習一">總結課程並分發練習一</a></li>
+</ul>
+</li>
+<li><a href="#第2課：橋牌是搭檔的遊戲" title="第2課：橋牌是搭檔的遊戲">第2課：橋牌是搭檔的遊戲</a><ul class="nav">
+<li><a href="#搭檔原則" title="搭檔原則">搭檔原則</a></li>
+<li><a href="#確認理解的問題－有多少墩" title="確認理解的問題－有多少墩">確認理解的問題－有多少墩</a></li>
+<li><a href="#遊戲各階段的知識：合約與獲取贏墩" title="遊戲各階段的知識：合約與獲取贏墩">遊戲各階段的知識：合約與獲取贏墩</a></li>
+<li><a href="#桌子周圍玩家的角色" title="桌子周圍玩家的角色">桌子周圍玩家的角色</a></li>
+<li><a href="#打牌和夢家練習---引牌" title="打牌和夢家練習 - 引牌">打牌和夢家練習 - 引牌</a></li>
+<li><a href="#牌例1" title="牌例1">牌例1</a></li>
+<li><a href="#牌例2" title="牌例2">牌例2</a></li>
+<li><a href="#熟悉「確定贏墩」sure-tricks-一詞" title="熟悉「確定贏墩」(sure tricks) 一詞">熟悉「確定贏墩」(sure tricks) 一詞</a></li>
+</ul>
+</li>
+<li><a href="#第3課：發展贏墩" title="第3課：發展贏墩">第3課：發展贏墩</a><ul class="nav">
+<li><a href="#發展花色" title="發展花色">發展花色</a></li>
+<li><a href="#牌例3" title="牌例3">牌例3</a><ul class="nav">
+<li><a href="#牌局分析" title="牌局分析">牌局分析</a></li>
+</ul>
+</li>
+<li><a href="#尊牌及其價值" title="尊牌及其價值">尊牌及其價值</a></li>
+<li><a href="#計分練習－在每張桌子上分發一副卡片" title="計分練習－在每張桌子上分發一副卡片">計分練習－在每張桌子上分發一副卡片</a></li>
+<li><a href="#合約中的最少墩數" title="合約中的最少墩數">合約中的最少墩數</a></li>
+<li><a href="#最低開標價要求" title="最低開標價要求">最低開標價要求</a></li>
+</ul>
+</li>
+<li><a href="#第4課：獲勝分數" title="第4課：獲勝分數">第4課：獲勝分數</a><ul class="nav">
+<li><a href="#按照規則處理牌和叫牌的練習" title="按照規則處理牌和叫牌的練習">按照規則處理牌和叫牌的練習</a></li>
+<li><a href="#檢視理解程度的問題—贏墩和點力表" title="檢視理解程度的問題—贏墩和點力表">檢視理解程度的問題—贏墩和點力表</a></li>
+<li><a href="#熟悉術語–小滿貫和大滿貫" title="熟悉術語–小滿貫和大滿貫">熟悉術語–小滿貫和大滿貫</a></li>
+<li><a href="#如果我們沒完成合約會怎樣？" title="如果我們沒完成合約會怎樣？">如果我們沒完成合約會怎樣？</a></li>
+<li><a href="#幫助理解的問題" title="幫助理解的問題">幫助理解的問題</a></li>
+<li><a href="#牌例4" title="牌例4">牌例4</a></li>
+<li><a href="#牌例5" title="牌例5">牌例5</a></li>
+</ul>
+</li>
+<li><a href="#第5課：主打" title="第5課：主打">第5課：主打</a><ul class="nav">
+<li><a href="#計算兩手間的尊牌與確定贏墩" title="計算兩手間的尊牌與確定贏墩">計算兩手間的尊牌與確定贏墩</a></li>
+<li><a href="#長手和短手" title="長手和短手">長手和短手</a></li>
+<li><a href="#牌例6" title="牌例6">牌例6</a></li>
+<li><a href="#保持兩手之間的溝通" title="保持兩手之間的溝通">保持兩手之間的溝通</a></li>
+<li><a href="#我們如何克服阻塞？" title="我們如何克服阻塞？">我們如何克服阻塞？</a></li>
+<li><a href="#牌例7" title="牌例7">牌例7</a></li>
+</ul>
+</li>
+<li><a href="#第6課：牌張打法" title="第6課：牌張打法">第6課：牌張打法</a><ul class="nav">
+<li><a href="#牌例8" title="牌例8">牌例8</a></li>
+<li><a href="#從連續張頂部開始的引牌" title="從連續張頂部開始的引牌">從連續張頂部開始的引牌</a></li>
+<li><a href="#當還有一張更大的牌時，一樣是從連續張頂部開始引牌" title="當還有一張更大的牌時，一樣是從連續張頂部開始引牌">當還有一張更大的牌時，一樣是從連續張頂部開始引牌</a></li>
+<li><a href="#克服阻塞——「吞下」swallowing-蓋吃尊張" title="克服阻塞——「吞下」(swallowing, 蓋吃)尊張">克服阻塞——「吞下」(swallowing, 蓋吃)尊張</a></li>
+<li><a href="#友善分配" title="友善分配">友善分配</a></li>
+<li><a href="#牌例9" title="牌例9">牌例9</a></li>
+</ul>
+</li>
+<li><a href="#第7課：主打技巧–偷牌" title="第7課：主打技巧–偷牌">第7課：主打技巧–偷牌</a><ul class="nav">
+<li><a href="#簡單的偷牌" title="簡單的偷牌">簡單的偷牌</a></li>
+<li><a href="#牌例10" title="牌例10">牌例10</a></li>
+<li><a href="#僵局Impasse" title="僵局(Impasse)">僵局(Impasse)</a></li>
+<li><a href="#僵局或偷牌？" title="僵局或偷牌？">僵局或偷牌？</a></li>
+<li><a href="#雙向偷牌" title="雙向偷牌">雙向偷牌</a></li>
+<li><a href="#牌例11" title="牌例11">牌例11</a></li>
+</ul>
+</li>
+<li><a href="#第8課：打王牌合約" title="第8課：打王牌合約">第8課：打王牌合約</a><ul class="nav">
+<li><a href="#牌例12" title="牌例12">牌例12</a></li>
+<li><a href="#偏好打王牌Trumps合約" title="偏好打王牌(Trumps)合約">偏好打王牌(Trumps)合約</a></li>
+<li><a href="#王吃-Ruff" title="王吃 (Ruff)">王吃 (Ruff)</a></li>
+<li><a href="#誰被允許王吃？" title="誰被允許王吃？">誰被允許王吃？</a></li>
+<li><a href="#牌例13" title="牌例13">牌例13</a></li>
+<li><a href="#分配點" title="分配點">分配點</a></li>
+<li><a href="#牌例14" title="牌例14">牌例14</a></li>
+</ul>
+</li>
+<li><a href="#第9課：決定合約型式" title="第9課：決定合約型式">第9課：決定合約型式</a><ul class="nav">
+<li><a href="#我們如何找到配合？" title="我們如何找到配合？">我們如何找到配合？</a></li>
+<li><a href="#牌例15" title="牌例15">牌例15</a></li>
+<li><a href="#牌例16" title="牌例16">牌例16</a></li>
+<li><a href="#結論性問題" title="結論性問題">結論性問題</a></li>
+</ul>
+</li>
+<li><a href="#第10課：王牌合約中規劃打法" title="第10課：王牌合約中規劃打法">第10課：王牌合約中規劃打法</a><ul class="nav">
+<li><a href="#牌例17" title="牌例17">牌例17</a></li>
+<li><a href="#如何擺脫失張" title="如何擺脫失張">如何擺脫失張</a></li>
+</ul>
+</li>
+<li><a href="#第11課：計劃防禦" title="第11課：計劃防禦">第11課：計劃防禦</a><ul class="nav">
+<li><a href="#首引的重要性" title="首引的重要性">首引的重要性</a></li>
+<li><a href="#對抗-NT-的引牌規則" title="對抗 NT 的引牌規則">對抗 NT 的引牌規則</a></li>
+<li><a href="#對抗王牌合約的引牌規則" title="對抗王牌合約的引牌規則">對抗王牌合約的引牌規則</a></li>
+<li><a href="#從引牌張上得出結論" title="從引牌張上得出結論">從引牌張上得出結論</a></li>
+<li><a href="#牌例18" title="牌例18">牌例18</a></li>
+<li><a href="#牌例19" title="牌例19">牌例19</a></li>
+<li><a href="#牌局分析1" title="牌局分析">牌局分析</a></li>
+</ul>
+</li>
+<li><a href="#第12課：王牌合約的主打計劃" title="第12課：王牌合約的主打計劃">第12課：王牌合約的主打計劃</a><ul class="nav">
+<li><a href="#第一階段-準備主打－選擇“基準方”-base-hand" title="第一階段 準備主打－選擇“基準方” (base hand)">第一階段 準備主打－選擇“基準方” (base hand)</a></li>
+<li><a href="#第二階段-規劃這手牌的打法-–-評估強度" title="第二階段 規劃這手牌的打法 – 評估強度">第二階段 規劃這手牌的打法 – 評估強度</a></li>
+<li><a href="#第三階段-策劃主打－如何成約" title="第三階段 策劃主打－如何成約">第三階段 策劃主打－如何成約</a></li>
+<li><a href="#牌例20" title="牌例20">牌例20</a></li>
+<li><a href="#莊家牌局分析" title="莊家牌局分析">莊家牌局分析</a></li>
+</ul>
+</li>
+<li><a href="#第13課：計劃王牌合約主打" title="第13課：計劃王牌合約主打">第13課：計劃王牌合約主打</a><ul class="nav">
+<li><a href="#EXPASS" title="EXPASS">EXPASS</a></li>
+<li><a href="#牌例21" title="牌例21">牌例21</a></li>
+<li><a href="#第二家跟小" title="第二家跟小">第二家跟小</a></li>
+<li><a href="#防守－大牌蓋大牌" title="防守－大牌蓋大牌">防守－大牌蓋大牌</a></li>
+<li><a href="#為什麼要蓋？如果不蓋會怎樣？" title="為什麼要蓋？如果不蓋會怎樣？">為什麼要蓋？如果不蓋會怎樣？</a></li>
+<li><a href="#什麼時候我們不該蓋？" title="什麼時候我們不該蓋？">什麼時候我們不該蓋？</a></li>
+<li><a href="#牌例22" title="牌例22">牌例22</a></li>
+</ul>
+</li>
+<li><a href="#第14課：高花和低花" title="第14課：高花和低花">第14課：高花和低花</a><ul class="nav">
+<li><a href="#叫牌決策全表" title="叫牌決策全表">叫牌決策全表</a></li>
+<li><a href="#牌例23" title="牌例23">牌例23</a></li>
+<li><a href="#首選高花，其次無法，最後才是低花" title="首選高花，其次無法，最後才是低花">首選高花，其次無法，最後才是低花</a></li>
+<li><a href="#牌例24" title="牌例24">牌例24</a></li>
+</ul>
+</li>
+<li><a href="#第15課；扣住／忍讓" title="第15課；扣住／忍讓">第15課；扣住／忍讓</a><ul class="nav">
+<li><a href="#牌例25" title="牌例25">牌例25</a></li>
+<li><a href="#防禦" title="防禦">防禦</a></li>
+<li><a href="#牌例26" title="牌例26">牌例26</a></li>
+</ul>
+</li>
+<li><a href="#第16課：花色建立" title="第16課：花色建立">第16課：花色建立</a><ul class="nav">
+<li><a href="#在NT中建立一套花色－放棄一墩給防家" title="在NT中建立一套花色－放棄一墩給防家">在NT中建立一套花色－放棄一墩給防家</a></li>
+<li><a href="#在王牌合約中建立贏張－透過王吃" title="在王牌合約中建立贏張－透過王吃">在王牌合約中建立贏張－透過王吃</a></li>
+<li><a href="#牌例27" title="牌例27">牌例27</a></li>
+<li><a href="#牌例28" title="牌例28">牌例28</a></li>
+</ul>
+</li>
+<li><a href="#第17課：主打技巧" title="第17課：主打技巧">第17課：主打技巧</a><ul class="nav">
+<li><a href="#牌例29" title="牌例29">牌例29</a></li>
+<li><a href="#牌例30" title="牌例30">牌例30</a></li>
+<li><a href="#王吃偷牌Ruffing-Finesse" title="王吃偷牌(Ruffing Finesse)">王吃偷牌(Ruffing Finesse)</a></li>
+<li><a href="#牌例31" title="牌例31">牌例31</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

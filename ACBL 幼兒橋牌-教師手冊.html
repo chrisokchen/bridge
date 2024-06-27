@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        ACBL 幼兒橋牌-教師手冊 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="ACBL-幼兒橋牌-教師手冊" data-id="ACBL-幼兒橋牌-教師手冊"><a class="anchor hidden-xs" href="#ACBL-幼兒橋牌-教師手冊" title="ACBL-幼兒橋牌-教師手冊"><span class="octicon octicon-link"></span></a><span>ACBL 幼兒橋牌-教師手冊</span></h1><p><a href="https://web2.acbl.org/documentLibrary/teachers/ComptonLessonsPreK1.pdf" target="_blank" rel="noopener"><span>Elementary School Bridge Lesson Teacher Manual PreK-1st Grades</span></a></p><p><span>小學橋牌課</span><br>
+<span>教師手冊</span><br>
+<span>學前班至一年級</span></p><p><span>廣泛使用 ACBL Bridge 系列和 English Bridge Union MiniBridge 材料</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th><span>課程</span></th>
+<th><span>目標</span></th>
+<th><span>內容</span></th>
+<th><span>牌例</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>1</span></td>
+<td><a href="#%E7%AC%AC1%E8%AA%B2"><span>一副牌和取得贏墩</span></a></td>
+<td><span>認識四種花色</span><br><span>認識牌的相對等級</span><br><span>了解 War 規則</span></td>
+<td><span>練習 1：牌的等級</span><br><span>練習 2：戰爭遊戲</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>2</span></td>
+<td><a href="#%E7%AC%AC2%E8%AA%B2"><span>Tricks 遊戲</span></a></td>
+<td><span>洗牌、發牌並排序</span><br><span>了解如何在無王牌中贏得一墩</span></td>
+<td><span>練習 1：洗牌和發牌</span><br><span>練習 2. 分類花色</span><br><span>練習 3：取得贏墩</span><br><span>Tricks 遊戲</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>3</span></td>
+<td><a href="#%E7%AC%AC3%E8%AA%B2"><span>Trumps 遊戲</span></a></td>
+<td><span>用王牌取得贏墩</span></td>
+<td><span>練習1：重複取得贏墩</span><br><span>練習 2：玩王牌合約</span><br><span>Trumps 遊戲</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>4</span></td>
+<td><a href="#%E7%AC%AC4%E8%AA%B2"><span>惠斯特 (Whist) 遊戲</span></a></td>
+<td><span>介紹人臉（尊張）卡牌</span><br><span>學習惠斯特遊戲</span></td>
+<td><span>練習 1：尊張 (Honor Cards)</span><br><span>惠斯特 (Whist) 遊戲</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>5</span></td>
+<td><a href="#%E7%AC%AC5%E8%AA%B2"><span>與夥伴一起玩</span></a></td>
+<td></td>
+<td><span>練習 1：合作遊戲</span><br><span>練習 2：挑選王牌花色</span><br><span>練習 3：惠斯特計分</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>6</span></td>
+<td><a href="#%E7%AC%AC6%E8%AA%B2"><span>迷你橋第1部分</span></a></td>
+<td><span>學習有夢家玩遊戲</span><br><span>與夥伴一起學習挑選王牌花色</span><br><span>了解惠斯特的計分</span><br><span>學習計算分數</span><br><span>無需計分即可了解迷你橋基本規則</span></td>
+<td><span>練習 1：有夢家的遊戲</span><br><span>練習 2：計算大牌點</span><br><span>練習 3：第一手迷你橋牌</span><br><span>迷你橋牌遊戲</span></td>
+<td><a href="###Deal-1"><span>Deal-1</span></a><span>, </span><a href="###Deal-2"><span>Deal-2</span></a></td>
+</tr>
+<tr>
+<td><span>7</span></td>
+<td><a href="#%E7%AC%AC7%E8%AA%B2"><span>迷你橋第2部分</span></a></td>
+<td><span>學習指定王牌花色或無王</span><br><span>學會計算確定贏墩</span><br><span>學習從連續張引頂張</span><br><span>了解哪些是低花，哪些是高花</span><br><span>學習計分</span><br><span>了解合約</span></td>
+<td><span>練習 1：迷你橋機制回顧</span><br><span>練習 2：高花和低花</span><br><span>練習 3：記分</span><br><span>練習 4：合約</span></td>
+<td><a href="###Deal-3"><span>Deal-3</span></a><span>, </span><a href="###Deal-4"><span>Deal-4</span></a></td>
+</tr>
+<tr>
+<td><span>8</span></td>
+<td><a href="#%E7%AC%AC8%E8%AA%B2"><span>把它們放在一起</span></a></td>
+<td><span>了解哪些是低花，哪些是高花（如果前一週沒有涉及）</span><br><span>復習前七課</span></td>
+<td><span>玩 #2，牌號 3 和 4，並計分</span></td>
+<td><a href="###Deal-5"><span>Deal-5</span></a><span>, </span><a href="###Deal-6"><span>Deal-6</span></a></td>
+</tr>
+</tbody>
+</table><h1 id="介紹" data-id="介紹"><a class="anchor hidden-xs" href="#介紹" title="介紹"><span class="octicon octicon-link"></span></a><span>介紹</span></h1><h2 id="教學方法概述" data-id="教學方法概述"><a class="anchor hidden-xs" href="#教學方法概述" title="教學方法概述"><span class="octicon octicon-link"></span></a><span>教學方法概述</span></h2><p><span>本資料旨在向 4 至 7 歲的目標群體兒童教授橋牌。基本方法是從 War 遊戲開始，然後通過贏墩、王牌和惠斯特遊戲，在課程結束時到達迷你橋牌遊戲。這些課程計劃的關鍵字是「有趣」。如果孩子們享受第一次打牌的體驗，他們還有很多年的時間可以繼續學習橋牌遊戲。如果孩子們玩得開心，你就成功了。</span></p><p><span>引號中的單字是您想要向孩子傳達的概念。與他們交談時，你應該選擇簡短易懂的字詞。您必須使用卡片或海報等視覺輔助工具來介紹新概念。 「有趣的工作」(Fun Work) 頁面供孩子們帶回家給父母看。</span></p><p><strong><span>War</span></strong><span> 是兩個人之間的紙牌遊戲。莊家將一張牌面朝上放在桌子中間。她的對手將一張牌面朝上放在桌子中間的莊家牌旁邊。擁有較大牌的玩家贏得該墩牌，並拿走兩張牌並將它們單獨放在桌子的一側。贏得這墩牌的玩家再將一張牌面朝上放在桌子中間。最終一個人將贏得所有牌。</span></p><p><strong><span>Tricks</span></strong><span> 是一種四人玩的紙牌遊戲。莊家左邊的玩家先出，將一張牌面朝上放在他面前。開局首引者左邊的玩家現在在他面前打出一張相同花色的牌。每位玩家依順時針順序依序打出一張同花色的牌。擁有最高等級牌的人贏得這一墩。如果玩家不能跟牌，則應該打出一張其他花色的小牌。贏得這一墩的玩家可以先引下一墩。對於年幼的孩子，您可以拿出 2、3 和 4，而用 10 張牌。</span></p><p><strong><span>Trumps</span></strong><span> 王牌是一種添加王牌花色的贏墩遊戲。王牌花色的等級高於其他花色。莊家宣布哪種花色將成為王牌，並將一張牌放在桌上。其他玩家依順時針方向依序跟隨。擁有最高等級牌的玩家贏得該墩，記住王牌 2 比任何其他花色的 A 都高。因此，當玩家不能跟牌時，該玩家可以在該墩中打出王牌並贏得該墩。該墩的獲勝者然後選擇下一張要打的牌。</span></p><p><strong><span>MiniBridge</span></strong><span> 是沒有競價的橋牌。所有玩家依序宣布自己的大牌點。點數最多的一方負責玩這手牌。點數少的伙伴攤牌成為夢家，他的伙伴（莊家）在看著夢家牌的同時選擇一份合約。</span></p><h2 id="課程形式" data-id="課程形式"><a class="anchor hidden-xs" href="#課程形式" title="課程形式"><span class="octicon octicon-link"></span></a><span>課程形式</span></h2><p><span>每節課的時間安排為一個小時。小學的課外活動通常為45分鐘到1小時。只要讓孩子玩當天學到的遊戲，就可以輕鬆擴展課程計畫。每週應使用相同的格式。學生喜歡熟悉的結構。格式為：</span><br>
+<span>• 開始時有一個非常簡短的互動演講（最多五分鐘）。本指南中有一些範例演講，每個新術語都以粗體顯示。</span><br>
+<span>• 玩當天的遊戲。有些課程包含課程中的牌組。</span><br>
+<span>• 引號中的材料表示教師可能會說的話，斜體材料表示對教師的指示。</span></p><p><strong><span>E-Z Deal Cards</span></strong><span> (Bidding Course cards, The Club Series)  不建議該年齡層使用。計劃在第 6、7 和 8 課中的六手牌中使用預發的牌組。</span></p><h1 id="第1課" data-id="第1課"><a class="anchor hidden-xs" href="#第1課" title="第1課"><span class="octicon octicon-link"></span></a><span>第1課</span></h1><h1 id="一副牌和取得贏墩" data-id="一副牌和取得贏墩"><a class="anchor hidden-xs" href="#一副牌和取得贏墩" title="一副牌和取得贏墩"><span class="octicon octicon-link"></span></a><span>一副牌和取得贏墩</span></h1><p><span>（如果您的贊助老師同意的話，請在前幾節課中使用“你好，我的名字是”名牌。讓學生在進入房間時寫下自己的名字。學生的到達和座位需要與您的贊助老師討論，以及房間的設置。如果將課桌當作牌桌，通常可以將四張桌子拼在一起。看看什麼對你的團隊有效。當地玩家很可能願意為有價值的事業貢獻舊橋牌桌。教師通常可以將折疊牌桌存放在櫃子後面或大壁櫥中。</span></p><h2 id="材料" data-id="材料"><a class="anchor hidden-xs" href="#材料" title="材料"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 為每個預期的牌桌準備兩副牌以及一些額外的牌。</span><br>
+<span>• 姓名標籤。</span></p><h2 id="目標" data-id="目標"><a class="anchor hidden-xs" href="#目標" title="目標"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 認識四種花色。</span><br>
+<span>• 認識牌的相對等級。</span><br>
+<span>• 了解 War 規則</span></p><blockquote>
+<p><span>「歡迎來到橋牌俱樂部。我們來這裡是為了學習玩最好的紙牌遊戲，可以用一副普通的紙牌來玩。我的名字是（你的名字），我的教學夥伴是（他們的名字）。我們將成為您的橋牌老師。</span></p>
+</blockquote><blockquote>
+<p><span>「如果您認為自己已經知道如何打橋牌，請舉手。如果您對橋牌有一點了解或您有其他家庭成員玩橋牌，請舉手。 （你可以向每個舉手的人詢問他們的經歷——保持簡短。）</span></p>
+</blockquote><blockquote>
+<p><span>「你們當中有多少人玩過其他紙牌遊戲？如果你玩過撿紅點請舉手？黑桃？戰爭？ （如果大多數人舉手，請告訴他們橋牌就像四人戰爭。）如果您從未玩過任何紙牌遊戲，請舉手。誰知道有多少種花色？ （請人回答。）大家都知道花色的名字嗎？ （請某人來回答這個問題。）”</span></p>
+</blockquote><h2 id="練習-1：牌的等級" data-id="練習-1：牌的等級"><a class="anchor hidden-xs" href="#練習-1：牌的等級" title="練習-1：牌的等級"><span class="octicon octicon-link"></span></a><span>練習 1：牌的等級</span></h2><p><span>「你們都知道卡牌的等級嗎？哪張卡擊敗了所有其他卡片？ （請人來回答這個問題。）下一張最大的牌是什麼？接下來呢？在那之後？最低的卡是什麼卡？有人知道一套完整的牌有多少張？ （請人回答。）一套花色有多少張牌？ （如果沒有人舉手，請給他們一個提示 – 52 除以 4 是？）</span></p><h2 id="練習-2：戰爭遊戲" data-id="練習-2：戰爭遊戲"><a class="anchor hidden-xs" href="#練習-2：戰爭遊戲" title="練習-2：戰爭遊戲"><span class="octicon octicon-link"></span></a><span>練習 2：戰爭遊戲</span></h2><p><span>解釋戰爭遊戲的說明，並允許學生在課堂上剩餘的時間玩戰爭遊戲。</span></p><h2 id="戰爭遊戲" data-id="戰爭遊戲"><a class="anchor hidden-xs" href="#戰爭遊戲" title="戰爭遊戲"><span class="octicon octicon-link"></span></a><span>戰爭遊戲</span></h2><p><span>（2個人）</span></p><h3 id="洗牌和發牌" data-id="洗牌和發牌"><a class="anchor hidden-xs" href="#洗牌和發牌" title="洗牌和發牌"><span class="octicon octicon-link"></span></a><span>洗牌和發牌</span></h3><ol>
+<li><span>洗牌有兩種方法：</span><br>
+<span>A. 一隻手水平且鬆散地握住一半牌，然後將第二半推入第一半。</span><br>
+<span>B. 將卡片面朝下放在桌上，然後將卡片混合在一起。</span></li>
+<li><span>洗完牌組後，將所有牌面朝下發給每位玩家，從對手開始，一次發一張，直到你們每人都有 26 張牌。</span></li>
+<li><span>將你的牌疊起來，不要向其他玩家展示。</span></li>
+</ol><h3 id="取得贏墩" data-id="取得贏墩"><a class="anchor hidden-xs" href="#取得贏墩" title="取得贏墩"><span class="octicon octicon-link"></span></a><span>取得贏墩</span></h3><ol>
+<li><span>莊家將一張牌面朝上放在桌子中央。</span></li>
+<li><span>她的對手將一張牌面朝上放在桌子中間的莊家牌旁邊。</span></li>
+<li><span>擁有最高牌的玩家贏得該墩牌，並拿走兩張牌並將它們單獨放在桌子的一側。</span></li>
+<li><span>贏得這墩牌的玩家將一張牌面朝上放在桌子中間。然後重複步驟 2 到 4，直到一名玩家出完所有牌。</span></li>
+</ol><h3 id="規則" data-id="規則"><a class="anchor hidden-xs" href="#規則" title="規則"><span class="octicon octicon-link"></span></a><span>規則</span></h3><ol>
+<li><span>如果玩家同時將兩個相同等級的物品放在桌子中央，則宣戰。</span></li>
+<li><span>宣戰時，每位玩家必須將三張牌面朝下放在其原始牌上，然後將一張牌面朝上。擁有新面朝上牌中排名最高的牌的玩家將贏得全部 10 張牌！</span></li>
+<li><span>如果兩張新的正面朝上的牌的點數相同，則再次宣戰。</span></li>
+</ol><h2 id="趣味工作" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作" title="趣味工作"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第 1 課</span></p><ol>
+<li><span>練習洗牌你的新牌。</span></li>
+<li><span>告訴你的家人和朋友這四種花色的名稱。</span></li>
+<li><span>向您的家人和朋友展示每種花色中排名最高的牌。</span></li>
+<li><span>向您的家人和朋友展示每種花色中排名最低的牌。</span></li>
+<li><span>教你的家人和朋友如何玩戰爭。</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第2課" data-id="第2課"><a class="anchor hidden-xs" href="#第2課" title="第2課"><span class="octicon octicon-link"></span></a><span>第2課</span></h1><h1 id="Tricks-遊戲" data-id="Tricks-遊戲"><a class="anchor hidden-xs" href="#Tricks-遊戲" title="Tricks-遊戲"><span class="octicon octicon-link"></span></a><span>Tricks 遊戲</span></h1><h2 id="材料1" data-id="材料"><a class="anchor hidden-xs" href="#材料1" title="材料1"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 為每個預期的牌桌準備兩副牌以及一些額外的牌。</span><br>
+<span>• 名稱標籤。</span><br>
+<span>• Card holders。</span></p><h2 id="目標1" data-id="目標"><a class="anchor hidden-xs" href="#目標1" title="目標1"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 認識四種花色。</span><br>
+<span>• 認識牌的相對等級。</span><br>
+<span>• 洗牌、發牌並排序。</span><br>
+<span>• 了解如何在無王牌中贏得一墩。</span></p><h2 id="練習-1：洗牌和發牌" data-id="練習-1：洗牌和發牌"><a class="anchor hidden-xs" href="#練習-1：洗牌和發牌" title="練習-1：洗牌和發牌"><span class="octicon octicon-link"></span></a><span>練習 1：洗牌和發牌</span></h2><blockquote>
+<p><span>「我給每張桌子發了一副牌。如果您能夠拿一副 52 張牌洗牌，請舉手。 （讓幾位學生示範洗牌和/或自己洗牌的方法。）每個人都知道「洗牌」一詞的意思嗎？隨機播放有兩種基本類型。一種方法是將牌分成兩半，然後慢慢地將兩半的邊緣磨合在一起，再次將它們推在一起作為一層牌。另一種方法是用一隻手水平且鬆散地握住一半牌，然後將第二半推入第一半。 （在這個年齡段，他們可能需要將牌面朝下放在桌子上，然後將它們混合在一起，然後發牌。）</span></p>
+</blockquote><blockquote>
+<p><span>「洗牌後，將所有牌面朝下發給每位玩家，從左邊的玩家開始，每次發一張。依序繞著桌子走一圈，直到發完所有牌。每個玩家有多少張牌？ （請某人來回答這個問題。）</span></p>
+</blockquote><blockquote>
+<p><span>「沿該方向旋轉稱為順時針方向。如果您已經知道該術語，請舉手。有人知道為什麼從左邊開始繞一圈被稱為順時針？ （請某人回答這個問題。）在紙牌遊戲中發牌的人稱為莊家。應該沒有剩餘的卡片。為什麼？ （如果合適的話請某人回答這個問題。）每個人有多少張卡片？ （我們希望是13 張，否則我們會了解到發錯牌的情況。） 在拿牌之前數數牌是一個好習慣，這樣如果發牌出現問題，牌數太少的人可以直接從牌中拿一張牌。現在每個人都知道正確的號碼了嗎？</span></p>
+</blockquote><h2 id="練習-2-分類花色" data-id="練習-2-分類花色"><a class="anchor hidden-xs" href="#練習-2-分類花色" title="練習-2-分類花色"><span class="octicon octicon-link"></span></a><span>練習 2. 分類花色</span></h2><p><span>4-7歲孩子最大的問題之一是學習對卡片進行排序。透過提供以下至少一種方法來幫助他們。還帶一些卡片夾給他們試試。您可以使用舊鉛筆或鞋盒作為卡片夾。</span></p><p><span>「當所有牌都發完後，我希望你們每個人都拿起自己的牌，不要向其他玩家展示它們，並將它們握在一隻手中。慣用右手的人通常用左手拿著牌，反之亦然。將你的牌從高到低分成四種花色。當你有 13 張牌時，這並不那麼容易。</span></p><p><span>「對於那些以前從未整理過這麼多卡片的人，我將向您提供逐步執行此操作的技巧：</span></p><h3 id="整理你的卡片" data-id="整理你的卡片"><a class="anchor hidden-xs" href="#整理你的卡片" title="整理你的卡片"><span class="octicon octicon-link"></span></a><span>整理你的卡片</span></h3><ol>
+<li><span>拿起發來的手牌，將所有牌放在一起，牌背朝外。</span></li>
+<li><span>一隻手緊緊地放在底部，用另一隻手的拇指和食指展開卡片的頂角，以便您可以看到數字或圖片字母（J、Q、K 或 A）以形成扇形。</span></li>
+<li><span>現在從手牌中取出最低的方塊並將其放在其他牌後面，這樣你就看不到它了。</span></li>
+<li><span>取出下一個最小的方塊並將其放在所有其他卡片的後面，這樣您就看不到它了。</span></li>
+<li><span>對所有鑽石繼續上面的步驟 (4)。</span></li>
+<li><span>對俱樂部套裝重複步驟 (3) 至 (5)。</span></li>
+<li><span>對心形套裝重複步驟 (3) 至 (5)。</span></li>
+<li><span>使用黑桃花色重複步驟 (3) 至 (5)。</span></li>
+<li><span>現在您將看到最低的方塊，也就是您移到後面的第一張牌。像一開始（上面第 2 步）一樣展開卡片，您的手牌將被排序。</span></li>
+</ol><p><span>或者，他們可以將牌以相同的順序面朝下疊放，甚至放在單獨的花色堆中（這對敏銳的對手很有幫助）。此時將持卡人分發給任何有困難的人。</span></p><h2 id="練習-3：取得贏墩" data-id="練習-3：取得贏墩"><a class="anchor hidden-xs" href="#練習-3：取得贏墩" title="練習-3：取得贏墩"><span class="octicon octicon-link"></span></a><span>練習 3：取得贏墩</span></h2><blockquote>
+<p><span>「你要打牌了。大家準備好了嗎？玩家 – 請注意，現在你們都是牌</span><strong><span>玩家</span></strong><span> – 莊家左邊的玩家將先出。請記住，這只是一個實驗。拿起你的一張牌，任何一張牌，將其面朝上放在你面前。這就是所謂的</span><strong><span>引牌 (Lead)</span></strong><span>。不要像其他紙牌遊戲那樣將其放在中間。將其放在您面前的邊緣上。現在，</span><strong><span>首引 (Openning Lead)</span><strong><span>左邊的玩家，請在你面前打出一張同花色的牌（是的，第一手稱為</span></strong><span>首引</span></strong><span>）。然後每位玩家依順時針順序依序打出一張同花色的牌。</span></p>
+</blockquote><blockquote>
+<p><span>「如果你打出了等級最高的牌，請舉手。恭喜你，你贏了第一墩。一個**墩(Trick)**是當每個人都打出一張牌時。橋牌遊戲有很多特殊術語。如果我使用了一個尚未解釋的詞，請舉手問我。</span></p>
+</blockquote><blockquote>
+<p><span>「將你面前打出的牌面朝下稍微向左轉動。輸掉這墩牌的玩家，將牌放在牌桌上，讓長邊沿著桌子的邊緣；換句話說，與桌子的側面平行。贏得這一墩的玩家將你的牌放在相反的方向，使其指向桌子的中間和你。既然你贏了這一墩，你就可以引下一輪，所以引任何一張牌。 （等這墩玩完之後再評論。）</span></p>
+</blockquote><blockquote>
+<p><span>「現在每個人都打出了一張牌，將你的牌翻過來，與右側第一張牌的一半以上重疊。獲勝者再次轉動他們的牌，使其指向中間。既然你贏了這一墩，你就可以引下一輪，所以引任何一張牌。你的目標是贏得盡可能多的墩。</span></p>
+</blockquote><blockquote>
+<p><span>「目前有兩個主要規則。首先，贏得這墩牌的牌將是已出牌花色中最大的牌。第二條規則是，如果你有一張引牌的花色，你必須打出一張牌。這就是所謂的 </span><strong><span>跟牌 (following suit)</span></strong><span>。當你不能跟牌時，你必須打出任何其他花色的牌，而且它無法贏得這一墩。這就是所謂的 </span><strong><span>墊牌 (Discard)</span></strong><span>。讓我們玩！</span></p>
+</blockquote><p><span>讓他們把整件事都講清楚。除了糾正技術錯誤之外，不要幫助他們。提醒他們這只是一個實驗。</span></p><blockquote>
+<p><span>「現在讓我們看看哪些牌贏了墩數。將獲勝的牌翻面朝上。關於這些卡片，你注意到什麼？現在來看看那些失去墩的牌。把它們翻過來。這些卡片有何不同？</span></p>
+</blockquote><p><span>理想情況下，並非所有贏得一墩的牌都是大牌，因此長花色的概念就出現了——也就是說，當其他人都出完該花色時，小牌也可以贏得了一墩。除非時間很短，否則玩另一手牌。</span></p><blockquote>
+<p><span>「好的，莊家左邊的玩家請洗牌並發下一副牌。新莊家總是順時針方向在桌子周圍的下一個人。我們再玩一次這個遊戲吧。</span></p>
+</blockquote><p><span>如果您每桌有兩副牌，現在是時候介紹這樣的想法：發牌人對面的人應該在發新牌的同時洗剛剛玩過的牌。</span></p><h2 id="Tricks-遊戲1" data-id="Tricks-遊戲"><a class="anchor hidden-xs" href="#Tricks-遊戲1" title="Tricks-遊戲1"><span class="octicon octicon-link"></span></a><span>Tricks 遊戲</span></h2><p><span>（四個人）</span></p><h3 id="洗牌、發牌和排序" data-id="洗牌、發牌和排序"><a class="anchor hidden-xs" href="#洗牌、發牌和排序" title="洗牌、發牌和排序"><span class="octicon octicon-link"></span></a><span>洗牌、發牌和排序</span></h3><ol>
+<li><span>一隻手水平且鬆散地握住一半牌，然後將另一半推入第一半。</span></li>
+<li><span>洗牌後，將所有牌面朝下發給每位玩家，從左邊的玩家開始，每次發一張。</span></li>
+<li><span>拿起你的 13 張牌，不要向其他玩家展示，並將它們握在你的一隻手中。將你的牌從高到低分成四種花色。請參閱「對卡片進行排序」講義。</span></li>
+</ol><h3 id="取得贏墩1" data-id="取得贏墩"><a class="anchor hidden-xs" href="#取得贏墩1" title="取得贏墩1"><span class="octicon octicon-link"></span></a><span>取得贏墩</span></h3><ol>
+<li><span>莊家左邊的玩家先出。拿起你的一張牌，任何一張牌，將其面朝上放在你面前。這就是所謂的引牌。</span></li>
+<li><span>首引左邊的玩家順時針方向打出他面前同花色的牌。</span></li>
+<li><span>每位玩家依序打出一張同花色的牌​。</span></li>
+<li><span>排名最高的人贏得該墩。</span></li>
+<li><span>將您面前打出的牌面朝下稍微放在左邊。</span></li>
+<li><span>輸掉這墩牌的玩家，翻轉他們的牌，使長邊沿著桌子的邊緣。</span></li>
+<li><span>贏得這一墩的玩家翻轉他的牌，使其指向桌子的中間。</span></li>
+<li><span>贏得這一墩的玩家可以先引下一墩。</span><br>
+<span>繼續玩，直到 52 張牌全部打完，每個玩家面前有 13 墩。</span></li>
+</ol><h3 id="規則1" data-id="規則"><a class="anchor hidden-xs" href="#規則1" title="規則1"><span class="octicon octicon-link"></span></a><span>規則</span></h3><ol>
+<li><span>贏取該墩的牌將是引出的花色中最大的牌。如果您在引出的花色中有同花色的牌，就一定要跟這門花色，這就是所謂的跟牌。</span></li>
+<li><span>當你無法跟牌時，你必須打出任何其他花色的牌，並且不能贏得該墩。這稱為墊牌。</span></li>
+</ol><h2 id="趣味工作1" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作1" title="趣味工作1"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第2課</span></p><ol>
+<li><span>練習洗牌。</span></li>
+<li><span>練習從左邊的人開始向 4 位玩家發牌。</span></li>
+<li><span>練習將 13 張卡片排序。</span></li>
+<li><span>教你的家人和朋友如何玩 TRICKS。</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第3課" data-id="第3課"><a class="anchor hidden-xs" href="#第3課" title="第3課"><span class="octicon octicon-link"></span></a><span>第3課</span></h1><h1 id="Trumps-遊戲" data-id="Trumps-遊戲"><a class="anchor hidden-xs" href="#Trumps-遊戲" title="Trumps-遊戲"><span class="octicon octicon-link"></span></a><span>Trumps 遊戲</span></h1><h2 id="材料2" data-id="材料"><a class="anchor hidden-xs" href="#材料2" title="材料2"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 每張預期牌桌各有兩副牌，外加一些額外的牌。</span><br>
+<span>• 名稱標籤（如果您正在使用它們）。</span><br>
+<span>• card holders。</span></p><h2 id="目標2" data-id="目標"><a class="anchor hidden-xs" href="#目標2" title="目標2"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 鞏固您在第 2 課中學到的內容（本課可能有一些新學生）：</span><br>
+<span>• 如何洗牌，</span><br>
+<span>• 發牌，</span><br>
+<span>• 整理手牌，</span><br>
+<span>• 對無王牌取得贏墩。</span><br>
+<span>• 用王牌取得贏墩。</span></p><h2 id="練習1：重複取得贏墩" data-id="練習1：重複取得贏墩"><a class="anchor hidden-xs" href="#練習1：重複取得贏墩" title="練習1：重複取得贏墩"><span class="octicon octicon-link"></span></a><span>練習1：重複取得贏墩</span></h2><p><span>如果這是課後活動，本課程可能會有新學生。在這種情況下，您可以在開始新材料之前重複上週的取墩練習。</span></p><blockquote>
+<p><span>「每張桌子都有一副牌。請洗牌並發牌。上週你熟悉了這副牌。 （為了方便新玩家問，誰願意命名並描述四種花色？）您學會了洗牌並將所有 52 張牌發給四名玩家。然後，玩家們學會如何將自己的手牌分成不同的花色。每位玩家收到多少張牌？莊家左邊的玩家打出第一張牌，稱為首引。此後，所出花色最大的牌獲勝。有人可以向新玩家解釋一下橋牌中的「墩」是什麼嗎？</span></p>
+</blockquote><blockquote>
+<p><span>「在本課中你將學習很多新術語，所以每當我使用尚未解釋的新單字時請舉手。例如，術語 </span><strong><span>等級 (Rank)</span></strong><span> 是指卡牌的高低。也就是說，是 A 還是 2。 (如有必要，請檢查新玩家是否知道牌的等級。繼續進行取墩練習，然後用王牌花色再次進行。讓他們習慣發牌是順時針方向傳遞的想法，並且如果每個桌子上有兩副牌，請莊家對面的人洗另一副牌以進行下一副牌。)</span></p>
+</blockquote><h2 id="練習-2：玩王牌合約" data-id="練習-2：玩王牌合約"><a class="anchor hidden-xs" href="#練習-2：玩王牌合約" title="練習-2：玩王牌合約"><span class="octicon octicon-link"></span></a><span>練習 2：玩王牌合約</span></h2><blockquote>
+<p><span>「到目前為止，所有牌局都以 </span><strong><span>無王 (notrump)</span></strong><span> 的方式進行——所引花色中最大的牌獲勝。現在您將擁有一套 </span><strong><span>王牌 (Trump)</span></strong><span> 花色（或“魔術花色”）。對於這副牌，我將指定方塊作為王牌花色。未來你將挑選自己的王牌花色。</span></p>
+</blockquote><blockquote>
+<p><span>「如果你有王牌花色，當你不能再跟牌時，你可以用王牌贏得這一墩。換句話說，您可以打出一張王牌，而不是墊牌。王牌花色勝過其他所有牌。因此，王牌 2 可以打敗另一種花色的 A。如果一墩打出不只一張王牌，則最大的王牌獲勝。王牌花色可以像其他花色一樣隨時引出。它的特別之處在於，即使引出的是另一種花色，只要你沒有這門花色，你就可以用王牌贏得一墩。</span></p>
+</blockquote><h2 id="Trumps-遊戲1" data-id="Trumps-遊戲"><a class="anchor hidden-xs" href="#Trumps-遊戲1" title="Trumps-遊戲1"><span class="octicon octicon-link"></span></a><span>Trumps 遊戲</span></h2><p><span>(2至4人)</span></p><h3 id="洗牌和發牌1" data-id="洗牌和發牌"><a class="anchor hidden-xs" href="#洗牌和發牌1" title="洗牌和發牌1"><span class="octicon octicon-link"></span></a><span>洗牌和發牌</span></h3><ol>
+<li><span>洗牌有兩種方法：</span><br>
+<span>A. 一隻手水平且鬆散地握住一半甲板，然後將第二半推入第一半。</span><br>
+<span>B.將 卡片面朝下放在桌上，然後將卡片混合在一起。</span></li>
+<li><span>洗牌後，將所有牌面朝下發給每位玩家，從對手開始，一次發一張，直至每人發 13 張牌。</span></li>
+<li><span>查看你的牌，但不要向對手展示。</span></li>
+</ol><h3 id="取得贏墩2" data-id="取得贏墩"><a class="anchor hidden-xs" href="#取得贏墩2" title="取得贏墩2"><span class="octicon octicon-link"></span></a><span>取得贏墩</span></h3><ol>
+<li><span>莊家宣布哪一種花色為王牌。王牌是為本場比賽挑選的特殊花色，除了更高的王牌之外，它比放置在桌上的任何其他牌都大。</span></li>
+<li><span>莊家將一張牌面朝上放在她面前的桌上。她的對手選擇一張她認為會擊敗桌上牌的牌，並將該牌面朝上放在她面前。遊戲順時針方向繼續，所有四名玩家都貢獻一張牌。</span></li>
+<li><span>擁有最高等級牌的玩家贏得該墩，記住王牌 2 比任何其他花色的 A 都高。</span></li>
+<li><span>該墩的贏家將牌面朝下放在她面前，面向桌子的中央。在該墩中失敗的人將他們的牌面朝下放在桌子的一側。</span></li>
+<li><span>該墩的獲勝者然後選擇下一張要引的牌。然後重複步驟 2 到 5，直到 13 張卡片打完。</span></li>
+</ol><h3 id="規則2" data-id="規則"><a class="anchor hidden-xs" href="#規則2" title="規則2"><span class="octicon octicon-link"></span></a><span>規則</span></h3><p><span>1、大牌勝出。</span><br>
+<span>2. 王牌勝過大牌。</span></p><h2 id="趣味工作2" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作2" title="趣味工作2"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第三課</span></p><ol>
+<li><span>練習洗牌。</span></li>
+<li><span>練習發給你和你的對手 13 張牌。</span></li>
+<li><span>練習將 13 張卡片排序。</span></li>
+<li><span>告訴你的家人和朋友關於王牌。</span></li>
+<li><span>教你的家人和朋友如何玩 Trumps。</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第4課" data-id="第4課"><a class="anchor hidden-xs" href="#第4課" title="第4課"><span class="octicon octicon-link"></span></a><span>第4課</span></h1><h1 id="惠斯特-Whist-遊戲" data-id="惠斯特-Whist-遊戲"><a class="anchor hidden-xs" href="#惠斯特-Whist-遊戲" title="惠斯特-Whist-遊戲"><span class="octicon octicon-link"></span></a><span>惠斯特 (Whist) 遊戲</span></h1><h2 id="材料3" data-id="材料"><a class="anchor hidden-xs" href="#材料3" title="材料3"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 每張預期牌桌各有兩副牌，外加一些額外的牌。</span><br>
+<span>• 名稱標籤（如果您正在使用它們）。</span><br>
+<span>• 持卡人。</span></p><h2 id="目標3" data-id="目標"><a class="anchor hidden-xs" href="#目標3" title="目標3"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 鞏固您在第 3 課所學到的內容：</span><br>
+<span>• 如何發牌，</span><br>
+<span>• 整理手牌，</span><br>
+<span>• 對無王取得贏墩。</span><br>
+<span>• 以王牌取得贏墩。</span><br>
+<span>• 介紹人臉（尊張）卡牌。</span><br>
+<span>• 學習惠斯特遊戲。</span></p><h2 id="練習-1：尊張-Honor-Cards" data-id="練習-1：尊張-Honor-Cards"><a class="anchor hidden-xs" href="#練習-1：尊張-Honor-Cards" title="練習-1：尊張-Honor-Cards"><span class="octicon octicon-link"></span></a><span>練習 1：尊張 (Honor Cards)</span></h2><p><span>回顧如何發牌、對牌進行排序以及在無王和王牌時取得贏墩。</span></p><blockquote>
+<p><span>「有誰注意到有些卡片上有臉孔，有些卡片上只有數字？嗯，那些上面有面孔的卡片被稱為 **尊張 (Honor) ** 卡，它們在我們稍後的課程中將非常重要。展示每張尊張卡片並讓他們猜測每張卡的名稱。</span></p>
+</blockquote><h2 id="練習-2：惠斯特" data-id="練習-2：惠斯特"><a class="anchor hidden-xs" href="#練習-2：惠斯特" title="練習-2：惠斯特"><span class="octicon octicon-link"></span></a><span>練習 2：惠斯特</span></h2><blockquote>
+<p><span>「今天我們要學習一種新遊戲，叫做惠斯特。請將這副牌翻過來，看看最下面的牌。該花色將成為您下一場遊戲中的王牌。繼續發出所有 52 張牌，並將它們按花色分類。然後玩你的遊戲，記住如果你輸了這墩牌，就把你的牌放在一邊，如果你贏了這把牌，就把你的牌轉向桌子的中間。</span></p>
+</blockquote><p><span>玩盡可能多副牌。</span></p><h2 id="惠斯特遊戲" data-id="惠斯特遊戲"><a class="anchor hidden-xs" href="#惠斯特遊戲" title="惠斯特遊戲"><span class="octicon octicon-link"></span></a><span>惠斯特遊戲</span></h2><p><span>（三至四人）</span></p><h3 id="洗牌、發牌和排序1" data-id="洗牌、發牌和排序"><a class="anchor hidden-xs" href="#洗牌、發牌和排序1" title="洗牌、發牌和排序1"><span class="octicon octicon-link"></span></a><span>洗牌、發牌和排序</span></h3><ol>
+<li><span>一隻手水平且鬆散地握住一半牌，然後將另一半推入第一半。</span></li>
+<li><span>洗牌後，將所有牌面朝下發給每位玩家，從左邊的玩家開始，每次發一張。</span></li>
+<li><span>拿起你的 13 張牌，不要向其他玩家展示，並將它們握在你的一隻手中。將你的牌從高到低分成四種花色。請參閱「對卡片進行排序」講義。</span></li>
+</ol><h3 id="取得贏墩3" data-id="取得贏墩"><a class="anchor hidden-xs" href="#取得贏墩3" title="取得贏墩3"><span class="octicon octicon-link"></span></a><span>取得贏墩</span></h3><ol>
+<li><span>莊家左邊的玩家先出。拿起你的一張牌，任何一張牌，將其面朝上放在你面前。這就是所謂的首引。</span></li>
+<li><span>首引者左邊的玩家現在在他面前打出一張相同花色的牌。</span></li>
+<li><span>每位玩家依順時針順序依序打出一張同花色的牌。</span></li>
+<li><span>擁有最高等級牌的人贏得該墩。</span></li>
+<li><span>將您面前打出的牌面朝下稍微向左轉。</span></li>
+<li><span>輸掉這墩牌的玩家，翻轉你的牌，使長邊沿著桌子的邊緣。</span></li>
+<li><span>贏得這一墩的玩家翻轉他的牌，使其指向桌子的中間。</span></li>
+<li><span>贏得這一墩的玩家可以先玩下一墩。繼續玩，直到 52 張牌全部打完，每個玩家面前有 13 墩。</span></li>
+</ol><h3 id="規則3" data-id="規則"><a class="anchor hidden-xs" href="#規則3" title="規則3"><span class="octicon octicon-link"></span></a><span>規則</span></h3><ol>
+<li><span>發牌者及其合作夥伴可以宣告合約。</span></li>
+<li><span>他們可以在「無王」或「王牌」之間進行選擇。</span></li>
+<li><span>當您玩無王牌時：如果您有一張已引的牌，則贏得該墩的牌將是已引花色中最大的牌。</span></li>
+<li><span>當您玩王牌合約時：當您無法再跟牌時，您可以使用王牌贏得這墩牌。王牌花色勝過其他所有牌。因此，王牌 2 可以打敗另一種花色的 A。換句話說，當你跟不上時，你可能會勝出而不是墊牌。</span></li>
+<li><span>如果一墩中打出了多於一張王牌，則最大的王牌獲勝。</span></li>
+<li><span>王牌可以像其他花色一樣隨時引出。</span></li>
+<li><span>惠斯特是一種夥伴遊戲，所以不要王吃你夥伴的 A！</span></li>
+<li><span>如果只有三個人，則將發牌者的合夥人設為夢家。</span></li>
+</ol><h3 id="計分" data-id="計分"><a class="anchor hidden-xs" href="#計分" title="計分"><span class="octicon octicon-link"></span></a><span>計分</span></h3><p><span>在前六墩之後，你們的搭檔每完成一墩即可獲得 1 分。</span></p><h2 id="趣味工作3" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作3" title="趣味工作3"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第 4 課</span></p><ol>
+<li><span>練習洗牌。</span></li>
+<li><span>練習將 13 張卡片排序。</span></li>
+<li><span>向您的家人和朋友介紹尊張卡：A、K、Q 和 J</span></li>
+<li><span>教你的家人和朋友如何玩 WHIST。</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第5課" data-id="第5課"><a class="anchor hidden-xs" href="#第5課" title="第5課"><span class="octicon octicon-link"></span></a><span>第5課</span></h1><h1 id="與夥伴一起玩" data-id="與夥伴一起玩"><a class="anchor hidden-xs" href="#與夥伴一起玩" title="與夥伴一起玩"><span class="octicon octicon-link"></span></a><span>與夥伴一起玩</span></h1><h2 id="練習1：合作遊戲" data-id="練習1：合作遊戲"><a class="anchor hidden-xs" href="#練習1：合作遊戲" title="練習1：合作遊戲"><span class="octicon octicon-link"></span></a><span>練習1：合作遊戲</span></h2><blockquote>
+<p><span>「發牌，但先不要開始打牌。</span></p>
+</blockquote><blockquote>
+<p><span>「你們當中有多少人知道橋牌是一種合作遊戲？舉起你的手。好的。從現在開始，在這個橋牌俱樂部，您將與夥伴一起打牌。當你的搭檔贏得這墩時，你也贏得了這墩。因此，如果您的搭檔要贏得一墩，您無需嘗試贏得該墩。換句話說，如果可以避免的話，就不要將你的 A 打到你夥伴的 K 上！</span></p>
+</blockquote><blockquote>
+<p><span>「在該墩結束時將牌放在桌子邊緣時，你可以像你的搭檔一樣轉動你的牌。因此，如果你們中的任何一個人贏得了這一墩，則將其指向您和您的搭檔。</span></p>
+</blockquote><blockquote>
+<p><span>「準備開始？你又玩的是無王，所以該花色中最大的牌贏得了這一墩，並且沒有王牌花色。</span></p>
+</blockquote><p><span>讓學生與夥伴一起取得贏墩。他們會阻塞花色，在一墩中上兩次大牌，忘記搭檔最初的引牌，通常對正在發生的事情知之甚少。不要對此感到不舒服。教練也必須記住，此時正在介紹跟牌和與夥伴一起玩的機制。這只是第五課。</span></p><blockquote>
+<p><span>「那麼和夥伴一起玩有什麼不同呢？ （請幾位來談談他們的印象。）這更有趣嗎？更有意思的？讓我們再來一次。 （如果時間允許，可以玩幾手牌。）</span></p>
+</blockquote><h2 id="練習2：挑選王牌花色" data-id="練習2：挑選王牌花色"><a class="anchor hidden-xs" href="#練習2：挑選王牌花色" title="練習2：挑選王牌花色"><span class="octicon octicon-link"></span></a><span>練習2：挑選王牌花色</span></h2><p><span>請發牌者指定王牌花色或無王（或可能將決定權轉給他的搭檔）。您可以提到惠斯特是這樣玩的，最後一張發牌會被短暫翻開以設定王牌花色。</span></p><blockquote>
+<p><span>「你準備好迎接新的挑戰了嗎？發牌者將挑選一套王牌花色。選擇王牌花色後，莊家左邊的人首引。記住，不要吃了你夥伴的贏墩！</span></p>
+</blockquote><h2 id="練習-3：惠斯特計分" data-id="練習-3：惠斯特計分"><a class="anchor hidden-xs" href="#練習-3：惠斯特計分" title="練習-3：惠斯特計分"><span class="octicon octicon-link"></span></a><span>練習 3：惠斯特計分</span></h2><p><span>如果您的班級年齡較大（6-7 歲），則應該引入這一點，否則您的學生已經處於資訊過載狀態。</span></p><blockquote>
+<p><span>「你還沒學會的一件事是如何記分。在惠斯特遊戲中，在前六墩之後，你們的搭檔每完成一墩，就得 1 分。為什麼會這樣呢？ （你必須完成一半以上的墩數才能獲得分數。）</span></p>
+</blockquote><h2 id="趣味工作4" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作4" title="趣味工作4"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第五課</span></p><ol>
+<li><span>練習洗牌。</span></li>
+<li><span>練習發給每人 13 張牌。</span></li>
+<li><span>練習將 13 張卡片排序。</span></li>
+<li><span>告訴您的家人和朋友與夥伴一起玩的情況。</span></li>
+<li><span>與夥伴一起玩惠斯特並記分。</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第6課" data-id="第6課"><a class="anchor hidden-xs" href="#第6課" title="第6課"><span class="octicon octicon-link"></span></a><span>第6課</span></h1><h1 id="迷你橋第-1-部分" data-id="迷你橋第-1-部分"><a class="anchor hidden-xs" href="#迷你橋第-1-部分" title="迷你橋第-1-部分"><span class="octicon octicon-link"></span></a><span>迷你橋第 1 部分</span></h1><h2 id="材料4" data-id="材料"><a class="anchor hidden-xs" href="#材料4" title="材料4"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 預發牌。</span><br>
+<span>• 名稱標籤（如果您正在使用它們）。</span><br>
+<span>• 顯示羅盤點的層壓桌子號碼卡。從現在開始就需要這些。</span><br>
+<span>• 海報上有A、K、Q 和J 的點數值。一旦投標開始，這可以添加到每週。</span><br>
+<span>• 持卡器。</span><br>
+<span>• 計數塊。他們可以使用任何小物體來計算分數。</span></p><h2 id="目標4" data-id="目標"><a class="anchor hidden-xs" href="#目標4" title="目標4"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 學習有夢家玩遊戲。</span><br>
+<span>• 與夥伴一起學習挑選王牌花色。</span><br>
+<span>• 了解惠斯特的計分。</span><br>
+<span>• 學習計算分數。</span><br>
+<span>• 無需計分即可了解 MiniBridge 的基本規則。</span></p><h2 id="練習-1：有夢家的遊戲" data-id="練習-1：有夢家的遊戲"><a class="anchor hidden-xs" href="#練習-1：有夢家的遊戲" title="練習-1：有夢家的遊戲"><span class="octicon octicon-link"></span></a><span>練習 1：有夢家的遊戲</span></h2><blockquote>
+<p><span>「在橋牌遊戲中，說出王牌花色或非王牌花色的人可以同時打自己的手牌和放在桌子上的搭檔的手牌。該玩家稱為 </span><strong><span>莊家 (declarer)</span></strong><span>，而他的搭檔（手放在桌上）稱為 </span><strong><span>夢家 (dummy)</span></strong><span>。</span></p>
+</blockquote><blockquote>
+<p><span>「「夢家」一詞並不反映該玩家的智力。在這個遊戲發明的時候，「啞」(dummy) 其實就是不能說話的意思。在這手牌比賽中，夢家不被允許說話或幫助他的搭檔。夢家將手牌面朝上放在桌上，每種花色排成一列，面對他的搭檔。然後，輪到他打牌時，他必須打出他的搭檔要求的牌。從夢家的角度來看，王牌總是放在右側，而從其他人的角度來看，王牌總是放在左側。</span></p>
+</blockquote><h2 id="練習-2：計算大牌點" data-id="練習-2：計算大牌點"><a class="anchor hidden-xs" href="#練習-2：計算大牌點" title="練習-2：計算大牌點"><span class="octicon octicon-link"></span></a><span>練習 2：計算大牌點</span></h2><blockquote>
+<p><span>「今天你要開始學習 MiniBridge。第一步是學習如何計算你的點力，這樣你就可以確定誰擁有最好的牌。擁有最好牌的玩家將成為莊家。</span></p>
+</blockquote><blockquote>
+<p><span>「誰能告訴我最好的卡是什麼？ （A。）我們將為 A 指定 4 點計數值。你知道 K 的價值嗎？ （如果合適的話請找人。）K 值 3 點。Q 呢？ （叫人來－他們應該能猜出這個。） 是的，沒錯，2 點。最後也是最不重要的一點，J 值錢嗎？ （一。） 如果你有橋牌海報，現在就把它貼出來。否則將卡片的數值寫在黑板上。</span></p>
+</blockquote><blockquote>
+<p><span>「這是給你的一個挑戰。單一花色（例如黑桃花色）有幾個點？ (10.) 這副牌中可用的大牌點數總和是多少？ (40.)」（這些問題可能適合也可能不適合該年齡層。）</span></p>
+</blockquote><h2 id="練習-3：第一手迷你橋牌" data-id="練習-3：第一手迷你橋牌"><a class="anchor hidden-xs" href="#練習-3：第一手迷你橋牌" title="練習-3：第一手迷你橋牌"><span class="octicon octicon-link"></span></a><span>練習 3：第一手迷你橋牌</span></h2><p><span>此時分配計數塊。向他們解釋每個區塊如何等於一個點。</span></p><blockquote>
+<p><span>「在MiniBridge遊戲中，發牌後，每位玩家從荷官開始，宣布手上有多少大牌點數。四手牌的總數加起來應該是40，如果不是，就重新數一次！</span></p>
+</blockquote><h3 id="Deal-1" data-id="Deal-1"><a class="anchor hidden-xs" href="#Deal-1" title="Deal-1"><span class="octicon octicon-link"></span></a><span>Deal-1</span></h3><p><span>: (E-Z Deal Cards: #1, Deal 2)</span><br>
+<span>Dealer is North</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ J52</span><br><font color="red"><span>♥</span></font><span> KQJ8</span><br><font color="red"><span>♦</span></font><span> 93</span><br><span>♣ T864</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ AK8</span><br><font color="red"><span>♥</span></font><span> T75</span><br><font color="red"><span>♦</span></font><span> AKQ</span><br><span>♣ 9532</span></td>
+<td></td>
+<td><span>♠ 973</span><br><span> </span><font color="red"><span>♥</span></font><span> A93</span><br><font color="red"><span>♦</span></font><span> 7542</span><br><span>♣ AKQ</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ QT64</span><br><font color="red"><span>♥</span></font><span> 642</span><br><font color="red"><span>♦</span></font><span> JT86</span><br><span>♣ J7</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>13</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>13</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>16</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>16</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>29</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>29</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌型</span></th>
+<th style="text-align:center"><span>S</span></th>
+<th style="text-align:center"><span>H</span></th>
+<th style="text-align:center"><span>D</span></th>
+<th style="text-align:center"><span>C</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>莊家</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>夢家</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>7</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>王牌</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>防家</span></th>
+<th style="text-align:center"><span>首引者</span></th>
+<th style="text-align:center"><span>首引</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>3NT</span></td>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><font color="red"><span>♥</span></font><span>K</span></td>
+</tr>
+</tbody>
+</table><p><span>如果有時間，可以再玩：</span></p><h3 id="Deal-2" data-id="Deal-2"><a class="anchor hidden-xs" href="#Deal-2" title="Deal-2"><span class="octicon octicon-link"></span></a><span>Deal-2</span></h3><p><span>(E-Z Deal Cards: #1, Deal 1)</span><br>
+<span>Dealer is North</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A94</span><br><font color="red"><span>♥</span></font><span> A76</span><br><font color="red"><span>♦</span></font><span> 96</span><br><span>♣ AJ963</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 73</span><br><font color="red"><span>♥</span></font><span> JT9</span><br><font color="red"><span>♦</span></font><span> KQJ43</span><br><span>♣ Q52</span></td>
+<td></td>
+<td><span>♠ 62</span><br><span> </span><font color="red"><span>♥</span></font><span> 8432</span><br><font color="red"><span>♦</span></font><span> A752</span><br><span>♣ KT7</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ KQJT85</span><br><font color="red"><span>♥</span></font><span> KQ5</span><br><font color="red"><span>♦</span></font><span> T8</span><br><span>♣ 84</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>13</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>13</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>7</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>11</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>24</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>24</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>16</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>16</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌型</span></th>
+<th style="text-align:center"><span>S</span></th>
+<th style="text-align:center"><span>H</span></th>
+<th style="text-align:center"><span>D</span></th>
+<th style="text-align:center"><span>C</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>莊家</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>5</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>夢家</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>7</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>王牌</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>防家</span></th>
+<th style="text-align:center"><span>首引者</span></th>
+<th style="text-align:center"><span>首引</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>4S</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><font color="red"><span>♥</span></font><span>4</span></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>「大牌點總合最多的搭檔將主導這副牌。在該夥伴關係中點力高的玩家同時玩自己的牌和搭檔的牌。該玩家被稱為“莊家”，他的搭檔將是“夢家”。</span></p>
+</blockquote><blockquote>
+<p><span>「你的目標是至少完成一半的墩數。這到底要多少墩啊？ （六墩半，無條件進位為七墩。） 莊家左邊的玩家，請先首引。您和您的伴侶被稱為 </span><strong><span>防家 (defenders)</span></strong><span>。你的目標是打敗莊家的計劃，並自己贏取七或更多的墩數。 （請注意，第一手牌是無王。如果他們詢問是否有王牌花色，請提及這一點。）</span></p>
+</blockquote><blockquote>
+<p><span>「這裡還有一些規則。如果雙方都有20點，則重發。另外，如果作莊方兩人的點數相同，則最先宣布點數的為莊家。然而，在這門課上，如果一個夥伴之前已經作莊過，而另一個夥伴沒有作過莊過，那麼我們就會輪到另一個夥伴。</span></p>
+</blockquote><h2 id="迷你橋牌遊戲" data-id="迷你橋牌遊戲"><a class="anchor hidden-xs" href="#迷你橋牌遊戲" title="迷你橋牌遊戲"><span class="octicon octicon-link"></span></a><span>迷你橋牌遊戲</span></h2><p><span>（三至四人）</span></p><ol>
+<li><span>洗牌並發牌，四名玩家各發 13 張牌</span></li>
+<li><span>計算並宣告點力，從莊家開始，順時針輪流，使用的比例為：Ace = 4, King = 3, Queen = 2, Jack = 1</span></li>
+<li><span>每個合作夥伴的點力相加。作莊方方是點力最多的夥伴，莊家是其一方點力最多的成員，或者如果相等則先宣布點力的為莊家。莊家的夥伴作為夢家，牌面朝上攤放在桌上。</span></li>
+<li><span>莊家決定並公佈合約－目標墩數以及選擇王牌或無王。目標技巧數可能是：</span><br>
+<span>部分分數：7+</span><br>
+<span>無王成局：9+</span><br>
+<span>黑桃或紅心成局：10+</span><br>
+<span>方塊或梅花成局：11+</span></li>
+<li><span>首引者者由莊家左邊的玩家發起。每墩順時針方向進行，牌面朝上。莊家決定夢家打牌的方式。</span></li>
+<li><span>每完成一墩後，該墩的牌將面朝下。每墩的獲勝者將引下一墩的第一張牌。</span><br>
+<span>7.比賽結束時，統計並確認輸贏墩數，並計算得分。</span></li>
+<li><span>下一手牌，莊家是順時針方向的下一個玩家。</span></li>
+</ol><h3 id="計分1" data-id="計分"><a class="anchor hidden-xs" href="#計分1" title="計分1"><span class="octicon octicon-link"></span></a><span>計分</span></h3><h4 id="合約完成" data-id="合約完成"><a class="anchor hidden-xs" href="#合約完成" title="合約完成"><span class="octicon octicon-link"></span></a><span>合約完成</span></h4><p><span>所完成合約的分數由作莊方贏得。作莊方只有在贏得目標墩數或更多墩數時才能得分。</span></p><p><span>前六墩不得分。每增加一墩，完成合約時，作莊方將獲得 1 分。</span></p><p><span>如果合約是成局等級的，則作莊方在贏得目標牌數後將獲得 5 分獎勵，每增加一墩則獲得 1 分。</span></p><h3 id="未完成的合約" data-id="未完成的合約"><a class="anchor hidden-xs" href="#未完成的合約" title="未完成的合約"><span class="octicon octicon-link"></span></a><span>未完成的合約</span></h3><p><span>如果未完成合約（即未達目標墩數），則防守方而不是作莊方得分。每不足一墩防守方得 1 分：</span></p><h2 id="迷你橋牌進階計分" data-id="迷你橋牌進階計分"><a class="anchor hidden-xs" href="#迷你橋牌進階計分" title="迷你橋牌進階計分"><span class="octicon octicon-link"></span></a><span>迷你橋牌進階計分</span></h2><h3 id="完成的合約" data-id="完成的合約"><a class="anchor hidden-xs" href="#完成的合約" title="完成的合約"><span class="octicon octicon-link"></span></a><span>完成的合約</span></h3><p><span>所完成合約的分數由作莊方贏得。</span><br>
+<span>作莊方僅在贏得目標墩數或更多時才得分。</span><br>
+<span>前 6 墩不得分。對於每一個額外的墩數，在完成合約時，根據合約得分如下：</span><br>
+<span>♣ 或 </span><font color="red"><span>♦</span></font><span>： 20 分</span><br>
+<font color="red"><span>♥</span></font><span> 或 ♠： 30 分</span><br>
+<span>第 7 墩無王牌得 40 分，此後得 30 分</span></p><p><span>獎分發放方式如下：</span></p><table>
+<thead>
+<tr>
+<th style="text-align:left"><span>合約</span></th>
+<th style="text-align:center"><span>獎分</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>部分合約</span><br><span>（至少7墩）</span></td>
+<td style="text-align:center"><span>50 分</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>成局合約</span><br><span>（無王至少 9 墩，</span><br><font color="red"><span>♥</span></font><span> 或 ♠ 至少 10 墩，</span><br><span>♣ 或 </span><font color="red"><span>♦</span></font><span> 至少 11 墩）</span></td>
+<td style="text-align:center"><span>300 分</span></td>
+</tr>
+</tbody>
+</table><h3 id="未完成的合約1" data-id="未完成的合約"><a class="anchor hidden-xs" href="#未完成的合約1" title="未完成的合約1"><span class="octicon octicon-link"></span></a><span>未完成的合約</span></h3><p><span>如果未完成合約（即未達到目標墩數），則防守方而不是作莊方得分。每一個未達到目標的墩數，防守者的得分如下：</span></p><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>每個不足墩</span></td>
+<td style="text-align:center"><span>50 分</span></td>
+</tr>
+</tbody>
+</table><h2 id="趣味工作5" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作5" title="趣味工作5"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第6課</span></p><ol>
+<li><span>練習洗牌。</span></li>
+<li><span>練習發給每人 13 張牌。</span></li>
+<li><span>練習將 13 張卡片排序。</span></li>
+<li><span>向您的家人和朋友介紹尊張卡：A、K、Q 和 J。</span></li>
+<li><span>向您的家人和朋友介紹 Dummys。</span></li>
+<li><span>教你的家人和朋友如何玩 MINIBRIDGE。</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第7課" data-id="第7課"><a class="anchor hidden-xs" href="#第7課" title="第7課"><span class="octicon octicon-link"></span></a><span>第7課</span></h1><h1 id="迷你橋第-2-部分" data-id="迷你橋第-2-部分"><a class="anchor hidden-xs" href="#迷你橋第-2-部分" title="迷你橋第-2-部分"><span class="octicon octicon-link"></span></a><span>迷你橋第 2 部分</span></h1><h2 id="材料5" data-id="材料"><a class="anchor hidden-xs" href="#材料5" title="材料5"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 預發牌。</span><br>
+<span>• 名稱標籤（如果您正在使用它們）。</span><br>
+<span>• 從現在開始需要記分本和鉛筆。</span><br>
+<span>• 計分圖範例。</span><br>
+<span>• 附NESW 的層壓工作台引導卡。</span><br>
+<span>• 本課或可能下週分發 MiniBridge 摘要卡。</span><br>
+<span>• 持卡人。</span><br>
+<span>• 計數塊。</span></p><h2 id="目標5" data-id="目標"><a class="anchor hidden-xs" href="#目標5" title="目標5"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 學習指定王牌花色或無王。</span><br>
+<span>• 學會計算確定贏墩。</span><br>
+<span>• 學習從連續張引頂張。</span><br>
+<span>• 了解哪些是低花，哪些是高花。</span><br>
+<span>• 學習計分。</span><br>
+<span>• 了解合約。</span></p><p><span>嘗試打完兩副牌。如果第一副需要太長時間，就停止教學對話，並將計分和合約保留到下週。每副牌 15 分鐘是相當正常的。透過本課，如果您的學生人數不能被四整除，有經驗的玩家現在可以三人玩。三人桌可以透過宣布自己的點數，然後扣除未見過的牌中的點數來玩迷你橋牌遊戲。然後，要成為夢家的玩家開始玩隱藏的手牌。</span></p><h2 id="練習-1：MiniBridge-機制回顧" data-id="練習-1：MiniBridge-機制回顧"><a class="anchor hidden-xs" href="#練習-1：MiniBridge-機制回顧" title="練習-1：MiniBridge-機制回顧"><span class="octicon octicon-link"></span></a><span>練習 1：MiniBridge 機制回顧</span></h2><p><span>進行以下牌局。 North 是荷官，每週都是第一個發牌的。然後，交易將轉移到左邊的球員，即東家。 （莊家可以打無王牌，也可以用任一低花當王牌。應該可估計並取得九個贏墩。）</span></p><blockquote>
+<p><span>「讓我們快速回顧一下 MiniBridge 的機制。首先，每個人用計數塊將自己的分數加起來，然後沿著桌子順時針方向宣布他們的大牌點。點數最多的夥伴擁有控制權。此夥伴關係中點數高的玩家是莊家。他的搭檔將夢家牌攤放在桌上。然後，莊家決定是否打無王或特定王牌花色，並宣布他目標是部份合約還是成局合約。</span></p>
+</blockquote><h2 id="練習-2：高花和低花" data-id="練習-2：高花和低花"><a class="anchor hidden-xs" href="#練習-2：高花和低花" title="練習-2：高花和低花"><span class="octicon octicon-link"></span></a><span>練習 2：高花和低花</span></h2><p><span>在 MiniBridge 中，王牌花色對於計分目的具有特殊意義。黑桃和紅心稱為高花，方塊和梅花稱為低花。</span></p><p><span>玩 #2 ，第 1 牌，然後停下來討論首引連續大牌頂張。</span></p><h3 id="Deal-3" data-id="Deal-3"><a class="anchor hidden-xs" href="#Deal-3" title="Deal-3"><span class="octicon octicon-link"></span></a><span>Deal-3</span></h3><p><span>(E-Z Deal Cards: #2, Deal 1)</span><br>
+<span>Dealer is North</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A7</span><br><font color="red"><span>♥</span></font><span> K52</span><br><font color="red"><span>♦</span></font><span> AKQJ</span><br><span>♣ 6542</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 8432</span><br><font color="red"><span>♥</span></font><span> QJT4</span><br><font color="red"><span>♦</span></font><span> T84</span><br><span>♣ T8</span></td>
+<td></td>
+<td><span>♠ KQJT9</span><br><span> </span><font color="red"><span>♥</span></font><span> A96</span><br><font color="red"><span>♦</span></font><span> 53</span><br><span>♣ 973</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 65</span><br><font color="red"><span>♥</span></font><span> 873</span><br><font color="red"><span>♦</span></font><span> 9762</span><br><span>♣ AKQJ</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>10</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>10</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>27</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>27</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>13</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>13</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌型</span></th>
+<th style="text-align:center"><span>S</span></th>
+<th style="text-align:center"><span>H</span></th>
+<th style="text-align:center"><span>D</span></th>
+<th style="text-align:center"><span>C</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>莊家</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>夢家</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>8</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>王牌</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>防家</span></th>
+<th style="text-align:center"><span>首引者</span></th>
+<th style="text-align:center"><span>首引</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>低花或NT</span></td>
+<td style="text-align:center"><span>3NT</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>♠ K</span></td>
+</tr>
+</tbody>
+</table><blockquote>
+<p><span>「當這副牌結束後，請大家將牌像夢家一樣攤在桌上，這樣我們就可以進行一般性討論。</span></p>
+</blockquote><blockquote>
+<p><span>「尊張大牌的首引預示著下一個較低的尊張，也許還有下一個較低的尊張。它向您的搭檔傳達您持有的牌以及您有興趣建立該花色的贏墩。當你有一套長門花色且有一兩張不連續的尊張時，你就會引低牌。</span></p>
+</blockquote><h3 id="練習-3：記分" data-id="練習-3：記分"><a class="anchor hidden-xs" href="#練習-3：記分" title="練習-3：記分"><span class="octicon octicon-link"></span></a><span>練習 3：記分</span></h3><blockquote>
+<p><span>「你終於要開始學習如何計分了。作莊方必須完成一半以上的墩數才能得分。因此，只有在前六墩之後獲勝的墩數才算作得分。前六墩在橋牌術語中被稱為“書”(book)。作莊方在前 6 墩後每拿 1 墩得 1 分。另一方面，作莊方每有一墩未達到其聲明目標，防守方就得 1 分。</span></p>
+</blockquote><p><span>分發本課末尾的特殊記分卡，並解釋三欄的含義。</span></p><h3 id="練習-4：合約" data-id="練習-4：合約"><a class="anchor hidden-xs" href="#練習-4：合約" title="練習-4：合約"><span class="octicon octicon-link"></span></a><span>練習 4：合約</span></h3><p><span>合約是承諾在所聲明的無王或王牌中採取特定數量的墩數。在計分表第一列的左側，您將寫下您是否選擇成局或部分分數，以及您選擇無王或哪個王牌花色進行遊戲。接下來寫下代表莊家玩家方向的單一大寫字母。如果合約完成了額外的墩數，則應在莊家所定的合約旁寫上加號和墩數。如果合約失敗，則寫下減號和短缺的墩數。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:left"><span>合約</span></th>
+<th style="text-align:center"><span>NS得分</span><br><span>(我們)</span></th>
+<th style="text-align:center"><span>EW得分</span><br><span>(他們)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span>部份 D +1 N</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>部份 S = E</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>1</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span>成局 H -1 S</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>1</span></td>
+</tr>
+</tbody>
+</table><p><span>玩 #2 行，第2牌。</span><br>
+<span>（如果年齡合適，請停下來討論首引連續尊張頂張。）</span></p><h3 id="Deal-4" data-id="Deal-4"><a class="anchor hidden-xs" href="#Deal-4" title="Deal-4"><span class="octicon octicon-link"></span></a><span>Deal-4</span></h3><p><span>(E-Z Deal Cards: #2, Deal 2)</span><br>
+<span>Dealer is East</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ T74</span><br><font color="red"><span>♥</span></font><span> KJ952</span><br><font color="red"><span>♦</span></font><span> K9</span><br><span>♣ J93</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ Q32</span><br><font color="red"><span>♥</span></font><span> 743</span><br><font color="red"><span>♦</span></font><span> 853</span><br><span>♣ AK74</span></td>
+<td></td>
+<td><span>♠ AKJ5</span><br><span> </span><font color="red"><span>♥</span></font><span> A86</span><br><font color="red"><span>♦</span></font><span> Q642</span><br><span>♣ 85</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ 986</span><br><font color="red"><span>♥</span></font><span> QT</span><br><font color="red"><span>♦</span></font><span> AJT7</span><br><span>♣ QT62</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>14</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>23</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>23</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌型</span></th>
+<th style="text-align:center"><span>S</span></th>
+<th style="text-align:center"><span>H</span></th>
+<th style="text-align:center"><span>D</span></th>
+<th style="text-align:center"><span>C</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>莊家</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>夢家</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>4</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>7</span></td>
+<td style="text-align:center"><span>6</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>王牌</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>防家</span></th>
+<th style="text-align:center"><span>首引者</span></th>
+<th style="text-align:center"><span>首引</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>NT</span></td>
+<td style="text-align:center"><span>部份</span></td>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>小D或C</span></td>
+</tr>
+</tbody>
+</table><p><span>東將是莊家。理想情況下，東家和西家將選擇無王並估計七個贏墩。現在是介紹擁有八張王牌的想法的好時機，因為不存在八張牌的組合。如果南方首引方塊，如果您願意，您可以引入第三家上大牌的概念。梅花或方塊都是很好的首引，這裡可以提到首引最長和最強花色的第四大牌。告訴他們，為自己一方建立贏墩的一個好方法是引長門花色。也許合作夥伴可以幫助他們建立這門花色。首引是南家。</span></p><p><span>請注意，這手牌就是「早從短邊出大牌」這句格言的用武之地。如果不儘早打出 Q，莊家的黑桃將會被阻塞。提醒他們計分。四處走走並幫助他們。</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌號</span></th>
+<th style="text-align:left"><span>合約</span></th>
+<th style="text-align:center"><span>我們</span></th>
+<th style="text-align:center"><span>他們</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>1</span></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table><h2 id="趣味工作6" data-id="趣味工作"><a class="anchor hidden-xs" href="#趣味工作6" title="趣味工作6"><span class="octicon octicon-link"></span></a><span>趣味工作</span></h2><p><span>第7課</span></p><ol>
+<li><span>練習洗牌。</span></li>
+<li><span>練習發給每人 13 張牌。</span></li>
+<li><span>練習將 13 張卡片排序。</span></li>
+<li><span>教導您的家人和朋友如何在 MINIBRIDGE 上計分。</span></li>
+<li><span>向您的家人和朋友傳授王牌花色、無王和合約的知識。</span></li>
+<li><span>教導你的家人和朋友有關高花和低花的知識</span></li>
+<li><span>玩得開心！</span></li>
+</ol><h1 id="第8課" data-id="第8課"><a class="anchor hidden-xs" href="#第8課" title="第8課"><span class="octicon octicon-link"></span></a><span>第8課</span></h1><h1 id="把它們放在一起" data-id="把它們放在一起"><a class="anchor hidden-xs" href="#把它們放在一起" title="把它們放在一起"><span class="octicon octicon-link"></span></a><span>把它們放在一起</span></h1><h2 id="材料6" data-id="材料"><a class="anchor hidden-xs" href="#材料6" title="材料6"><span class="octicon octicon-link"></span></a><span>材料</span></h2><p><span>• 預發牌</span><br>
+<span>• 名稱標籤（如果您正在使用它們）。</span><br>
+<span>• 記分表和鉛筆。</span><br>
+<span>• 附NESW 的層壓工作台導卡。</span><br>
+<span>• 如有需要，請在本課程中分發更多 MiniBridge 層壓摘要卡。</span><br>
+<span>• 持卡器。</span><br>
+<span>• 計數區塊</span></p><h2 id="目標6" data-id="目標"><a class="anchor hidden-xs" href="#目標6" title="目標6"><span class="octicon octicon-link"></span></a><span>目標</span></h2><p><span>• 了解哪些是低花，哪些是高花（如果前一週沒有涉及）。</span><br>
+<span>• 簡單回顧前七課。</span><br>
+<span>• 玩 #2，牌號 3 和 4，並計分。</span></p><p><span>復習應包括以下內容：</span><br>
+<span>• 花色</span><br>
+<span>• 卡牌等級</span><br>
+<span>• 無王下獲取贏墩</span><br>
+<span>• 王牌時獲取贏墩</span><br>
+<span>• 迷你橋牌遊戲</span><br>
+<span>• 選擇王牌花色</span><br>
+<span>• 高花和低花</span><br>
+<span>• 迷你橋計分</span><br>
+<span>• 引連續尊張頂張</span><br>
+<span>• 先從短邊打大牌（如果有提及）</span></p><h3 id="Deal-5" data-id="Deal-5"><a class="anchor hidden-xs" href="#Deal-5" title="Deal-5"><span class="octicon octicon-link"></span></a><span>Deal-5</span></h3><p><span>(E-Z Deal Cards: #2, Deal 3)</span><br>
+<span>Dealer is South</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ A764</span><br><font color="red"><span>♥</span></font><span> K83</span><br><font color="red"><span>♦</span></font><span> J52</span><br><span>♣ AQ8</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ 82</span><br><font color="red"><span>♥</span></font><span> QJT5</span><br><font color="red"><span>♦</span></font><span> A94</span><br><span>♣ T8</span></td>
+<td></td>
+<td><span>♠ 93</span><br><span> </span><font color="red"><span>♥</span></font><span> A96</span><br><font color="red"><span>♦</span></font><span> KQ763</span><br><span>♣ T65</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ KQJT5</span><br><font color="red"><span>♥</span></font><span> 742</span><br><font color="red"><span>♦</span></font><span> T8</span><br><span>♣ K94</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>14</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>14</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>8</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>8</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>23</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>23</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>17</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌型</span></th>
+<th style="text-align:center"><span>S</span></th>
+<th style="text-align:center"><span>H</span></th>
+<th style="text-align:center"><span>D</span></th>
+<th style="text-align:center"><span>C</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>莊家</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>夢家</span></td>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>6</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>王牌</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>防家</span></th>
+<th style="text-align:center"><span>首引者</span></th>
+<th style="text-align:center"><span>首引</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>部份</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><font color="red"><span>♦</span></font><span> K</span></td>
+</tr>
+</tbody>
+</table><p><span>如果這副牌的莊家已經當過莊家，請讓他的搭檔輪流當莊，因為這是一個班級而不是一場比賽。 “既然北家打過出了第一副牌，就讓南家成為莊家吧。”</span><br>
+<span>（或者，如果您正在做牌，請將牌局旋轉 180 度。）</span></p><h3 id="Deal-6" data-id="Deal-6"><a class="anchor hidden-xs" href="#Deal-6" title="Deal-6"><span class="octicon octicon-link"></span></a><span>Deal-6</span></h3><p><span>(E-Z Deal Cards: #2, Deal 4)</span><br>
+<span>Dealer is West</span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><span>♠ KQT</span><br><font color="red"><span>♥</span></font><span> 4</span><br><font color="red"><span>♦</span></font><span> 87432</span><br><span>♣ A643</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span>♠ A763</span><br><font color="red"><span>♥</span></font><span> AK7</span><br><font color="red"><span>♦</span></font><span> KT6</span><br><span>♣ K82</span></td>
+<td></td>
+<td><span>♠ 95</span><br><span> </span><font color="red"><span>♥</span></font><span> QJT986</span><br><font color="red"><span>♦</span></font><span> AQ9</span><br><span>♣ 75</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span>♠ J842</span><br><font color="red"><span>♥</span></font><span> 532</span><br><font color="red"><span>♦</span></font><span> J5</span><br><span>♣ QJT9</span></td>
+<td></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+<th style="text-align:center"><span>點力</span></th>
+<th style="text-align:center"><span>大牌點</span></th>
+<th style="text-align:center"><span>分配點</span></th>
+<th style="text-align:center"><span>合計</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>9</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>S</span></td>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>5</span></td>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>17</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>17</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>14</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>14</span></td>
+<td style="text-align:center"><span>E-W</span></td>
+<td style="text-align:center"><span>26</span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><span>26</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>牌型</span></th>
+<th style="text-align:center"><span>S</span></th>
+<th style="text-align:center"><span>H</span></th>
+<th style="text-align:center"><span>D</span></th>
+<th style="text-align:center"><span>C</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>莊家</span></td>
+<td style="text-align:center"><span>4</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>3</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>夢家</span></td>
+<td style="text-align:center"><span>2</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>3</span></td>
+<td style="text-align:center"><span>2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>合計</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>9</span></td>
+<td style="text-align:center"><span>6</span></td>
+<td style="text-align:center"><span>5</span></td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th style="text-align:center"><span>莊家</span></th>
+<th style="text-align:center"><span>夢家</span></th>
+<th style="text-align:center"><span>王牌</span></th>
+<th style="text-align:center"><span>合約</span></th>
+<th style="text-align:center"><span>防家</span></th>
+<th style="text-align:center"><span>首引者</span></th>
+<th style="text-align:center"><span>首引</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span>W</span></td>
+<td style="text-align:center"><span>E</span></td>
+<td style="text-align:center"><span>H</span></td>
+<td style="text-align:center"><span>4H</span></td>
+<td style="text-align:center"><span>N-S</span></td>
+<td style="text-align:center"><span>N</span></td>
+<td style="text-align:center"><span>♠ K</span></td>
+</tr>
+</tbody>
+</table><p><span>如果有多餘的時間，讓學生洗牌、發牌、玩！</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#ACBL-幼兒橋牌-教師手冊" title="ACBL 幼兒橋牌-教師手冊">ACBL 幼兒橋牌-教師手冊</a></li>
+<li><a href="#介紹" title="介紹">介紹</a><ul class="nav">
+<li><a href="#教學方法概述" title="教學方法概述">教學方法概述</a></li>
+<li><a href="#課程形式" title="課程形式">課程形式</a></li>
+</ul>
+</li>
+<li><a href="#第1課" title="第1課">第1課</a></li>
+<li><a href="#一副牌和取得贏墩" title="一副牌和取得贏墩">一副牌和取得贏墩</a><ul class="nav">
+<li><a href="#材料" title="材料">材料</a></li>
+<li><a href="#目標" title="目標">目標</a></li>
+<li><a href="#練習-1：牌的等級" title="練習 1：牌的等級">練習 1：牌的等級</a></li>
+<li><a href="#練習-2：戰爭遊戲" title="練習 2：戰爭遊戲">練習 2：戰爭遊戲</a></li>
+<li><a href="#戰爭遊戲" title="戰爭遊戲">戰爭遊戲</a><ul class="nav">
+<li><a href="#洗牌和發牌" title="洗牌和發牌">洗牌和發牌</a></li>
+<li><a href="#取得贏墩" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則" title="規則">規則</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第2課" title="第2課">第2課</a></li>
+<li><a href="#Tricks-遊戲" title="Tricks 遊戲">Tricks 遊戲</a><ul class="nav">
+<li><a href="#材料1" title="材料">材料</a></li>
+<li><a href="#目標1" title="目標">目標</a></li>
+<li><a href="#練習-1：洗牌和發牌" title="練習 1：洗牌和發牌">練習 1：洗牌和發牌</a></li>
+<li><a href="#練習-2-分類花色" title="練習 2. 分類花色">練習 2. 分類花色</a><ul class="nav">
+<li><a href="#整理你的卡片" title="整理你的卡片">整理你的卡片</a></li>
+</ul>
+</li>
+<li><a href="#練習-3：取得贏墩" title="練習 3：取得贏墩">練習 3：取得贏墩</a></li>
+<li><a href="#Tricks-遊戲1" title="Tricks 遊戲">Tricks 遊戲</a><ul class="nav">
+<li><a href="#洗牌、發牌和排序" title="洗牌、發牌和排序">洗牌、發牌和排序</a></li>
+<li><a href="#取得贏墩1" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則1" title="規則">規則</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作1" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第3課" title="第3課">第3課</a></li>
+<li><a href="#Trumps-遊戲" title="Trumps 遊戲">Trumps 遊戲</a><ul class="nav">
+<li><a href="#材料2" title="材料">材料</a></li>
+<li><a href="#目標2" title="目標">目標</a></li>
+<li><a href="#練習1：重複取得贏墩" title="練習1：重複取得贏墩">練習1：重複取得贏墩</a></li>
+<li><a href="#練習-2：玩王牌合約" title="練習 2：玩王牌合約">練習 2：玩王牌合約</a></li>
+<li><a href="#Trumps-遊戲1" title="Trumps 遊戲">Trumps 遊戲</a><ul class="nav">
+<li><a href="#洗牌和發牌1" title="洗牌和發牌">洗牌和發牌</a></li>
+<li><a href="#取得贏墩2" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則2" title="規則">規則</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作2" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第4課" title="第4課">第4課</a></li>
+<li><a href="#惠斯特-Whist-遊戲" title="惠斯特 (Whist) 遊戲">惠斯特 (Whist) 遊戲</a><ul class="nav">
+<li><a href="#材料3" title="材料">材料</a></li>
+<li><a href="#目標3" title="目標">目標</a></li>
+<li><a href="#練習-1：尊張-Honor-Cards" title="練習 1：尊張 (Honor Cards)">練習 1：尊張 (Honor Cards)</a></li>
+<li><a href="#練習-2：惠斯特" title="練習 2：惠斯特">練習 2：惠斯特</a></li>
+<li><a href="#惠斯特遊戲" title="惠斯特遊戲">惠斯特遊戲</a><ul class="nav">
+<li><a href="#洗牌、發牌和排序1" title="洗牌、發牌和排序">洗牌、發牌和排序</a></li>
+<li><a href="#取得贏墩3" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則3" title="規則">規則</a></li>
+<li><a href="#計分" title="計分">計分</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作3" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第5課" title="第5課">第5課</a></li>
+<li><a href="#與夥伴一起玩" title="與夥伴一起玩">與夥伴一起玩</a><ul class="nav">
+<li><a href="#練習1：合作遊戲" title="練習1：合作遊戲">練習1：合作遊戲</a></li>
+<li><a href="#練習2：挑選王牌花色" title="練習2：挑選王牌花色">練習2：挑選王牌花色</a></li>
+<li><a href="#練習-3：惠斯特計分" title="練習 3：惠斯特計分">練習 3：惠斯特計分</a></li>
+<li><a href="#趣味工作4" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第6課" title="第6課">第6課</a></li>
+<li><a href="#迷你橋第-1-部分" title="迷你橋第 1 部分">迷你橋第 1 部分</a><ul class="nav">
+<li><a href="#材料4" title="材料">材料</a></li>
+<li><a href="#目標4" title="目標">目標</a></li>
+<li><a href="#練習-1：有夢家的遊戲" title="練習 1：有夢家的遊戲">練習 1：有夢家的遊戲</a></li>
+<li><a href="#練習-2：計算大牌點" title="練習 2：計算大牌點">練習 2：計算大牌點</a></li>
+<li><a href="#練習-3：第一手迷你橋牌" title="練習 3：第一手迷你橋牌">練習 3：第一手迷你橋牌</a><ul class="nav">
+<li><a href="#Deal-1" title="Deal-1">Deal-1</a></li>
+<li><a href="#Deal-2" title="Deal-2">Deal-2</a></li>
+</ul>
+</li>
+<li><a href="#迷你橋牌遊戲" title="迷你橋牌遊戲">迷你橋牌遊戲</a><ul class="nav">
+<li><a href="#計分1" title="計分">計分</a></li>
+<li><a href="#未完成的合約" title="未完成的合約">未完成的合約</a></li>
+</ul>
+</li>
+<li><a href="#迷你橋牌進階計分" title="迷你橋牌進階計分">迷你橋牌進階計分</a><ul class="nav">
+<li><a href="#完成的合約" title="完成的合約">完成的合約</a></li>
+<li><a href="#未完成的合約1" title="未完成的合約">未完成的合約</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作5" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第7課" title="第7課">第7課</a></li>
+<li><a href="#迷你橋第-2-部分" title="迷你橋第 2 部分">迷你橋第 2 部分</a><ul class="nav">
+<li><a href="#材料5" title="材料">材料</a></li>
+<li><a href="#目標5" title="目標">目標</a></li>
+<li><a href="#練習-1：MiniBridge-機制回顧" title="練習 1：MiniBridge 機制回顧">練習 1：MiniBridge 機制回顧</a></li>
+<li><a href="#練習-2：高花和低花" title="練習 2：高花和低花">練習 2：高花和低花</a><ul class="nav">
+<li><a href="#Deal-3" title="Deal-3">Deal-3</a></li>
+<li><a href="#練習-3：記分" title="練習 3：記分">練習 3：記分</a></li>
+<li><a href="#練習-4：合約" title="練習 4：合約">練習 4：合約</a></li>
+<li><a href="#Deal-4" title="Deal-4">Deal-4</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作6" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第8課" title="第8課">第8課</a></li>
+<li><a href="#把它們放在一起" title="把它們放在一起">把它們放在一起</a><ul class="nav">
+<li><a href="#材料6" title="材料">材料</a></li>
+<li><a href="#目標6" title="目標">目標</a><ul class="nav">
+<li><a href="#Deal-5" title="Deal-5">Deal-5</a></li>
+<li><a href="#Deal-6" title="Deal-6">Deal-6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#ACBL-幼兒橋牌-教師手冊" title="ACBL 幼兒橋牌-教師手冊">ACBL 幼兒橋牌-教師手冊</a></li>
+<li><a href="#介紹" title="介紹">介紹</a><ul class="nav">
+<li><a href="#教學方法概述" title="教學方法概述">教學方法概述</a></li>
+<li><a href="#課程形式" title="課程形式">課程形式</a></li>
+</ul>
+</li>
+<li><a href="#第1課" title="第1課">第1課</a></li>
+<li><a href="#一副牌和取得贏墩" title="一副牌和取得贏墩">一副牌和取得贏墩</a><ul class="nav">
+<li><a href="#材料" title="材料">材料</a></li>
+<li><a href="#目標" title="目標">目標</a></li>
+<li><a href="#練習-1：牌的等級" title="練習 1：牌的等級">練習 1：牌的等級</a></li>
+<li><a href="#練習-2：戰爭遊戲" title="練習 2：戰爭遊戲">練習 2：戰爭遊戲</a></li>
+<li><a href="#戰爭遊戲" title="戰爭遊戲">戰爭遊戲</a><ul class="nav">
+<li><a href="#洗牌和發牌" title="洗牌和發牌">洗牌和發牌</a></li>
+<li><a href="#取得贏墩" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則" title="規則">規則</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第2課" title="第2課">第2課</a></li>
+<li><a href="#Tricks-遊戲" title="Tricks 遊戲">Tricks 遊戲</a><ul class="nav">
+<li><a href="#材料1" title="材料">材料</a></li>
+<li><a href="#目標1" title="目標">目標</a></li>
+<li><a href="#練習-1：洗牌和發牌" title="練習 1：洗牌和發牌">練習 1：洗牌和發牌</a></li>
+<li><a href="#練習-2-分類花色" title="練習 2. 分類花色">練習 2. 分類花色</a><ul class="nav">
+<li><a href="#整理你的卡片" title="整理你的卡片">整理你的卡片</a></li>
+</ul>
+</li>
+<li><a href="#練習-3：取得贏墩" title="練習 3：取得贏墩">練習 3：取得贏墩</a></li>
+<li><a href="#Tricks-遊戲1" title="Tricks 遊戲">Tricks 遊戲</a><ul class="nav">
+<li><a href="#洗牌、發牌和排序" title="洗牌、發牌和排序">洗牌、發牌和排序</a></li>
+<li><a href="#取得贏墩1" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則1" title="規則">規則</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作1" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第3課" title="第3課">第3課</a></li>
+<li><a href="#Trumps-遊戲" title="Trumps 遊戲">Trumps 遊戲</a><ul class="nav">
+<li><a href="#材料2" title="材料">材料</a></li>
+<li><a href="#目標2" title="目標">目標</a></li>
+<li><a href="#練習1：重複取得贏墩" title="練習1：重複取得贏墩">練習1：重複取得贏墩</a></li>
+<li><a href="#練習-2：玩王牌合約" title="練習 2：玩王牌合約">練習 2：玩王牌合約</a></li>
+<li><a href="#Trumps-遊戲1" title="Trumps 遊戲">Trumps 遊戲</a><ul class="nav">
+<li><a href="#洗牌和發牌1" title="洗牌和發牌">洗牌和發牌</a></li>
+<li><a href="#取得贏墩2" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則2" title="規則">規則</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作2" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第4課" title="第4課">第4課</a></li>
+<li><a href="#惠斯特-Whist-遊戲" title="惠斯特 (Whist) 遊戲">惠斯特 (Whist) 遊戲</a><ul class="nav">
+<li><a href="#材料3" title="材料">材料</a></li>
+<li><a href="#目標3" title="目標">目標</a></li>
+<li><a href="#練習-1：尊張-Honor-Cards" title="練習 1：尊張 (Honor Cards)">練習 1：尊張 (Honor Cards)</a></li>
+<li><a href="#練習-2：惠斯特" title="練習 2：惠斯特">練習 2：惠斯特</a></li>
+<li><a href="#惠斯特遊戲" title="惠斯特遊戲">惠斯特遊戲</a><ul class="nav">
+<li><a href="#洗牌、發牌和排序1" title="洗牌、發牌和排序">洗牌、發牌和排序</a></li>
+<li><a href="#取得贏墩3" title="取得贏墩">取得贏墩</a></li>
+<li><a href="#規則3" title="規則">規則</a></li>
+<li><a href="#計分" title="計分">計分</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作3" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第5課" title="第5課">第5課</a></li>
+<li><a href="#與夥伴一起玩" title="與夥伴一起玩">與夥伴一起玩</a><ul class="nav">
+<li><a href="#練習1：合作遊戲" title="練習1：合作遊戲">練習1：合作遊戲</a></li>
+<li><a href="#練習2：挑選王牌花色" title="練習2：挑選王牌花色">練習2：挑選王牌花色</a></li>
+<li><a href="#練習-3：惠斯特計分" title="練習 3：惠斯特計分">練習 3：惠斯特計分</a></li>
+<li><a href="#趣味工作4" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第6課" title="第6課">第6課</a></li>
+<li><a href="#迷你橋第-1-部分" title="迷你橋第 1 部分">迷你橋第 1 部分</a><ul class="nav">
+<li><a href="#材料4" title="材料">材料</a></li>
+<li><a href="#目標4" title="目標">目標</a></li>
+<li><a href="#練習-1：有夢家的遊戲" title="練習 1：有夢家的遊戲">練習 1：有夢家的遊戲</a></li>
+<li><a href="#練習-2：計算大牌點" title="練習 2：計算大牌點">練習 2：計算大牌點</a></li>
+<li><a href="#練習-3：第一手迷你橋牌" title="練習 3：第一手迷你橋牌">練習 3：第一手迷你橋牌</a><ul class="nav">
+<li><a href="#Deal-1" title="Deal-1">Deal-1</a></li>
+<li><a href="#Deal-2" title="Deal-2">Deal-2</a></li>
+</ul>
+</li>
+<li><a href="#迷你橋牌遊戲" title="迷你橋牌遊戲">迷你橋牌遊戲</a><ul class="nav">
+<li><a href="#計分1" title="計分">計分</a></li>
+<li><a href="#未完成的合約" title="未完成的合約">未完成的合約</a></li>
+</ul>
+</li>
+<li><a href="#迷你橋牌進階計分" title="迷你橋牌進階計分">迷你橋牌進階計分</a><ul class="nav">
+<li><a href="#完成的合約" title="完成的合約">完成的合約</a></li>
+<li><a href="#未完成的合約1" title="未完成的合約">未完成的合約</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作5" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第7課" title="第7課">第7課</a></li>
+<li><a href="#迷你橋第-2-部分" title="迷你橋第 2 部分">迷你橋第 2 部分</a><ul class="nav">
+<li><a href="#材料5" title="材料">材料</a></li>
+<li><a href="#目標5" title="目標">目標</a></li>
+<li><a href="#練習-1：MiniBridge-機制回顧" title="練習 1：MiniBridge 機制回顧">練習 1：MiniBridge 機制回顧</a></li>
+<li><a href="#練習-2：高花和低花" title="練習 2：高花和低花">練習 2：高花和低花</a><ul class="nav">
+<li><a href="#Deal-3" title="Deal-3">Deal-3</a></li>
+<li><a href="#練習-3：記分" title="練習 3：記分">練習 3：記分</a></li>
+<li><a href="#練習-4：合約" title="練習 4：合約">練習 4：合約</a></li>
+<li><a href="#Deal-4" title="Deal-4">Deal-4</a></li>
+</ul>
+</li>
+<li><a href="#趣味工作6" title="趣味工作">趣味工作</a></li>
+</ul>
+</li>
+<li><a href="#第8課" title="第8課">第8課</a></li>
+<li><a href="#把它們放在一起" title="把它們放在一起">把它們放在一起</a><ul class="nav">
+<li><a href="#材料6" title="材料">材料</a></li>
+<li><a href="#目標6" title="目標">目標</a><ul class="nav">
+<li><a href="#Deal-5" title="Deal-5">Deal-5</a></li>
+<li><a href="#Deal-6" title="Deal-6">Deal-6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

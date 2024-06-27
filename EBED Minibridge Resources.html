@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        EBED Minibridge Resources - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="EBED-Minibridge-Resources" data-id="EBED-Minibridge-Resources"><a class="anchor hidden-xs" href="#EBED-Minibridge-Resources" title="EBED-Minibridge-Resources"><span class="octicon octicon-link"></span></a><span>EBED Minibridge Resources</span></h1><p><a href="https://www.ebedcio.org.uk/MiniBridge-resources" target="_blank" rel="noopener"><span>English Bridge Education &amp; Development - Minibridge Resources</span></a></p><h1 id="迷你橋資源" data-id="迷你橋資源"><a class="anchor hidden-xs" href="#迷你橋資源" title="迷你橋資源"><span class="octicon octicon-link"></span></a><span>迷你橋資源</span></h1><p><span>如果您正在教導一群兒童或年輕人，您可以利用這些資源。 如果您想了解有關為您的學校或其他組織建立橋牌遊戲或橋牌俱樂部的更多信息，請參閱我們的</span><a href="##linkA"><span>青少年手冊</span></a><span>頁面。</span></p><ul>
+<li><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/Minibridge/MiniBridge%20teaching%20hands_revised_including%20defence%20v2021%20%282%29.pdf" target="_blank" rel="noopener"><span>MiniBridge Teaching Hands</span></a><span>,   </span><a href="https://hackmd.io/Ks98Sr6pRgeaXoecCIPa1w" target="_blank" rel="noopener"><span>EBED 迷你橋牌教學牌局</span></a></li>
+<li><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/zips/MBPbn.zip" target="_blank" rel="noopener"><span>Deal files Pbn</span></a></li>
+<li><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/zips/MBlin.zip" target="_blank" rel="noopener"><span>Deal files lin</span></a></li>
+<li><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/Minibridge/EBED%20MiniBridge%20crib%20sheet.pdf" target="_blank" rel="noopener"><span>MiniBridge crib sheet</span></a></li>
+<li><span>No Fear Bridge 有個很棒的 </span><a href="https://www.nofearbridge.co.uk/xmember/aff/go/ebed?i=9" target="_blank" rel="noopener"><span>MiniBridge learning website</span></a><span> 與其主站分離且完全免費。 Link to the MiniBridge site click </span><a href="https://www.nofearbridge.co.uk/xmember/aff/go/ebed?i=9" target="_blank" rel="noopener"><span>here</span></a></li>
+<li><a href="https://realbridge.online/" target="_blank" rel="noopener"><span>RealBridge</span></a><span> 提供些滿貫牌局，可用於迷你橋與橋牌</span></li>
+<li><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/Minibridge/Set%201%20-%20Slam%20MB%20and%20B.pdf" target="_blank" rel="noopener"><span>MiniBridge Slam pdf</span></a></li>
+<li><a href="https://www.ebedcio.org.uk/files/docs/teachers-docs/Minibridge/Set%201%20-%20Slam%20MB%20and%20B.pbn" target="_blank" rel="noopener"><span>MiniBridge Slam pbn</span></a></li>
+</ul><h2 id="linkA" data-id="linkA"><a class="anchor hidden-xs" href="#linkA" title="linkA"><span class="octicon octicon-link"></span></a><span>linkA</span></h2><h1 id="EBED-青少年橋牌手冊" data-id="EBED-青少年橋牌手冊"><a class="anchor hidden-xs" href="#EBED-青少年橋牌手冊" title="EBED-青少年橋牌手冊"><span class="octicon octicon-link"></span></a><a href="https://www.ebedcio.org.uk/youth-handbook" target="_blank" rel="noopener"><span>EBED 青少年橋牌手冊</span></a></h1><p><span>青年橋牌手冊 v1</span></p><ol>
+<li><span>概述</span><br>
+<span>本手冊由 EBED 青年諮詢小組 (YAG, Youth Advisory Group) 製作，旨在幫助那些在青少年之間推廣橋牌的人。 YAG 會員和本手冊的貢獻者有：</span></li>
+</ol><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>Bernard Eddleston</span></td>
+<td><span>EBED Trustee(受託人)</span></td>
+</tr>
+<tr>
+<td><span>Richard Banbury</span></td>
+<td><span>EBED Youth &amp; Business Manager</span></td>
+</tr>
+<tr>
+<td><span>Joan Bennett</span></td>
+<td><span>牛津郡 (Oxon) 青年官員，但本手冊也藉鑒了瓊之前在 Bucks &amp; Berks 擔任相同職務的經驗</span></td>
+</tr>
+<tr>
+<td><span>Liz Dale</span></td>
+<td><span>Project Leader, Stamford Youth Bridge Academy, Stamford Bridge Club, Lincs</span></td>
+</tr>
+<tr>
+<td><span>Tim Warren</span></td>
+<td><span>Youth Officer for Surrey</span></td>
+</tr>
+</tbody>
+</table><p><span>我們生活在英格蘭各地的各個縣，有著不同的特徵和挑戰。 因此，每個作者都有他或她自己的個人方法，但為了風格的簡單性和一致性，我們在整個文件中使用「我們」和「我們的」。 我們堅信，處理事情的方式不僅有一種“正確”，這些只是幫助你自己思考的想法，而不是一個可以盲目遵循的規範。</span><br>
+<span>史丹佛在這些領域的方法已作為一個單獨的計畫進行了完整記錄，可在史丹佛青年橋學院網站 Stamford Youth Bridge Academy </span><a href="http://www.syba.org.uk" target="_blank" rel="noopener"><span>www.syba.org.uk</span></a><span> 上取得。 因此，本文件在很大程度上傾向於關注Oxon和Surrey的經驗。</span></p><p><span>出發點是：你想要達成什麼目標？ 我們認為您最有可能的目標是：</span><br>
+<span>* 在學校推廣橋牌俱樂部</span><br>
+<span>* 吸引年輕人加入現有的橋牌俱樂部</span><br>
+<span>這些將在第 2 節和第 3 節中討論。 如果您有不同的目標，請告訴我們； 我們也許可以提供建議，或者我們可以在以後的版本中添加一個部分。</span><br>
+<span>第 4 節討論如何尋找潛在的教師和助手，第 5 節討論在哪裡可以找到教材。 接下來，我們列出了 EBED 在設備等方面可以提供的服務來幫助您。</span><br>
+<span>從學校橋牌的角度來看，我們專注於讓事情開始。 但從長遠來看，您可能希望考慮幫助學校發展和擴展他們的橋牌能力，因此我們在第 7 節中對此主題給出了一些簡短的想法。</span><br>
+<span>然後，第 8 節給出了一些想法來幫助您創建自己的行銷資料，例如：</span><br>
+<span>* 給學校的勘探信；</span><br>
+<span>* 當你與學校會面時，可以與學校討論的講義； 和</span><br>
+<span>* 宣傳 MiniBridge 訓練師訓練課程的海報。</span><br>
+<span>我們歡迎所有建議和其他回饋，並在最後提供了 EBED 的聯絡資訊。 祝你好運！</span></p><ol start="2">
+<li><span>在學校推廣橋牌俱樂部</span></li>
+</ol><p><span>這有幾個面向：</span><br>
+<span>勘探——尋找可能有興趣的學校</span><br>
+<span>說服——一旦你已“咬了一口”，就說服他們</span><br>
+<span>資源配置——為學校社團尋找領導者和幫助者</span><br>
+<span>您需要同時考慮這些問題：如果學校對您感興趣，您就不希望他們在您尋找人才時等待很長時間。</span></p><p><span>2.1 勘探</span></p><p><span>您可以在當地縣議會網站上找到所有公立學校的列表，或者更普遍地透過維基百科或搜尋引擎找到。</span></p><p><span>您會關注特定群體（例如小學/中學、公立/私立）嗎？</span><br>
+<span>* 在 Oxon，重點主要集中在小學。 公立中學似乎很少有時間參加午餐俱樂部，而課後俱樂部的參與人數也很少：在一個相對農村的縣，學生來自廣闊的學區，許多人必須乘坐放學後的公共汽車才能到達學校。 然而，我們在巴克斯和伯克斯附近的一些文法學校也取得了成功。</span><br>
+<span>* 在斯坦福德，我們從一開始就專注於小學和中學：請參閱 </span><a href="http://www.syba.org.uk" target="_blank" rel="noopener"><span>www.syba.org.uk</span></a><span>。</span><br>
+<span>* 在薩裡，我們最初將重點放在中學，邏輯是 11 歲、12 歲和 13 歲的俱樂部在學生繼續前進之前會有更長的時間範圍。 然而，實際上，它比迄今為止更多地由學校驅動，即我們與任何表示有興趣的學校合作。</span></p><p><span>您將如何引起學校的興趣？ 您可以嘗試「散彈槍」方法：向所有學校發送一封信，然後看看誰會回覆。 這種方法在某些情況下可能有用，但在我們看來，這並不是引起學校注意的非常有效的方法——他們收到了大量未經請求的郵件，而且幾乎總是像這樣的信件似乎直接被丟進了垃圾箱。</span><br>
+<span>我們認為，更好的方法是利用當地的橋牌玩家網絡，透過個人接觸來激發學校的興趣。 許多人在當地學校有孩子或孫子，或前教師/官員，並且有機會和動力找到「進入點」。 它還可以為您提供所需的教學資源，讓您有一個良好的開始。</span><br>
+<span>無論您決定如何做，我們都在第 8 節：範例資料中包含了勘探信件的範例。</span><br>
+<span>順便說一句，我們建議橋牌不僅適合有學術天賦的人，而且也非常適合那些來自弱勢背景或有特殊需求的人。</span></p><p><span>2.2 說服</span></p><p><span>如果你能在校長或高級老師面前，你可能會推開他們希望你打開的門。 你現在的工作是：</span><br>
+<span>1. 讓學校相信你可以幫助建立一個有效的社團； 和</span><br>
+<span>2. 提供他們可以向家長傳達的有說服力的材料。</span></p><p><span>我們在範例材料部分提供了一份講義，其中包含一些簡單的關鍵資訊。 它是為您面對面討論而設計的，但由六張幻燈片組成，這些幻燈片在一張列印頁上清晰可見，可以隨身攜帶。 其中包括來自美國的一些關於學習橋對兒童的好處的令人印象深刻的研究（我們強烈建議透過文本中包含的連結閱讀原始資料）。</span></p><p><span>一個有價值的方法是為學校提供一次“試玩會”，讓一組或多組學生從一開始就參與其中（“什麼是花色？”、“什麼是贏墩？”）並玩幾手牌。 兩小時的課程對我們來說似乎是理想的選擇，但您可能沒有那麼奢侈，您需要根據允許的時間進行調整。</span><br>
+<span>向學校簡要介紹他們需要採取哪些措施非常重要。 特別是，我們建議您堅持每所學校指定一名老師來負責俱樂部，即使他們本身不是橋牌選手並且不參與教學本身。 你可能會面臨學校完全退出的風險，但根據我們的經驗，這是學校長期連續性的重要因素。</span></p><p><span>2.3 資源配置</span></p><ul>
+<li>
+<p><span>一般說明</span><br>
+<span>如果您是橋牌俱樂部，我們強烈建議您在俱樂部內設立一名擁護者來領導您所在地區的任何學校倡議。 擁護者的部分工作是與其他成員一起灌輸對該計畫的熱情，並在有多所學校參與的情況下協調活動。</span><br>
+<span>不要低估在學校經營橋牌俱樂部所需的時間和精力。 除了巨大的回報之外，教導一群充滿熱情、玩得很開心的年輕人也可能會讓人筋疲力盡。 即使您有這個願望，您也不太可能有時間處理一兩個以上。 雖然您可能需要幫助在早期將俱樂部嵌入學校，但我們認為您的任務是盡快再尋找下一個機會！</span><br>
+<span>許多人願意在學校幫忙，但又不想在整個學年中每週都去學校； 無論如何，他們可能會有假期、生病等等。</span><br>
+<span>基於所有這些原因，我們建議您嘗試組建一批志願者，俱樂部領導可以每週從中調配資源。 我們在第 0 節中提出了一些關於如何做到這一點的想法。</span></p>
+</li>
+<li>
+<p><span>俱樂部領導和助手</span><br>
+<span>為了俱樂部的長期成功，我們認為在學校找到負責俱樂部的老師至關重要，因為他們可能擁有課堂控制技術以及學校內部的聯繫以完成工作。 如果這是不可能的——如果你不准備離開——你需要找到一個你可以信任的優秀領導者來管理俱樂部，而不需要太多的幫助。 以前的教學經驗，無論是橋牌或其他方面，在這裡都是非常寶貴的； 即使當地的橋牌老師無法在學校提供幫助，也許他們認識一個可能符合要求的人。</span><br>
+<span>一旦學校社團成立，就可以由兩個人（也許只有一個人）自己經營。 但在早期，當每個學生都是初學者時，我們建議您嘗試每桌有一名成人。 因此，對於一個由 18 名學生組成的俱樂部，理想情況下至少需要 5 名成年人，其中一些可能需要填補桌子上的空座位。 幫助者不需要是經過全面訓練的橋牌老師：幾乎任何會打橋牌的人都可以幫助年輕人掌握基礎知識。 比一個人打橋牌的能力更重要的是他們與年輕人互動和同情的能力。</span><br>
+<span>特別是如果他們正在與一所小學最近成立的俱樂部合作，例如，您的資源需要將他們的努力視為長期活動的一部分。 在早期，當孩子們還在努力拿著牌並記住花色時，你的幫助者很可能會覺得他們更像是兒童照顧者而不是（迷你）橋牌老師。 「堅持下去，他們會到達那裡的！” 可以是一條有價值的資訊。</span></p>
+</li>
+<li>
+<p><span>向您的資源付款</span><br>
+<span>一般來說，您的大部分資源將是志願者，但無論哪種方式，這都可能是一個敏感話題。 如果您與私立學校合作，他們很可能會向家長收取所有課外俱樂部的費用。 這些資訊會傳遞給您的俱樂部/縣協會和/或您的老師嗎？ 如果俱樂部裡有人承擔提前準備牌等職責，你會付更多錢給他們嗎？ 這是由你決定的，但當你進入其他不收取此類俱樂部費用的學校時，要小心不要開創先例。 有些人可能主動希望不獲得報酬，您需要尊重這一點。</span></p>
+</li>
+<li>
+<p><span>Disclosure and Barring Service 揭露和限制服務</span><br>
+<span>所有領導者和助手都需要接受 DBS 檢查； 也就是說，獲得披露和禁止服務機構的認證，能夠與兒童一起工作。 如果您偶爾需要幫忙，您也需要獲得自己的證書。 學校將運作自己的 DBS 流程，但 EBED 也提供一項服務，通常是免費的。 透過 EBED 執行此操作（並保持最新狀態），而不是為每所學校單獨執行此操作，會更有效。 不過，請先與學校核實，因為有些學校只接受自己的學校。</span><br>
+<span>EBED 有一套全面的保護政策和程序，您可以在 </span><a href="http://www.ebedcio.org.uk/safeguarding" target="_blank" rel="noopener"><span>www.ebedcio.org.uk/safeguarding</span></a><span> 上找到這些政策和程序。 當您接觸學校時，這始終是一個潛在的關注領域，您需要能夠向他們保證您的方法將滿足他們的需求。 因此，我們建議您的俱樂部採用 EBED 政策，或者我們可以提供一些大型俱樂部的保障政策的連結。</span></p>
+</li>
+</ul><ol start="3">
+<li><span>吸引年輕人來到現有的橋牌俱樂部</span></li>
+</ol><p><span>在薩裡，一些俱樂部最近已經開始嘗試，但我們覺得我們還有很多東西需要了解什麼有效，什麼無效。</span><br>
+<span>從觀眾的角度考慮時機很重要。 常規俱樂部時間不適合兒童。 例如，我們在期中休息期間舉辦 MiniBridge 品嚐會，然後在下一個完整的學校假期中連續幾天舉辦完整的 MiniBridge 課程。 如果您發現足夠多的孩子對此感興趣，您也可以在學期期間嘗試週末課程。</span><br>
+<span>如果您正在考慮舉辦週末課程，奧克森和薩裡都發現週日下午（喝茶）效果很好，因為孩子們通常在早上已經預訂了其他活動。</span><br>
+<span>宣傳是關鍵。 您自己俱樂部的成員，尤其是祖父母的成員，可能是您最好的參與者來源。 他們首先需要時間說服，然後預留寫日記的時間，也需要時間向其他人傳達訊息。 有趣的是，我們發現了附帶好處，因為它們也為成人課程培養了學生。</span><br>
+<span>課程結束後，俱樂部向年輕人免費提供正常課程，以鼓勵他們參加。 但請注意，他們可能更喜歡在線上玩。 橋牌會有所增長，即使不是總是你的實體俱樂部。</span><br>
+<span>史丹佛在這方面也擁有豐富的經驗； 請參閱 </span><a href="http://www.syba.org.uk" target="_blank" rel="noopener"><span>www.syba.org.uk</span></a><span>。</span></p><ol start="4">
+<li><span>找潛在的橋牌老師和助手</span></li>
+</ol><p><span>根據我們的經驗，很明顯，許多橋牌玩家都喜歡這項運動，並且非常樂意幫助年輕人學習，尤其是因為許多俱樂部的玩家平均年齡明顯穩定增長。 你如何利用這個？</span><br>
+<span>在不同的縣，我們的方法有所不同，因此我們在這裡分別進行描述。 但有一些我們都同意的共同點：</span><br>
+<span>* 在您的俱樂部或縣裡有一位熱情的擁護者</span><br>
+<span>* 確保您的俱樂部縣委員會完全支持您的倡議並廣泛宣傳</span><br>
+<span>* 培訓一批潛在的幫助者</span><br>
+<span>* 透過電子郵件或時事通訊定期與所有幫助者溝通，讓他們了解進度並致力於您的事業</span></p><ul>
+<li>
+<p><span>牛津郡的方法</span><br>
+<span>從 2009 年開始，我們在熱心的俱樂部中大力推動，並對挺身而出的人數感到高興。 一開始，舉辦「培訓培訓師」課程效果很好，後來又增加了「如何讓他們開始叫牌」課程，但隨著時間的推移，這些課程的需求逐漸減少，因為退休的志工往往會帶來自己的替代者。 許多橋牌玩家都是兩到三個每週一次的俱樂部的成員，這有助於口碑宣傳和長期連續性。</span><br>
+<span>發送普通電子郵件往往不會成功，但在茶歇時與個人聊天要好得多。 由於某些原因，這可能因俱樂部而異。</span></p>
+</li>
+<li>
+<p><span>薩裡的方法</span><br>
+<span>在薩裡，我們的方法是：</span></p>
+<ul>
+<li><span>為潛在的 MiniBridge 教師舉辦免費培訓課程</span></li>
+<li><span>參觀當地的橋牌俱樂部並鼓勵牌手參與其中：像 Oxon 一樣，這比透過時事通訊等進行的一般勸告更成功。</span><br>
+<span>首先，我們抓住了機會，為潛在教師舉辦了培訓師培訓課程，該課程由我們地區人口最稠密地區的一個俱樂部主辦，並以 EBED 的紅皮書為基礎。 儘管俱樂部免費提供場地，但成本也不小，但我們覺得值得嘗試性投資。 （最後，我們設法獲得了該課程的贊助；這裡不適合詳細討論這個問題，但如果您願意聯繫我們，我們很樂意討論它。）部分費用用於清淡的午餐——事實證明這是課程中最有價值的部分之一，因為它讓每個人都有機會進行非正式的互動，也讓我們有機會鼓勵人們為當地學校做志工。</span><br>
+<span>此後，我們在縣內的另一個角落安排了進一步的課程，人們的興趣和熱情給我們留下了深刻的印象。</span><br>
+<span>如果您也這樣做，請確保記錄所有參加您課程的人員的郵遞區號以及他們的聯絡資訊。 我們在地圖上標示了郵遞區號； 這是一項繁重的工作，但是當一所潛在的學校出現時，很容易找到哪些老師是當地的。</span><br>
+<span>廣泛推廣該課程很重要。 為此，我們建議您：</span></li>
+<li><span>創建海報來宣傳它（有用資料中的範例，§C）</span></li>
+<li><span>將其顯示在您所在縣的網站上的顯眼位置，並要求 EBED 也這樣做</span></li>
+<li><span>爭取主辦俱樂部和範圍內其他俱樂部的幫助，並讓他們進行宣傳</span></li>
+<li><span>將海報透過電子郵件發送給附近縣的青年代表 – 他們可能知道邊境那邊有潛在的教師，或者他們可能想親自前來</span></li>
+<li><span>在您所在縣市的通訊中進行宣傳</span><br>
+<span>您需要在課程開始之前就開始行銷。 訊息透過橋牌玩家的非正式網絡傳播出去需要時間，我們建議您至少等待三個月。 我們試圖在提前兩個月通知的情況下舉辦第二門課程，但最終因缺乏參與者而不得不取消。</span><br>
+<span>我們相信您也可以添加其他想法； 例如，您俱樂部的一些成員可能不知道 MiniBridge 是什麼，那麼為什麼不舉辦一次有趣的 MiniBridge 會議來啟動您的志工招募活動呢？ 如果您發現其他適合您的東西，請告訴我們。</span><br>
+<span>在給潛在教師的訊息中，明確表示你不會堅持要求他們每週都去學校幫忙。 他們中的許多人希望能夠自由地度假，並且不想被學校束縛。</span></li>
+</ul>
+</li>
+</ul><ol start="5">
+<li><span>教學方法和材料</span></li>
+</ol><p><span>在奧克森和薩裡，我們通常讓孩子們在 MiniBridge 的學校裡開始學習。 作為我們課程的基礎，我們使用 EBED 的 Bridge for All 國家學習計劃中的第 1 冊：Beginning Bridge（非正式稱為紅皮書），</span><a href="http://www.ebu.co.uk/education/bridge-for-all/programme%E3%80%82" target="_blank" rel="noopener"><span>www.ebu.co.uk/education/bridge-for-all/programme。</span></a><span> 它有大量的相關資料，包括準備好的手稿和教學筆記。 在斯坦福德，我們開發了自己的培訓材料，可透過 </span><a href="http://www.syba.org.uk" target="_blank" rel="noopener"><span>www.syba.org.uk</span></a><span> 取得。 其他地區也正在使用這種方法，例如赫特福德郡。</span><br>
+<span>紅皮書提供了一種結構化的方法，從 MiniBridge 開始，然後透過叫牌和基本的紙牌遊戲技術繼續前進。 許多遊戲新手都會熟悉它的佈局。 各個章節包括討論和隨後的練習，因此本書也可以用來為初級班提供作業。</span></p><p><span>在 Oxon，假設學年開始，該方法轉化為以下時間表大綱：</span><br>
+<span>* 從 5 年級或 6 年級（9 歲至 11 歲）開始參加 MiniBridge 品嚐課程。</span><br>
+<span>* 對於那些繼續學習的人，教 4-6 週的“無王”玩法，然後介紹王牌：這意味著到聖誕節他們可以選擇成局/部分合約，以及王牌/NT。</span><br>
+<span>* 在將他們引入叫牌之前，先進行一段時間的整合。</span><br>
+<span>除非有理由這樣做（例如，及時進行 EBED 同步配對 - 請參閱下一節），否則不會使用計分，因為我們發現孩子們寧願只是玩耍。 每年的時間會根據孩子本身以及學校的不同而有所不同。 例如，我們的一所學校已經辦了八年了，我們發現很多弟弟妹妹到了就可以玩。</span></p><p><span>5.1 設計及發牌</span></p><p><span>我們不建議教孩子手動發牌：首先，洗牌和發牌對小手指來說不是一件容易的事； 其次，在可用的時間內你有更重要的事情需要關注。</span><br>
+<span>相反，您或您的俱樂部領導需要提前做好準備。 您可以自己手動處理它們，但是您會面臨分配等風險，而初學者無法處理這些問題。 製作適合不同學習階段的牌局是一項重要的任務，因此除非您已經擁有大量材料並確信可以滿足需求，否則我們建議您從紅皮書或 SYBA 材料中獲取牌局。</span><br>
+<span>EBED 組織了一項免費的全國性活動，稱為學生同步雙人賽，向所有年齡段的學生開放，並涉及許多初中生和學校。 我們購買了一套既適合迷你橋又適合橋牌的牌型，可以在一個月的時間裡隨時打牌，並且成績可以與全國所有比賽的牌型進行比較。 牌局附有註釋，志工可以將其用作教學輔助工具。 如果人數為奇數，教師和志工也可以參加——當然，活動也可以與鄰近的學校或教學小組共同舉辦。</span><br>
+<span>有些網站允許您下載手牌，可能需要付費。 No Fear Bridge，</span><a href="http://www.nofearbridge.co.uk" target="_blank" rel="noopener"><span>www.nofearbridge.co.uk</span></a><span>，就是一個很好的例子； 在撰寫本文時，我們了解到這對青少年橋牌教師來說是免費的。</span><br>
+<span>在 Oxon，我們有一台帶有 Jannesten 牌的中央發牌機，供學校團隊使用。</span></p><p><span>5.2 電腦</span></p><p><span>適用於手機、平板電腦等的優秀應用程式越來越多。 我們確實建議每個團隊中至少有一個人學習如何利用這些應用程序，因為它們會鼓勵孩子們在課外時間玩。</span></p><ol start="6">
+<li><span>EBED 可以提供什麼</span></li>
+</ol><p><span>許多縣和俱樂部能夠為青少年橋牌活動提供財務或實際支援。 除此之外，EBED 還可以免費或低成本提供志工可能需要的各種設備、教材和書籍。 這包括卡片、木板、桌布、適合手指較小的人的卡夾，有時，隨著初級組的發展，還包括桌子或叫牌盒。 可以為偶爾的需求提供財務支持，例如品嘗課或期末獎品。 還可以根據需要提供教學資源、複製的手寫文件、幫助製作傳單和參與/獲獎證書。</span><br>
+<span>EBED 每年兩次安排學校橋牌小組參觀議會大廈，並與同齡人打橋牌或迷你橋牌。 這通常可以與當地議員的參與相協調，並且它提供了在學校或當地媒體內進行額外宣傳的機會。</span><br>
+<span>除了管理青少年獎勵計劃 (</span><a href="http://www.ebedcio.org.uk/junior-award-scheme" target="_blank" rel="noopener"><span>www.ebedcio.org.uk/junior-award-scheme</span></a><span>) 外，EBED 還舉辦全國青少年活動，例如上述學生同步雙人賽、青少年宣講會、學校盃和大學波特蘭盃。 我們也與第三方和縣協會密切合作，為大型初級計畫的成本安排補助。</span><br>
+<span>如果您發現自己面臨意想不到的挑戰，我們也會在這裡提供建議！</span></p><ol start="7">
+<li><span>助力學校發展</span></li>
+</ol><p><span>短期內，你很可能遇到的第一個問題是：我們如何將MiniBridge的年輕選手帶入叫牌？ 這可能是一個特殊的問題，他們實際上說，「我們只是想打牌！」。 答案很大程度上取決於學生個人，但對於俱樂部領導和志工來說，制定明確的計劃非常重要。 Oxon 專門開設了有關此主題的課程，我們也可以提供建議。</span><br>
+<span>一旦您度過了該階段，我們強烈建議您帶領學生參加青少年獎勵計劃（請參閱上面的連結）。 該計劃將從新手到真正的競爭者的發展分解為一系列步驟和里程碑，這些步驟和里程碑可以在課堂上輕鬆理解和評估。 這些技能涵蓋叫牌、主打和防守，分為六個漸進級別：迷你橋牌、青銅牌、白銀牌、黃金牌、白金牌和鑽石牌。 每個級別都要求學生展示大約二十個難度逐漸增加的技術要素。</span><br>
+<span>學生和學校都喜歡獲得因成就而頒發的證書，並在學校集會上頒發證書等。 - 這個想法是鼓勵並提供結構和明確的目標。</span><br>
+<span>橋牌被認為是愛丁堡公爵獎勵計劃的技能，而青少年獎勵計劃證明了他們已經取得了必要的成就。 招募年齡較大的孩子來幫助教導年齡較小的孩子可能是值得的，因為這也符合服務和志願服務的資格。</span><br>
+<span>從長遠來看，您可能會舉辦校際比賽，並為獲勝者頒發獎盃。 學校喜歡向家長展示他們正在與其他人競爭。 然而，有些學校老師會擔心他們的學生不夠優秀，無法參加，因此請考慮如何應對這種恐懼（幾乎肯定是錯誤的）。 從學校的角度考慮，幫助那些表現好的學生在全國和地方獲得宣傳。 在薩裡，我們已經舉辦薩裡學校杯很多年了，我們可以提供建議。 我們試圖透過為全新橋手推出一項活動來消除「我們不夠好」的恐懼。</span><br>
+<span>鼓勵他們參加全國性的活動，如 EBED Schools Cup、Junior Teach-In 等。 例如，2016年和2017年，蘇塞克斯郡和格洛斯特郡都有初中週末； 奧克森（Oxon）負責後者，並且可以在其他地方提供同等幫助。</span></p><ol start="8">
+<li><span>樣品材料</span></li>
+</ol><p><span>以下頁面提供了一些想法來幫助您創建自己的信件等。</span><br>
+<span>給學校的探勘信</span><br>
+<span>與學校初次會面的講義</span><br>
+<span>您可以從以下位置下載該文件的 PowerPoint 版本</span><br>
+<a href="http://www.ebedcio.org.uk/youth%E3%80%82" target="_blank" rel="noopener"><span>http://www.ebedcio.org.uk/youth。</span></a><br>
+<span>MiniBridge 訓練師培訓課程海報</span></p><p><span>8.1 給學校的探勘信</span></p><ul>
+<li>
+<p><span>史丹佛例子</span><br>
+<span>SYBA 網站 </span><a href="http://www.syba.org.uk" target="_blank" rel="noopener"><span>www.syba.org.uk</span></a><span> 上有一封範本信函</span></p>
+</li>
+<li>
+<p><span>薩裡的例子</span><br>
+<span>您想在{學校名稱}成立橋牌俱樂部嗎？</span><br>
+<span>Bridge 有助於培養非常廣泛的技能：</span><br>
+<span>學術：計數、心算、計算機率、記憶</span><br>
+<span>解決問題； 分析、推理、規劃、測驗/觀察/重新規劃</span><br>
+<span>社會；團隊合作、溝通與協作</span></p>
+</li>
+</ul><p><span>但遠不止於此。 橋牌培養對他人的尊重，並設身處地為他人著想； 它幫助年輕人成為成熟、全面發展的人。</span><br>
+<span>橋牌受到愛丁堡公爵獎的歡迎，許多學校參加與其他學校的比賽，並且有一個國家青少年獎勵計劃，青少年可以通過該計劃取得進步。</span><br>
+<span>當然，打橋牌很有趣！ 對他們來說，這是一款融入成年生活的精彩遊戲。</span></p><ul>
+<li>
+<p><span>我們能怎樣幫助你？</span><br>
+<span>我們將提供經過培訓的志工來幫助您建立和經營俱樂部，並且我們可以為您提供卡包、牌組、記分錶、網站訪問權限等。成為橋牌玩家—不過，如果您希望您的老師也能獲得免費的橋牌培訓。</span></p>
+</li>
+<li>
+<p><span>為什麼不把腳趾放進水裡呢？</span><br>
+<span>本學期結束時，我們在您的學校舉辦一場「MiniBridge Taster 會議」怎麼樣？ MiniBridge 是專為初學者設計的遊戲的簡化形式。 我們將從頭開始（「什麼是花色？」）帶領學生玩一些手牌。 如果他們中的幾個人喜歡它——而且他們總是喜歡——我們就可以在秋季學期創辦一個橋牌俱樂部。</span><br>
+<span>我會在幾天後打電話，但如果您想同時聯繫我，我很樂意收到您的來信 - 最好的方法就是回覆這封電子郵件。</span></p>
+</li>
+</ul></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#EBED-Minibridge-Resources" title="EBED Minibridge Resources">EBED Minibridge Resources</a></li>
+<li><a href="#迷你橋資源" title="迷你橋資源">迷你橋資源</a><ul class="nav">
+<li><a href="#linkA" title="linkA">linkA</a></li>
+</ul>
+</li>
+<li><a href="#EBED-青少年橋牌手冊" title="EBED 青少年橋牌手冊">EBED 青少年橋牌手冊</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a href="#EBED-Minibridge-Resources" title="EBED Minibridge Resources">EBED Minibridge Resources</a></li>
+<li><a href="#迷你橋資源" title="迷你橋資源">迷你橋資源</a><ul class="nav">
+<li><a href="#linkA" title="linkA">linkA</a></li>
+</ul>
+</li>
+<li><a href="#EBED-青少年橋牌手冊" title="EBED 青少年橋牌手冊">EBED 青少年橋牌手冊</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        為什麼要打橋牌 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="為什麼要打橋牌" data-id="為什麼要打橋牌"><a class="anchor hidden-xs" href="#為什麼要打橋牌" title="為什麼要打橋牌"><span class="octicon octicon-link"></span></a><span>為什麼要打橋牌</span></h1><p><a href="http://cml.austincollege.edu/bfs/why-play-bridge.html" target="_blank" rel="noopener"><span>Ref</span></a></p><ul>
+<li>
+<p><a href="https://www.bridgeworld.com/pages/learn/beginners/whyplaybridge.html" target="_blank" rel="noopener"><span>Why play? from The Bridge World</span></a><span>, 中文 </span><a href="https://hackmd.io/_S4ypdZvSCWhBkt2n5k4uA" target="_blank" rel="noopener"><span>關於世界上最偉大遊戲的想法</span></a></p>
+</li>
+<li>
+<p><a href="https://www.ebu.co.uk/information-resources/bridge-and-its-benefits" target="_blank" rel="noopener"><span>EBU Bridge and its benefits</span></a><span>, 中文 </span><a href="https://hackmd.io/ecOexflgTPyB6CXVsicnpQ" target="_blank" rel="noopener"><span>打橋牌的好處</span></a></p>
+</li>
+<li>
+<p><a href="https://www.nytimes.com/2005/11/27/opinion/bring-bridge-back-to-the-table.html" target="_blank" rel="noopener"><span>Bring Bridge Back</span><span class="smartypants">…</span></a><span> from the New York Times, 中文 </span><a href="##%E5%B0%87%E6%A9%8B%E7%89%8C%E5%B8%B6%E5%9B%9E%E6%A1%8C%E4%B8%8A"><span>將橋牌帶回桌上</span></a></p>
+</li>
+<li>
+<p><a href="https://www.businessinsider.com/why-wall-street-plays-bridge-2012-12" target="_blank" rel="noopener"><span>18 Reasons why Wall Street loves Bridge</span></a><span>  Business Insider, 中文 </span><a href="##%E8%8F%AF%E7%88%BE%E8%A1%97%E5%96%9C%E6%84%9B%E6%A9%8B%E7%89%8C%E7%9A%8418%E5%80%8B%E7%90%86%E7%94%B1"><span>華爾街喜愛橋牌的18個理由</span></a></p>
+</li>
+<li>
+<p><a href="http://www.mapiano.com/why.htm" target="_blank" rel="noopener"><span>Why I Play Bridge</span></a><span> M, Arnowitt, Pianist</span></p>
+</li>
+<li>
+<p><a href="https://www.huffpost.com/entry/7-reasons-to-teach-your-kids-bridge_b_6648000" target="_blank" rel="noopener"><span>7 Reasons to teach your kids Bridge</span></a><span>  Huffington Post, 中文 </span><a href="##%E6%95%99%E5%B0%8E%E5%AD%A9%E5%AD%90%E6%A9%8B%E7%89%8C%E7%9A%847%E5%80%8B%E7%90%86%E7%94%B1"><span>教導孩子橋牌的7個理由</span></a></p>
+</li>
+<li>
+<p><a href="http://blueberrybridge.com/health-benefits-of-playing-bridge/" target="_blank" rel="noopener"><span>Bridge enhances T-Cell development</span></a><span>  Marian Diamond, 中文 </span><a href="##%E6%89%93%E6%A9%8B%E7%89%8C%E5%B0%8D%E5%81%A5%E5%BA%B7%E7%9A%84%E5%A5%BD%E8%99%95"><span>打橋牌對健康的好處</span></a></p>
+</li>
+<li>
+<p><span>Why play? </span><a href="https://www.aarp.org/health/brain-health/info-2015/bridge-for-brain-health.html" target="_blank" rel="noopener"><span>from AARP</span></a><span>, 中文 </span><a href="##%E9%80%9A%E5%BE%80%E8%85%A6%E5%8A%9B%E7%9A%84%E6%A9%8B%E6%A8%91"><span>通往腦力的橋樑</span></a></p>
+<p><span>「橋牌是一款非常轟動的遊戲，如果我有三個獄友都是體面的玩家並且願意每天 24 小時繼續遊戲，我不介意坐牢。”</span><br>
+<span>-華倫‧巴菲特</span></p>
+<p><span>降低失智症的風險，橋牌刺激胸腺，產生白血球（T 淋巴球），進而增強免疫系統</span><br>
+<span>-2003年，新英格蘭醫學雜誌</span></p>
+</li>
+</ul><h2 id="將橋牌帶回桌上" data-id="將橋牌帶回桌上"><a class="anchor hidden-xs" href="#將橋牌帶回桌上" title="將橋牌帶回桌上"><span class="octicon octicon-link"></span></a><span>將橋牌帶回桌上</span></h2><h2 id="將橋牌帶回桌上1" data-id="將橋牌帶回桌上"><a class="anchor hidden-xs" href="#將橋牌帶回桌上1" title="將橋牌帶回桌上1"><span class="octicon octicon-link"></span></a><a href="https://www.nytimes.com/2005/11/27/opinion/bring-bridge-back-to-the-table.html" target="_blank" rel="noopener"><span>將橋牌帶回桌上</span></a></h2><p><span>Sharon Osberg     Nov. 27, 2005</span></p><p><span>舊金山 - 撲克風靡一時。 線上撲克遊戲和電視撲克錦標賽的受歡迎程度呈爆炸性增長。 德州撲克和五張牌梭哈等遊戲在高中生和大學生中如野火般蔓延。 根據統計，美國有多達 8000 萬人玩撲克。 據獨立研究網站 </span><a href="http://Pokerpulse.com" target="_blank" rel="noopener"><span>Pokerpulse.com</span></a><span> 稱，每月約有 200 萬人在線上玩撲克。</span></p><p><span>你可能會認為有了這些數字，稱為橋牌的紙牌遊戲也會得到提升。 但再想一想。</span></p><p><span>根據美國橋牌合約聯盟的統計，18 歲以上的美國人有 2,500 萬懂得打橋牌。 這些人受過良好教育（79% 擁有大學學位）、富裕（平均收入為每年 62,000 美元），主要是白人（71%）和老年人（平均年齡為 51 歲）。 在這 2,500 萬名成年橋牌玩家中，只有 300 萬人每週至少玩一次遊戲。 與 1940 年代相比，這一數字大幅下降，當時 44% 的美國家庭至少擁有一名活躍的橋牌玩家。</span></p><p><span>橋應該很受歡迎。 這是一款優雅的遊戲，充滿策略和戰術。 它一部份是科學，一部份是數學，一部份是邏輯，一部份是理性。 但橋牌的一個巨大的組成部分也非常人性化。 前者與後者的融合使得橋牌不僅區別於其他紙牌遊戲，也區別於西洋棋等棋盤遊戲。 雖然電腦現在通常可以擊敗除少數西洋棋大師之外的所有人，但它們還無法擊敗世界上最優秀的橋牌選手。 為什麼是這樣？ 因為電腦可以理解數學，但它們無法理解人類——至少現在還不能</span></p><p><span>橋牌是一種合作遊戲。 最重要的是，一名成功的橋牌玩家必須是一位出色的搭檔。 信任、溝通和耐心是橋牌獲勝的基本要素。 一旦形成牢固的合作關係，它就為個人創造力提供了一個平台，讓玩家可以將自己的個性注入遊戲中。</span></p><p><span>以我的橋牌搭檔為例。 我和Berkshire Hathaway的投資者兼創辦人華倫巴菲特一起玩。 沒有人會形容華倫膽怯。 然而，當我們第一次打橋牌時，我們被對手踐踏了，因為沃倫聽從了我的意見，而我又害怕犯錯。 隨著我們相互了解，隨著我們的夥伴關係的鞏固，事情發生了變化。</span></p><p><span>你在商界認識的華倫‧巴菲特現在和我在橋牌桌上認識的華倫‧巴菲特是一樣的。 正如沃倫會告訴你的那樣，打橋牌就像經營一家企業。 這是關於狩獵、追逐、細微差別、欺騙、獎勵、危險、合作，以及美好的一天的勝利。</span></p><p><span>橋曾經很受歡迎。 1938年，三本橋牌書籍——《Complete Contract Bridge》、《Culbertson's Own New Contract Bridge》和《Five Suit Bridge》——登上了該報的暢銷書排行榜。 1957 年，《Goren's New Complete Contract Bridge》也榜上有名──持續了四個星期。 《瘦人的影子》(Shadow of the Thin Man)、《世界多美好》(It's a Wonderful World)和《日落大道》(Sunset Boulevard)等電影中都有打橋牌的角色。 報紙、雜誌和廣播對比賽進行了報導。</span></p><p><span>1920 年代的一場著名的牌局遊戲連續幾個月吸引了公眾的注意。 1929年9月29日，密蘇裡州堪薩斯城的John and Myrtle Bennett夫妻邀請他們的朋友 Charles and Myrna Hofman夫婦來玩橋牌。 一切進展順利，直到比賽開始幾個小時後，貝內特先生叫牌過高。 隨後發生了一場家庭爭吵，貝內特夫人突然走進一間臥室，拿著槍回來，向她的丈夫開了幾槍。 貝內特夫人被指控犯有一級謀殺罪，但因槍擊事件是意外而被無罪釋放。 當然，由橋牌玩家組成的陪審團可能會裁定這是合理的殺人行為。《橋桌謀殺案》(Murder at the Bridge Table)</span></p><p><span>那麼，為什麼橋牌的受歡迎程度在過去 50 年穩定下降呢？ 人們很容易將這種衰退與電視的出現聯繫起來，但這並非巧合。 電視成為橋牌之夜的社交替代品。 為了補償日益激烈的技術競爭，各個橋藝組織可能會進行某種行銷，以使橋牌保持可見，但直到最近之前，還沒有進行任何行銷。 因此，橋牌被正確地視為「我的祖父母」玩的遊戲。</span></p><p><span>橋牌永遠不會像撲克這樣的遊戲那樣具有觀眾吸引力，因為它太費腦力了。 此外，學習曲線很陡峭。 但值得嘗試的是透過讓年輕人參與橋牌運動來恢復橋牌的一些榮耀。</span></p><p><span>這方面已經取得了進展。 美國橋牌聯盟最近制定了一項針對附屬俱樂部的青少年行銷計劃，</span><a href="http://xn--bridgeiscool-ft4stqo0c47mmpjw69fcdyet5l.com" target="_blank" rel="noopener"><span>並推出了一個網站bridgeiscool.com</span></a><span>，年輕人可以在該網站上學習、玩耍並獲取有關錦標賽、俱樂部和特別活動的資訊。 華倫·巴菲特和微軟的另一位橋牌愛好者比爾·蓋茲最近要求我為公立學校組織一個橋牌計畫。 他們知道復興橋牌的關鍵是讓孩子們玩橋牌，他們準備為此提供 100 萬美元的初始資金。</span></p><p><span>公立學校應該對這個提議感到興奮。 橋牌體現了合作、邏輯、解決問題的能力，甚至與兒童更高的考試成績有關。 誰知道，下一個華倫巴菲特或比爾蓋茲可能會坐在某個教室裡等待有人教他們大滿貫的意義。</span></p><p><span>專欄撰稿人莎朗‧奧斯伯格 (Sharon Osberg) 是兩屆世界冠軍橋牌選手。</span></p><h2 id="華爾街喜愛橋牌的18個理由" data-id="華爾街喜愛橋牌的18個理由"><a class="anchor hidden-xs" href="#華爾街喜愛橋牌的18個理由" title="華爾街喜愛橋牌的18個理由"><span class="octicon octicon-link"></span></a><span>華爾街喜愛橋牌的18個理由</span></h2><h2 id="華爾街喜愛橋牌的-18-個理由" data-id="華爾街喜愛橋牌的-18-個理由"><a class="anchor hidden-xs" href="#華爾街喜愛橋牌的-18-個理由" title="華爾街喜愛橋牌的-18-個理由"><span class="octicon octicon-link"></span></a><a href="https://www.businessinsider.com/why-wall-street-plays-bridge-2012-12" target="_blank" rel="noopener"><span>華爾街喜愛橋牌的 18 個理由</span></a></h2><p><span>Business Insider</span><br>
+<span>盧卡斯·卡瓦 2013 年 1 月 1 日晚上 9:06 GMT+8</span></p><p><span>撲克在金融界的崛起已經將其更成熟的前身橋牌推離了聚光燈下。</span></p><p><span>然而，這個國家最好的橋牌玩家幾乎都是投資者，這是有原因的。 《商業內幕》副主編兼橋牌愛好者 Gus Lubin 指出：“橋牌是一種複雜的紙牌遊戲，適合金融分析，就像撲克吸引直覺一樣。”</span></p><p><span>作為一名橋牌愛好者，沃倫·巴菲特曾說過一句名言：“如果我有三個玩橋牌的獄友，我不介意進監獄。” 但對遊戲的熱情讓華爾街的一些人陷入了麻煩。 正如威廉·D·科漢的《紙牌屋》中所描述的那樣，吉米·凱恩參加了一場橋牌比賽，而貝爾·斯特恩斯卻崩潰了，這是高管層反感的一個例子，人們常常將其與羅馬被燒毀時尼祿拉小提琴相比較。</span></p><p><span>雖然橋牌是一項激烈的腦力活動，但它也為精力充沛的人提供了放鬆的機會。 1955 年的《體育畫報》提到艾森豪威爾對比賽的熱愛，這是他「唯一有效的放鬆方式……他能做的最放鬆的事情就是玩一場問題很棘手、解決方案很困難，但犯錯的後果卻只是在記分板上寫下幾百分無害的點。”</span></p><p><span>毫無疑問，為什麼投資人仍然蜂擁而至，參加這項對團隊合作、記憶力和智慧的挑戰性考驗。 橋牌可以提高你的智力、你的健康和你的事業——而且它很有趣。</span></p><ol>
+<li>
+<p><span>這是一款針對「業內人士」的遊戲，常常讓初學者感到困惑</span><br>
+<span>由於在橋牌之前的叫牌涉及大量規則和複雜性，因此它可能是一個非常難上手的遊戲。 對於那些具有競爭精神和分析頭腦的人來說，掌握橋牌的挑戰本身就是一個令人信服的目標。</span></p>
+</li>
+<li>
+<p><span>橋牌是對大腦的鍛煉</span><br>
+<span>毫無疑問，華爾街人喜歡橋牌遊戲所帶來的精神刺激。 華倫‧巴菲特曾說過，橋牌「一定是最好的智力練習」。</span></p>
+</li>
+<li>
+<p><span>網路機會無所不在</span><br>
+<span>正如下面的引言所示，你永遠不知道在橋牌遊戲中你可能會遇到誰：</span><br>
+<span>「我來這裡的原因之一是因為友情，」芝加哥政治和城市顧問、大聲喧嘩、善於交際的菲利普·克朗 (Philip Krone) 說道。 “你還能去什麼地方和世界500強公司的董事長、歐洲大國的總法律顧問，甚至是上海商人一起玩？”</span></p>
+</li>
+<li>
+<p><span>電腦短期內不會打敗人類</span><br>
+<span>雖然電腦現在通常可以擊敗除少數國際象棋大師之外的所有人，但它們還無法擊敗世界上最優秀的橋牌選手。 為什麼是這樣？ 因為電腦可以理解數學，但它們無法理解人類——至少現在還不能。</span></p>
+</li>
+<li>
+<p><span>橋牌很像投資，但風險低很多</span><br>
+<span>巴菲特詳細闡述了這兩種追求之間的相似之處：</span><br>
+<span>「方法和策略非常相似，因為你收集了所有可以收集的信息，然後隨著事情的發展不斷添加到該信息基礎中。你根據當時擁有的知識做任何概率表明的事情，但你是當你獲得新資訊時，你總是願意改變你的行為或方法，在商業中，你的行為方式可以從你的合作夥伴那裡得到最好的結果。</span></p>
+</li>
+<li>
+<p><span>你可以永遠打橋牌</span><br>
+<span>只要您的頭腦敏銳，無論您的年齡如何，您都可以繼續打橋牌，無論級別如何。 對於像高爾夫這樣的運動來說，情況就不同了，因為在這些運動中，你依賴天氣和關節的壽命。</span></p>
+</li>
+<li>
+<p><span>經常玩耍可以降低阿茲海默症的風險</span><br>
+<span>Yeshiva 大學醫學院發布的一項研究發現，「根據一項最全面的研究來檢驗挑戰智力活動的好處，下棋、橋牌或演奏樂器可以顯著降低阿茲海默症或其他形式癡呆症的風險。</span></p>
+</li>
+<li>
+<p><span>你可以輸掉一場戰鬥，但仍然贏得戰爭</span><br>
+<span>對沖基金最了解這個事實——它們有可能虧損，但仍然跑贏整個市場。 在橋牌比賽中，一支球隊可能會輸掉幾手牌，但仍然會贏得比賽。</span></p>
+</li>
+<li>
+<p><span>橋牌有自己獨特的行話</span><br>
+<span>就像投資一樣，橋牌也有自己的詞彙——從 Astro 到 Zip。 這些技術術語的使用既展示又有助於提高一個人在遊戲中的專業知識。</span></p>
+</li>
+<li>
+<p><span>與華爾街的大部分地區一樣，橋牌保留了「老男孩俱樂部」的氛圍</span><br>
+<span>儘管許多俱樂部官員做出了努力，但競技橋牌俱樂部仍由男性主導：</span><br>
+<span>但用商業術語來說，橋牌面臨嚴重的形象問題和缺乏消費者忠誠度……事實上，Vanderbilt 橋牌俱樂部周一比賽的 40 多名參與者中只有一名女性玩家。 弗羅斯特對「男性氛圍」占主導地位感到遺憾，他說他希望改變這種人口結構。</span></p>
+</li>
+<li>
+<p><span>他們擁有您在橋牌比賽中表現出色所需的紀律</span><br>
+<span>Warren Buffett 的導師 Ben Graham 在強調正確行事的重要性時曾經打趣道：</span><br>
+<span>「我記得打過橋牌的人都知道，橋牌專家強調的是打好一手牌，而不是打成功一手牌。 因為，如你所知，從長遠來看，如果你玩得對，你就會賺錢，如果你玩錯了，你就會賠錢。 有一個關於夫妻隊橋牌較弱的男子的美麗小故事。 看起來他叫了一個大滿貫，最後他很得意地對妻子說：“我看到你一直對我做鬼臉，但你注意到我不僅叫到這個大滿貫，而且我打成了。 對此你能說什麼？” 他的妻子非常嚴肅地回答說：“如果你玩得對，你就會輸掉它。”</span></p>
+</li>
+<li>
+<p><span>橋牌選手的免疫細胞數量較多</span><br>
+<span>加州大學的一項研究發現，「打橋牌會讓人們擁有更多的免疫細胞…橋牌玩家提前規劃，他們使用和啟動背外側皮層涉及的工作記憶，處理排序、和許多其他高級功能。」</span></p>
+</li>
+<li>
+<p><span>選擇權交易者非常熟悉橋牌中所使用的決策過程</span><br>
+<span>“如果有人能安排一場按職業組織球隊的團體錦標賽，那麼期權交易者很可能會獲勝：交易是一種玩家必須快速研究模式並做出準確決策的遊戲。”</span></p>
+</li>
+<li>
+<p><span>你可以作弊——而不必擔心 SEC</span><br>
+<span>由於橋牌是一項團隊遊戲，因此始終有可能使用手部定位、代碼字或其他系統將有關您的牌的信息傳達給您的伙伴。 這不是你可以在國際象棋或西洋跳棋中完成的事情。</span></p>
+</li>
+<li>
+<p><span>遊戲的複雜程度沒有限制——就像衍生性商品交易一樣</span><br>
+<span>毫無疑問，衍生性商品交易極其複雜——事實上，複雜到有時無法驗證其是否正確建構。 同樣，這個「不完整」清單裡還包括了 100 多個叫牌系統，這表明橋樑就像衍生性商品交易一樣，提供了無限多種開展業務的方式。</span></p>
+</li>
+<li>
+<p><span>橋牌就是在管理風險</span><br>
+<span>Weik Investment Services 的資訊長 Thomas Weik 清楚地解釋了這種相似之處：</span><br>
+<span>「在橋牌比賽中，人們可以採取各種安全打法來防範某花色或整手牌的逆境。對我來說，安全是投資和橋牌中極其重要的概念，也是我成功的主要因素。我可以決定改變我的打法，橋牌的不同之處在於你實際上可以從頭到尾規劃一手牌的打法。</span></p>
+</li>
+<li>
+<p><span>他們正在爭奪「Grand Life Master」的稱號</span><br>
+<span>在美國橋牌聯賽中，最高的榮譽稱號就是這個吉祥的名字。 為了成為 偉大的終生大師，“玩家必須獲得 10,000 點大師積分，並至少贏得一項沒有大師點上限或同等水平的北美橋牌錦標賽賽事。”</span></p>
+</li>
+<li>
+<p><span>在嚴肅的橋牌中，你就是嘗試想產生阿爾法</span><br>
+<span>在複式橋牌中，許多牌桌玩相同的手牌，您不會專注於贏得個別手牌 - 這相當於跟踪市場。 相反，你試圖從每手牌中擠出比房間裡其他人更多的分數——也就是，基本上，產生阿爾法。</span><br>
+<span>毫不奇怪，什麼樣的隊伍在 IMP 評分系統中取得了令人難以置信的數字：</span><br>
+<span>需要淨獲得 4,000 總分才能獲得量表上的 24-Imp 最大值，而這幾乎從未實現過。 去年秋天，在紐約州天鵝湖舉行的地區性Swiss團體錦標賽中，有一支隊伍接近達成了這個極限，並且在某種意義上還超越了。 這些賽員包括艾琳·布倫納(Eileen Brenner)、邁克爾·皮克特(Michael Pickert)、吉姆·克雷科里安(Jim Krekorian) 和史蒂夫·韋恩斯坦(Steve Weinstein)，他們在橋牌桌外也是一支隊伍，在美國證券交易所作為一個團隊進行選擇權交易。</span></p>
+</li>
+</ol><h2 id="教導孩子橋牌的7個理由" data-id="教導孩子橋牌的7個理由"><a class="anchor hidden-xs" href="#教導孩子橋牌的7個理由" title="教導孩子橋牌的7個理由"><span class="octicon octicon-link"></span></a><span>教導孩子橋牌的7個理由</span></h2><h2 id="教導孩子橋牌的-7-個理由" data-id="教導孩子橋牌的-7-個理由"><a class="anchor hidden-xs" href="#教導孩子橋牌的-7-個理由" title="教導孩子橋牌的-7-個理由"><span class="octicon octicon-link"></span></a><a href="https://www.huffpost.com/entry/7-reasons-to-teach-your-kids-bridge_b_6648000" target="_blank" rel="noopener"><span>教導孩子橋牌的 7 個理由</span></a></h2><p><span>忘記足球比賽和小提琴課程，教你的孩子一些非常酷的東西——橋牌。 當然，橋牌玩家的平均年齡更接近70歲而不是7歲，但有一些非常好的理由來教您的孩子這種令人驚嘆的遊戲。 這裡有七個！</span></p><ol>
+<li>
+<p><span>提高考試成績</span><br>
+<span>一位名叫克里斯多福·肖博士的研究人員教五年級學生打橋牌，然後比較他們六年級的標準化考試成績。 他的發現非常有趣。</span><br>
+<span>Shaw 發現，與不打橋牌的同學相比，學習打橋牌的學生的 ITSB 分數顯著提高。</span><br>
+<a href="http://web2.acbl.org/documentlibrary/teachers/statisticallyspeaking.pdf" target="_blank" rel="noopener"><span>Shaw Study</span></a><span>, </span><a href="https://hackmd.io/FIqB-1e2RxyrW1Do8Ltl0w" target="_blank" rel="noopener"><span>中文</span></a><br>
+<span>雖然每個人的分數都因為年齡的增長而增加，但最顯著的進步來自那些學過橋牌的人！</span></p>
+</li>
+<li>
+<p><span>增強免疫系統</span><br>
+<span>誰不想要健康的孩子？ 您可能認為整天打牌對健康沒有好處，但根據生物學家瑪麗安戴蒙德的一項研究，您錯了。</span><br>
+<a href="https://newsarchive.berkeley.edu/news/berkeleyan/2000/11/15/bridge.html" target="_blank" rel="noopener"><span>Marian Diamond Study</span></a><span> , </span><a href="https://hackmd.io/kVo-5pjCTX6HuRH91soULQ" target="_blank" rel="noopener"><span>中文</span></a><br>
+<span>「在上週神經科學學會會議上的演講中，生物學家瑪麗安·戴蒙德（Marian Diamond）描述了一項實驗，該實驗表明，橋牌合約選手在打完橋牌後免疫細胞數量增加。</span><br>
+<span>根據她之前的工作以及其他人的工作，戴蒙德將這些發現解釋為“有力的證據表明，參與打橋牌的大腦區域會刺激免疫系統，特別是產生稱為 T 細胞的白血球的胸腺。T淋巴細胞。”</span><br>
+<span>忘記止咳藥，發牌吧！</span></p>
+</li>
+<li>
+<p><span>價格便宜</span><br>
+<span>我的女兒參加了一週的橋牌訓練營，在當地的俱樂部上了幾堂課，並在亞特蘭大的青少年國家隊打了三場比賽，總共花了零美元。 ACBL（美國橋牌聯盟）和亞特蘭大少年橋牌全年都在支持青少年和籌款方面做得很好，因此家長的成本幾乎為零。 我唯一支付的費用是 15 美元的 ACBL 青少年會員資格 - 沒有聯賽費用、制服或裝備！ 即使你付了錢，也不是很多。 青少年可以在大多數俱樂部打球，每次費用約為 6.00 美元至 10.00 美元。</span></p>
+</li>
+<li>
+<p><span>你可以永遠打橋牌，並隨著年齡的增長不斷進步</span><br>
+<span>你不能對足球、棒球、網球、曲棍球、排球、滑板或體操說同樣的話。 當你 80 歲的時候，你也許可以做所有這些事情，但我敢打賭，你 18 歲時會做得更好。 在橋牌領域，你的輝煌歲月永遠在前方。 愛上某件事並且在高中畢業後就不必停止，這真是太棒了！</span></p>
+</li>
+<li>
+<p><span>這是一種用心的娛樂</span><br>
+<span>我最喜歡看孩子們玩橋牌的事情是看到他們除了玩電腦遊戲或看電視之外還做一些事情。 他們開動腦筋，與其他孩子麵對面互動，結識我們最偉大一代的一些人，並享受樂趣！ 儘管橋牌有著「書呆子」的名聲，但孩子們都很可愛、正常，而且我從未見過有體育運動帶著口袋保護器。</span></p>
+</li>
+<li>
+<p><span>這是一條職業道路</span><br>
+<span>當我帶女兒參觀亞特蘭大的橋牌場館時，一位先生提到看到孩子們打橋牌真是太棒了，然後他告訴我們有一個 16 歲的孩子打橋牌每週賺 3500 美元！ 據了解，客戶會向專業人士支付 500 至 1500 美元以獲得次共賽。 成為橋牌專業人士很困難，但如果您的孩子全心投入，他們就有機會靠打牌謀生。 這麼說吧，高中橄欖球運動員進入 NFL 的機會是 0.2%。 在橋牌，機會大得多，而且不需要頻繁的 CT 掃描。</span></p>
+</li>
+<li>
+<p><span>乾淨的樂趣</span><br>
+<span>我女兒打橋牌的好處之一就是我不必擔心通常的男孩/女孩的惡作劇。 是的，她可以在橋牌俱樂部坐在男孩的腿上，但我很確定俱樂部主管（將其視為裁判）很快就會結束這種廢話。 而且也不可能來到俱樂部，然後偷偷溜出去見一個男孩。 在全國比賽期間，其中一個孩子開始抱怨頭痛。 導演告訴他，如果需要退出可以，但在他父母來接他之前不能離開房間。 當我自己去打橋牌時，我毫不猶豫地將女兒留在房間裡玩。</span></p>
+</li>
+</ol><h2 id="打橋牌對健康的好處" data-id="打橋牌對健康的好處"><a class="anchor hidden-xs" href="#打橋牌對健康的好處" title="打橋牌對健康的好處"><span class="octicon octicon-link"></span></a><span>打橋牌對健康的好處</span></h2><h2 id="Bridge-enhances-T-Cell-development-Marian-Diamond" data-id="Bridge-enhances-T-Cell-development-Marian-Diamond"><a class="anchor hidden-xs" href="#Bridge-enhances-T-Cell-development-Marian-Diamond" title="Bridge-enhances-T-Cell-development-Marian-Diamond"><span class="octicon octicon-link"></span></a><a href="http://blueberrybridge.com/health-benefits-of-playing-bridge/" target="_blank" rel="noopener"><span>Bridge enhances T-Cell development</span></a><span>  Marian Diamond</span></h2><p><span>打橋牌對健康的好處</span></p><p><span>柏克萊大學的一項研究表明，學習打橋牌對健康有顯著的好處。</span></p><p><span>早在 2000 年，瑪麗安戴蒙德教授就表明打橋牌可以增強免疫系統。 橋牌需要集中注意力，當你打橋牌時，你的大腦會保持活躍和受到刺激。 這似乎可以增強你的免疫系統。</span></p><p><span>戴蒙德教授想知道是否可以利用背外側皮質來增強免疫系統。 他得到了 12 位 70 多歲和 80 多歲的女士的幫助。 他採集了血樣，然後讓他們打了一個半小時的橋牌。 之後，他們再次接受了血液檢測。 令人震驚的是，這些女性中三分之二的人體內 T 細胞（用於抵抗感染的細胞）水平增加。</span></p><p><span>許多人發現，隨著年齡的增長，他們的大腦似乎變得遲鈍。 就像肌肉一樣，你的大腦也需要充分利用才能保持其正常運作。 人們的壽命越來越長，許多人都關心如何幫助他們的大腦保持活躍和警覺，以便他們可以充分享受更長的壽命。</span></p><p><span>定期打橋牌可以刺激您的大腦，有助於保持記憶活躍和大腦警覺。 它需要你運用數學、策略和注意力。 有句老話「use it or lose it，使用它或失去它」－打橋牌可以幫助你「用得上」。 當你玩橋牌遊戲時，你的大腦會保持完全活躍，鍛鍊你的手牌，找出最佳的叫牌方法，跟隨你的伙伴的叫牌，並弄清楚他們的牌與你的牌如何配合。 最後，當你真正玩這手牌時，制定出最佳策略來最大化你和你的搭檔贏得的墩數。</span></p><p><span>許多橋牌新手專注於學習叫牌，而忘記了學習打牌策略可以對您的整體得分產生很大的影響。 遊戲的這一部分是最大的心理挑戰之一，要求您在實際投標結束後長時間集中注意力。</span></p><p><span>打橋牌還有其他健康益處嗎？ 當然有。 您將結識新朋友並享受活躍的社交生活。 您將不再坐在家裡感到痛苦和孤獨，也沒有人可以交談，而是進行對話並出去走走，這也將有助於您保持身體活躍。</span></p><p><span>在我第一次寫關於為什麼打橋牌對健康有益的文章近一年後，我注意到Barbara Lynch Hill 的</span><a href="http://www.journalscene.com/article/20130822/SJ11/130829835/1149/a-bridge-game-over-troubled-waters" target="_blank" rel="noopener"><span>這篇文章</span></a></p><p><span>芭芭拉（Barbara）寫道，她遇到了一位名叫多麗絲（Doris）的女士，她喜歡打橋牌，但在病癒期間一直宅在家裡。   她發現自己可以在線上玩橋牌，並很快與一群橋牌玩家成為了朋友。   幾年後，他們開始定期見面。   在線打橋牌讓多麗絲在生病期間有興趣打發無聊的時光，並在康復後增強了她的社交生活。</span></p><p><span>您也可以透過在 No Fear Bridge 註冊免費試用來學習線上打橋牌。   只需在表格中填寫您的姓名和電子郵件地址，選擇一個用戶名，您就可以在不知不覺中在線學習。</span></p><h2 id="通往腦力的橋樑" data-id="通往腦力的橋樑"><a class="anchor hidden-xs" href="#通往腦力的橋樑" title="通往腦力的橋樑"><span class="octicon octicon-link"></span></a><span>通往腦力的橋樑</span></h2><h2 id="Why-play-from-AARP" data-id="Why-play-from-AARP"><a class="anchor hidden-xs" href="#Why-play-from-AARP" title="Why-play-from-AARP"><span class="octicon octicon-link"></span></a><span>Why play? </span><a href="https://www.aarp.org/health/brain-health/info-2015/bridge-for-brain-health.html" target="_blank" rel="noopener"><span>from AARP</span></a></h2><p><span>A Bridge to Brainpower? 通往腦力的橋樑？</span><br>
+<span class="smartypants">–</span><span> 正確打牌可以幫助您在退休後長時間保持敏銳</span></p><p><span>倫納德·梅蘭德 (Leonard Melander) 在 90 歲生日即將到來之際，熱情地追求著對橋牌這一精緻而複雜的紙牌遊戲的終生熱愛。</span></p><p><span>2007年，82歲的梅蘭德成為贏得美國全國橋牌雙打冠軍的年紀最大的選手； 四年後，他在高級組再次做到了這一點。 對於這位來自密西根州西布魯姆菲爾德的退休醫生來說，這款遊戲仍然是一種有益的追求，儘管有時會令人煩惱。</span></p><p><span>89 歲的梅蘭德去年12 月在羅德島州普羅維登斯舉行的秋季北美錦標賽上獲得超級成年雙人賽亞軍，他說，「正是智力挑戰和解決問題的滿足感」讓橋牌如此有吸引力。 “這麼說吧。這樣：任何能讓你從中獲得快樂的活動都可以預防典型抑鬱症的發作。”</span></p><p><span>“布里奇，”梅蘭德嘆了口氣，補充道，“相當於麻醉劑的高度。”</span></p><h2 id="心理體操的好處" data-id="心理體操的好處"><a class="anchor hidden-xs" href="#心理體操的好處" title="心理體操的好處"><span class="octicon octicon-link"></span></a><span>心理體操的好處</span></h2><p><span>該遊戲對美國約 2500 萬玩家也具有類似的吸引力，其中包括沃倫·巴菲特和比爾·蓋茲等狂熱玩家。 他們中的大多數年齡超過50歲。研究人員發現，橋牌等智力挑戰遊戲非常適合老年人，因為這些遊戲可以在日常基礎上提供智力和社交刺激。</span></p><p><span>橋牌的複雜性使其對於那些想要透過心理體操來提高敏銳度的人來說特別有吸引力。 加州大學柏克萊分校 2000 年的一項研究發現強有力的證據表明，打橋牌時使用的大腦區域會刺激免疫系統。 研究人員認為，這是因為玩家必須使用記憶、視覺化和排序。(memory, visualization and sequencing)</span></p><p><span>康乃狄克州米爾福德市67 歲的退休教師伯特·撒克遜(Burt Saxon) 說：「當我十幾歲的時候第一次開始玩牌時，我記不起玩過的牌。到了50 多歲時，我幾乎記住了每張牌。現在我年紀大了，我必須努力。 我相信橋牌有助於防止我的短期記憶完全衰退。</span></p><p><span>明尼蘇達州羅徹斯特市梅奧診所的神經科醫生基思·A·約瑟夫斯(Keith A. Josephs) 說：「數據表明，『孩子，也許玩這些遊戲和積極參與社交活動會帶來更好的表現。 患者抑鬱的可能性較小，因此他們的睡眠品質更好，運動量更大，總體上生活品質更好。</span></p><p><span>約瑟夫斯強調，沒有太多醫學證據表明「玩這些遊戲中的任何一個都可以預防退化過程或阿茲海默症的發作。相反，它可能會延遲症狀的出現，以便個人能夠以更高的水平發揮作用，」他說。</span></p><p><span>阿茲海默症協會醫療和科學業務主任希瑟·斯奈德表示，阿茲海默症研究中缺乏的一件事是「如何降低某人的風險或延遲發病的方法」。</span></p><p><span>去年，阿茲海默症協會分享了芬蘭一項大規模臨床試驗的結果，該試驗證明了將認知訓練和社交活動（橋牌的兩個主要好處）與其他生活方式元素相結合的好處：生活方式的多種改變可以改善那些有認知能力下降風險的人的記憶和思考。</span></p><p><span>威斯康辛大學麥迪遜分校 2014 年的一項研究發現，玩紙牌和棋盤遊戲可以幫助老年人保持思維敏捷。 研究人員發現，玩遊戲的頻率與受阿茲海默症影響的幾個區域的大腦體積增加有關。 那些玩得更頻繁的人在認知測試中得分也更高。</span></p><h2 id="保持社交參與" data-id="保持社交參與"><a class="anchor hidden-xs" href="#保持社交參與" title="保持社交參與"><span class="octicon octicon-link"></span></a><span>保持社交參與</span></h2><p><span>以梅蘭德為例，在他的黃金歲月中打橋牌似乎對他的整體健康有益。 透過橋牌，他保持社交參與和認知挑戰。 當然，在他十幾歲的時候，橋牌壓倒了美國大多數休閒活動，他不必擔心這些事情。</span></p><p><span>「在 30 年代，每個人都打得很差，但他們還是打，」梅蘭德笑著說。 “橋牌是頭版新聞。在大蕭條時期，除了打橋牌之外，沒有人有其他事可做。”</span></p><p><span>主要原因是遊戲豐富的社交成分。 幾十年來，朋友和家人經常聚在一起喝雞尾酒、吃晚餐，玩一場激烈的橋牌遊戲，橋牌遊戲源自於 17 世紀的英國惠斯特牌遊戲。</span></p><p><span>合約橋牌由四人玩，於 1920 年代發展起來，要求玩家出價他們認為自己可以接受合約交易的牌數或「墩數」。 複式橋牌是遊戲中最受歡迎和最具競爭力的變體。 它減少了運氣的因素，因為相同的牌會由多組玩家重玩，並比較分數。</span></p><p><span>自 1930 年代和 1940 年代的太平歲月以來，橋牌的受歡迎程度逐漸下降。 1960 年代初，有一個針對橋牌愛好者的全國電視節目，但到那時，社會和休閒習慣的徹底變化開始加劇橋牌運動的衰落。 如今，撲克風靡一時。 對年輕人來說，橋牌是過去時代的遺跡。 現今美國橋牌選手的平均年齡為 71 歲。</span></p><h2 id="吸引嬰兒潮世代" data-id="吸引嬰兒潮世代"><a class="anchor hidden-xs" href="#吸引嬰兒潮世代" title="吸引嬰兒潮世代"><span class="octicon octicon-link"></span></a><span>吸引嬰兒潮世代</span></h2><p><span>雖然橋牌早已淪為小眾地位，但《紐約時報》仍出版橋牌專欄。 當這項運動在 2002 年鹽湖城冬季奧運會上獲得示範項目後，這項運動得到了提升。 橋牌忠實擁護者拒絕在這項傑出的比賽中出牌。 至今仍有數百萬人參與這項運動——在家庭和俱樂部中進行社交活動，在錦標賽中進行競技性比賽。 近年來，它在網路上吸引了更廣泛的受眾。 莉莉漢森 (Lily Hansen)，103 歲，來自密西根州拉丁頓，打橋牌已有 9 年歷史。 “我是鎮上唯一的銀牌終生大師”，這意味著她已經從美國橋牌聯盟（ACBL）積累了 1,000 點終身大師點。 就我而言，我認為我不會活那麼久。</span></p><p><span>漢森每週打兩次橋牌，並且是一個重複橋牌俱樂部的總監，這使她的數學技能保持敏銳。 「每個人都問我怎麼已經 103 歲了，還在開車……還在附近，」她說。 它讓你的大腦保持運轉。 我真的相信這一點。</span></p><p><span>近年來，ACBL 推出了一系列行銷舉措來吸引更多嬰兒潮世代，其中許多人在青少年時期就玩過這款遊戲。</span></p><p><span>ACBL 執行長 Robert Hartman 表示，「我們發現，透過教育和指導計劃，我們可以重新吸引 50 多歲的人」。</span></p><p><span>ACBL 的主要受眾包括年齡在 55 歲至 75 歲之間、家庭年收入超過 75,000 美元的大學畢業生。 有些嬰兒潮世代是這項運動的新手，但許多人，例如 2014 年 ACBL 年度最佳球員鮑比·萊文 (Bobby Levin)，都是在孩童時期就學會了這項運動。 Levin 12 歲開始打牌。15歲時，他成為了終生大師，這是當時橋牌玩家的最高頭銜。</span></p><p><span>我的母親在離婚後告訴我，打牌是她結識朋友的好方法，」57 歲的全職橋牌專業人士萊文說。 最優秀的職業選手每年的收入超過50萬美元。</span></p><h2 id="數十億的可能性" data-id="數十億的可能性"><a class="anchor hidden-xs" href="#數十億的可能性" title="數十億的可能性"><span class="octicon octicon-link"></span></a><span>數十億的可能性</span></h2><p><span>無論年齡、收入或身體狀況如何，橋牌都能帶來巨大的好處。 它具有挑戰性，成本低廉，並且可以容納那些患有嚴重殘疾（例如失明）的人。</span></p><p><span>來自馬薩諸塞州普利茅斯的 74 歲退休電氣工程師保羅·凱利 (Paul Kelley) 說：“對於許多比我年長且體力較差的人來說，這是他們唯一的戶外活動。”  “它確實對老年人有好處，可以讓你保持思維敏捷，尤其是在記憶力下降的情況下。”</span></p><p><span>每副牌都有數十億種可能性。 65 歲的喬治·雅各布斯 (George Jacobs) 是《橋牌公報》的專欄作家，他說：“每副牌都像一片雪花。”</span></p><p><span>2002 年美國奧運表演隊隊長雅各布斯說：“最好的球員在一場比賽中犯下如此多的錯誤，如果他們是棒球運動員，他們就會被解僱。” 「你不斷嘗試，所以你的大腦必須更加努力地運作。”</span></p><h2 id="超級巨星玩家" data-id="超級巨星玩家"><a class="anchor hidden-xs" href="#超級巨星玩家" title="超級巨星玩家"><span class="octicon octicon-link"></span></a><span>超級巨星玩家</span></h2><p><span>美國最聰明的兩個人，即使不是最有成就的橋牌選手，也是 84 歲的華倫巴菲特和 59 歲的比爾蓋茲。巴菲特曾說過，他不介意坐牢——只要有三個能打橋牌的獄友就好了。</span></p><p><span>「沃倫已經打牌近 70 年了，」65 歲的兩屆世界冠軍莎朗·奧斯伯格 (Sharon Osberg) 說，她是這位億萬富翁的朋友和固定橋牌搭檔。 他「在沒有太多事情發生、每個人都在打橋牌的時候學習。網路確實為他打開了大門。他不需要在奧馬哈聚集四個人來玩。 比爾和他的父母一起玩，並休息了很長時間，直到他遇到了沃倫，沃倫讓比爾重新對遊戲產生了興趣。</span></p><p><span>十年前，三人為橋牌選手製定了一項全國青少年計劃，但「由於經濟不景氣，我們遇到了完美的風暴，」奧斯伯格說。 “我們不能把它送給學校。”</span></p><p><span>「一般來說，國際象棋和橋牌遭受同樣的命運——對年輕人的業餘時間來說競爭太多，」她補充道。 「橋牌是一項艱苦的遊戲。它需要投入大量的時間。你知道的越多，你就越能理解你真正不理解的東西。」</span></p><p><span>網球名人堂明星瑪蒂娜·納芙拉蒂洛娃在橋牌教學指南的前言中寫道，橋牌「不僅僅是一種紙牌遊戲。它是一項腦力運動。橋牌教你邏輯、推理、快速思維、耐心、專注和合作技巧。</span></p><p><span>這就是這款遊戲永恆、優雅和慢節奏的吸引力，74 歲的瑪西婭·湯普金斯 (Marcia Tompkins) 四年前重新發現了這一點。</span></p><p><span>「橋牌是我現在能做的事情，」來自緬因州薩裡的退休銀行審計師說。 “只要你頭腦清醒，就可以打橋牌。”</span></p><h2 id="入門起步" data-id="入門起步"><a class="anchor hidden-xs" href="#入門起步" title="入門起步"><span class="octicon octicon-link"></span></a><span>入門起步</span></h2><p><span>無論橋牌新手的年齡、教育程度或身體狀況如何，都可以使用工具來幫助學習橋牌。</span></p><p><span>美國橋牌聯盟首席執行官羅伯特·哈特曼 (Robert Hartman) 表示：“毫無疑問，任何人都可以學習。我們開發了許多項目，讓學習變得簡單。”</span></p><p><span>近年來，ACBL 透過科技和互聯網擴大了其專案範圍。 其中最主要的是：</span></p><pre><code class="code_block">​​​​ * 一個新的 Learn to Play Bridge 軟體程式，即邊玩邊學的教程。
+​​​​ * 免費的個人電腦軟體程序，包括適合初學者的 Learn to Play Bridge I。
+​​​​ * Learn Bridge in a Day?，一個適合新手的五小時課程。
+</code></pre><p><span>哈特曼在談到在北美橋牌錦標賽和各個地點提供的課程時說：“它顛覆了學習橋牌需要花費數年時間的整個概念。從本質上講，我們在一天內教授基礎知識。”</span></p><p><span>退休社區和當地橋牌團體歡迎新玩家。 對於那些想要學習如何親自玩遊戲的人來說，</span><a href="http://acbl.org/findeacher" target="_blank" rel="noopener"><span>acbl.org/findeacher</span></a><span> 是一個很好的資源。 </span><a href="http://xn--bridgedoctor-w26s570ab5fbl8eovof43d6nfz9xnvn.com" target="_blank" rel="noopener"><span>其他有用的網站包括bridgedoctor.com</span></a><span>、</span><a href="http://learn.acbl.org" target="_blank" rel="noopener"><span>learn.acbl.org</span></a><span> </span><a href="http://xn--abtahome-yc2n.com" target="_blank" rel="noopener"><span>和abtahome.com</span></a><span>（美國橋牌教師協會的主頁）。</span></p><p><span>紐約長老會醫院/哥倫比亞大學醫學中心赫伯特·歐文綜合癌症中心主任、61 歲的橋牌狂熱愛好者史蒂夫·愛默生(Steve Emerson) 說：“無論你是誰，你都會感到舒適和充滿抱負。</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#為什麼要打橋牌" title="為什麼要打橋牌">為什麼要打橋牌</a><ul class="nav">
+<li><a href="#將橋牌帶回桌上" title="將橋牌帶回桌上">將橋牌帶回桌上</a></li>
+<li><a href="#將橋牌帶回桌上1" title="將橋牌帶回桌上">將橋牌帶回桌上</a></li>
+<li><a href="#華爾街喜愛橋牌的18個理由" title="華爾街喜愛橋牌的18個理由">華爾街喜愛橋牌的18個理由</a></li>
+<li><a href="#華爾街喜愛橋牌的-18-個理由" title="華爾街喜愛橋牌的 18 個理由">華爾街喜愛橋牌的 18 個理由</a></li>
+<li><a href="#教導孩子橋牌的7個理由" title="教導孩子橋牌的7個理由">教導孩子橋牌的7個理由</a></li>
+<li><a href="#教導孩子橋牌的-7-個理由" title="教導孩子橋牌的 7 個理由">教導孩子橋牌的 7 個理由</a></li>
+<li><a href="#打橋牌對健康的好處" title="打橋牌對健康的好處">打橋牌對健康的好處</a></li>
+<li><a href="#Bridge-enhances-T-Cell-development-Marian-Diamond" title="Bridge enhances T-Cell development  Marian Diamond">Bridge enhances T-Cell development  Marian Diamond</a></li>
+<li><a href="#通往腦力的橋樑" title="通往腦力的橋樑">通往腦力的橋樑</a></li>
+<li><a href="#Why-play-from-AARP" title="Why play? from AARP">Why play? from AARP</a></li>
+<li><a href="#心理體操的好處" title="心理體操的好處">心理體操的好處</a></li>
+<li><a href="#保持社交參與" title="保持社交參與">保持社交參與</a></li>
+<li><a href="#吸引嬰兒潮世代" title="吸引嬰兒潮世代">吸引嬰兒潮世代</a></li>
+<li><a href="#數十億的可能性" title="數十億的可能性">數十億的可能性</a></li>
+<li><a href="#超級巨星玩家" title="超級巨星玩家">超級巨星玩家</a></li>
+<li><a href="#入門起步" title="入門起步">入門起步</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a href="#為什麼要打橋牌" title="為什麼要打橋牌">為什麼要打橋牌</a><ul class="nav">
+<li><a href="#將橋牌帶回桌上" title="將橋牌帶回桌上">將橋牌帶回桌上</a></li>
+<li><a href="#將橋牌帶回桌上1" title="將橋牌帶回桌上">將橋牌帶回桌上</a></li>
+<li><a href="#華爾街喜愛橋牌的18個理由" title="華爾街喜愛橋牌的18個理由">華爾街喜愛橋牌的18個理由</a></li>
+<li><a href="#華爾街喜愛橋牌的-18-個理由" title="華爾街喜愛橋牌的 18 個理由">華爾街喜愛橋牌的 18 個理由</a></li>
+<li><a href="#教導孩子橋牌的7個理由" title="教導孩子橋牌的7個理由">教導孩子橋牌的7個理由</a></li>
+<li><a href="#教導孩子橋牌的-7-個理由" title="教導孩子橋牌的 7 個理由">教導孩子橋牌的 7 個理由</a></li>
+<li><a href="#打橋牌對健康的好處" title="打橋牌對健康的好處">打橋牌對健康的好處</a></li>
+<li><a href="#Bridge-enhances-T-Cell-development-Marian-Diamond" title="Bridge enhances T-Cell development  Marian Diamond">Bridge enhances T-Cell development  Marian Diamond</a></li>
+<li><a href="#通往腦力的橋樑" title="通往腦力的橋樑">通往腦力的橋樑</a></li>
+<li><a href="#Why-play-from-AARP" title="Why play? from AARP">Why play? from AARP</a></li>
+<li><a href="#心理體操的好處" title="心理體操的好處">心理體操的好處</a></li>
+<li><a href="#保持社交參與" title="保持社交參與">保持社交參與</a></li>
+<li><a href="#吸引嬰兒潮世代" title="吸引嬰兒潮世代">吸引嬰兒潮世代</a></li>
+<li><a href="#數十億的可能性" title="數十億的可能性">數十億的可能性</a></li>
+<li><a href="#超級巨星玩家" title="超級巨星玩家">超級巨星玩家</a></li>
+<li><a href="#入門起步" title="入門起步">入門起步</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

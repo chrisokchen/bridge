@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        橋牌：全民智力運動, BAMSA - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{border-radius:3px;font-size:85%;line-height:1.45;overflow:auto}.markdown-body:not(.next-editor) pre{background-color:#f7f7f7;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-alert{border-left-style:solid;border-left-width:4px;color:inherit;margin-bottom:16px;padding:8px 16px}.markdown-alert .markdown-alert-title{align-items:center;display:flex;font-weight:500;line-height:1;white-space:break-spaces}.markdown-body .markdown-alert>*{margin-bottom:0;margin-top:16px}.markdown-body .markdown-alert .selection-popover,.markdown-body .markdown-alert>:first-child{margin-top:0}.markdown-alert.markdown-alert-note{border-left-color:#0969da}.markdown-alert.markdown-alert-note .markdown-alert-title{fill:currentColor;color:#0969da}.markdown-alert.markdown-alert-tip{border-left-color:#1a7f37}.markdown-alert.markdown-alert-tip .markdown-alert-title{fill:currentColor;color:#1a7f37}.markdown-alert.markdown-alert-important{border-left-color:#8250df}.markdown-alert.markdown-alert-important .markdown-alert-title{fill:currentColor;color:#8250df}.markdown-alert.markdown-alert-warning{border-left-color:#9a6700}.markdown-alert.markdown-alert-warning .markdown-alert-title{fill:currentColor;color:#9a6700}.markdown-alert.markdown-alert-caution{border-left-color:#d1242f}.markdown-alert.markdown-alert-caution .markdown-alert-title{fill:currentColor;color:#d1242f}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert{display:flex;flex-direction:column;gap:16px}.markdown-body .alert>*{margin:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body pre.pseudocode{white-space-collapse:collapse}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="橋牌：全民智力運動-BAMSA" data-id="橋牌：全民智力運動-BAMSA"><a class="anchor hidden-xs" href="#橋牌：全民智力運動-BAMSA" title="橋牌：全民智力運動-BAMSA"><span class="octicon octicon-link"></span></a><span>橋牌：全民智力運動, BAMSA</span></h1><p><span>Connect People, Challenges Minds</span><br>
+<a href="https://bridgemindsport.org/wp-content/uploads/2021/05/bamsa-spring-webinar-2021-summary.pdf" target="_blank" rel="noopener"><span>Bridge: A MindSport for All</span></a></p><p><span>橋牌：全民思維運動 (Bridge: A MindSport for All, BAMSA) 網路研討會吸引了來自世界各地的學者、管理人員和橋牌玩家。喬丹麥克林 (Jordan Maclean) 編寫的完整報告和錄音可在</span><a href="https://bridgemindsport.org/wp-content/uploads/2022/03/Summary-Report-for-BAMSA-Conference-final.pdf" target="_blank" rel="noopener"><span>此處存取</span></a><span>。</span><a href="#%E4%B8%AD%E6%96%87"><span>中文</span></a></p><p><span>大衛·斯科特(David Scott)教授對休閒社交世界有著長期的興趣，並專注於嚴肅休閒、娛樂專業化、休閒限制和不參與。他在 20 世紀 90 年代初攻讀了橋牌社交世界的博士學位，因為這是一個易於上手的遊戲，他可以在大學期間學習。兩個研究問題指導了他的專案：一個是針對透過社會世界理論鏡頭檢查的橋牌群體的各個部分；第二個更具體地針對個人、娛樂和專業。從方法上講，他的計畫是人種學的，包括一年內在五個不同地點的觀察和採訪。</span></p><p><span>小組發言人講述了 David 20 世紀 90 年代每篇橋牌論文的主要發現並提出了問題。</span><br>
+<span>Miriam 談到了 David (1991a) 關於休閒利用限制的研究。 Jordan 介紹了 Scott 和 Godbey（1992）關於橋牌存在於兩個世界的論文。 Zoe 討論了他們 1994 年關於合約橋牌的娛樂性和專業化的論文。 Samantha 在 David (1991) 的論文中發表了有關橋牌興衰的論文。</span></p><p><span>在回答米里亞姆關於數位橋牌與面對面橋牌的比較問題時，大衛表示，網路可能有助於透過吸引年輕一代的玩家來「復興橋牌」。在回答喬丹關於社交和嚴肅橋牌的問題時，大衛表示，他沒有預見到他觀察到的群體會對橋牌有任何其他描述。在回答佐伊關於夥伴關係和精英橋牌的問題時，夥伴關係被視為橋牌的獨特特徵，因為遊戲依賴於夥伴，而對於在錦標賽中訓練和比賽並尋求技能發展進步的玩家來說，精英橋牌與嚴肅的橋牌是一致的。在回答薩曼莎關於嚴肅休閒的問題時，大衛指出橋牌具有一定的“專有性”，因此它可以被視為一種嚴肅的休閒活動。</span></p><p><span>觀眾提出的幾個問題涉及子群體之間的轉變、社會階層、社會資本、技術和包容性等主題。大衛指出，過渡取決於玩家如何進入不同類型的橋牌。為了讓橋牌在社會各階層之間蓬勃發展，我們需要找到榜樣或「與我們相似的人」。社會資本被視為橋牌的副產品，而不是本身可以整合的原則。技術既是障礙，也是推動者，嚴肅的橋牌俱樂部被認為比社交橋牌俱樂部更具包容性。</span></p><p><span>這個網路研討會具有學術和橋牌意義。學術影響包括致力於遊戲的性別、性別和種族隔離的研究；從檔案研究中了解橋牌的歷史；在線上數位世界中玩耍的影響；事後分析或賽後分析；以及遊戲的重要性。確定了四個橋牌影響：</span></p><ol>
+<li><span>橋牌組織內教練和導師的能力建設，特別是俱樂部和（線上）社群內的橋牌培訓和教育</span></li>
+<li><span>改變行為以促進更具包容性的遊戲</span></li>
+<li><span>為俱樂部和組織提供服務，以促進與更廣泛的受眾、更多樣化的玩家和社區建立聯繫</span></li>
+<li><span>將橋牌推廣為對不同受眾有吸引力的遊戲。</span></li>
+</ol><h1 id="中文" data-id="中文"><a class="anchor hidden-xs" href="#中文" title="中文"><span class="octicon octicon-link"></span></a><span>中文</span></h1><h1 id="Bridging-Academia-Policy-and-Practice-Conference" data-id="Bridging-Academia-Policy-and-Practice-Conference"><a class="anchor hidden-xs" href="#Bridging-Academia-Policy-and-Practice-Conference" title="Bridging-Academia-Policy-and-Practice-Conference"><span class="octicon octicon-link"></span></a><span>Bridging Academia, Policy and Practice Conference</span></h1><p><span>橋接學術界、政策與實踐會議</span></p><p><span>來自全球 62 個國家的學者、管理人員和橋牌選手參加了 2021 年橋牌：全民思維運動 (BAMSA) 會議。這是第四屆國際橋樑會議。史特靈大學和 BAMSA 於 6 月底主辦了為期四天的線上活動。會議的成功召開，是大家共同努力的成果。該計劃有來自 20 個國家的 70 名演講者和小組成員。全球 BAMSA 網路成員之間的合作是這項活動的推動力。</span></p><p><span>此次會議旨在建立學術界和橋牌玩家之間的對話。地方、區域、國家和國際橋樑組織的代表都出席了會議。從業者包括政策制定者、橋牌教師、組織者和參與者。學者們來自不同學科。社會學、心理學、體育研究、健康科學、全球研究、社會工作和休閒研究都有代表。</span></p><p><a href="https://bridgemindsport.org/bridging-academia-policy-practice-conference/conference-2021-day-1-session-1b/" target="_blank" rel="noopener"><span>Conference Day 1: Bridge as a Mindsport (1B)</span></a></p><p><span>會議引發了廣泛的討論。在他富有洞察力的主題演講中，馬丁·塞利格曼(Martin Seligman)教授將他的幸福理論應用到了橋牌遊戲中。其他會議則重點討論橋牌在社會中的作用，以及橋牌如何造福不同世代。</span></p><p><span>關於教育和數位學習的會議引發了關於如何最好地在學校教授橋牌的討論。會議也展示了解決不平等問題和創造安全、溫馨環境的重要性。在一次關於性別的會議上提議對賽事總監、選拔者和青少年培訓師進行平等和無意識偏見的培訓。</span></p><p><span>Covid 19 改變了橋牌俱樂部的運作方式。關於新冠疫情後機會和挑戰的討論與計劃恢復面對面比賽的橋牌俱樂部相關。線上橋牌已經成為許多玩家的生命線，但並非所有人。大約一半的俱樂部玩家在疫情期間停止了比賽，橋牌俱樂部不能自滿。</span></p><p><span>為了提高人們對橋牌在社會中的積極作用的認識，會議展示了打橋牌的多重好處以及橋牌俱樂部的社會作用。來自世界各地的積極案例研究與致力於改善心理健康和減少社會孤立的執政黨尤其相關。</span></p><p><span>蘇格蘭橋牌聯盟、美國橋牌合約聯盟教育基金會、休閒研究協會和史特靈大學都提供了資助。在他們的支持下，會議為國際橋牌界創建了寶貴的線上資源。所有會議的錄音以及預先錄製的簡報均可在 BAMSA 網站上取得。</span></p><p><span>會議免費參加。為了支持 Bridge: A MindSport for All，請向 Keep Bridge Alive 眾籌機構捐款。</span></p><p><span>Please follow BAMSA on Facebook page and twitter (@bridgemindsport). Visit the website and subscribe to the e-bulletin to keep up to date with news from Bridge: A MindSport for All (</span><a href="http://bridgemindsport.org" target="_blank" rel="noopener"><span>bridgemindsport.org</span></a><span>).</span></p><h2 id="會議1A總結" data-id="會議1A總結"><a class="anchor hidden-xs" href="#會議1A總結" title="會議1A總結"><span class="octicon octicon-link"></span></a><span>會議1A總結</span></h2><h2 id="學術界與社會中的思維運動" data-id="學術界與社會中的思維運動"><a class="anchor hidden-xs" href="#學術界與社會中的思維運動" title="學術界與社會中的思維運動"><span class="octicon octicon-link"></span></a><span>學術界與社會中的思維運動</span></h2><p><span>會議 1A 部分將重點放在學術界和社會中的思維運動。簡報和錄音可以在</span><a href="https://www.youtube.com/watch?v=Jy2S2G1Vpdg" target="_blank" rel="noopener"><span>此處訪問</span></a><span>。</span></p><p><span>會議在斯特靈大學 Samantha Punch 教授和 BAMSA 計畫負責人的歡迎下開始。 Punch 教授談到了連結學術界和橋牌界以及政策界的重要性，並認為需要合作。接下來，世界橋牌聯合會主席賈納里戈·羅納 (Gianarrigo Rona) 致開幕詞，他在演講中談到橋牌是一種通用遊戲，也是一種本質上的社交遊戲。阿伯泰大學的 Punch 教授和 David Scott 博士隨後就他們的研究做了簡短的介紹。 Punch 教授重點介紹了 BAMSA 如何將橋牌作為一種社會智力運動，而 Scott 博士則分享了他與橋牌的物理性和情感體驗相關的研究。</span></p><p><span>在這些演講之後，由貢獻者組成了一個小組，其中一些提供了高級錄製的簡報。該小組成員多元化，貢獻者包括德克薩斯農工大學的David Scott 教授、來自澳大利亞的《在橋牌上獲得心理優勢》一書的作者Kim Frazer、以色列阿里爾大學的Liat Hen-Herbst 博士以及BAMSA團隊的Zoe Russell。小組成員討論了智力運動的定義特徵以及如何將橋牌理解為智力運動，包括這樣做的好處和缺點。</span></p><p><span>橋牌玩家分類以及社交橋牌和嚴肅橋牌之間關係的討論是 David Scott 教授 (1992, 1994) 工作的核心部分，Punch 等人對此進行了繼承和擴展。 （2021）。這裡的一個關鍵結論是，「橋牌」對不同的人來說是不同的東西，繼續澄清和區分不同形式的玩家和遊戲是有用的。</span></p><p><span>圍繞著將橋牌歸類為智力運動的討論是一種新的研究途徑，一些 BAMSA 論文中已經涉及到這一點，特別是 Punch 等人中關於玩家身份的討論。 （2020）。雖然智力運動的概念在某些情況下被接受，但在其他情況下卻不然，並且在討論中存在各種考慮和意見。這也納入了「電子競技」一詞，這是與「智力運動」並列的另一個需要考慮的類別。</span></p><p><span>這個網路研討會具有學術和橋牌意義。未來的研究需要考慮定義運動以及橋牌等智力運動在社會中的地位，包括對包容性的影響；橋牌作為一項智力運動的跨文化比較；線上橋牌作為一種電子競技。橋牌意義包括：橋牌形象和提高橋牌意識；獲得橋牌和橋牌研究的經費；橋牌在社會中的地位和增加參與。</span></p><h2 id="會議1B總結" data-id="會議1B總結"><a class="anchor hidden-xs" href="#會議1B總結" title="會議1B總結"><span class="octicon octicon-link"></span></a><span>會議1B總結</span></h2><h2 id="健康與橋牌" data-id="健康與橋牌"><a class="anchor hidden-xs" href="#健康與橋牌" title="健康與橋牌"><span class="octicon octicon-link"></span></a><span>健康與橋牌</span></h2><p><span>BAMSA 會議 1B 會議重點在於健康和橋牌。可以在</span><a href="https://bridgemindsport.org/bridging-academia-policy-practice-conference/conference-2021-day-1-session-1b/" target="_blank" rel="noopener"><span>此處存取錄音和預先演示</span></a></p><p><span>會議在斯特靈大學 Samantha Punch 教授和 BAMSA 計畫負責人的歡迎下開始。 Punch教授介紹了Martin Seligman教授是世界領先的心理健康專家和終身橋牌選手。 Seligman 教授首次講述了他如何將他的兩種熱情結合在一起，並應用他的 PERMA 幸福理論來架起橋樑。 PERMA 代表幸福的五個支柱：正向情緒、參與、關係、意義和成就。</span></p><p><span>Seligman 教授解釋如何將 PERMA 有效地應用於理解幸福感以及人們打橋牌背後的動機。他接著討論了兩種類型的認知（自動認知和刻意認知）以及這與打橋牌、老化和失智症的關係。注意到打橋牌對老年人的健康和認知的潛在好處。</span></p><p><span>在演講中，Seligman 教授將 PERMA 的軼事與橋牌結合起來，並要求參與者確定 PERMA 的哪一方面對他們來說最有吸引力；將 PERMA 更有效地應用到現實生活中打橋牌的動機和興趣將會很有用。鑑於橋牌作為一項智力運動在全球範圍內的衰落，了解玩這種耗時遊戲的動機對於橋牌的進一步行銷可能很有價值。</span></p><p><span>在塞利格曼教授的主題演講之後，潘奇教授推出了她的新書《頂端的橋樑：屏幕背後》（Master Point Press）。龐奇教授與出版商雷·李（Ray Lee）以及吉爾·萊文（Jill Levin）和奇普·馬特爾（Chip Martel）一書中採訪的兩位橋牌精英選手討論了她的書。 Punch 教授描述了這本書實際上是 BAMSA 的起點，並對橋牌桌上發生的事情進行了案例研究。所有小組成員都討論了橋牌對他們生活的重要性，包括認識他們的配偶以及橋牌與遊戲的家庭關係。然後他們討論了作為職業選手在橋牌上賺錢的潛在途徑。有人指出，在橋牌上賺錢的人可以透過做其他事情來賺錢，但因為他們熱愛橋牌遊戲而選擇橋牌。</span></p><p><span>然後，小組討論了困難且具有挑戰性的合作夥伴以及桌上的負面評論，以及這種行為如何讓玩家儘管熱愛遊戲卻仍會感到厭煩。他們特別討論了遊戲中持續存在的性別歧視和性別不平等的系統性經驗。學術研究，特別是女性主義研究長期以來一直強調，休閒和體育環境中的平等需要解決運動中存在的結構性不平等問題。這是未來研究創造更具包容性的橋牌環境以確保橋牌生存的重要途徑。</span></p><p><span>主題演講和新書發表會涵蓋了老牌手和菁英牌手之間的橋牌遊戲，未來的研究需要考慮年輕新手牌手的觀點和經驗。 BAMSA 的下一個研究計畫「學校橋牌」將解決橋牌世界中的這一差距，這將涉及招聘和保留方面的問題。這也可能是將塞利格曼的 PERMA 幸福理論應用於在學校打橋牌的年輕人的絕佳機會。</span></p><h2 id="會議2A總結" data-id="會議2A總結"><a class="anchor hidden-xs" href="#會議2A總結" title="會議2A總結"><span class="octicon octicon-link"></span></a><span>會議2A總結</span></h2><h2 id="全球流行病對橋牌的影響" data-id="全球流行病對橋牌的影響"><a class="anchor hidden-xs" href="#全球流行病對橋牌的影響" title="全球流行病對橋牌的影響"><span class="octicon octicon-link"></span></a><span>全球流行病對橋牌的影響</span></h2><p><span>第 2A 場會議的目的是探討與疫情對橋牌的影響相關的問題以及如何解決這些問題，考慮案例研究並確定未來的研究需求。關鍵問題涉及橋牌社區的下一步行動，以及新橋牌不同的機會和挑戰。會議有幾場預先錄製的演示，以及五場現場演示</span></p><ul>
+<li><span>凱文·賈吉（Kevin Judge）透過社會資本的視角討論了橋牌玩家所經歷的好處、障礙和動機。社會資本是合作與自身利益之間的平衡，是一種基於詹姆斯·科爾曼（James Coleman）描述社會結構、意識形態和穩定性的著作的必要方法。</span></li>
+<li><span>妮基班布里奇 (Nicky Bainbridge) 描述了她在疫情爆發時經營橋牌俱樂部的經歷。一些會員繼續作為線上會員，但相當多的人表示他們正在等待面對面橋的回歸。有些玩家喜歡親自玩遊戲，因為這是他們社交生活的一部分。</span></li>
+<li><span>Patrick Shields）談到縣協會如何填補橋牌俱樂部無法輕易填補的空白。</span></li>
+<li><span>Peter Cox 描述了澳洲橋牌的情況，當時澳洲處於一個相當獨特的位置，因為他們已經重新開放面對面橋牌。未來可能會有混合版本。大多數人都會在有線上橋牌的俱樂部裡玩。</span></li>
+<li><span>Jan Kamras 討論了歐洲橋牌聯盟的活動。未來的課程和研討會可能部分在線，部分面對面，這意味著更多的 NBO 可能能夠參與。對於比賽，玩家想要見面；這是他們享受打高水準橋牌比賽的樂趣的一部分。</span></li>
+</ul><p><span>小組討論瞭如何在大流行期間最大限度地發揮在線體驗的積極作用並儘量減少其消極作用。首先，線上更方便，但面對面更社交。我們需要讓比賽保持一致，同時認識到兩個方面都有優勢。討論了混合解決方案如何運作。還有人指出，大約50%的橋牌玩家不是在線上玩的。</span></p><p><span>然後，觀眾分為六個不同的小組來討論各種關鍵挑戰：</span></p><ul>
+<li><span>Club Bridge 的未來：混合解決方案可能是未來的發展方向。</span></li>
+<li><span>錦標賽橋牌的測試時間：錦標賽的經濟效益很重要。此外，人們也擔心網路作弊。</span></li>
+<li><span>線上橋牌的新禮儀：線上橋牌的氣氛與橋牌俱樂部的氣氛不同。有一種不同的玩家禮儀需要學習。</span></li>
+<li><span>流行病組織：NBO 可能需要改變社交/競爭橋牌或管理混合橋牌的重點。</span></li>
+<li><span>尋找失蹤的玩家：目前只有 40-50% 的先前玩家在線上玩遊戲。超過一半的玩家正在等待面對面的回歸，這應該是未來討論的關鍵。</span></li>
+<li><span>線上橋牌 – 低劣的遊戲？用「劣質」這個詞來形容線上橋牌是錯誤的——「不同」才是更好的詞。我們如何才能將線上橋牌和面對面橋接的優點結合起來？</span></li>
+</ul><p><span>小組成員總結了一些簡短的想法。彼得·考克斯問我們如何激勵俱樂部繼續前進？ Patrick Shields 表示，最好的方式是面對面和在線，利用兩者的優勢共同前進。班布里奇 (Nicky Bainbridge) 表示，重要的是不要讓任何人落後。克里斯蒂娜·巴林格表示我們非常期待再次面對面的比賽。埃斯彭·吉斯沃爾德表示，疫情改變了橋牌的形狀，未來將是混合型。凱瑟琳福克斯想知道幾年後我們是否會積極回顧這段時期。</span></p><p><span>會議 2A 的錄音和簡報可在</span><a href="https://bridgemindsport.org/bridging-academia-policy-practice-conference/conference-2021-day-2/" target="_blank" rel="noopener"><span>此處訪問</span></a><span>。</span></p><h2 id="會議2B總結" data-id="會議2B總結"><a class="anchor hidden-xs" href="#會議2B總結" title="會議2B總結"><span class="octicon octicon-link"></span></a><span>會議2B總結</span></h2><h2 id="數位橋牌和作弊" data-id="數位橋牌和作弊"><a class="anchor hidden-xs" href="#數位橋牌和作弊" title="數位橋牌和作弊"><span class="octicon octicon-link"></span></a><span>數位橋牌和作弊</span></h2><p><span>第 2B 部分「數位橋牌與作弊」有 356 名註冊參與者，其中包括學者、管理人員和橋牌玩家。</span></p><p><span>Tihana Brykljačić 和 Jordan Maclean 的兩場現場演講從心理學和社會學角度闡述了數位橋牌作弊問題。隨後舉行了小組會議，與會者包括：</span></p><ul>
+<li><span>世界橋牌聯合會調查委員會的艾瑞克‧勞蘭特</span></li>
+<li><span>揚‧卡姆拉斯 (Jan Kamras) 歐洲橋牌聯盟主席</span></li>
+<li><span>博耶‧布羅格蘭德 (Boye Brogeland) 挪威橋牌世界冠軍</span></li>
+<li><span>史蒂夫韋恩斯坦世界冠軍橋牌選手和橋牌優勝者合作夥伴</span></li>
+</ul><p><span>小組討論了五個主要問題：</span></p><ol>
+<li><span>作為一項遊戲/智力運動，橋牌作弊有何影響？</span></li>
+<li><span>對橋牌形像有何影響？</span></li>
+<li><span>橋牌獲勝者、公眾討論和懺悔的作用是什麼？</span><br>
+<span>3a. 您認為橋牌獲勝者在點名和羞辱作弊者方面扮演什麼角色？</span><br>
+<span>3b. 表白的作用是什麼以及你如何看待不同的網頁表白</span><br>
+<span>3c. 那些被指控但沒有認罪的球員呢？</span></li>
+<li><span>您如何看待國際和國家組織的作用</span></li>
+<li><span>作弊的等級和背景：這是否是更嚴重的橋牌犯罪，取決於犯罪者、地點和方式？</span></li>
+</ol><p><span>專家小組一致譴責作弊行為，因為它破壞了橋牌作為智力運動的本質。呼籲國際聯合會和國家組織在比賽的各個層面採取預防行動。他們可以透過修改現有法規並制定新的規則和法律來解決數位橋牌的細微差別；制定健全的流程，對涉嫌或已承認不同類型作弊行為的玩家進行紀律和懲罰；並建立檢測作弊的最佳實踐。課程的意義在於教導道德橋牌行為。</span></p><p><span>可以</span><a href="https://www.youtube.com/watch?v=SuiPxKPdrr8" target="_blank" rel="noopener"><span>在此處存取 2B 的錄音</span></a><span>。</span></p><h2 id="會議3A總結" data-id="會議3A總結"><a class="anchor hidden-xs" href="#會議3A總結" title="會議3A總結"><span class="octicon octicon-link"></span></a><span>會議3A總結</span></h2><h2 id="架起幾代人的橋樑" data-id="架起幾代人的橋樑"><a class="anchor hidden-xs" href="#架起幾代人的橋樑" title="架起幾代人的橋樑"><span class="octicon octicon-link"></span></a><span>架起幾代人的橋樑</span></h2><p><span>會議的第 3A 部分重點討論了跨代溝通。可以</span><a href="https://www.youtube.com/watch?v=_aHt0L0-RQk" target="_blank" rel="noopener"><span>在此處存取簡報和小組錄音</span></a><span>。</span></p><p><span>斯特靈大學的 Alison Bowes 教授宣布會議開幕，並透過討論健康老化的意義以及橋牌在此背景下提供的功能來展開討論。討論這一問題以及跨世代之間的橋樑連接方式是本次會議的一些主要目標。小組發言人進行了簡短的演講或預先錄製的演講，從不同的學科角度和不同的全球背景來討論這些目標。</span></p><p><span>例如，波蘭的 Marek Malysa 博士分享了學習打橋牌如何影響老年人的健康和認知技能，以及如何降低阿茲海默症的風險。 BAMSA 的 Miriam Snellgrove 博士介紹了有關 covid-19 大流行期間孤獨和橋牌的研究。她分享說，孤獨和聯繫之間的區別很複雜，尤其是在線上和離線橋牌方面。澳洲昆士蘭大學的 Polly Fong 將社會認同觀點應用於健康老化和就地老化，討論了社會群體對於福祉的重要性。她的研究是基於橋牌俱樂部的案例研究。</span></p><p><span>葡萄牙開放大學的 José Júlio Curado 貢獻了橋牌的全球研究視角，強調了跨學科的重要性。他認為，關鍵問題是橋牌如何促進一個更包容、更公平和有凝聚力的社會，同時增加社會福祉。最後，來自澳洲的克里斯·帕納吉奧塔羅斯（Chris Panagiotaros）專注於代際性和透過橋牌發展社區，他將其置於「孤獨危機」和「超個性化」的當代世界的背景下。</span></p><p><span>在會議期間，小組成員和與會者討論了與橋牌在老年人生活中的作用相關的關鍵主題和問題，以及如何鼓勵年輕人參與遊戲並促進跨世代互動。討論的內容包括橋牌可能在多大程度上存在年齡歧視。米里亞姆·斯內爾格羅夫（Miriam Snellgrove）認為，關於橋牌的敘述因為它是老年人的遊戲而存在問題，應該轉變為將其視為積極的一面，同時關注進入障礙和年輕人的持續參與。</span></p><p><span>討論了學術研究的角色以及宣傳工作的重要性。人們希望看到更多的大學參與 BAMSA 並與之合作。已確定的未來研究重點包括關注成人遊戲團體，波莉方認為這一點的研究嚴重不足，尤其是與健康和福祉的聯繫。</span></p><p><span>另一個差距被認為是對實踐的關注，以及如何讓年輕人接觸橋牌，以及如何將其轉化為代際關係和社區發展。鮑斯教授認為，國際合作很重要，並且可以關注多學科工作，這不僅有利於橋牌社區，而且符合研究資助者的需求。</span></p><h2 id="會議3B總結" data-id="會議3B總結"><a class="anchor hidden-xs" href="#會議3B總結" title="會議3B總結"><span class="octicon octicon-link"></span></a><span>會議3B總結</span></h2><h2 id="性別、性別歧視與橋牌" data-id="性別、性別歧視與橋牌"><a class="anchor hidden-xs" href="#性別、性別歧視與橋牌" title="性別、性別歧視與橋牌"><span class="octicon octicon-link"></span></a><span>性別、性別歧視與橋牌</span></h2><p><span>會議第 3B 部分的重點是性別、性別歧視和橋牌。可以</span><a href="https://bridgemindsport.org/bridging-academia-policy-practice-conference/conference-2021-day-3-session-3b/" target="_blank" rel="noopener"><span>在此處存取錄音和簡報</span></a><span>。</span></p><p><span>斯特靈大學的 Miriam Snellgrove 博士宣布會議開幕，她首先討論了性別不平等有時如何被視為個人問題，但這忽略了這種不平等在制度層面根深蒂固的方式。與許多其他組織一樣，橋牌組織是維護和再現性別不平等的機構。本次會議的目的是考慮橋牌世界在更廣泛的不平等世界中可以採取哪些解決方案。小組發言人進行了簡短的演講或預先錄製的演講，從不同的角度和全球背景討論了這些問題。在會議期間，小組成員和與會者就如何使橋牌更具包容性以及如何鼓勵更多女性參與各個級別的遊戲進行了關鍵辯論。</span></p><p><span>一場爭論的焦點是俱樂部和組織的角色和責任，以及改革是否應該由組織強制實施或從頭開始。有些人主張從區域、區域和國家橋牌組織中進行更多投資、研究和領導，而另一些人則建議在俱樂部層級招募女性，一刀切的方法行不通。另一個爭論是女子運動的未來以及是否應該保留或廢除它。有些人認為，刪除這一類別會剝奪女性的安全空間。此外，隨著公開比賽的女性人數減少，取消女性類別可能會導致女性退出橋牌比賽。</span></p><p><span>其他人則持相反觀點，認為在廢除女子比賽之前不會有更多的女性運動員。對於團隊和橋牌組織的領導層來說，配額的想法是另一個有爭議的問題。一些小組成員強烈反對這樣的想法，即只有最好的玩家才能代表自己的國家，並且應該選擇最優秀的人來擔任組織中的工作，其他人則強調積極的歧視，以幫助克服婦女面臨的獨特障礙。</span></p><p><span>小組成員也討論了女性在橋牌比賽中面臨的障礙。我們討論了時間和旅行的承諾，這對女性來說可能更具挑戰性，因為社會壓力要求女性承擔更多的育兒和家務勞動。我們也討論了社會化以及這如何影響女性的信心。也討論了諸如評論員幾乎全部是男性、名人堂以男性為主、章程通常用“他”這個詞來書寫等微侵犯。男性和女性玩家提出的更明顯的性別歧視和性別歧視言論也是如此。贊助商對全男子隊伍的偏見也受到關注。選擇開放團隊時的選擇者偏見也是如此。</span></p><p><span>從本次會議中可以清楚看出，女性橋牌界內部擁有充足的專業知識，可以利用這些專業知識來提出急需的變革。小組成員共同撰寫的一份報告強調了對錦標賽和俱樂部橋牌的建議變化，可以作為更廣泛的橋牌社區的激勵機制。組織的角色是未來研究的一個重要途徑，旨在創造一個更具包容性的橋樑環境，以確保其生存，還需要考慮其他社會不平等，包括種族、性和殘疾。</span></p><h2 id="會議4A總結" data-id="會議4A總結"><a class="anchor hidden-xs" href="#會議4A總結" title="會議4A總結"><span class="octicon octicon-link"></span></a><span>會議4A總結</span></h2><h2 id="教學和招募的新方法" data-id="教學和招募的新方法"><a class="anchor hidden-xs" href="#教學和招募的新方法" title="教學和招募的新方法"><span class="octicon octicon-link"></span></a><span>教學和招募的新方法</span></h2><p><span>BAMSA 會議的第 4A 部分重點討論了教學和招募的新方法。可以</span><a href="https://www.youtube.com/watch?v=ZVEsFBWWI3c" target="_blank" rel="noopener"><span>在此處存取小組討論的簡報和錄音</span></a><span>。</span></p><p><span>Terrie-Lynn Thompson 博士介紹了本次會議，並談到了教學法技術和橋牌教學法。她談到了「情境學習」的概念以及作為「情境活動」的教育思想。</span></p><p><span>第一小組討論了橋牌的學習和教學，並回答了有關如何吸引線上新學習者和針對不同年齡層的面對面橋牌的關鍵問題。他們考慮是否有特定的障礙和機會。在談到吸引新玩家的有效方法時，瑪麗夏普表示，我們需要考慮人們如何學習。她繼續談論普遍存在於教學中的“成長心態”，即培養學生的適應能力和足智多謀。米蘭·馬庫拉接下來認為，做任何事情都不存在“最好的方法”，方法有多種，而且對每個人來說，不同的方法可能會起作用。他談到了不同年齡層玩家的不同動機，以及我們可能需要不同的教學方法。</span></p><p><span>柳澤明子談到推廣橋牌所面臨的挑戰。例如，橋牌在日本並不為人所知，在招募玩家時僅僅解釋遊戲就需要花費大量額外的工作。史蒂芬妮·斯雷爾凱德 (Stephanie Threlkeld) 建議，重要的是要專注於透過實踐來學習，而不是透過交談來學習。她談到了改進教學計劃的努力，特別是當大流行來襲時，面臨的挑戰是製定一個體現相同原則的線上計劃。</span></p><p><span>第二小組討論了學校和青年的橋牌以及如何吸引和留住學習者。會議由挪威橋牌聯合會的 Marianne Harding 和丹麥學校橋牌協會主席 Morten Bilde 開始，他們的演講和討論重點是回答有關關鍵挑戰和機遇的問題，以及在實踐中可行的方法和如何推進研究橋牌的技巧。瑪麗安哈丁首先消除了年輕人對學習橋牌不感興趣的謠言。她說很多人根本不知道橋牌是什麼，所以沒有理由說他們是否想學橋牌。</span></p><p><span>莫滕談到了丹麥學校項目，他說重要的是要了解「人們學習事物的方式正在發生變化，這意味著我們教授橋牌的方式必須改變」。他認為，對橋牌如何影響學習進行案例研究非常重要。這是讓政客資助活動所必需的。另外三位小組成員 Sue Johnson、Michael Xu 和 Patty Tucker 繼續討論並分享實務知識和經驗，例如英國的“New Tricks”、2020 年青年橋協會的成立以及亞特蘭大少年賽橋組。</span></p><p><span>會議總體上強調了可以對不同的學習和教學實用方法進行重要的共享學習。它也說明了跨學科、涉及理論的新學術研究的範圍，以及提供用於政策參與的具體學習。</span></p><h2 id="會議4B總結" data-id="會議4B總結"><a class="anchor hidden-xs" href="#會議4B總結" title="會議4B總結"><span class="octicon octicon-link"></span></a><span>會議4B總結</span></h2><h2 id="行銷橋牌" data-id="行銷橋牌"><a class="anchor hidden-xs" href="#行銷橋牌" title="行銷橋牌"><span class="octicon octicon-link"></span></a><span>行銷橋牌</span></h2><p><span>會議的第 4B 部分重點討論了行銷橋牌以及會議閉幕式，其中包括 Punch 教授、Malysa 博士和 Brkljačić 博士的評論。</span></p><p><span>第 4B 場「行銷橋牌」有 278 名註冊參與者（學者、管理人員和橋牌玩家）。本次會議是由 Samantha Punch 教授領導的橋接見解 (Bridging Insights) 計畫的第一部分，該計畫由 Samantha Punch 教授領導，旨在製定行銷研究活動策略，以向下一代玩家推廣橋牌遊戲。</span></p><p><span>使用線上投票系統 Menti 向整個小組提出了幾個問題。行為改變框架介紹了橋牌玩家的每一種理想類型——競爭者、社交者、自我改進者和智力玩家。</span></p><p><span>「競爭者」類型引發了關於在國際舞台上競爭的興奮感的討論。然而，有些人認為「不惜一切代價取勝」的心態太過分了，可能會阻止新玩家融入其中。 「社交者」類型與人、食物和遊戲有關。有些人認為橋牌俱樂部必須擁抱這些社交特質才能吸引新玩家。 「自我完善者」類型渴望學習並持續提升自己的技能。為了實現這一目標，建議新人採用以問題為基礎的教學方法。 「心理玩家」類型是一位專家，他們有時甚至憤世嫉俗地利用遊戲心理智取對手。有些人比其他人更質疑這種類型的真實性。</span></p><h2 id="會議總結" data-id="會議總結"><a class="anchor hidden-xs" href="#會議總結" title="會議總結"><span class="octicon octicon-link"></span></a><span>會議總結</span></h2><p><span>BAMSA 會議表明，學術視角為年齡歧視、作弊和性別歧視等問題提供了不同且往往具有挑戰性的視角。討論了以下主題。</span></p><p><strong><span>連續體而不是二分法：</span></strong><span> 討論了許多二元論，包括在線/離線；數位正面與負面的比較；青年球員與年長球員的較量；社交玩家與嚴肅玩家、負面/正面的刻板印象。類別的兩極化沒有幫助，許多人同意我們需要更多地從連續體的角度思考，其中某件事應該關注的程度或它是好/壞的事情根據背景、玩家水平、文化而變化。做更多的工作來概念化和理論化移動連續體的複雜性，以便進一步解開橋牌實踐的層次並避免某些問題或群體過度同質化。</span></p><p><strong><span>Mindsport：</span></strong><span> 學術界對理論的運用可以有效解釋橋牌社群的動態，但理論可能會讓實踐者感到疏離。學術界有責任使其更容易獲得。橋牌語言也可能具有排他性。連結學術界和實踐兩個世界需要意識到語言如何阻礙討論。</span></p><p><strong><span>幸福：</span></strong><span> 本次會議探討了橋牌可以為有意義的生活做出貢獻的多種方式。人們提出了一些有趣的問題，涉及馬丁·塞利格曼教授的 PERMA 福祉框架如何應用於橋牌行銷。</span></p><p><strong><span>流行病橋：</span></strong><span> 對於馬丁·塞利格曼（Martin Seligman）等一些人來說，在線是前進的道路，但對於其他人來說，他們迫切希望回到面對面的橋。許多人談到，這場大流行病為橋牌打開了大門，並成為迫使我們在技術方面更具創新性的巨大機會。然而，過多的螢幕時間也會帶來健康風險，尤其是對於現在在數位裝置上工作時間更長的人來說。</span></p><p><strong><span>老化：</span></strong><span> Bridge 為時間充裕的老年人提供了重要的社交空間，但有人提出了潛在年齡歧視的問題。人們傾向於對橋牌是老年人遊戲的刻板印象進行負面談論。相反，也許遊戲對老年人的吸引力可以被更積極地接受，而不是被視為必須解決的負面因素。如果過度關注年輕玩家的需求，就有可能貶低那些打橋牌、熱愛橋牌的老人。此外，可能需要確保橋牌桌上的代際接觸始終對老年人和年輕人來說都是歡迎和積極的。</span></p><p><strong><span>數位學習：</span></strong><span> 透過線上實踐社群提供不同的教學方法。關於學校的教學人員應該由誰組成，進行了有趣的討論。</span></p><p><strong><span>作弊：</span></strong><span> 幾年前，牌手在解決作弊問題上處於領先地位，現在橋牌組織已經迎頭趕上。 IBO 和 NBO 正在承擔制定新政策和程序的責任。</span></p><p><strong><span>性別歧視：</span></strong><span> 橋牌組織傾向於視而不見，將問題留給個人解決，而不是將問題視為制度問題。有必要解決結構性不平等問題，避免將性別歧視視為個人問題。性別不平等應被重新定義為一個需要集體解決的公共問題。國際和國家橋樑組織需要承擔一些責任，承認問題、評估其影響並探索最相關的解決方案。</span><br>
+<span>性別小組討論了各種可能性，包括對技術代表、選拔者和青年培訓師進行有關無意識偏見的培訓以及提高對性別問題的認識。應該更認真地對待性別歧視和性別不平等，組織可以製定相關的性別政策和多元化準則，使遊戲更具包容性。否則，它可能會產生一種過時的形象，與更廣泛的社會脫節，因為社會更廣泛地關注性別和社會包容性。</span></p><p><strong><span>社會包容：</span></strong><span> 本次會議在多個會議中表明，解決社會不平等問題非常重要，以便子孫後代能夠進入一個對所有參與者都歡迎且安全的更現代的環境。</span></p><p><strong><span>失蹤的玩家：</span></strong><span> 目前尚不清楚那些在疫情期間沒有接受電腦橋牌的玩家發生了什麼事。目前還不清楚是否採取了足夠的措施來避免他們永久退出遊戲，也不清楚如何吸引他們回來。隱形玩家是一個難以接觸的群體，因為有些人不透過電子郵件溝通。我們需要記住，在大流行期間，線上橋牌並不是所有人的生命線。</span></p><p><strong><span>其他缺失的聲音：</span></strong><span> 輟學的年輕女性；離開和返回的年輕人（一個需要更多研究的領域——是什麼吸引他們回來？）；不同的種族和民族； LGBTQ 社群。也有人建議，我們可能會錯過調整橋牌產品以滿足時間緊迫的工作成年人的機會。</span></p><p><strong><span>未來的研究：</span></strong><span> 這次會議激發了使用橋牌作為詳細案例研究的可能性，以展示社區聯繫和代際機會。透過思維運動橋樑的案例研究，可以製定跨文化、多學科、協作的資助提案來解決健康老化和社會孤立等社會問題。</span></p><h2 id="BAMSA會議評估" data-id="BAMSA會議評估"><a class="anchor hidden-xs" href="#BAMSA會議評估" title="BAMSA會議評估"><span class="octicon octicon-link"></span></a><span>BAMSA會議評估</span></h2><p><span>在會議的最後一天，與會者被要求填寫一份評估表，以便 BAMSA 團隊評估會議的影響並探索未來 BAMSA 活動的最佳實踐。</span></p><ul>
+<li>
+<p><span>調查受訪者</span><br>
+<span>在完成調查的60 名參與者中，大多數(87.9%) 被認為是橋牌玩家，超過一半是橋牌教師，超過三分之一是橋牌組織者或政策制定者，不到四分之一是學者。受訪者主要來自歐洲（65.5%）和北美（20.7%）。</span></p>
+</li>
+<li>
+<p><span>回顧本次會議的總體情況</span><br>
+<span>整體而言，受訪者對這次會議非常正面。當被問及是否同意「總的來說，我發現這次會議令人滿意」的說法時，86% 的人同意或強烈同意。當被問及是否同意「現場會議有適當的多樣性」這一說法時，83% 的人同意或強烈同意。當被問及是否同意「該計劃足夠多樣化」這一說法時，95% 的人同意或強烈同意。</span><br>
+<span>當被問及是否同意「會議的不同部分得到了很好的整合」這一說法時，78% 的人同意或強烈同意。當被問及是否同意「IT 運作良好」這一說法時，81% 的人表示同意或強烈同意。在自由文本回覆中，受訪者也讚揚了這些面向。與會者也被問到他們認為會議在多大程度上實現了每個目標，對於每個目標，大多數受訪者（至少 70%）同意或強烈同意。</span></p>
+</li>
+<li>
+<p><span>令人著迷的經歷。我參加了所有的會議，主題非常豐富。</span></p>
+</li>
+<li>
+<p><span>也許更多地關注俱樂部會很有用。對於橋牌來說，這確實是一件很棒的事情，並將產生良好的長期影響。</span></p>
+</li>
+<li>
+<p><span>簡直太棒了</span><span class="smartypants">…</span><span>徹底享受這一切並希望獲得更多</span></p>
+</li>
+<li>
+<p><span>做得非常好，祝賀有趣的貢獻者的範圍和範圍。</span></p>
+</li>
+<li>
+<p><span>會議影響</span><br>
+<span>自由文字回應表示參與者對 BAMSA 持普遍正面的看法。總的來說，這次會議增加了受訪者對 BAMSA 各個方面的了解，許多受訪者將在他們的工作中使用這些研究。關於橋接福利、橋接組織和橋接學校的會議特別相關，大約 70% 的受訪者表示他們將使用這項研究，約 50% 的人同意會議為他們提供了這些領域的工具和資源。</span></p>
+</li>
+<li>
+<p><span>評估各個會話</span><br>
+<span>受訪者被問及是否觀看了預先錄製的會議。有些會議比其他會議更受歡迎，很少有人觀看每個會議的所有錄音。然而，自由文字回覆表明與會者可以在會議結束後返回查看這些內容。總體而言，看過預錄的人發現預錄和現場會議的平均評分至少為 3 分（滿分為 5 分）（其中 5 分非常有用）。</span></p>
+</li>
+<li>
+<p><span>未來的研究</span><br>
+<span>針對未來的研究提出了一系列建議，其中許多建議著重於吸引新玩家、教學、留任和可轉移技能，例如：</span></p>
+<ul>
+<li><span>透過橋牌為現實生活培養的技能</span></li>
+<li><span>更多關於第一次進入橋牌俱樂部的人的轉變。有關社交橋牌玩家的更多信息</span></li>
+<li><span>橋牌教學法。線上學習橋牌與面對面學習的比較</span></li>
+<li><span>橋牌支持學校數學教學的方式</span></li>
+<li><span>如何支持政府政策和行銷理念以及成功增加新參與者的數量。新青年玩家</span></li>
+</ul>
+</li>
+</ul><p><span>關於 BAMSA 的整體評價是正面的，包括：</span><br>
+<span>* 透過協作方法進行跨學科的有價值的研究，確定了橋牌對全世界個人、團體和社會的正面效益和影響。</span><br>
+<span>* 專案運作良好，學術團隊強大。兌現承諾。</span><br>
+<span>* 橋牌作為一項智力運動獲得個人和政策制定者的認可，背後的驅動力</span><br>
+<span>* 努力在不斷變化的環境中促進和維持橋樑</span><br>
+<span>* 讓我看到更多關於橋牌的知識</span><br>
+<span>* 有價值且發人深省</span><br>
+<span>* 展現得好、有進取心、內容豐富。</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#橋牌：全民智力運動-BAMSA" title="橋牌：全民智力運動, BAMSA">橋牌：全民智力運動, BAMSA</a></li>
+<li><a href="#中文" title="中文">中文</a></li>
+<li><a href="#Bridging-Academia-Policy-and-Practice-Conference" title="Bridging Academia, Policy and Practice Conference">Bridging Academia, Policy and Practice Conference</a><ul class="nav">
+<li><a href="#會議1A總結" title="會議1A總結">會議1A總結</a></li>
+<li><a href="#學術界與社會中的思維運動" title="學術界與社會中的思維運動">學術界與社會中的思維運動</a></li>
+<li><a href="#會議1B總結" title="會議1B總結">會議1B總結</a></li>
+<li><a href="#健康與橋牌" title="健康與橋牌">健康與橋牌</a></li>
+<li><a href="#會議2A總結" title="會議2A總結">會議2A總結</a></li>
+<li><a href="#全球流行病對橋牌的影響" title="全球流行病對橋牌的影響">全球流行病對橋牌的影響</a></li>
+<li><a href="#會議2B總結" title="會議2B總結">會議2B總結</a></li>
+<li><a href="#數位橋牌和作弊" title="數位橋牌和作弊">數位橋牌和作弊</a></li>
+<li><a href="#會議3A總結" title="會議3A總結">會議3A總結</a></li>
+<li><a href="#架起幾代人的橋樑" title="架起幾代人的橋樑">架起幾代人的橋樑</a></li>
+<li><a href="#會議3B總結" title="會議3B總結">會議3B總結</a></li>
+<li><a href="#性別、性別歧視與橋牌" title="性別、性別歧視與橋牌">性別、性別歧視與橋牌</a></li>
+<li><a href="#會議4A總結" title="會議4A總結">會議4A總結</a></li>
+<li><a href="#教學和招募的新方法" title="教學和招募的新方法">教學和招募的新方法</a></li>
+<li><a href="#會議4B總結" title="會議4B總結">會議4B總結</a></li>
+<li><a href="#行銷橋牌" title="行銷橋牌">行銷橋牌</a></li>
+<li><a href="#會議總結" title="會議總結">會議總結</a></li>
+<li><a href="#BAMSA會議評估" title="BAMSA會議評估">BAMSA會議評估</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li><a href="#橋牌：全民智力運動-BAMSA" title="橋牌：全民智力運動, BAMSA">橋牌：全民智力運動, BAMSA</a></li>
+<li><a href="#中文" title="中文">中文</a></li>
+<li><a href="#Bridging-Academia-Policy-and-Practice-Conference" title="Bridging Academia, Policy and Practice Conference">Bridging Academia, Policy and Practice Conference</a><ul class="nav">
+<li><a href="#會議1A總結" title="會議1A總結">會議1A總結</a></li>
+<li><a href="#學術界與社會中的思維運動" title="學術界與社會中的思維運動">學術界與社會中的思維運動</a></li>
+<li><a href="#會議1B總結" title="會議1B總結">會議1B總結</a></li>
+<li><a href="#健康與橋牌" title="健康與橋牌">健康與橋牌</a></li>
+<li><a href="#會議2A總結" title="會議2A總結">會議2A總結</a></li>
+<li><a href="#全球流行病對橋牌的影響" title="全球流行病對橋牌的影響">全球流行病對橋牌的影響</a></li>
+<li><a href="#會議2B總結" title="會議2B總結">會議2B總結</a></li>
+<li><a href="#數位橋牌和作弊" title="數位橋牌和作弊">數位橋牌和作弊</a></li>
+<li><a href="#會議3A總結" title="會議3A總結">會議3A總結</a></li>
+<li><a href="#架起幾代人的橋樑" title="架起幾代人的橋樑">架起幾代人的橋樑</a></li>
+<li><a href="#會議3B總結" title="會議3B總結">會議3B總結</a></li>
+<li><a href="#性別、性別歧視與橋牌" title="性別、性別歧視與橋牌">性別、性別歧視與橋牌</a></li>
+<li><a href="#會議4A總結" title="會議4A總結">會議4A總結</a></li>
+<li><a href="#教學和招募的新方法" title="教學和招募的新方法">教學和招募的新方法</a></li>
+<li><a href="#會議4B總結" title="會議4B總結">會議4B總結</a></li>
+<li><a href="#行銷橋牌" title="行銷橋牌">行銷橋牌</a></li>
+<li><a href="#會議總結" title="會議總結">會議總結</a></li>
+<li><a href="#BAMSA會議評估" title="BAMSA會議評估">BAMSA會議評估</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
